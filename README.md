@@ -51,6 +51,10 @@ The protocol, the test split and the outcomes that would count against the metho
 committed before any test document was built. The code was frozen, and each condition
 was run once.
 
+<p align="center">
+  <img src="docs/assets/results.svg" alt="Three panels of horizontal bars comparing five systems on 120 scanned statements. Altered statements confirmed, which should be zero: Probity 1 of 52, Gemini alone 50 of 52, Qwen alone 22 of 26, Gemini with a Python interpreter 2 of 52, OCR with the same rules 0 of 52. Altered row named and no other: Probity 42 of 52, Gemini alone 0 of 52, Qwen alone 0 of 26, Gemini with a Python interpreter 9 of 52, OCR with the same rules 15 of 52. Clean statements confirmed: Probity 32 of 40, Gemini alone 36 of 40, Qwen alone 20 of 20, Gemini with a Python interpreter 17 of 40, OCR with the same rules 9 of 40." width="100%">
+</p>
+
 **120 scanned six-page statements, image only.** 40 tie. 52 carry one alteration that
 arithmetic can detect: an amount or a balance changed, a row removed, or an amount moved
 to the other column. The other 28 carry alterations that leave the arithmetic exact, and

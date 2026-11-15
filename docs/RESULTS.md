@@ -134,6 +134,10 @@ statements it misreads.
 
 ### 4.1 Main comparison
 
+<p align="center">
+  <img src="assets/results.svg" alt="Three panels of horizontal bars comparing five systems on 120 scanned statements. Altered statements confirmed, which should be zero: Probity 1 of 52, Gemini alone 50 of 52, Qwen alone 22 of 26, Gemini with a Python interpreter 2 of 52, OCR with the same rules 0 of 52. Altered row named and no other: Probity 42 of 52, Gemini alone 0 of 52, Qwen alone 0 of 26, Gemini with a Python interpreter 9 of 52, OCR with the same rules 15 of 52. Clean statements confirmed: Probity 32 of 40, Gemini alone 36 of 40, Qwen alone 20 of 20, Gemini with a Python interpreter 17 of 40, OCR with the same rules 9 of 40." width="100%">
+</p>
+
 | 120 sealed statements | **Probity** | Gemini alone | Gemini with interpreter | OCR and rules | Qwen alone (60) |
 |---|---:|---:|---:|---:|---:|
 | clean confirmed | **32 of 40** (65-90%) | 36 of 40 (77-96%) | 17 of 40 (29-58%) | 9 of 40 (12-38%) | 20 of 20 (84-100%) |

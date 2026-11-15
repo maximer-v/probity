@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="470" viewBox="0 0 1240 470" font-family="Inter, 'Helvetica Neue', Arial, sans-serif">
+<rect width="1240" height="470" fill="#fcfcfb"/>
+<text x="30" y="44" font-size="20" font-weight="600" fill="#0b0b0b">The same two low-cost models, with and without the state machine</text>
+<text x="30" y="68" font-size="13" fill="#52514e">120 scanned bank statements never seen in development: 40 clean, 52 with an alteration that arithmetic can detect. Code frozen before the run.</text>
+<text x="262" y="118" font-size="14" font-weight="600" fill="#0b0b0b">Altered statements confirmed</text>
+<text x="262" y="137" font-size="12" fill="#8a8984">should be zero</text>
+<line x1="262" y1="154" x2="262" y2="392" stroke="#c9c8c3" stroke-width="1"/>
+<text x="592" y="118" font-size="14" font-weight="600" fill="#0b0b0b">Altered row named, and no other</text>
+<text x="592" y="137" font-size="12" fill="#8a8984">higher is better</text>
+<line x1="592" y1="154" x2="592" y2="392" stroke="#c9c8c3" stroke-width="1"/>
+<text x="922" y="118" font-size="14" font-weight="600" fill="#0b0b0b">Clean statements confirmed</text>
+<text x="922" y="137" font-size="12" fill="#8a8984">higher is better</text>
+<line x1="922" y1="154" x2="922" y2="392" stroke="#c9c8c3" stroke-width="1"/>
+<text x="30" y="182" font-size="14" font-weight="600" fill="#0b0b0b">Probity</text>
+<rect x="262" y="170" width="210" height="14" rx="4" fill="#eeede9"/>
+<path d="M 262 170 H 264.0 Q 266.0 170 266.0 172.01923076923077 V 181.98076923076923 Q 266.0 184 264.0 184 H 262 Z" fill="#2a78d6"/>
+<text x="484" y="182" font-size="13" font-weight="600" fill="#0b0b0b">1 of 52</text>
+<rect x="592" y="170" width="210" height="14" rx="4" fill="#eeede9"/>
+<path d="M 592 170 H 757.6 Q 761.6 170 761.6 174 V 180 Q 761.6 184 757.6 184 H 592 Z" fill="#2a78d6"/>
+<text x="814" y="182" font-size="13" font-weight="600" fill="#0b0b0b">42 of 52</text>
+<rect x="922" y="170" width="210" height="14" rx="4" fill="#eeede9"/>
+<path d="M 922 170 H 1086.0 Q 1090.0 170 1090.0 174 V 180 Q 1090.0 184 1086.0 184 H 922 Z" fill="#2a78d6"/>
+<text x="1144" y="182" font-size="13" font-weight="600" fill="#0b0b0b">32 of 40</text>
+<text x="30" y="230" font-size="14" font-weight="400" fill="#0b0b0b">Gemini alone</text>
+<line x1="30" y1="201" x2="1210" y2="201" stroke="#eeede9" stroke-width="1"/>
+<rect x="262" y="218" width="210" height="14" rx="4" fill="#eeede9"/>
+<path d="M 262 218 H 459.9 Q 463.9 218 463.9 222 V 228 Q 463.9 232 459.9 232 H 262 Z" fill="#8a8984"/>
+<text x="484" y="230" font-size="13" font-weight="400" fill="#0b0b0b">50 of 52</text>
+<rect x="592" y="218" width="210" height="14" rx="4" fill="#eeede9"/>
+<text x="814" y="230" font-size="13" font-weight="400" fill="#0b0b0b">0 of 52</text>
+<rect x="922" y="218" width="210" height="14" rx="4" fill="#eeede9"/>
+<path d="M 922 218 H 1107.0 Q 1111.0 218 1111.0 222 V 228 Q 1111.0 232 1107.0 232 H 922 Z" fill="#8a8984"/>
+<text x="1144" y="230" font-size="13" font-weight="400" fill="#0b0b0b">36 of 40</text>
+<text x="30" y="278" font-size="14" font-weight="400" fill="#0b0b0b">Qwen alone</text>
+<text x="30" y="294" font-size="11" fill="#8a8984">on 60 of the 120</text>
+<line x1="30" y1="249" x2="1210" y2="249" stroke="#eeede9" stroke-width="1"/>
+<rect x="262" y="266" width="210" height="14" rx="4" fill="#eeede9"/>
+<path d="M 262 266 H 435.7 Q 439.7 266 439.7 270 V 276 Q 439.7 280 435.7 280 H 262 Z" fill="#8a8984"/>
+<text x="484" y="278" font-size="13" font-weight="400" fill="#0b0b0b">22 of 26</text>
+<rect x="592" y="266" width="210" height="14" rx="4" fill="#eeede9"/>
+<text x="814" y="278" font-size="13" font-weight="400" fill="#0b0b0b">0 of 26</text>
+<rect x="922" y="266" width="210" height="14" rx="4" fill="#eeede9"/>
+<path d="M 922 266 H 1128.0 Q 1132.0 266 1132.0 270 V 276 Q 1132.0 280 1128.0 280 H 922 Z" fill="#8a8984"/>
+<text x="1144" y="278" font-size="13" font-weight="400" fill="#0b0b0b">20 of 20</text>
+<text x="30" y="326" font-size="14" font-weight="400" fill="#0b0b0b">Gemini + Python interpreter</text>
+<line x1="30" y1="297" x2="1210" y2="297" stroke="#eeede9" stroke-width="1"/>
+<rect x="262" y="314" width="210" height="14" rx="4" fill="#eeede9"/>
+<path d="M 262 314 H 266.1 Q 270.1 314 270.1 318 V 324 Q 270.1 328 266.1 328 H 262 Z" fill="#8a8984"/>
+<text x="484" y="326" font-size="13" font-weight="400" fill="#0b0b0b">2 of 52</text>
+<rect x="592" y="314" width="210" height="14" rx="4" fill="#eeede9"/>
+<path d="M 592 314 H 624.3 Q 628.3 314 628.3 318 V 324 Q 628.3 328 624.3 328 H 592 Z" fill="#8a8984"/>
+<text x="814" y="326" font-size="13" font-weight="400" fill="#0b0b0b">9 of 52</text>
+<rect x="922" y="314" width="210" height="14" rx="4" fill="#eeede9"/>
+<path d="M 922 314 H 1007.2 Q 1011.2 314 1011.2 318 V 324 Q 1011.2 328 1007.2 328 H 922 Z" fill="#8a8984"/>
+<text x="1144" y="326" font-size="13" font-weight="400" fill="#0b0b0b">17 of 40</text>
+<text x="30" y="374" font-size="14" font-weight="400" fill="#0b0b0b">OCR + the same rules</text>
+<line x1="30" y1="345" x2="1210" y2="345" stroke="#eeede9" stroke-width="1"/>
+<rect x="262" y="362" width="210" height="14" rx="4" fill="#eeede9"/>
+<text x="484" y="374" font-size="13" font-weight="400" fill="#0b0b0b">0 of 52</text>
+<rect x="592" y="362" width="210" height="14" rx="4" fill="#eeede9"/>
+<path d="M 592 362 H 648.6 Q 652.6 362 652.6 366 V 372 Q 652.6 376 648.6 376 H 592 Z" fill="#8a8984"/>
+<text x="814" y="374" font-size="13" font-weight="400" fill="#0b0b0b">15 of 52</text>
+<rect x="922" y="362" width="210" height="14" rx="4" fill="#eeede9"/>
+<path d="M 922 362 H 965.2 Q 969.2 362 969.2 366 V 372 Q 969.2 376 965.2 376 H 922 Z" fill="#8a8984"/>
+<text x="1144" y="374" font-size="13" font-weight="400" fill="#0b0b0b">9 of 40</text>
+<text x="30" y="434" font-size="12" fill="#8a8984">Each bar is a share of the statements in that group. Probity reads with Gemini and re-reads with Qwen where a rule fails; code decides. The others are each system doing the whole job.</text>
+<text x="30" y="454" font-size="12" fill="#8a8984">Gemini is google/gemini-3.1-flash-lite and Qwen is qwen/qwen3.5-flash-02-23. Full results with intervals: docs/RESULTS.md.</text>
+</svg>
