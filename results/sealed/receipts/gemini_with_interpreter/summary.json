@@ -1,0 +1,54 @@
+{
+ "documents": 100,
+ "no_answer": 8,
+ "clean_confirmed": {
+  "k": 47,
+  "n": 50,
+  "ci95": [
+   0.838,
+   0.979
+  ]
+ },
+ "altered_confirmed": {
+  "k": 13,
+  "n": 50,
+  "ci95": [
+   0.159,
+   0.396
+  ]
+ },
+ "altered_reported": {
+  "k": 32,
+  "n": 50,
+  "ci95": [
+   0.501,
+   0.759
+  ]
+ },
+ "altered_located": {
+  "k": 32,
+  "n": 50,
+  "ci95": [
+   0.501,
+   0.759
+  ]
+ },
+ "clean_reported": {
+  "k": 0,
+  "n": 50,
+  "ci95": [
+   0.0,
+   0.071
+  ]
+ },
+ "reading_exact": {
+  "k": 79,
+  "n": 100,
+  "ci95": [
+   0.7,
+   0.858
+  ]
+ },
+ "cost_usd": 0.64,
+ "cost_per_document_usd": 0.0064
+}

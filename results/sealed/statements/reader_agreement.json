@@ -1,0 +1,101 @@
+{
+ "documents": 60,
+ "compared_cell_by_cell": 58,
+ "no_complete_transcription": [
+  {
+   "doc_id": "Type2_00035-clean-T2",
+   "reason": "offline and not cached: qwen/qwen3.5-flash-02-23 (transcribe:4). Re-run with network access, or point --cache at a directory that has this call."
+  },
+  {
+   "doc_id": "Type1_00026-amount_adjusted-T2",
+   "reason": "offline and not cached: google/gemini-3.1-flash-lite (transcribe:6). Re-run with network access, or point --cache at a directory that has this call."
+  }
+ ],
+ "skipped_row_count_differs": [],
+ "amount": {
+  "cells": 28113,
+  "both_right": 27827,
+  "one_wrong": 284,
+  "both_wrong_differently": 0,
+  "both_wrong_same": 2,
+  "shared_misreading_rate": 7.1e-05,
+  "shared_misreading_rate_ci95": [
+   2e-05,
+   0.000259
+  ],
+  "readers_agree": 27829,
+  "correct_given_agreement": 0.999928
+ },
+ "date": {
+  "cells": 9371,
+  "both_right": 9222,
+  "one_wrong": 148,
+  "both_wrong_differently": 0,
+  "both_wrong_same": 1,
+  "shared_misreading_rate": 0.000107,
+  "shared_misreading_rate_ci95": [
+   1.9e-05,
+   0.000604
+  ],
+  "readers_agree": 9223,
+  "correct_given_agreement": 0.999892
+ },
+ "description": {
+  "cells": 9371,
+  "both_right": 8778,
+  "one_wrong": 471,
+  "both_wrong_differently": 41,
+  "both_wrong_same": 81,
+  "shared_misreading_rate": 0.008644,
+  "shared_misreading_rate_ci95": [
+   0.00696,
+   0.01073
+  ],
+  "readers_agree": 8859,
+  "correct_given_agreement": 0.990857
+ },
+ "header_balance": {
+  "cells": 116,
+  "both_right": 116,
+  "one_wrong": 0,
+  "both_wrong_differently": 0,
+  "both_wrong_same": 0,
+  "shared_misreading_rate": 0.0,
+  "shared_misreading_rate_ci95": [
+   0.0,
+   0.032056
+  ],
+  "readers_agree": 116,
+  "correct_given_agreement": 1.0
+ },
+ "account_number": {
+  "cells": 58,
+  "both_right": 57,
+  "one_wrong": 1,
+  "both_wrong_differently": 0,
+  "both_wrong_same": 0,
+  "shared_misreading_rate": 0.0,
+  "shared_misreading_rate_ci95": [
+   0.0,
+   0.06212
+  ],
+  "readers_agree": 57,
+  "correct_given_agreement": 1.0
+ },
+ "shared_amount_misreadings": [
+  {
+   "doc_id": "Type1_00017-clean-T2",
+   "row": 132,
+   "column": "debit",
+   "printed": 294591879,
+   "both_read": null
+  },
+  {
+   "doc_id": "Type1_00017-clean-T2",
+   "row": 132,
+   "column": "credit",
+   "printed": null,
+   "both_read": 294591879
+  }
+ ]
+}

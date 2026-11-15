@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="docs/assets/workflow.svg" alt="Probity workflow in four stages. 1 Input: a scanned statement as PDF or image. 2 Read: a low-cost vision model transcribes each page and decides nothing. 3 Check: rules run as code with exact arithmetic and name the failing row. 4 Revisit: a second model reads the failed page blind, code compares the readings and re-runs the rule, and a third reading breaks a tie. Three outcomes: confirmed, document inconsistent at a named row, or unresolved and sent to a person. On 20 scanned statements, in each of two runs: 10 of 11 clean confirmed, 0 of 9 altered confirmed, 9 of 9 altered rows named, 65 misread rows corrected, about 5 cents per document." width="100%">
+  <img src="docs/assets/workflow.svg" alt="Probity workflow in four stages. 1 Input: a scanned statement as PDF or image. 2 Read: a low-cost vision model transcribes each page and decides nothing. 3 Check: rules run as code with exact arithmetic and name the failing row. 4 Revisit: a second model reads the failed page blind, code compares the readings and re-runs the rule, and a third reading breaks a tie. Three outcomes: confirmed, document inconsistent at a named row, or unresolved and sent to a person. On 120 scanned statements never seen in development: 32 of 40 clean confirmed, 1 of 52 altered confirmed, 42 of 52 altered rows named exactly, no clean statement reported, about 5 cents per document." width="100%">
 </p>
 
 <h1 align="center">Probity</h1>
@@ -9,7 +9,7 @@
 <p align="center">
   <a href="LICENSE"><img alt="License CC BY-NC 4.0" src="https://img.shields.io/badge/license-CC%20BY--NC%204.0-6250d6"></a>
   <img alt="Python 3.11+" src="https://img.shields.io/badge/python-3.11%2B-2a78d6">
-  <img alt="Tests" src="https://img.shields.io/badge/tests-143%20passing-1baf7a">
+  <img alt="Tests" src="https://img.shields.io/badge/tests-163%20passing-1baf7a">
   <img alt="Input" src="https://img.shields.io/badge/input-PDF%20%7C%20PNG%20%7C%20JPEG%20%7C%20TIFF-2a78d6">
   <img alt="Author" src="https://img.shields.io/badge/author-Javier%20Mancilla-1f4ca0">
   <img alt="Affiliation" src="https://img.shields.io/badge/affiliation-SquareOne%20Labs-lightgrey">
@@ -36,64 +36,88 @@ Where an answer can be checked by computation, a model's judgment of its own wor
 risk, not assurance, and a fixed state machine with rules does better than the same
 models asked to verify themselves.
 
-On 20 scanned statements, 9 of them with one amount altered, each of the two models
-working alone declared most of the altered statements consistent and never identified
-the altered row. The same two models inside Probity confirmed none of them and named
-the altered row in all nine, at about the same cost, while confirming 10 of the 11
-clean statements. The test is small, uses one
-synthetic corpus, and was not held out from development. [Limits](#limits) says what
-that does and does not support.
+It was evaluated once, with the code frozen, on documents it had never seen: 120
+scanned bank statements and 100 real scanned receipts. Of 52 statements with an
+alteration that arithmetic can detect, the two models working alone confirmed 50 and 22
+of 26 and located none. The same two models inside Probity confirmed 1 and located the
+altered row exactly in 42, at about the same cost. The price is coverage: 8 of 40 clean
+statements were handed to a person instead of confirmed. The statements are synthetic
+and the alterations are simple. [Limits](#limits) says what the evaluation does and does
+not support.
 
 ## Result
 
-20 scanned six-page statements, image only: 11 that tie and 9 in which one printed
-amount was altered.
+The protocol, the test split and the outcomes that would count against the method were
+committed before any test document was built. The code was frozen, and each condition
+was run once.
 
-| the same 20 documents | Gemini alone | Qwen alone | **Probity** |
-|---|---:|---:|---:|
-| clean statements confirmed | 10 of 11 | 11 of 11 | 10 of 11 |
-| altered statements confirmed (should be 0) | 8 of 9 | 7 of 9 | **0 of 9** |
-| altered row named, and no other | 0 of 9 | 0 of 9 | **9 of 9** |
-| every amount, balance and row date correct | 3 of 20 | 17 of 20 | **19 of 20** |
-| no usable answer | 0 | 1 | n/a |
-| cost per document | $0.047 | $0.040 | $0.045 |
+**120 scanned six-page statements, image only.** 40 tie. 52 carry one alteration that
+arithmetic can detect: an amount or a balance changed, a row removed, or an amount moved
+to the other column. The other 28 carry alterations that leave the arithmetic exact, and
+are reported under [Limits](#limits).
+
+| 120 statements never seen in development | **Probity** | Gemini alone | Gemini with a Python interpreter | OCR and the same rules | Qwen alone (60) |
+|---|---:|---:|---:|---:|---:|
+| clean statements confirmed | **32 of 40** | 36 of 40 | 17 of 40 | 9 of 40 | 20 of 20 |
+| altered statements confirmed (should be 0) | **1 of 52** | 50 of 52 | 2 of 52 | 0 of 52 | 22 of 26 |
+| altered row named, and no other | **42 of 52** | 0 of 52 | 9 of 52 | 15 of 52 | 0 of 26 |
+| clean statements reported as inconsistent | **0 of 40** | 4 of 40 | 20 of 40 | 11 of 40 | 0 of 20 |
+| every amount, balance and row date correct | **84 of 120** | 22 of 120 | 26 of 120 | 31 of 120 | 39 of 60 |
+| no usable answer | 0 | 0 | 13 | 0 | 3 |
+| cost per statement | $0.045 | about $0.047 | about $0.064 | none | $0.041 |
+
+**100 real scanned receipts,** 50 as scanned and 50 with one amount repainted. The
+receipt is a second document type, added as [one YAML file](examples/specs/receipt_cord.yaml).
+
+| 100 receipts | **Probity** | Gemini alone | Qwen alone | Gemini with a Python interpreter | OCR and the same rules |
+|---|---:|---:|---:|---:|---:|
+| clean receipts confirmed | **50 of 50** | 50 of 50 | 48 of 50 | 47 of 50 | 8 of 50 |
+| altered receipts confirmed (should be 0) | **0 of 50** | 24 of 50 | 34 of 50 | 13 of 50 | 0 of 50 |
+| altered receipts reported | **37 of 50** | 26 of 50 | 14 of 50 | 32 of 50 | 28 of 50 |
+| clean receipts reported as inconsistent | 0 of 50 | 0 of 50 | 1 of 50 | 0 of 50 | 23 of 50 |
 
 **The columns.** *Gemini alone* and *Qwen alone* are `google/gemini-3.1-flash-lite` and
-`qwen/qwen3.5-flash-02-23` each doing the whole job: transcribe the statement, then,
+`qwen/qwen3.5-flash-02-23` each doing the whole job: transcribe the document, then,
 with every page image and its own transcription in front of it, correct what it
-misread, check every row and the total exactly, say whether the statement is
-consistent, name the rows that do not add up, and finally re-examine its own answer.
-*Probity* uses Gemini as the first reader and Qwen as the second, with code doing the
-checking and deciding.
+misread, check every row and the total exactly, say whether the document is consistent,
+name the rows that do not add up, and finally re-examine its own answer. *With a Python
+interpreter*, Gemini may also run code on its transcription before answering. *OCR and
+the same rules* uses a conventional OCR engine and no language model. *Probity* uses
+Gemini as the first reader and Qwen as the second, with code doing the checking and
+deciding. Qwen alone ran on a seeded half of the statements.
 
-**The rows.** *Confirmed* means the system's final word was that the statement is
-consistent. *Every amount, balance and row date correct* compares the final
-transcription with the answer key on each row's date, debit, credit and balance and on
-the opening and closing balances. It does not cover descriptions, which nothing checks:
-at least 4.3% of them are wrong in Probity's output. Qwen's one document without an
-answer is an altered statement on which its reply ran past the model's maximum length;
-it is counted as not confirmed.
+**What the tables show.**
 
-**What the table shows.** The difference is in the second and third rows. Confirming a
-clean statement is the easy direction: a model that says "consistent" to almost
-everything gets it right. Reading well is not judging well either: Qwen transcribes
-these statements accurately, 17 of 20 without a single wrong figure, and still declared
-7 of the 9 altered ones consistent. Neither model pointed to the altered row once.
+- *The models alone confirm almost anything.* Confirming a clean statement is the easy
+  direction: a system that says "consistent" to everything scores 40 of 40. The same
+  habit confirms 50 of 52 altered statements. Two rewordings of the instructions gave
+  13 of 13 and 12 of 13.
+- *Letting the model compute is not the answer.* With a Python interpreter the model
+  sees that a balance fails, but it is computing on its own uncorrected transcription
+  and cannot tell a misread from an alteration. It reported half of the clean
+  statements as inconsistent.
+- *OCR with the same rules is not the answer either.* It confirms 9 of 40 clean
+  statements, and none on the two harder scan tiers.
+- *Probity never reported a clean document.* All 42 statements it reported as
+  inconsistent had been altered, and each report names exactly the altered row.
 
-**The clean statement Probity did not confirm.** It ended `UNRESOLVED`. The first reader
-lost a page's amount column; 34 of the 35 affected rows were recovered from the second
-reader, and one was not, because the first reader had also dropped a digit from that
-row's reference number and the two transcriptions could no longer be shown to be the
-same line. The rule that refuses such a match exists to stop a value being copied from a
-look-alike neighbouring line, and here it cost a confirmation. The report hands a
-reviewer that one row.
+**The altered statement Probity confirmed.** A debit had been moved to the credit
+column. The first reader transcribed it as a debit, where it had been before the
+alteration. That reading is consistent, so no rule failed and no second look was taken.
+The protocol said in advance that this would count against the method, and it does: a
+misreading that happens to agree with the arithmetic is invisible to it.
 
-**How firm this is.** Probity's figures were the same in two independent runs. With 9
-altered documents, 0 of 9 is statistically compatible with a true rate of up to 30%.
-The comparison is between complete workflows and does not by itself show that the
-difference comes from who decides; a separate experiment on 191 statements addresses
-that ([below](#does-it-matter-who-decides)). The full record, with intervals, every
-variant and the per-document tables, is in [docs/RESULTS.md](docs/RESULTS.md).
+**The clean statements Probity did not confirm.** Eight of 40 ended `UNRESOLVED`,
+mostly because a rule still failed on a few rows and the two readings did not settle
+it. Each goes to a person with those rows and both readings.
+
+**The assumption underneath.** The method treats agreement between two different models
+as evidence of what is printed. Measured cell by cell on 58 statements, the two models
+were wrong in the same way on 2 of 28,113 amounts.
+
+The full record, with intervals, results by scan quality, the contribution of the second
+model, variation between runs and every failure, is in
+[docs/RESULTS.md](docs/RESULTS.md).
 
 ## Contents
 
@@ -219,7 +243,8 @@ the one that had been altered. Total cost $0.05.
 | [`altered_statement.certificate.json`](examples/scanned/outputs/altered_statement.certificate.json) | the same as data |
 | [`clean_statement.report.md`](examples/scanned/outputs/clean_statement.report.md) | a statement that ties: two misread rows corrected, then confirmed |
 
-All 40 reports from the two benchmark runs are in [`results/`](results/).
+The reports for all 120 test statements are in
+[`results/sealed/statements/probity/reports/`](results/sealed/statements/probity/reports/).
 
 Rows are numbered from 0 in every output, so row 127 is the line the statement prints
 as No. 128.
@@ -281,19 +306,18 @@ they are specified, with an example of each, in
 fails, the first model transcribes the page once more at a higher resolution. If that
 reading differs and satisfies the same guards, the row is corrected and recorded as
 such; the two models had shared a misreading. If it agrees, or settles nothing, the row
-is reported as inconsistent. In the benchmark this was requested for each of the nine
-altered rows in both runs, and each time it agreed with the other two.
+is reported as inconsistent.
 
 **The second reader costs nothing when the first reading passes.** It is asked only for
 a page where a rule failed, or the page before it when the failing row is the first on
-its page, and at most once per page. In the benchmark the second reader accounted for
-10% of the cost and the third readings for 7%.
+its page, and at most once per page. In the evaluation the second reader accounted for
+11% of the cost.
 
 **Without a second reader** the same machinery runs with the first model re-reading its
-own page at a higher resolution. That corrects many misreads (8 of 11 clean statements
-confirmed in the benchmark, against 10 of 11), but a model agreeing with itself confirms
+own page at a higher resolution. That corrects many misreads (8 of 13 clean statements
+confirmed in the evaluation, against 9 of 13), but a model agreeing with itself confirms
 nothing, so a statement that still fails ends unresolved and is never reported as
-inconsistent.
+inconsistent: 0 of 17 altered statements located, against 14 of 17.
 
 Underneath, this is a state machine with 10 states and 16 transitions held as a data
 table with named guards: [docs/STATE_MACHINE.md](docs/STATE_MACHINE.md). The layering
@@ -312,20 +336,20 @@ Two points deserve to be stated plainly.
 **A correction is chosen by arithmetic.** A value is taken from the second reader
 because the rule then passes. A wrong value almost never makes an exact integer
 equation close by chance, so this is strong evidence against a misread digit or a
-swapped column. It is not proof of what is printed. In the benchmark every corrected
-document did match the answer key afterwards.
+swapped column. It is not proof of what is printed.
 
 **Models can be wrong together.** Two models reading the same image sometimes make the
 same mistake; the worked example above contains one. The third reading exists for that
 case and corrected it. It is the same model as the first reader looking at a sharper
 image, not a third independent reader, so three readings can still share a misreading.
 When they do and it breaks a rule, a row is reported that should not be; a shared
-misreading that happens to be consistent would be confirmed.
+misreading that happens to be consistent is confirmed, which happened once in the
+evaluation, with a single reader.
 
 ## Does it matter who decides?
 
-The main comparison is between whole workflows. To isolate the deciding step, 191
-digital statements (97 clean, 94 altered) were read from their text layer, so that all
+The main comparison is between whole workflows. To isolate the deciding step, in a
+separate experiment during development, 191 digital statements (97 clean, 94 altered) were read from their text layer, so that all
 191 readings match the answer key exactly, and the same reading was judged three ways.
 
 | who decides, given a perfect transcription | clean accepted | altered accepted |
@@ -336,14 +360,16 @@ digital statements (97 clean, 94 altered) were read from their text layer, so th
 
 With nothing to misread and one question to answer, the model accepted 84 of the 94
 altered statements. Shown the rules' findings it accepted none, and rejected six clean
-ones. The rules cost nothing to run.
+ones. The rules cost nothing to run. Details are in
+[docs/DEVELOPMENT_SAMPLE.md](docs/DEVELOPMENT_SAMPLE.md).
 
 ### What this suggests, and where it stops
 
 Not every problem needs a harness of agents. Here, adding more model judgment (a
-self-check, a model reviewing its own answer) did not fix the failure; removing the
-judgment from the models did. The same two models, at the same cost, went from letting
-most altered statements through to letting none through.
+self-check, a model reviewing its own answer, a Python interpreter) did not fix the
+failure; removing the judgment from the models did. The same two models, at the same
+cost, went from letting almost every altered statement through to letting one in 52
+through.
 
 Three conditions bound that conclusion:
 
@@ -352,8 +378,8 @@ Three conditions bound that conclusion:
   where agents or human review still earn their place.
 - **It is not an argument against models.** They do the part nothing else can: reading
   a scanned page. The point is about who holds the verdict.
-- **The evidence is a demonstration, not a proof:** 20 scanned statements and 191
-  digital ones, from one synthetic corpus.
+- **The evidence has edges.** The statements come from one synthetic corpus, the
+  alterations are single and simple, and larger models were left out on purpose.
 
 ## Quickstart
 
@@ -480,10 +506,48 @@ columns:
 invariants: [ROW_BAL, GLOBAL_BAL, LAST_ROW_EQ_CLOSING, DATE_ORDER, NO_DUP_ROW]
 ```
 
-Two specs ship in [`examples/specs/`](examples/specs/), one per layout of the test
-corpus. Rules are selected in YAML but cannot yet be written there: a new kind of check
-is a function in [`probity/invariants.py`](probity/invariants.py). Making rules
-authorable without code is the next piece of work.
+Two statement specs ship in [`examples/specs/`](examples/specs/), one per layout of the
+test corpus. A statement's rules are selected in YAML from the table above.
+
+**Other document types are written entirely in YAML.** A spec of `kind: form` declares
+the fields to read, any table, and the rules as formulas over them. The same machinery
+then applies: read, check, read again with a second model where a rule fails, compare,
+conclude. The receipt type used in the evaluation, abridged:
+
+```yaml
+doc_type: receipt.cord
+kind: form
+amounts: integer              # rupiah has no minor unit
+
+fields:
+  subtotal: {type: money, optional: true, label: "the subtotal before tax and service, if one is printed"}
+  tax:      {type: money, optional: true, label: "tax (PPN, PB1, VAT), if printed"}
+  total:    {type: money, label: "the total to pay"}
+
+tables:
+  items:
+    columns:
+      name:       {type: text,   label: "the item as printed"}
+      quantity:   {type: number, optional: true, label: "quantity, if printed"}
+      unit_price: {type: money,  optional: true, label: "price of one unit, if printed separately"}
+      price:      {type: money,  label: "the line amount"}
+
+rules:
+  - id: ITEMS_SUM_TO_SUBTOTAL
+    when: subtotal is not None
+    check: sum(items.price) == subtotal
+
+  - id: LINE_AMOUNT
+    for_each: items
+    when: row.quantity is not None and row.unit_price is not None
+    check: row.quantity * row.unit_price == row.price
+```
+
+Formulas are evaluated by a small interpreter that allows arithmetic, comparisons and
+`sum`, `len`, `abs`, `min` and `max`, and nothing else. See
+[`examples/specs/receipt_cord.yaml`](examples/specs/receipt_cord.yaml) and
+[`probity/forms.py`](probity/forms.py). Forms take a single image and are run from Python;
+[`benchmark/run_receipts.py`](benchmark/run_receipts.py) is a complete example.
 
 ## Where this is meant to go
 
@@ -505,16 +569,18 @@ review is usually a few lines of a page and not the whole document.
 
 | limit | detail |
 |---|---|
-| **Development-set results** | all 20 documents were used while the method was built. Nothing was held out. Expect less on new documents |
-| **The alteration tested is the kind the main rule detects** | one amount changed, balances untouched. An amount changed together with every later balance leaves the document internally exact, and no rule here can object. This is a test of whether reading and correction preserve an arithmetic signal through a scan, not of fraud detection |
-| **Small, non-random sample** | 11 clean and 9 altered, two layouts, one synthetic corpus, one currency. No skew, rotation, handwriting or stamps. No real customer documents |
-| **Not deterministic** | the models return different transcriptions on different runs. Two full runs of the benchmark agreed on every conclusion |
-| **Safety costs coverage** | each guard that prevents a wrong correction also blocks some right ones. One clean statement in 11 was left unresolved for that reason |
-| **Readers can share a mistake** | two models can misread the same cell the same way. The third reading catches that when a sharper image resolves it, as in the worked example. All three readings sharing a misreading remains possible: if it breaks a rule a good row is reported, and if it happened to be consistent it would be confirmed |
+| **It is not zero** | 1 of 52 detectable alterations was confirmed. The interval on that rate runs to 10% |
+| **A consistent misreading is invisible** | a second look is triggered by a failed rule. A first reading that is wrong and still ties passes unexamined. That is how the one alteration got through |
+| **Alterations that keep the arithmetic exact pass** | an amount changed together with every later balance, or a description changed, leaves no rule to fail. In the evaluation 16 of 20 and 6 of 8 such statements were confirmed, as expected. This is a test of whether reading and correction preserve an arithmetic signal through a scan, not of fraud detection |
+| **Safety costs coverage** | 8 of 40 clean statements ended unresolved, 3 of 12 on the hardest scan tier. Each guard that prevents a wrong correction also blocks some right ones |
+| **`CONFIRMED` covers amounts and balances, not dates or text** | 11 of 55 confirmed statements carry a misread date that still falls in order. Descriptions, names and account numbers are transcribed once and checked by nothing; 6.2% of descriptions are wrong |
+| **Synthetic statements** | one corpus, two layouts, one currency, simulated scan degradation, no handwriting or stamps. The receipts are the only real documents |
+| **Two low-cost models, one configuration each** | a stronger model would do better alone. That comparison was left out on purpose: the question is what can be made reliable cheaply |
+| **Not deterministic** | the models return different transcriptions on different runs. Across three runs of 30 statements, individual documents moved between a conclusion and unresolved; none moved to a wrong conclusion |
+| **Readers can share a mistake** | two models can misread the same cell the same way: 2 of 28,113 amounts in the evaluation. The third reading catches that when a sharper image resolves it. All three sharing a misreading remains possible |
 | **A correction is selected by arithmetic, not proven** | see [What a conclusion means](#what-a-conclusion-means) |
-| **Only amounts, balances and dates are protected** | descriptions, names and account numbers are transcribed once and checked by nothing; at least 4.3% of descriptions are wrong |
 | **Dropped rows that cancel out are invisible** | rows missing from the transcription whose amounts net to zero leave every remaining balance consistent. A printed transaction count catches this where a statement has one |
-| **The baseline is two low-cost models, each in one configuration** | a stronger model, or the same model verifying page by page at a higher resolution, might do better alone |
+| **Slow when a second look is needed** | the second reader takes about two minutes a page; a statement took a median of five minutes |
 | **On scans, "grounded" in the certificate means nothing** | that check compares a value with text found on the page, and for an image the only text is the model's own transcription |
 
 Every certificate carries a `not_claimed` list naming the error classes the method
@@ -527,12 +593,15 @@ cannot catch.
 | [`probity/`](probity/) | the package: readers, rules, the second-reader step, the state machine, reports |
 | [`examples/scanned/`](examples/scanned/) | two scanned statements and everything the tool wrote for them |
 | [`examples/specs/`](examples/specs/) | document types |
-| [`benchmark/`](benchmark/) | corpus construction and the three experiment runners |
-| [`results/`](results/) | scored outcomes for every condition, all 40 Probity reports, each model's raw answers, answer keys, the corpus audit, cost ledgers |
+| [`benchmark/`](benchmark/) | the evaluation protocol, test-set construction and the runners for every condition |
+| [`results/sealed/`](results/sealed/) | the evaluation: scored outcomes for every condition, Probity's report for every document, the reader-agreement measurement, and a script that recomputes the tables |
+| [`results/development/`](results/development/) | the 20-statement development sample and the who-decides experiment |
 | [`docs/METHOD.md`](docs/METHOD.md) | the procedure, the guards, and what the conclusions establish |
-| [`docs/RESULTS.md`](docs/RESULTS.md) | materials, conditions, measures, results with intervals, threats to validity |
+| [`docs/RESULTS.md`](docs/RESULTS.md) | the evaluation: materials, conditions, measures, results with intervals, failures, threats to validity |
+| [`docs/DEVELOPMENT_SAMPLE.md`](docs/DEVELOPMENT_SAMPLE.md) | the statements the method was built on, and who decides |
+| [`benchmark/protocol/PROTOCOL.md`](benchmark/protocol/PROTOCOL.md) | the protocol committed before the evaluation, its deviations and its outcome |
 | [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md), [`STATE_MACHINE.md`](docs/STATE_MACHINE.md), [`LOGS.md`](docs/LOGS.md) | design, the state machine, reading the outputs |
-| [`tests/`](tests/) | 143 tests, no network and no key needed |
+| [`tests/`](tests/) | 163 tests, no network and no key needed |
 
 ## Reproducing
 
@@ -540,8 +609,9 @@ cannot catch.
 pytest -q
 ```
 
-The experiments need an OpenRouter key and cost about four dollars in total. The
-commands are in [docs/RESULTS.md](docs/RESULTS.md#6-reproducing). A fresh run draws new
+The evaluation needs an OpenRouter key and cost about 18 dollars in total. The
+commands are in [docs/RESULTS.md](docs/RESULTS.md#9-reproducing), and
+`python results/sealed/tables.py` recomputes every table from the stored outcomes. A fresh run draws new
 model replies and will not reproduce the counts exactly.
 
 ## Citing
@@ -562,7 +632,8 @@ model replies and will not reproduce the counts exactly.
 Copyright 2026 Javier Mancilla Montero. [CC BY-NC 4.0](LICENSE): free for research and
 evaluation, not for commercial or production use.
 
-Not affiliated with any bank. Every document in this repository is synthetic. The
-scanned examples are derived from AgamiAI/Indian-Bank-Statements (Apache 2.0).
+Not affiliated with any bank. Every bank statement in this repository is synthetic,
+derived from AgamiAI/Indian-Bank-Statements (Apache 2.0). The receipts come from the
+public CORD corpus.
 
 <p align="center"><sub>Authored by <b>Javier Mancilla Montero</b> at <b>SquareOne Labs</b>, a frontier technology lab applying generative AI, quantum computing and neuromorphic/thermodynamic computing to financial services.</sub></p>

@@ -1,443 +1,409 @@
 # Results
 
-The experimental record: what was tested, on what, how it was scored, what came out, and
-what the results do not support. The counts on this page come from the files in
-[`results/`](../results/); [`results/README.md`](../results/README.md) says which can be
-recomputed from scratch there and which rest on a stored summary.
+The evaluation on documents the method had never seen: 120 scanned bank statements and
+100 real scanned receipts. The protocol, the test split, the measures and the outcomes
+that would count against the method were written and committed before any test document
+was built ([`benchmark/protocol/PROTOCOL.md`](../benchmark/protocol/PROTOCOL.md)). The
+code was then frozen at the tag `sealed-run-1`, the test set was built with it, and each
+condition was run once. Everything is reported, including what went against the method.
 
-## 1. Questions
+Every count on this page can be recomputed from the scored outcomes in
+[`results/sealed/`](../results/sealed/) with `python results/sealed/tables.py`.
+Percentages in brackets are 95% Wilson intervals.
 
-1. Given a scanned statement, how often does the method reach the right conclusion, and
-   when a statement has been altered, does it name the altered row?
-2. How do the two models it uses perform when each is asked to do the whole job alone?
-3. What does the second reader contribute?
-4. If the reading is already perfect, does it matter whether a model or code decides?
+The 20 statements the method was developed on, and the experiment that isolates the
+deciding step, are in [DEVELOPMENT_SAMPLE.md](DEVELOPMENT_SAMPLE.md).
+
+## 1. Findings
+
+1. **A low-cost model asked to check a statement confirms almost anything.** Gemini
+   alone confirmed 50 of 52 statements with a detectable alteration and Qwen alone 22
+   of 26. Neither located one. Rewording the instructions did not change this.
+2. **The same models inside the state machine let one through in 52 and located 42.**
+   Cost was about the same as the model working alone: $0.045 against $0.047 a
+   statement.
+3. **That one counts against the method.** The protocol said in advance that any
+   detectable alteration confirmed would. A debit had been moved to the credit column,
+   and the first reader transcribed it in the column it had come from. The reading was
+   consistent, so no rule failed and no second look was taken (section 5.1).
+4. **Giving the model a Python interpreter does not replace the state machine.** It
+   stopped the model confirming altered statements (2 of 52), but the model then
+   confirmed only 17 of 40 clean ones, located the altered row exactly in 9 of 52, and
+   returned no answer for 13 statements.
+5. **Conventional OCR with the same rules is not enough either.** It confirmed 9 of 40
+   clean statements and none on the two harder scan tiers. The vision models are doing
+   work the rules need.
+6. **The method's central assumption holds on this material.** Where two different
+   models transcribe an amount identically, it is what is printed 99.993% of the time
+   (2 shared misreadings in 28,113 cells, both on one row).
+7. **Safety is paid for in coverage.** 8 of 40 clean statements ended unresolved and
+   went to a person. None was reported as inconsistent.
+8. **It carries to a second document type with no new code.** On 100 real receipts
+   described by one YAML file, Probity confirmed 50 of 50 clean and 0 of 50 altered;
+   Gemini alone confirmed 24 of the 50 altered and Qwen alone 34.
+9. **`CONFIRMED` protects the money, not the dates.** Of 55 confirmed statements, 54
+   have every amount and balance right; the exception is the one in finding 3. Eleven
+   carry at least one misread date that still falls in order.
 
 ## 2. Materials
 
-### 2.1 Documents
+### 2.1 Bank statements
 
-Source: [AgamiAI/Indian-Bank-Statements](https://huggingface.co/datasets/AgamiAI/Indian-Bank-Statements)
-(Apache 2.0), a public corpus of synthetic bank statements in two layouts, six pages and
-about 160 transactions each, in Indian rupees. "Type 1" has separate debit and credit
-columns. "Type 2" has one amount column and a `Cr/Dr` column.
+Source: the digital split of AgamiAI/Indian-Bank-Statements, a synthetic corpus in two
+layouts. Of its 200 statements, 191 can be built. They were split by source statement
+with a fixed seed into 21 seen in development, 50 further development statements and
+**120 sealed test statements**
+([`split.json`](../benchmark/protocol/split.json)). Each test statement has six pages
+and about 160 transactions.
 
-As published, none of the corpus's digital statements ties to its own balance column:
-3,901 of 32,349 rows break the running balance, with at least six breaks in each of the
-200 documents. So the corpus contains no statement that should be confirmed and no
-alteration of known origin. Both were built from it
-([`benchmark/external/agami_patch.py`](../benchmark/external/agami_patch.py)):
+Each test statement was assigned by a seeded draw to one group and one scan tier, and
+then flattened to images with no text layer.
 
-- **Clean** documents: the amounts are corrected to agree with the printed balances.
-  The printed closing balance equals the last row's balance in all 200 documents, while
-  the chain recomputed from the published amounts ends below the closing balance in 184
-  of them, on it in 16, and above it in none. A one-sided error points at the amounts,
-  which is why they are treated as the faulty field.
-- **Altered** documents: a clean document in which one amount is then changed by a
-  known quantity, with every balance left as it was. The row, the old value and the new
-  value are recorded.
+| group | statements | what was done | can arithmetic detect it? |
+|---|---:|---|---|
+| clean | 40 | nothing; the statement ties | n/a |
+| amount | 16 | one amount changed, balances untouched | yes |
+| balance | 12 | one balance changed | yes |
+| row removed | 12 | one row whited out, balances untouched | yes |
+| direction | 12 | one amount moved from debit to credit or the reverse | yes |
+| amount, balances adjusted | 12 | one amount changed and every later balance recomputed | **no** |
+| row removed, balances adjusted | 8 | one row whited out and every later balance recomputed | **no** |
+| text | 8 | a description changed, no figure touched | **no** |
 
-Every built file is read back through its text layer and compared, amount by amount and
-date by date, with its answer key before it is used. 191 of the 200 could be built and
-all 191 read back exactly; the other 9 are excluded. The source audit, the build
-manifest with the reason for each exclusion, and the answer keys of the documents used
-here are in [`results/corpus/`](../results/corpus/) and
-[`results/answer_keys/`](../results/answer_keys/).
+The 52 statements in the four "yes" groups are the *detectable* alterations. The 20 with
+adjusted balances are internally exact, and the rules cannot object to them; they are in
+the test so that this number is on the page. Each alteration was verified in the built
+PDF before flattening: the text reads as intended, and an audit of the ledger breaks at
+exactly the expected rows.
 
-Each page is then flattened to a greyscale image at 300 dpi with a slight blur, a smooth
-lighting gradient, sensor noise and JPEG compression
-([`benchmark/external/rasterise.py`](../benchmark/external/rasterise.py)), and the result
-is checked to carry no text layer. No skew or rotation is applied.
+| tier | statements | rendering |
+|---|---:|---|
+| T1 | 40 | 300 dpi greyscale, blur, uneven lighting, sensor noise, JPEG |
+| T2 | 40 | T1 plus rotation of up to 2 degrees and a shadow band |
+| T3 | 40 | T1 plus perspective distortion, stronger blur and lower JPEG quality, as from a phone |
 
-### 2.2 The sample
+### 2.2 Receipts
 
-20 documents, taken in the corpus's own order: numbers 1 to 11 of layout Type 1 and
-numbers 1 to 9 of layout Type 2. The tenth Type 2 document could not be built, which is
-why there are 9 of that layout. Groups alternate by position within each layout (odd
-numbers clean, even numbers altered), which gives 11 clean and 9 altered. Assignment is
-by position, not random.
+Source: CORD, a public corpus of real scanned receipts with published transcriptions.
+A receipt can serve only if its published transcription satisfies the receipt rules, has
+at least two lines and has no discount or nested line. The test set is every such
+receipt of the corpus's test split (35) topped up to 100 with a seeded draw from its
+training split (65), which was not opened during development. Half were altered by
+repainting one line amount or the total in the image. Every receipt, altered or not, was
+repainted once, so that retouching does not mark the altered group.
 
-| | Type 1 | Type 2 | total |
-|---|---:|---:|---:|
-| clean | 6 | 5 | 11 |
-| altered | 5 | 4 | 9 |
-| rows | | | 3,221 |
-
-In file names and document ids the two groups appear as `repaired` (clean) and
-`tampered` (altered).
-
-**These are development documents.** They were used while the method was built, and
-none was held out.
+The receipt document type is [one YAML file](../examples/specs/receipt_cord.yaml): its
+fields, its table, and five rules written as formulas (the lines sum to the subtotal,
+the subtotal and charges sum to the total, cash less total is the change, quantity times
+unit price is the line amount).
 
 ### 2.3 Models
 
-| role | model | accessed through |
-|---|---|---|
-| first reader | `google/gemini-3.1-flash-lite` | OpenRouter |
-| second reader | `qwen/qwen3.5-flash-02-23` | OpenRouter |
-
-Temperature 0. Neither model returned identical output on every repetition (section
-4.2).
+`google/gemini-3.1-flash-lite` and `qwen/qwen3.5-flash-02-23`, through OpenRouter, at
+temperature 0. Both are low-cost models. Larger models were excluded by design: the
+question is what can be made reliable cheaply. Replies are not deterministic.
 
 ## 3. Conditions and measures
 
-### 3.1 Conditions
+| condition | what it is | statements | receipts |
+|---|---|---:|---:|
+| **Probity** | Gemini reads; rules check; Qwen reads again where a rule fails; a third reading breaks ties; code decides | 120 | 100 |
+| Gemini alone | Gemini transcribes, then, with every page and its own transcription in front of it, corrects what it misread, checks every row and the total, says whether the document is consistent, names the rows that are not, and re-examines its answer | 120 | 100 |
+| Qwen alone | the same, with Qwen | 60 | 100 |
+| Gemini with an interpreter | as Gemini alone, and it may run Python on its transcription, up to six times, before answering | 120 | 100 |
+| OCR and rules | a conventional OCR engine, a position-based table parser, the same rules, no language model | 120 | 100 |
 
-| condition | reads | checks | decides |
-|---|---|---|---|
-| **Probity** | Gemini; Qwen re-reads pages where a rule failed; Gemini once more, at higher resolution, where the two agree and a rule still fails | rules as code | code |
-| **No second reader** | Gemini; Gemini re-reads at higher resolution | rules as code | code |
-| **Gemini alone** | Gemini | Gemini | Gemini |
-| **Qwen alone** | Qwen | Qwen | Qwen |
+Qwen alone ran on a seeded 60-statement subset, balanced over groups, because it is slow
+and the budget was fixed. Gemini alone uses Probity's first reading as its transcription,
+so the two start from the same reading of every page.
 
-In the two "alone" conditions
-([`benchmark/run_llm_alone.py`](../benchmark/run_llm_alone.py)) the model first
-transcribes the statement one page per request, with the instruction the framework's
-reader uses. It is then sent every page image together with that transcription and
-asked to (1) correct any debit, credit or balance it misread, (2) check the running
-balance on every row and the closing total exactly, (3) say whether the statement is
-consistent, and (4) name the rows where the printed document does not add up. It is then
-shown its own answer and asked to re-examine it. The full prompt is in the source file.
+**Measures.** *Confirmed*: the final word is that the document is consistent.
+*Located*: the document is reported as inconsistent and the altered row is among those
+named. *Located exactly*: and no other row is named. For a changed balance, two rows
+fail by construction and both are expected. *Amounts, balances and dates exact*: every
+row's date, debit, credit and balance and the opening and closing balances match the
+answer key. For receipts, a failed sum cannot say which line is wrong, so *located*
+means a rule that should fail is among those named.
 
-The answer format lets the model correct amounts and balances, not dates or header
-fields. That does not affect the scores below: neither model's transcription has a
-wrong row date or a wrong opening or closing balance in any of the 20 documents. Qwen
-does misread the statement period in 8 documents; no condition can correct that field,
-so it is scored separately and kept out of the main measure.
+For OCR and rules there is no second reader, so a statement on which a rule fails is
+scored as reported at the failing rows. That is the most favourable reading of it: it
+can be credited with finding an alteration, at the price of false reports on clean
+statements it misreads.
 
-Three answers are scored for each model: the **first** answer; the **re-examined**
-answer on its own; and the **final** answer, which is the re-examined one where the
-model returned one and otherwise the first. "Final" is a fallback rule, not a choice of
-the better answer, and is the one used in summary tables.
-
-**This compares workflows.** Probity differs from a model working alone in more than who
-decides: it re-reads one page at a time at a higher resolution (400 dpi against 170),
-and it draws on a second model family. The comparison shows what each complete
-arrangement achieves at about the same cost. The experiment that isolates the deciding
-step is in section 4.5.
-
-### 3.2 Measures
-
-| measure | definition |
-|---|---|
-| **clean confirmed** | Probity: conclusion `CONFIRMED` on a clean document. Model alone: it answered `consistent: true` |
-| **altered confirmed** | the same, on an altered document. The correct value is zero |
-| **altered row named, and no other** | Probity: conclusion `DOCUMENT_INCONSISTENT` and the only failing row is the altered one. Model alone: it answered `consistent: false` and listed that row and no other. Either the 0-based index or the printed 1-based number is accepted |
-| **altered row among those named** | as above, but other rows may be named too |
-| **ledger exact** | on the final transcription, every row's date, debit, credit and balance, and the opening and closing balances, equal the answer key. Rows are compared as a multiset. A blank amount and a zero are treated alike. **Descriptions, the account number, the statement period, row order and page assignment are not part of this measure** |
-| **period exact** | the period start and end dates in the header equal the answer key |
-| **no usable answer** | model alone only: the reply was cut off at the token limit, the provider aborted it, or it was not a valid answer. Such a document stays in every denominator and counts as not confirmed |
-
-For an altered document the answer key holds the altered figure, because that is what
-is printed. Reading it faithfully and concluding correctly are separate measures.
-
-Intervals are 95% Wilson intervals. With 9 and 11 documents they are wide, and because
-the sample was neither random nor held out they describe the precision of the counts
-more than they license a claim about other documents.
-
-## 4. Results
+## 4. Results on bank statements
 
 ### 4.1 Main comparison
 
-| | Gemini alone | Qwen alone | Probity |
+| 120 sealed statements | **Probity** | Gemini alone | Gemini with interpreter | OCR and rules | Qwen alone (60) |
+|---|---:|---:|---:|---:|---:|
+| clean confirmed | **32 of 40** (65-90%) | 36 of 40 (77-96%) | 17 of 40 (29-58%) | 9 of 40 (12-38%) | 20 of 20 (84-100%) |
+| detectable alterations confirmed (should be 0) | **1 of 52** (0-10%) | 50 of 52 (87-99%) | 2 of 52 (1-13%) | 0 of 52 (0-7%) | 22 of 26 (66-94%) |
+| detectable alterations located exactly | **42 of 52** (68-89%) | 0 of 52 (0-7%) | 9 of 52 (9-30%) | 15 of 52 (18-42%) | 0 of 26 (0-13%) |
+| detectable alterations located | 42 of 52 | 0 of 52 | 42 of 52 | 21 of 52 | 0 of 26 |
+| clean statements reported as inconsistent | **0 of 40** | 4 of 40 | 20 of 40 | 11 of 40 | 0 of 20 |
+| amounts, balances and dates exact | **84 of 120** (61-77%) | 22 of 120 (12-26%) | 26 of 120 (15-30%) | 31 of 120 (19-34%) | 39 of 60 (52-76%) |
+| no usable answer | 0 | 0 | 13 | 0 | 3 |
+| cost per statement | $0.045 | about $0.047 | about $0.064 | none | $0.041 |
+
+On the same 60 statements as Qwen alone, Probity confirmed 15 of 20 clean and 0 of 26
+detectable alterations, and located 22 of 26 exactly.
+
+**Reading the table.** The first row is the easy direction: a system that says
+"consistent" to everything scores 40 of 40. The second and third rows are the test. The
+two models alone sit near the top of the first row for that reason, and it is why they
+confirm almost every altered statement as well.
+
+**The interpreter.** With Python available, the model computes the running balance and
+sees that something fails. That is why it rarely confirms an altered statement and why
+the altered row is among the rows it names in 42 of 52. But it is computing on its own
+uncorrected transcription, and it has no way to tell a misread from an alteration. It
+names every row that fails, so it locates the altered row exactly in 9 of 52, reports 20
+of 40 clean statements as inconsistent, and on 13 statements runs out of reply length
+before answering. A model that can compute still needs something to decide which
+failures belong to the reading and which to the document.
+
+**OCR and rules.** On the first scan tier it does respectably: 9 of 12 clean confirmed,
+15 of 20 located exactly. On the two harder tiers it confirms no clean statement and
+locates nothing exactly.
+
+### 4.2 What Probity concluded
+
+| group | statements | confirmed | inconsistent, altered row named exactly | unresolved |
+|---|---:|---:|---:|---:|
+| clean | 40 | 32 | 0 | 8 |
+| amount | 16 | 0 | 12 | 4 |
+| balance | 12 | 0 | 9 | 3 |
+| row removed | 12 | 0 | 10 | 2 |
+| direction | 12 | 1 | 11 | 0 |
+| amount, balances adjusted | 12 | 10 | 0 | 2 |
+| row removed, balances adjusted | 8 | 6 | 0 | 2 |
+| text | 8 | 6 | 0 | 2 |
+
+No statement was reported as inconsistent at a row that had not been altered. Every
+`DOCUMENT_INCONSISTENT` conclusion in the run, 42 of 42, names exactly the altered row.
+
+To reach these conclusions the machine corrected 546 misread rows. A second reading was
+needed on 99 of the 120 statements; 21 passed every rule on the first reading.
+
+### 4.3 By scan quality
+
+| Probity | T1 | T2 | T3 |
 |---|---:|---:|---:|
-| clean confirmed | 10 of 11 (62–98%) | 11 of 11 (74–100%) | 10 of 11 (62–98%) |
-| altered confirmed (should be 0) | 8 of 9 (56–98%) | 7 of 9 (45–94%) | **0 of 9** (0–30%) |
-| altered row named, and no other | 0 of 9 | 0 of 9 | **9 of 9** |
-| altered row among those named | 0 of 9 | 0 of 9 | **9 of 9** |
-| ledger exact | 3 of 20 | 17 of 20 | **19 of 20** |
-| period exact | 20 of 20 | 12 of 20 | 20 of 20 |
-| no usable answer | 0 of 20 | 1 of 20 | n/a |
-| cost per document | $0.047 | $0.040 | $0.045 |
+| clean confirmed | 11 of 12 | 12 of 16 | 9 of 12 |
+| detectable alterations confirmed | 0 of 20 | 0 of 12 | 1 of 20 |
+| detectable alterations located exactly | 17 of 20 | 8 of 12 | 17 of 20 |
+| amounts, balances and dates exact | 32 of 40 | 25 of 40 | 27 of 40 |
 
-Model-alone figures are for the final answer. Probity's are identical in both samples
-of section 4.2.
+Coverage falls on the harder tiers; the rate of wrong conclusions does not rise with it,
+apart from the one statement of finding 3.
 
-Reading the table:
+### 4.4 What the second model contributes
 
-- Each model, working alone and asked explicitly to find inconsistencies, declared most
-  of the altered statements consistent (8 of 9 and 7 of 9), and neither identified the
-  altered row in any document, alone or among others.
-- Reading well is not the same as judging well. Qwen's final transcription is exact on
-  17 of 20 documents, far better than Gemini's 3, and it still declared 7 of the 9
-  altered statements consistent.
-- With the same two models and a similar cost, Probity confirmed no altered statement
-  and named the altered row in each.
-- On clean statements all three conditions are close (10, 11 and 10 of 11). Confirming
-  a clean statement is the easy direction for a model that seldom objects. Probity's
-  one miss is an `UNRESOLVED`, examined in section 4.3.
-- Probity's result of 0 of 9 is compatible with a true rate anywhere up to about 30%.
+On a seeded 40-statement subset (13 clean, 17 detectable), with code deciding in every
+arrangement:
 
-### 4.2 Two samples of the same experiment
+| arrangement | clean confirmed | detectable confirmed | located exactly | amounts exact |
+|---|---:|---:|---:|---:|
+| Gemini reads, **Qwen** second (Probity) | 9 of 13 | 0 of 17 | 14 of 17 | 29 of 40 |
+| Gemini reads, **Gemini** re-reads its own pages | 8 of 13 | 0 of 17 | 0 of 17 | 19 of 40 |
+| **Qwen** reads, Gemini second | 7 of 13 | 0 of 17 | 15 of 17 | 39 of 40 |
+| Gemini alone decides, same subset | 11 of 13 | 16 of 17 | 0 of 17 | 4 of 40 |
 
-The models do not return the same transcription every time, so one run is one sample.
-The Probity condition was run twice with independent model replies.
+A model re-reading its own page corrects many misreads, but a model agreeing with
+itself is not taken as confirmation of anything, so nothing is ever reported and every
+altered statement ends unresolved. A different model is what makes a finding possible.
 
-| | sample A | sample B |
-|---|---:|---:|
-| clean confirmed | 10 of 11 | 10 of 11 |
-| altered confirmed | 0 of 9 | 0 of 9 |
-| altered row named, and no other | 9 of 9 | 9 of 9 |
-| ledger exact | 19 of 20 | 19 of 20 |
-| rows corrected | 65 | 65 |
-| second-reader page requests | 28 | 27 |
-| documents that needed the second reader | 16 | 15 |
-| third readings requested (the two models agreed, the rule failed) | 9 | 9 |
-| third readings that changed a row | 0 | 0 |
+The reverse arrangement gives the most accurate transcriptions and the same safety. It
+confirmed fewer clean statements for a reason unrelated to money: on several statements
+Qwen wrote the statement period in a form the document type's declared date format does
+not accept, and a header field that does not parse is never guessed. Qwen is also about
+twelve times slower per page, which is why it is the second reader.
 
-The two samples are independent sets of model replies for the same 20 documents. The
-conclusions agree on all 20. The corrections differ in detail (for instance, one
-document needed one correction in A and none in B), which is the run-to-run variation
-showing through.
+### 4.5 Is the models' failure a matter of wording?
 
-In both samples a third reading was requested exactly once per altered document, for
-the altered row, and each time it had the same figures as the other two readings. So
-the tie-break changed nothing in the benchmark, and did not turn any altered row into
-one that ties.
+Gemini alone under two rewordings of the instructions, on a seeded 30-statement subset:
 
-**The third reading at work.** The benchmark never needed it to change a row. The worked
-example in [`examples/scanned/`](../examples/scanned/) does. In that run of
-`Type2_00002` the second reader made the same debit/credit mistake as the first reader
-on row 148, so the two models agreed on a wrong reading. The first reader's
-higher-resolution transcription has that amount as a credit; with it the row ties and
-is corrected, and the document is reported as inconsistent at row 127, the alteration,
-and nowhere else. That is one case, so it shows what the step does and not how often it
-succeeds.
-
-### 4.3 What the first reader gets wrong
-
-Rows whose values were replaced, by type, in sample A (sample B in brackets):
-
-| error in the first reading | rows |
-|---|---:|
-| amount missing: a page transcribed without its amount column | 34 (34) |
-| amount in the wrong column, debit for credit or the reverse | 25 (26) |
-| a digit misread in an amount | 4 (3) |
-| a digit misread in a balance | 2 (2) |
-| **total corrected** | **65 (65)** of 3,221 rows |
-
-The missing amounts are one page of one clean document (`Type2_00007`), 35 rows. 34 were
-recovered and one was not, in both samples: on that row the first reader had also
-dropped a digit from the reference number in the description
-(`IMPS-78918018766-…` for `IMPS-789186018766-…`), so the two transcriptions of the row
-no longer carried the same number and guard 3 refused to treat them as the same line.
-The document ended `UNRESOLVED` with that single row reported. This is the guard working
-as specified and costing a confirmation: it refuses to pair two transcriptions whose
-reference numbers differ, because that is also how a value from a look-alike
-neighbouring line would present.
-
-The other 19 documents match the answer key on the ledger in both samples.
-
-Descriptions are a different matter. They are transcribed by the first reader and
-checked by nothing. At least 140 of 3,221 (4.3%) differ from the answer key in sample A
-and 141 (4.4%) in sample B. This is a lower bound: descriptions are compared as a
-multiset after normalising case, spacing and slashes, so two descriptions exchanged
-between rows are not counted.
-
-### 4.4 What the second reader contributes
-
-The Probity condition with the second reader removed. When a rule fails, the first
-reader is asked to transcribe that page again at a higher resolution, and its second
-transcription goes through exactly the same comparison and guards as a second reader's
-would. The one difference is by design: a model agreeing with itself confirms nothing,
-so this arrangement can correct a row but can never report a document as inconsistent.
-
-| | Gemini re-reading its own pages | Probity (Gemini, then Qwen) |
-|---|---:|---:|
-| clean confirmed | 8 of 11 (43–90%) | 10 of 11 |
-| altered confirmed | 0 of 9 | 0 of 9 |
-| altered documents ending `DOCUMENT_INCONSISTENT` | 0 of 9 | 9 of 9 |
-| altered documents ending `UNRESOLVED` | 9 of 9 | 0 of 9 |
-| altered row is the only row still failing | 3 of 9 | 9 of 9 |
-| rows corrected | 53 | 65 |
-| ledger exact | 11 of 20 | 19 of 20 |
-
-A same-model re-read at higher resolution recovers most misreadings: 53 rows, against
-65 with a second model. What it cannot do is separate the two cases that matter. All 9
-altered documents end unresolved, as do 3 clean ones, and a reviewer cannot tell which
-is which. The second reader's contribution is partly more corrections and mainly the
-ability to say "two different models read this the same way, and it does not add up".
-
-### 4.5 Does it matter who decides?
-
-A separate experiment that holds the reading fixed
-([`benchmark/ablate_decider.py`](../benchmark/ablate_decider.py)). 191 digital
-statements, 97 clean and 94 altered, are read from their text layer; all 191 readings
-match the answer key on every amount and date. The same reading is then judged three
-ways.
-
-| who decides | clean accepted | altered accepted |
-|---|---:|---:|
-| the rules, as code | 97 of 97 (96–100%) | 0 of 94 (0–4%) |
-| `gemini-3.1-flash-lite`, shown the rules' results | 91 of 97 (87–97%) | 0 of 94 (0–4%) |
-| `gemini-3.1-flash-lite`, shown only the reading | 88 of 97 (83–95%) | 84 of 94 (82–94%) |
-
-Given a perfect transcription and nothing else, the model accepted 84 of 94 altered
-statements. Given the rules' findings it accepted none, and rejected six clean ones.
-
-### 4.6 Each model alone, in detail
-
-| | Gemini first | Gemini re-examined | Gemini final | Qwen first | Qwen re-examined | Qwen final |
-|---|---:|---:|---:|---:|---:|---:|
-| clean confirmed | 10/11 | 10/11 | 10/11 | 11/11 | 11/11 | 11/11 |
-| altered confirmed | 9/9 | 8/9 | 8/9 | 8/9 | 7/9 | 7/9 |
-| altered row named, and no other | 0/9 | 0/9 | 0/9 | 0/9 | 0/9 | 0/9 |
-| altered row among those named | 0/9 | 0/9 | 0/9 | 0/9 | 0/9 | 0/9 |
-| ledger exact | 4/20 | 3/20 | 3/20 | 16/20 | 17/20 | 17/20 |
-| period exact | 20/20 | 20/20 | 20/20 | 12/20 | 12/20 | 12/20 |
-| no usable answer | 0 | 0 | 0 | 1 | 1 | 1 |
-
-**Gemini** always answered, and nearly always said the statement was consistent. On the
-one altered statement it refused after re-examination, it named five rows (125 to 129);
-the altered row is 108. A typical final answer on an altered statement (the altered row is 6): *"The statement
-is consistent after correcting the transcription error in row 48, where a blank credit
-field was incorrectly transcribed as having a value."* Its corrections did not improve
-its transcription: 4 documents were ledger-exact after its first answer and 3 after
-re-examination.
-
-**Qwen** transcribes much better than Gemini and reasons at length before answering. Its
-verification requests were given the largest reply the model allows (65,536 tokens). It
-gave a usable answer on 19 of the 20 statements; on the remaining one, an altered
-statement, its reply ran past that limit and was cut off. Of the 8 altered statements it
-did answer, it declared all 8 consistent at first and 7 after re-examination. On the
-eighth it then refused and named row 154; the altered row is 108. Three of its requests
-were aborted by the provider and were sent again, successfully.
-
-### 4.7 Choosing the second reader
-
-Before the experiments, candidate second readers each transcribed one 167-row scanned
-statement in full. This is a single-document probe, recorded in
-[`results/second_reader_probe/`](../results/second_reader_probe/), and is the reason
-Qwen was chosen, not a result.
-
-| model | rows returned | field accuracy score | cost |
+| brief | clean confirmed | detectable alterations confirmed | located |
 |---|---:|---:|---:|
-| `qwen/qwen3.5-flash-02-23` | 167 | 98.8% | $0.016 |
-| `meta-llama/llama-4-scout` | 168 | 95.3% | $0.010 |
-| `bytedance-seed/seed-2.0-mini` | 167 | 92.0% | $0.023 |
-| `mistralai/mistral-small-3.2-24b-instruct` | 86 | 50.9% | $0.007 |
+| original, same 30 statements | 8 of 10 | 13 of 13 | 0 of 13 |
+| paraphrase B | 8 of 10 | 13 of 13 | 0 of 13 |
+| paraphrase C | 10 of 10 | 12 of 13 | 0 of 13 |
 
-The score counts every unmatched row as four wrong cells, so it is harsher than a
-cell-by-cell comparison; it is used here only to rank the candidates.
+### 4.6 Variation between runs
+
+Probity twice more from scratch on the same 30 statements, with new model replies:
+
+| | clean confirmed | detectable confirmed | located exactly | amounts exact |
+|---|---:|---:|---:|---:|
+| sealed run, these 30 | 7 of 10 | 0 of 13 | 11 of 13 | 23 of 30 |
+| replicate 1 | 8 of 10 | 0 of 13 | 10 of 13 | 22 of 30 |
+| replicate 2 | 8 of 10 | 0 of 13 | 11 of 13 | 21 of 30 |
+
+Individual documents move between a conclusion and unresolved from run to run. No run
+moved a detectable alteration to confirmed.
+
+### 4.7 The assumption the method rests on
+
+The method treats agreement between two different models as evidence of what is printed.
+This was measured directly on the 58 statements both models transcribed in full, by
+comparing each model's raw first transcription with the answer key, cell by cell.
+
+| cells | compared | one reader wrong | both wrong, differently | both wrong, the same way | correct when they agree |
+|---|---:|---:|---:|---:|---:|
+| amounts and balances | 28,113 | 284 | 0 | 2 (0.007%; interval 0.002-0.026%) | 99.993% |
+| dates | 9,371 | | | 1 (0.011%) | 99.989% |
+| opening and closing balances | 116 | | | 0 | 100% |
+| account number | 58 | | | 0 | 100% |
+| descriptions | 9,371 | | | 81 (0.86%) | 99.09% |
+
+The two shared amount misreadings are one event: on one row of one clean statement both
+models, in their first transcriptions, put a debit in the credit column. That breaks
+the running balance, so the row is looked at again; in the sealed run the statement
+ended confirmed with the row corrected.
+
+Where one reader is wrong and the other right, the rules can tell which, because only
+one of the two readings ties. That is 284 cells here. The exposure is the last column
+but one, and on this material it is about one cell in fourteen thousand.
 
 ### 4.8 Cost and time
 
-Measured on sample B, in which every request was paid for.
+| | |
+|---|---|
+| Probity, 120 statements | $5.44, $0.045 a statement |
+| of which first readings and third readings (Gemini) | $4.83 |
+| of which second readings (Qwen, 185 pages) | $0.62 |
+| time per statement, pages read side by side | median 5.3 minutes, 90th percentile 8.2 |
 
-| | requests | cost | per document | time per request |
-|---|---:|---:|---:|---:|
-| first reader, 6 pages per document | 120 | $0.752 | $0.0376 | 10 s |
-| second reader, pages where a rule failed | 27 | $0.090 | $0.0045 | 141 s |
-| third reading, where the two models agree | 9 | $0.063 | $0.0031 | 13 s |
-| **total** | 156 | **$0.905** | **$0.0452** | |
+Time is dominated by the second reader, at roughly two minutes a page. A statement that
+passes on the first reading takes about a minute.
 
-The second reader accounts for about 10% of the cost and most of the time, and the
-third readings for about 7%. A document that needs no second look takes about a minute;
-one that needs two pages re-read takes about six minutes when run on its own.
+The whole evaluation, with development, cost $19.0 against a fixed budget of $20.
 
-Model-alone costs: Gemini $0.038 to transcribe plus $0.009 to verify and re-examine,
-$0.047 per document; Qwen $0.018 plus $0.022, $0.040 per document, including requests
-that had to be sent again.
+## 5. Where the method failed
 
-What the whole set costs to run from scratch, about four dollars:
+### 5.1 The altered statement that was confirmed
 
-| | cost | basis |
-|---|---:|---|
-| Probity, one sample | $0.91 | ledgers of sample B |
-| Gemini alone | $0.93 | $0.75 transcription (as sample B's first reader) + $0.18 verification ledger |
-| Qwen alone | $0.80 | transcription and verification ledgers |
-| no second reader | about $0.95 | estimate: the first reading plus 28 page re-reads; not ledgered separately |
-| who decides, 191 statements | $0.63 | total recorded by the original run; its ledger is not in `results/` |
+`Type1_00030-direction-T3`. One debit of 643,950.43 had been moved to the credit column,
+leaving the printed balances as they were, so the printed row no longer ties. The first
+reader transcribed the amount as a debit, where it had been before the alteration. That
+transcription is consistent, every rule passed, no second look was requested, and the
+statement was confirmed.
 
-Result files produced by replaying cached replies show a cost of zero; the ledgers of
-the paid runs are in [`results/ledgers/`](../results/ledgers/).
+This is the failure the method cannot see from the inside: a misreading that happens to
+agree with the arithmetic. A second look is triggered by a failed rule, and here no rule
+failed. Amounts in these layouts sit in one of two adjacent columns, and under
+perspective distortion the first reader placed this one in the wrong column. It did not
+happen on the other 11 direction statements, and it is the same kind of error as the one shared misreading of section 4.7: a column, not a digit.
 
-## 5. Threats to validity
+The rate is 1 in 52, with an interval of 0 to 10%. Nothing in this evaluation supports a
+claim of zero.
 
-**No held-out data.** All 20 documents were used during development. The figures are an
-upper estimate of what to expect on new documents.
+### 5.2 Statements left unresolved
 
-**The alteration is the kind the main rule tests.** One amount is changed and the
-balances are left alone, which is exactly what the row-balance rule detects on a perfect
-reading. The experiment therefore measures whether reading and correction preserve that
-signal through a degraded scan. It does not measure detection of fraud in general, and
-an alteration that also adjusts the later balances would pass every rule.
+23 of 120 ended `UNRESOLVED`, 8 of them clean. In 19, a rule still failed on one or more
+rows and the second reading did not settle it: the two readers disagreed and neither
+reading tied, or the rows could not be shown to be the same printed line. In 2, the first
+reader's reply for one page was not usable, and a statement with an unread page is not
+checked at all. In 2, a header field did not parse. In 5 of the 23 the final
+transcription was in fact exact; the machine could not establish that, so it did not say
+so.
 
-**One corpus.** Two layouts from one synthetic source, one currency, one locale, no
-skew or rotation, no handwriting, no stamps, no real documents.
+An unresolved statement is handed to a person with the rows still in question, and the
+readings side by side.
 
-**Small sample, not random.** 11 clean and 9 altered, assigned by position.
+### 5.3 What `CONFIRMED` covers
 
-**The comparison is between workflows.** Section 3.1. A model working alone might do
-better with page-by-page verification, higher resolution, or a stronger model. Only two
-low-cost models were tested, each in one configuration.
+Of the 55 confirmed statements, 43 match the answer key on every amount, balance and
+date. In 11, every amount and balance is right and between 1 and 14 dates are misread to
+another date that still falls in order; the date rule checks order, and an in-order
+wrong date passes it. The remaining one is the statement of section 5.1.
 
-**The first reader is the weaker transcriber.** Qwen transcribes these documents more
-accurately than Gemini. Probity was run with Gemini first because it is several times
-faster; the reverse arrangement was not tested.
+Descriptions are transcribed once and checked by nothing: 6.2% of them differ from the
+answer key in Probity's output.
 
-**Non-determinism.** Section 4.2. Two full samples agree. A separate run of one document
-showed two models sharing a misreading; the tie-break added for it is the same model as
-the first reader at a higher resolution, so a misreading that survives a sharper image
-is not caught.
+### 5.4 Alterations no rule can see
 
-**The tie-break could be wrong in the unsafe direction.** A third transcription that
-misread an altered figure as exactly the value that ties would be accepted. It agreed
-with the other two readings on all 18 altered rows across the two samples.
+Of the 20 statements with an amount or a row changed and every later balance recomputed,
+16 were confirmed and 4 ended unresolved for reading reasons. Of the 8 with only a
+description changed, 6 were confirmed. This is by construction. A document that is
+internally exact passes, whatever was done to it.
 
-**A correction is not a proof.** A value is taken from the second reader because it
-makes the arithmetic close. In the two Probity samples every row that was corrected
-then matched the answer key, which is evidence that the rule selects true values here.
-It is not a guarantee, and [METHOD.md](METHOD.md) section 6 says why.
+## 6. Results on receipts
 
-**Guards trade coverage for safety.** Each guard blocks some right corrections along
-with the wrong ones it targets. The matching rule cost one clean confirmation in 11
-here; on documents with noisier descriptions it would cost more.
+100 real scanned receipts, 50 as scanned and 50 with one amount repainted.
 
-**Only arithmetic fields are protected.** At least one description in twenty-three is
-wrong and nothing notices; the statement period is transcribed once and checked only
-against the row dates.
+| | **Probity** | Gemini alone | Qwen alone | Gemini with interpreter | OCR and rules |
+|---|---:|---:|---:|---:|---:|
+| clean confirmed | **50 of 50** (93-100%) | 50 of 50 | 48 of 50 | 47 of 50 | 8 of 50 |
+| altered confirmed (should be 0) | **0 of 50** (0-7%) | 24 of 50 (35-61%) | 34 of 50 (54-79%) | 13 of 50 (16-40%) | 0 of 50 |
+| altered reported | **37 of 50** (60-84%) | 26 of 50 | 14 of 50 | 32 of 50 | 28 of 50 |
+| altered located | 36 of 50 | 22 of 50 | 8 of 50 | 32 of 50 | 22 of 50 |
+| clean reported as inconsistent | 0 of 50 | 0 of 50 | 1 of 50 | 0 of 50 | 23 of 50 |
+| reading exact | 90 of 100 | 65 of 100 | 75 of 100 | 79 of 100 | 13 of 100 |
+| no usable answer | 0 | 0 | 3 | 8 | 0 |
+| total cost, 100 receipts | $0.19 | $0.25 | $0.40 | $0.64 | none |
 
-## 6. Reproducing
+The 13 altered receipts Probity neither confirmed nor reported ended unresolved: a rule
+failed and the two readers disagreed on a value it uses.
+
+A receipt is a much shorter document than a statement, and the models alone do better
+on it than on statements. They still confirmed between a quarter and two thirds of the
+altered ones. Probity was also the cheapest of the conditions that use a model, because
+a receipt that passes on the first reading costs one request.
+
+## 7. Against the criteria set in advance
+
+| stated before the run as counting against the method | outcome |
+|---|---|
+| any detectable alteration confirmed | **happened: 1 of 52** (section 5.1) |
+| clean confirmed below 75% on tier T1 | did not happen: 11 of 12 |
+| located exactly below 80% on detectable alterations | did not happen, narrowly: 42 of 52, 80.8% |
+| Gemini with an interpreter matching Probity on clean confirmed, alterations confirmed and located exactly | did not happen: 17 of 40, 2 of 52, 9 of 52 |
+| OCR with the same rules matching Probity | did not happen: 9 of 40, 0 of 52, 15 of 52 |
+| the receipt document type needing Python | did not happen: the type is one YAML file, read by the generic form engine that is part of the frozen code |
+
+## 8. Threats to validity
+
+- **The statements are synthetic.** One corpus, two layouts, one currency, generated
+  transactions. The scan degradation is simulated. No real bank statement was available.
+  The receipts are real scans, and are the only real documents in the evaluation.
+- **The alterations are synthetic and single.** One change per document, made in the
+  PDF before scanning or repainted in the image. A person altering a document to
+  deceive would also adjust the balances, which is the group no rule here can detect.
+- **Two models, one configuration each.** A stronger model would do better alone. That
+  comparison was excluded on purpose and is not answered here.
+- **Small cells.** The factorial, paraphrase and replicate comparisons rest on 30 or 40
+  statements, and their intervals are wide. They show direction, not size.
+- **Qwen alone covers 60 statements, not 120**, and returned no answer on 3.
+- **One sealed run.** The replicates suggest the conclusions are stable, on a quarter of
+  the set.
+- **The models will change.** These are hosted models behind names; the same name may
+  not return the same behaviour later.
+
+## 9. Reproducing
+
+The frozen code is the tag `sealed-run-1`. An OpenRouter key is needed; a fresh run draws
+new replies and will not reproduce the counts exactly.
 
 ```bash
-pip install -e ".[all]"
+# the test sets
+python -m benchmark.build_test_set --sources data/agami --split sealed_test --out data/sealed
+python -m benchmark.receipts build --splits test train --out data/sealed_receipts --limit 100
 
-# build: correct the amounts, alter one, verify, flatten to images
-python -m benchmark.external.agami_patch --dir <downloaded pdf/json pairs> --out data/built
-python - <<'EOF'
-import json
-from benchmark.external.rasterise import build_scanned
-
-# the 20 documents used here, by the id of their digital source
-wanted = {d["doc_id"].replace("-scan-", "-") for d in json.load(open("results/corpus/sample_20.json"))}
-built = json.load(open("data/built/manifest.json"))
-built["documents"] = [d for d in built["documents"] if d["doc_id"] in wanted]
-json.dump(built, open("data/built/manifest_20.json", "w"))
-build_scanned("data/built/manifest_20.json", "data/scanned")
-EOF
-
-export OPENROUTER_API_KEY=...
-
-# Probity
-python -m benchmark.run_scanned --manifest data/scanned/manifest.json \
+# statements
+python -m benchmark.run_scanned   --manifest data/sealed/manifest.json \
        --model google/gemini-3.1-flash-lite --second-model qwen/qwen3.5-flash-02-23 \
-       --workers 8 --out benchmark/results/probity
+       --workers 8 --out runs/probity
+python -m benchmark.run_llm_alone --manifest data/sealed/manifest.json \
+       --model google/gemini-3.1-flash-lite --out runs/gemini_alone
+python -m benchmark.run_code_tool --manifest data/sealed/manifest.json \
+       --model google/gemini-3.1-flash-lite --out runs/gemini_with_interpreter
+python -m benchmark.run_ocr_rules --manifest data/sealed/manifest.json --out runs/ocr_rules
 
-# no second reader
-python -m benchmark.run_scanned --manifest data/scanned/manifest.json \
-       --model google/gemini-3.1-flash-lite --workers 8 --out benchmark/results/no_second_reader
+# receipts, one condition at a time
+python -m benchmark.run_receipts --manifest data/sealed_receipts/manifest.json \
+       --condition probity --out runs/receipts_probity
 
-# each model alone
-python -m benchmark.run_llm_alone --manifest data/scanned/manifest.json \
-       --model google/gemini-3.1-flash-lite --workers 4 --out benchmark/results/gemini_alone
-python -m benchmark.run_llm_alone --manifest data/scanned/manifest.json \
-       --model qwen/qwen3.5-flash-02-23 --json-hint --max-tokens 65536 --workers 8 \
-       --out benchmark/results/qwen_alone
-
-# who decides
-python -m benchmark.ablate_decider --manifest data/built/manifest.json
+# the tables on this page, from the stored outcomes
+python results/sealed/tables.py
 ```
-
-A fresh run draws new model replies and will not reproduce these counts exactly. The
-whole set costs about four dollars (section 4.8).

@@ -25,7 +25,8 @@ the others are counted and reported, because a dropped or invented row shifts ev
 after it.
 
 Nothing is requested from a model here: every transcription is replayed from the caches
-of runs that have already been paid for, and a missing one stops the analysis.
+of runs that have already been paid for. A statement one reader never transcribed in full
+is counted and left out.
 """
 
 from __future__ import annotations
@@ -77,12 +78,16 @@ def run(manifest_path: str, first_cache: str, second_cache: str, out_path: str,
     cells: dict[str, Counter] = {k: Counter() for k in
                                  ("amount", "date", "description", "header_balance",
                                   "account_number")}
-    skipped, compared, shared = [], 0, []
+    skipped, compared, shared, missing = [], 0, [], []
     for d in docs:
         spec = DocumentSpec.load(d["spec"])
         truth = json.loads(Path(d["truth"]).read_text(encoding="utf-8"))["ledger"]
-        a = _transcribe(FIRST, first_cache, d, spec, hint=False)
-        b = _transcribe(SECOND, second_cache, d, spec, hint=True)
+        try:
+            a = _transcribe(FIRST, first_cache, d, spec, hint=False)
+            b = _transcribe(SECOND, second_cache, d, spec, hint=True)
+        except Exception as exc:  # a reader gave no complete transcription of this one
+            missing.append({"doc_id": d["doc_id"], "reason": str(exc)[:160]})
+            continue
         for name in ("opening_balance", "closing_balance"):
             cells["header_balance"][_classify(a.get(name), b.get(name), truth.get(name))] += 1
         digits = lambda v: "".join(ch for ch in str(v or "") if ch.isdigit())  # noqa: E731
@@ -124,6 +129,7 @@ def run(manifest_path: str, first_cache: str, second_cache: str, out_path: str,
                 "correct_given_agreement": round(c["both_right"] / agree, 6) if agree else None}
 
     out = {"documents": len(docs), "compared_cell_by_cell": compared,
+           "no_complete_transcription": missing,
            "skipped_row_count_differs": skipped,
            **{k: summary(v) for k, v in cells.items()},
            "shared_amount_misreadings": shared[:200]}
@@ -135,7 +141,8 @@ def run(manifest_path: str, first_cache: str, second_cache: str, out_path: str,
               f"({(s['shared_misreading_rate'] or 0) * 100:.3f}%)  "
               f"correct given agreement {s['correct_given_agreement']}")
     print(f"compared {compared} of {len(docs)} statements cell by cell; "
-          f"{len(skipped)} skipped for a differing row count")
+          f"{len(skipped)} skipped for a differing row count, "
+          f"{len(missing)} without a complete transcription from both readers")
     return out
 
 

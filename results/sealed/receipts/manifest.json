@@ -1,0 +1,1291 @@
+{
+ "source": "naver-clova-ix/cord-v2",
+ "splits": {
+  "test": {
+   "receipts": 100,
+   "usable": 36
+  },
+  "train": {
+   "receipts": 800,
+   "usable": 264
+  }
+ },
+ "seed": 20261115,
+ "requested": 100,
+ "built": 100,
+ "documents": [
+  {
+   "doc_id": "cord-test-0038-clean",
+   "group": "clean",
+   "source_split": "test",
+   "document": "cord-test-0038-clean.png",
+   "truth": "cord-test-0038-clean.truth.json",
+   "alteration": null,
+   "items": 9
+  },
+  {
+   "doc_id": "cord-test-0082-altered",
+   "group": "altered",
+   "source_split": "test",
+   "document": "cord-test-0082-altered.png",
+   "truth": "cord-test-0082-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "60,000",
+    "to": "20,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL",
+     "LINE_AMOUNT"
+    ]
+   },
+   "items": 3
+  },
+  {
+   "doc_id": "cord-test-0020-clean",
+   "group": "clean",
+   "source_split": "test",
+   "document": "cord-test-0020-clean.png",
+   "truth": "cord-test-0020-clean.truth.json",
+   "alteration": null,
+   "items": 5
+  },
+  {
+   "doc_id": "cord-test-0019-altered",
+   "group": "altered",
+   "source_split": "test",
+   "document": "cord-test-0019-altered.png",
+   "truth": "cord-test-0019-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "100000",
+    "to": "600000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-test-0075-clean",
+   "group": "clean",
+   "source_split": "test",
+   "document": "cord-test-0075-clean.png",
+   "truth": "cord-test-0075-clean.truth.json",
+   "alteration": null,
+   "items": 6
+  },
+  {
+   "doc_id": "cord-test-0055-altered",
+   "group": "altered",
+   "source_split": "test",
+   "document": "cord-test-0055-altered.png",
+   "truth": "cord-test-0055-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "22,000",
+    "to": "82,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-test-0027-clean",
+   "group": "clean",
+   "source_split": "test",
+   "document": "cord-test-0027-clean.png",
+   "truth": "cord-test-0027-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-test-0088-altered",
+   "group": "altered",
+   "source_split": "test",
+   "document": "cord-test-0088-altered.png",
+   "truth": "cord-test-0088-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "19,000",
+    "to": "12,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL",
+     "LINE_AMOUNT"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-test-0052-clean",
+   "group": "clean",
+   "source_split": "test",
+   "document": "cord-test-0052-clean.png",
+   "truth": "cord-test-0052-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-test-0081-altered",
+   "group": "altered",
+   "source_split": "test",
+   "document": "cord-test-0081-altered.png",
+   "truth": "cord-test-0081-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "22.000",
+    "to": "12.000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 3
+  },
+  {
+   "doc_id": "cord-test-0001-clean",
+   "group": "clean",
+   "source_split": "test",
+   "document": "cord-test-0001-clean.png",
+   "truth": "cord-test-0001-clean.truth.json",
+   "alteration": null,
+   "items": 3
+  },
+  {
+   "doc_id": "cord-test-0022-altered",
+   "group": "altered",
+   "source_split": "test",
+   "document": "cord-test-0022-altered.png",
+   "truth": "cord-test-0022-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "20,000",
+    "to": "24,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-test-0066-clean",
+   "group": "clean",
+   "source_split": "test",
+   "document": "cord-test-0066-clean.png",
+   "truth": "cord-test-0066-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-test-0069-altered",
+   "group": "altered",
+   "source_split": "test",
+   "document": "cord-test-0069-altered.png",
+   "truth": "cord-test-0069-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "18,000",
+    "to": "38,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 3
+  },
+  {
+   "doc_id": "cord-test-0025-clean",
+   "group": "clean",
+   "source_split": "test",
+   "document": "cord-test-0025-clean.png",
+   "truth": "cord-test-0025-clean.truth.json",
+   "alteration": null,
+   "items": 3
+  },
+  {
+   "doc_id": "cord-test-0006-altered",
+   "group": "altered",
+   "source_split": "test",
+   "document": "cord-test-0006-altered.png",
+   "truth": "cord-test-0006-altered.truth.json",
+   "alteration": {
+    "where": "items[2].price",
+    "from": "9,000",
+    "to": "8,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 3
+  },
+  {
+   "doc_id": "cord-test-0097-clean",
+   "group": "clean",
+   "source_split": "test",
+   "document": "cord-test-0097-clean.png",
+   "truth": "cord-test-0097-clean.truth.json",
+   "alteration": null,
+   "items": 3
+  },
+  {
+   "doc_id": "cord-test-0024-altered",
+   "group": "altered",
+   "source_split": "test",
+   "document": "cord-test-0024-altered.png",
+   "truth": "cord-test-0024-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "Rp.62.000",
+    "to": "Rp.64.000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 3
+  },
+  {
+   "doc_id": "cord-test-0015-clean",
+   "group": "clean",
+   "source_split": "test",
+   "document": "cord-test-0015-clean.png",
+   "truth": "cord-test-0015-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-test-0073-altered",
+   "group": "altered",
+   "source_split": "test",
+   "document": "cord-test-0073-altered.png",
+   "truth": "cord-test-0073-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "22.000",
+    "to": "24.000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-test-0034-clean",
+   "group": "clean",
+   "source_split": "test",
+   "document": "cord-test-0034-clean.png",
+   "truth": "cord-test-0034-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-test-0040-altered",
+   "group": "altered",
+   "source_split": "test",
+   "document": "cord-test-0040-altered.png",
+   "truth": "cord-test-0040-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "54,000",
+    "to": "58,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL",
+     "LINE_AMOUNT"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-test-0086-clean",
+   "group": "clean",
+   "source_split": "test",
+   "document": "cord-test-0086-clean.png",
+   "truth": "cord-test-0086-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-test-0091-altered",
+   "group": "altered",
+   "source_split": "test",
+   "document": "cord-test-0091-altered.png",
+   "truth": "cord-test-0091-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "15.000",
+    "to": "35.000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-test-0035-clean",
+   "group": "clean",
+   "source_split": "test",
+   "document": "cord-test-0035-clean.png",
+   "truth": "cord-test-0035-clean.truth.json",
+   "alteration": null,
+   "items": 4
+  },
+  {
+   "doc_id": "cord-test-0079-altered",
+   "group": "altered",
+   "source_split": "test",
+   "document": "cord-test-0079-altered.png",
+   "truth": "cord-test-0079-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "22.000",
+    "to": "32.000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-test-0049-clean",
+   "group": "clean",
+   "source_split": "test",
+   "document": "cord-test-0049-clean.png",
+   "truth": "cord-test-0049-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-test-0084-altered",
+   "group": "altered",
+   "source_split": "test",
+   "document": "cord-test-0084-altered.png",
+   "truth": "cord-test-0084-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "12.000",
+    "to": "11.000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-test-0045-clean",
+   "group": "clean",
+   "source_split": "test",
+   "document": "cord-test-0045-clean.png",
+   "truth": "cord-test-0045-clean.truth.json",
+   "alteration": null,
+   "items": 4
+  },
+  {
+   "doc_id": "cord-test-0060-altered",
+   "group": "altered",
+   "source_split": "test",
+   "document": "cord-test-0060-altered.png",
+   "truth": "cord-test-0060-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "1.250",
+    "to": "6.250",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL",
+     "LINE_AMOUNT"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-test-0094-clean",
+   "group": "clean",
+   "source_split": "test",
+   "document": "cord-test-0094-clean.png",
+   "truth": "cord-test-0094-clean.truth.json",
+   "alteration": null,
+   "items": 4
+  },
+  {
+   "doc_id": "cord-test-0053-altered",
+   "group": "altered",
+   "source_split": "test",
+   "document": "cord-test-0053-altered.png",
+   "truth": "cord-test-0053-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "42.000",
+    "to": "41.000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL"
+    ]
+   },
+   "items": 3
+  },
+  {
+   "doc_id": "cord-test-0062-clean",
+   "group": "clean",
+   "source_split": "test",
+   "document": "cord-test-0062-clean.png",
+   "truth": "cord-test-0062-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-test-0098-altered",
+   "group": "altered",
+   "source_split": "test",
+   "document": "cord-test-0098-altered.png",
+   "truth": "cord-test-0098-altered.truth.json",
+   "alteration": {
+    "where": "items[2].price",
+    "from": "59,000",
+    "to": "50,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL"
+    ]
+   },
+   "items": 3
+  },
+  {
+   "doc_id": "cord-test-0023-clean",
+   "group": "clean",
+   "source_split": "test",
+   "document": "cord-test-0023-clean.png",
+   "truth": "cord-test-0023-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0292-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0292-altered.png",
+   "truth": "cord-train-0292-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "20.000",
+    "to": "26.000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0538-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0538-clean.png",
+   "truth": "cord-train-0538-clean.truth.json",
+   "alteration": null,
+   "items": 7
+  },
+  {
+   "doc_id": "cord-train-0367-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0367-altered.png",
+   "truth": "cord-train-0367-altered.truth.json",
+   "alteration": {
+    "where": "items[3].price",
+    "from": "16,000",
+    "to": "76,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 5
+  },
+  {
+   "doc_id": "cord-train-0031-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0031-clean.png",
+   "truth": "cord-train-0031-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0106-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0106-altered.png",
+   "truth": "cord-train-0106-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "15,455",
+    "to": "35,455",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0256-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0256-clean.png",
+   "truth": "cord-train-0256-clean.truth.json",
+   "alteration": null,
+   "items": 3
+  },
+  {
+   "doc_id": "cord-train-0234-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0234-altered.png",
+   "truth": "cord-train-0234-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "9,000",
+    "to": "4,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0585-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0585-clean.png",
+   "truth": "cord-train-0585-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0300-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0300-altered.png",
+   "truth": "cord-train-0300-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "59.091",
+    "to": "53.091",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL",
+     "LINE_AMOUNT"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0696-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0696-clean.png",
+   "truth": "cord-train-0696-clean.truth.json",
+   "alteration": null,
+   "items": 4
+  },
+  {
+   "doc_id": "cord-train-0481-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0481-altered.png",
+   "truth": "cord-train-0481-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "24.000,00",
+    "to": "84.000,00",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 4
+  },
+  {
+   "doc_id": "cord-train-0342-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0342-clean.png",
+   "truth": "cord-train-0342-clean.truth.json",
+   "alteration": null,
+   "items": 3
+  },
+  {
+   "doc_id": "cord-train-0305-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0305-altered.png",
+   "truth": "cord-train-0305-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "19,000",
+    "to": "39,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL",
+     "LINE_AMOUNT"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0048-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0048-clean.png",
+   "truth": "cord-train-0048-clean.truth.json",
+   "alteration": null,
+   "items": 4
+  },
+  {
+   "doc_id": "cord-train-0179-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0179-altered.png",
+   "truth": "cord-train-0179-altered.truth.json",
+   "alteration": {
+    "where": "items[2].price",
+    "from": "29,800",
+    "to": "39,800",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL"
+    ]
+   },
+   "items": 3
+  },
+  {
+   "doc_id": "cord-train-0059-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0059-clean.png",
+   "truth": "cord-train-0059-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0545-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0545-altered.png",
+   "truth": "cord-train-0545-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "52,800",
+    "to": "22,800",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL"
+    ]
+   },
+   "items": 7
+  },
+  {
+   "doc_id": "cord-train-0432-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0432-clean.png",
+   "truth": "cord-train-0432-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0093-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0093-altered.png",
+   "truth": "cord-train-0093-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "10,000",
+    "to": "12,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 3
+  },
+  {
+   "doc_id": "cord-train-0040-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0040-clean.png",
+   "truth": "cord-train-0040-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0085-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0085-altered.png",
+   "truth": "cord-train-0085-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "10.000",
+    "to": "19.000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0477-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0477-clean.png",
+   "truth": "cord-train-0477-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0643-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0643-altered.png",
+   "truth": "cord-train-0643-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "22.000",
+    "to": "21.000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0144-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0144-clean.png",
+   "truth": "cord-train-0144-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0568-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0568-altered.png",
+   "truth": "cord-train-0568-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "22.000",
+    "to": "82.000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 3
+  },
+  {
+   "doc_id": "cord-train-0245-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0245-clean.png",
+   "truth": "cord-train-0245-clean.truth.json",
+   "alteration": null,
+   "items": 3
+  },
+  {
+   "doc_id": "cord-train-0283-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0283-altered.png",
+   "truth": "cord-train-0283-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "12,000",
+    "to": "92,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL",
+     "LINE_AMOUNT"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0379-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0379-clean.png",
+   "truth": "cord-train-0379-clean.truth.json",
+   "alteration": null,
+   "items": 4
+  },
+  {
+   "doc_id": "cord-train-0681-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0681-altered.png",
+   "truth": "cord-train-0681-altered.truth.json",
+   "alteration": {
+    "where": "items[3].price",
+    "from": "65,000",
+    "to": "60,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL"
+    ]
+   },
+   "items": 4
+  },
+  {
+   "doc_id": "cord-train-0360-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0360-clean.png",
+   "truth": "cord-train-0360-clean.truth.json",
+   "alteration": null,
+   "items": 4
+  },
+  {
+   "doc_id": "cord-train-0192-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0192-altered.png",
+   "truth": "cord-train-0192-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "42,727",
+    "to": "32,727",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0117-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0117-clean.png",
+   "truth": "cord-train-0117-clean.truth.json",
+   "alteration": null,
+   "items": 4
+  },
+  {
+   "doc_id": "cord-train-0752-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0752-altered.png",
+   "truth": "cord-train-0752-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "10.000",
+    "to": "17.000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0260-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0260-clean.png",
+   "truth": "cord-train-0260-clean.truth.json",
+   "alteration": null,
+   "items": 6
+  },
+  {
+   "doc_id": "cord-train-0731-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0731-altered.png",
+   "truth": "cord-train-0731-altered.truth.json",
+   "alteration": {
+    "where": "items[2].price",
+    "from": "33,636",
+    "to": "83,636",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL"
+    ]
+   },
+   "items": 3
+  },
+  {
+   "doc_id": "cord-train-0069-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0069-clean.png",
+   "truth": "cord-train-0069-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0269-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0269-altered.png",
+   "truth": "cord-train-0269-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "19,800",
+    "to": "49,800",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 3
+  },
+  {
+   "doc_id": "cord-train-0659-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0659-clean.png",
+   "truth": "cord-train-0659-clean.truth.json",
+   "alteration": null,
+   "items": 4
+  },
+  {
+   "doc_id": "cord-train-0700-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0700-altered.png",
+   "truth": "cord-train-0700-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "13.500",
+    "to": "53.500",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL",
+     "LINE_AMOUNT"
+    ]
+   },
+   "items": 3
+  },
+  {
+   "doc_id": "cord-train-0565-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0565-clean.png",
+   "truth": "cord-train-0565-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0109-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0109-altered.png",
+   "truth": "cord-train-0109-altered.truth.json",
+   "alteration": {
+    "where": "items[2].price",
+    "from": "8.000,00",
+    "to": "8.500,00",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 4
+  },
+  {
+   "doc_id": "cord-train-0261-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0261-clean.png",
+   "truth": "cord-train-0261-clean.truth.json",
+   "alteration": null,
+   "items": 5
+  },
+  {
+   "doc_id": "cord-train-0796-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0796-altered.png",
+   "truth": "cord-train-0796-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "28.000",
+    "to": "48.000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0060-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0060-clean.png",
+   "truth": "cord-train-0060-clean.truth.json",
+   "alteration": null,
+   "items": 5
+  },
+  {
+   "doc_id": "cord-train-0054-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0054-altered.png",
+   "truth": "cord-train-0054-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "6,364",
+    "to": "4,364",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0449-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0449-clean.png",
+   "truth": "cord-train-0449-clean.truth.json",
+   "alteration": null,
+   "items": 3
+  },
+  {
+   "doc_id": "cord-train-0454-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0454-altered.png",
+   "truth": "cord-train-0454-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "12,500",
+    "to": "11,500",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 3
+  },
+  {
+   "doc_id": "cord-train-0265-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0265-clean.png",
+   "truth": "cord-train-0265-clean.truth.json",
+   "alteration": null,
+   "items": 3
+  },
+  {
+   "doc_id": "cord-train-0275-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0275-altered.png",
+   "truth": "cord-train-0275-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "40,000",
+    "to": "42,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL"
+    ]
+   },
+   "items": 4
+  },
+  {
+   "doc_id": "cord-train-0574-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0574-clean.png",
+   "truth": "cord-train-0574-clean.truth.json",
+   "alteration": null,
+   "items": 3
+  },
+  {
+   "doc_id": "cord-train-0597-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0597-altered.png",
+   "truth": "cord-train-0597-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "22.000",
+    "to": "26.000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0772-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0772-clean.png",
+   "truth": "cord-train-0772-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0582-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0582-altered.png",
+   "truth": "cord-train-0582-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "28.000",
+    "to": "38.000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0686-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0686-clean.png",
+   "truth": "cord-train-0686-clean.truth.json",
+   "alteration": null,
+   "items": 3
+  },
+  {
+   "doc_id": "cord-train-0442-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0442-altered.png",
+   "truth": "cord-train-0442-altered.truth.json",
+   "alteration": {
+    "where": "items[2].price",
+    "from": "55,000",
+    "to": "53,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL"
+    ]
+   },
+   "items": 4
+  },
+  {
+   "doc_id": "cord-train-0605-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0605-clean.png",
+   "truth": "cord-train-0605-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0456-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0456-altered.png",
+   "truth": "cord-train-0456-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "55,000",
+    "to": "50,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0760-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0760-clean.png",
+   "truth": "cord-train-0760-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0757-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0757-altered.png",
+   "truth": "cord-train-0757-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "92,000",
+    "to": "62,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_SUBTOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0030-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0030-clean.png",
+   "truth": "cord-train-0030-clean.truth.json",
+   "alteration": null,
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0549-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0549-altered.png",
+   "truth": "cord-train-0549-altered.truth.json",
+   "alteration": {
+    "where": "items[2].price",
+    "from": "11,000",
+    "to": "91,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 4
+  },
+  {
+   "doc_id": "cord-train-0756-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0756-clean.png",
+   "truth": "cord-train-0756-clean.truth.json",
+   "alteration": null,
+   "items": 4
+  },
+  {
+   "doc_id": "cord-train-0423-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0423-altered.png",
+   "truth": "cord-train-0423-altered.truth.json",
+   "alteration": {
+    "where": "items[0].price",
+    "from": "10,000",
+    "to": "12,000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 2
+  },
+  {
+   "doc_id": "cord-train-0455-clean",
+   "group": "clean",
+   "source_split": "train",
+   "document": "cord-train-0455-clean.png",
+   "truth": "cord-train-0455-clean.truth.json",
+   "alteration": null,
+   "items": 3
+  },
+  {
+   "doc_id": "cord-train-0422-altered",
+   "group": "altered",
+   "source_split": "train",
+   "document": "cord-train-0422-altered.png",
+   "truth": "cord-train-0422-altered.truth.json",
+   "alteration": {
+    "where": "items[1].price",
+    "from": "22.000",
+    "to": "52.000",
+    "expected_rules": [
+     "ITEMS_SUM_TO_TOTAL"
+    ]
+   },
+   "items": 3
+  }
+ ],
+ "skipped": [
+  {
+   "split": "test",
+   "index": 21,
+   "why": "no amount could be repainted for group altered"
+  }
+ ],
+ "counts": {
+  "clean": 50,
+  "altered": 50
+ },
+ "by_split": {
+  "test": 35,
+  "train": 65
+ }
+}

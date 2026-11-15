@@ -1,0 +1,1180 @@
+{
+ "documents": 120,
+ "clean_confirmed": {
+  "k": 32,
+  "n": 40,
+  "ci95": [
+   0.652,
+   0.895
+  ]
+ },
+ "clean_unresolved": {
+  "k": 8,
+  "n": 40,
+  "ci95": [
+   0.105,
+   0.348
+  ]
+ },
+ "clean_reported": {
+  "k": 0,
+  "n": 40,
+  "ci95": [
+   0.0,
+   0.088
+  ]
+ },
+ "detectable_confirmed": {
+  "k": 1,
+  "n": 52,
+  "ci95": [
+   0.003,
+   0.101
+  ]
+ },
+ "detectable_reported": {
+  "k": 42,
+  "n": 52,
+  "ci95": [
+   0.681,
+   0.892
+  ]
+ },
+ "detectable_located": {
+  "k": 42,
+  "n": 52,
+  "ci95": [
+   0.681,
+   0.892
+  ]
+ },
+ "detectable_located_exactly": {
+  "k": 42,
+  "n": 52,
+  "ci95": [
+   0.681,
+   0.892
+  ]
+ },
+ "detectable_only_expected_rows_failing": {
+  "k": 46,
+  "n": 52,
+  "ci95": [
+   0.77,
+   0.946
+  ]
+ },
+ "undetectable_confirmed": {
+  "k": 16,
+  "n": 20,
+  "ci95": [
+   0.584,
+   0.919
+  ]
+ },
+ "text_alteration_confirmed": {
+  "k": 6,
+  "n": 8,
+  "ci95": [
+   0.409,
+   0.929
+  ]
+ },
+ "ledger_exact": {
+  "k": 84,
+  "n": 120,
+  "ci95": [
+   0.613,
+   0.775
+  ]
+ },
+ "conclusions": {
+  "CONFIRMED": 55,
+  "DOCUMENT_INCONSISTENT": 42,
+  "UNRESOLVED": 23
+ },
+ "rows_corrected": 546,
+ "by_group": {
+  "amount": {
+   "documents": 16,
+   "clean_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "clean_unresolved": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "clean_reported": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_confirmed": {
+    "k": 0,
+    "n": 16,
+    "ci95": [
+     0.0,
+     0.194
+    ]
+   },
+   "detectable_reported": {
+    "k": 12,
+    "n": 16,
+    "ci95": [
+     0.505,
+     0.898
+    ]
+   },
+   "detectable_located": {
+    "k": 12,
+    "n": 16,
+    "ci95": [
+     0.505,
+     0.898
+    ]
+   },
+   "detectable_located_exactly": {
+    "k": 12,
+    "n": 16,
+    "ci95": [
+     0.505,
+     0.898
+    ]
+   },
+   "detectable_only_expected_rows_failing": {
+    "k": 13,
+    "n": 16,
+    "ci95": [
+     0.57,
+     0.934
+    ]
+   },
+   "undetectable_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "text_alteration_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "ledger_exact": {
+    "k": 11,
+    "n": 16,
+    "ci95": [
+     0.444,
+     0.858
+    ]
+   },
+   "conclusions": {
+    "CONFIRMED": 0,
+    "DOCUMENT_INCONSISTENT": 12,
+    "UNRESOLVED": 4
+   },
+   "rows_corrected": 72
+  },
+  "amount_adjusted": {
+   "documents": 12,
+   "clean_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "clean_unresolved": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "clean_reported": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_reported": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_located": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_located_exactly": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_only_expected_rows_failing": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "undetectable_confirmed": {
+    "k": 10,
+    "n": 12,
+    "ci95": [
+     0.552,
+     0.953
+    ]
+   },
+   "text_alteration_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "ledger_exact": {
+    "k": 8,
+    "n": 12,
+    "ci95": [
+     0.391,
+     0.862
+    ]
+   },
+   "conclusions": {
+    "CONFIRMED": 10,
+    "DOCUMENT_INCONSISTENT": 0,
+    "UNRESOLVED": 2
+   },
+   "rows_corrected": 56
+  },
+  "balance": {
+   "documents": 12,
+   "clean_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "clean_unresolved": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "clean_reported": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_confirmed": {
+    "k": 0,
+    "n": 12,
+    "ci95": [
+     0.0,
+     0.243
+    ]
+   },
+   "detectable_reported": {
+    "k": 9,
+    "n": 12,
+    "ci95": [
+     0.468,
+     0.911
+    ]
+   },
+   "detectable_located": {
+    "k": 9,
+    "n": 12,
+    "ci95": [
+     0.468,
+     0.911
+    ]
+   },
+   "detectable_located_exactly": {
+    "k": 9,
+    "n": 12,
+    "ci95": [
+     0.468,
+     0.911
+    ]
+   },
+   "detectable_only_expected_rows_failing": {
+    "k": 11,
+    "n": 12,
+    "ci95": [
+     0.646,
+     0.985
+    ]
+   },
+   "undetectable_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "text_alteration_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "ledger_exact": {
+    "k": 8,
+    "n": 12,
+    "ci95": [
+     0.391,
+     0.862
+    ]
+   },
+   "conclusions": {
+    "CONFIRMED": 0,
+    "DOCUMENT_INCONSISTENT": 9,
+    "UNRESOLVED": 3
+   },
+   "rows_corrected": 13
+  },
+  "clean": {
+   "documents": 40,
+   "clean_confirmed": {
+    "k": 32,
+    "n": 40,
+    "ci95": [
+     0.652,
+     0.895
+    ]
+   },
+   "clean_unresolved": {
+    "k": 8,
+    "n": 40,
+    "ci95": [
+     0.105,
+     0.348
+    ]
+   },
+   "clean_reported": {
+    "k": 0,
+    "n": 40,
+    "ci95": [
+     0.0,
+     0.088
+    ]
+   },
+   "detectable_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_reported": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_located": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_located_exactly": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_only_expected_rows_failing": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "undetectable_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "text_alteration_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "ledger_exact": {
+    "k": 25,
+    "n": 40,
+    "ci95": [
+     0.47,
+     0.758
+    ]
+   },
+   "conclusions": {
+    "CONFIRMED": 32,
+    "DOCUMENT_INCONSISTENT": 0,
+    "UNRESOLVED": 8
+   },
+   "rows_corrected": 167
+  },
+  "direction": {
+   "documents": 12,
+   "clean_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "clean_unresolved": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "clean_reported": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_confirmed": {
+    "k": 1,
+    "n": 12,
+    "ci95": [
+     0.015,
+     0.354
+    ]
+   },
+   "detectable_reported": {
+    "k": 11,
+    "n": 12,
+    "ci95": [
+     0.646,
+     0.985
+    ]
+   },
+   "detectable_located": {
+    "k": 11,
+    "n": 12,
+    "ci95": [
+     0.646,
+     0.985
+    ]
+   },
+   "detectable_located_exactly": {
+    "k": 11,
+    "n": 12,
+    "ci95": [
+     0.646,
+     0.985
+    ]
+   },
+   "detectable_only_expected_rows_failing": {
+    "k": 11,
+    "n": 12,
+    "ci95": [
+     0.646,
+     0.985
+    ]
+   },
+   "undetectable_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "text_alteration_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "ledger_exact": {
+    "k": 8,
+    "n": 12,
+    "ci95": [
+     0.391,
+     0.862
+    ]
+   },
+   "conclusions": {
+    "CONFIRMED": 1,
+    "DOCUMENT_INCONSISTENT": 11,
+    "UNRESOLVED": 0
+   },
+   "rows_corrected": 37
+  },
+  "row_adjusted": {
+   "documents": 8,
+   "clean_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "clean_unresolved": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "clean_reported": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_reported": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_located": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_located_exactly": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_only_expected_rows_failing": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "undetectable_confirmed": {
+    "k": 6,
+    "n": 8,
+    "ci95": [
+     0.409,
+     0.929
+    ]
+   },
+   "text_alteration_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "ledger_exact": {
+    "k": 7,
+    "n": 8,
+    "ci95": [
+     0.529,
+     0.978
+    ]
+   },
+   "conclusions": {
+    "CONFIRMED": 6,
+    "DOCUMENT_INCONSISTENT": 0,
+    "UNRESOLVED": 2
+   },
+   "rows_corrected": 37
+  },
+  "row_removed": {
+   "documents": 12,
+   "clean_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "clean_unresolved": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "clean_reported": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_confirmed": {
+    "k": 0,
+    "n": 12,
+    "ci95": [
+     0.0,
+     0.243
+    ]
+   },
+   "detectable_reported": {
+    "k": 10,
+    "n": 12,
+    "ci95": [
+     0.552,
+     0.953
+    ]
+   },
+   "detectable_located": {
+    "k": 10,
+    "n": 12,
+    "ci95": [
+     0.552,
+     0.953
+    ]
+   },
+   "detectable_located_exactly": {
+    "k": 10,
+    "n": 12,
+    "ci95": [
+     0.552,
+     0.953
+    ]
+   },
+   "detectable_only_expected_rows_failing": {
+    "k": 11,
+    "n": 12,
+    "ci95": [
+     0.646,
+     0.985
+    ]
+   },
+   "undetectable_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "text_alteration_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "ledger_exact": {
+    "k": 11,
+    "n": 12,
+    "ci95": [
+     0.646,
+     0.985
+    ]
+   },
+   "conclusions": {
+    "CONFIRMED": 0,
+    "DOCUMENT_INCONSISTENT": 10,
+    "UNRESOLVED": 2
+   },
+   "rows_corrected": 32
+  },
+  "text": {
+   "documents": 8,
+   "clean_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "clean_unresolved": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "clean_reported": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_reported": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_located": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_located_exactly": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "detectable_only_expected_rows_failing": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "undetectable_confirmed": {
+    "k": 0,
+    "n": 0,
+    "ci95": [
+     0.0,
+     1.0
+    ]
+   },
+   "text_alteration_confirmed": {
+    "k": 6,
+    "n": 8,
+    "ci95": [
+     0.409,
+     0.929
+    ]
+   },
+   "ledger_exact": {
+    "k": 6,
+    "n": 8,
+    "ci95": [
+     0.409,
+     0.929
+    ]
+   },
+   "conclusions": {
+    "CONFIRMED": 6,
+    "DOCUMENT_INCONSISTENT": 0,
+    "UNRESOLVED": 2
+   },
+   "rows_corrected": 132
+  }
+ },
+ "by_tier": {
+  "T1": {
+   "documents": 40,
+   "clean_confirmed": {
+    "k": 11,
+    "n": 12,
+    "ci95": [
+     0.646,
+     0.985
+    ]
+   },
+   "clean_unresolved": {
+    "k": 1,
+    "n": 12,
+    "ci95": [
+     0.015,
+     0.354
+    ]
+   },
+   "clean_reported": {
+    "k": 0,
+    "n": 12,
+    "ci95": [
+     0.0,
+     0.243
+    ]
+   },
+   "detectable_confirmed": {
+    "k": 0,
+    "n": 20,
+    "ci95": [
+     0.0,
+     0.161
+    ]
+   },
+   "detectable_reported": {
+    "k": 17,
+    "n": 20,
+    "ci95": [
+     0.64,
+     0.948
+    ]
+   },
+   "detectable_located": {
+    "k": 17,
+    "n": 20,
+    "ci95": [
+     0.64,
+     0.948
+    ]
+   },
+   "detectable_located_exactly": {
+    "k": 17,
+    "n": 20,
+    "ci95": [
+     0.64,
+     0.948
+    ]
+   },
+   "detectable_only_expected_rows_failing": {
+    "k": 17,
+    "n": 20,
+    "ci95": [
+     0.64,
+     0.948
+    ]
+   },
+   "undetectable_confirmed": {
+    "k": 6,
+    "n": 6,
+    "ci95": [
+     0.61,
+     1.0
+    ]
+   },
+   "text_alteration_confirmed": {
+    "k": 2,
+    "n": 2,
+    "ci95": [
+     0.342,
+     1.0
+    ]
+   },
+   "ledger_exact": {
+    "k": 32,
+    "n": 40,
+    "ci95": [
+     0.652,
+     0.895
+    ]
+   },
+   "conclusions": {
+    "CONFIRMED": 19,
+    "DOCUMENT_INCONSISTENT": 17,
+    "UNRESOLVED": 4
+   },
+   "rows_corrected": 96
+  },
+  "T2": {
+   "documents": 40,
+   "clean_confirmed": {
+    "k": 12,
+    "n": 16,
+    "ci95": [
+     0.505,
+     0.898
+    ]
+   },
+   "clean_unresolved": {
+    "k": 4,
+    "n": 16,
+    "ci95": [
+     0.102,
+     0.495
+    ]
+   },
+   "clean_reported": {
+    "k": 0,
+    "n": 16,
+    "ci95": [
+     0.0,
+     0.194
+    ]
+   },
+   "detectable_confirmed": {
+    "k": 0,
+    "n": 12,
+    "ci95": [
+     0.0,
+     0.243
+    ]
+   },
+   "detectable_reported": {
+    "k": 8,
+    "n": 12,
+    "ci95": [
+     0.391,
+     0.862
+    ]
+   },
+   "detectable_located": {
+    "k": 8,
+    "n": 12,
+    "ci95": [
+     0.391,
+     0.862
+    ]
+   },
+   "detectable_located_exactly": {
+    "k": 8,
+    "n": 12,
+    "ci95": [
+     0.391,
+     0.862
+    ]
+   },
+   "detectable_only_expected_rows_failing": {
+    "k": 12,
+    "n": 12,
+    "ci95": [
+     0.757,
+     1.0
+    ]
+   },
+   "undetectable_confirmed": {
+    "k": 8,
+    "n": 10,
+    "ci95": [
+     0.49,
+     0.943
+    ]
+   },
+   "text_alteration_confirmed": {
+    "k": 1,
+    "n": 2,
+    "ci95": [
+     0.095,
+     0.905
+    ]
+   },
+   "ledger_exact": {
+    "k": 25,
+    "n": 40,
+    "ci95": [
+     0.47,
+     0.758
+    ]
+   },
+   "conclusions": {
+    "CONFIRMED": 21,
+    "DOCUMENT_INCONSISTENT": 8,
+    "UNRESOLVED": 11
+   },
+   "rows_corrected": 283
+  },
+  "T3": {
+   "documents": 40,
+   "clean_confirmed": {
+    "k": 9,
+    "n": 12,
+    "ci95": [
+     0.468,
+     0.911
+    ]
+   },
+   "clean_unresolved": {
+    "k": 3,
+    "n": 12,
+    "ci95": [
+     0.089,
+     0.532
+    ]
+   },
+   "clean_reported": {
+    "k": 0,
+    "n": 12,
+    "ci95": [
+     0.0,
+     0.243
+    ]
+   },
+   "detectable_confirmed": {
+    "k": 1,
+    "n": 20,
+    "ci95": [
+     0.009,
+     0.236
+    ]
+   },
+   "detectable_reported": {
+    "k": 17,
+    "n": 20,
+    "ci95": [
+     0.64,
+     0.948
+    ]
+   },
+   "detectable_located": {
+    "k": 17,
+    "n": 20,
+    "ci95": [
+     0.64,
+     0.948
+    ]
+   },
+   "detectable_located_exactly": {
+    "k": 17,
+    "n": 20,
+    "ci95": [
+     0.64,
+     0.948
+    ]
+   },
+   "detectable_only_expected_rows_failing": {
+    "k": 17,
+    "n": 20,
+    "ci95": [
+     0.64,
+     0.948
+    ]
+   },
+   "undetectable_confirmed": {
+    "k": 2,
+    "n": 4,
+    "ci95": [
+     0.15,
+     0.85
+    ]
+   },
+   "text_alteration_confirmed": {
+    "k": 3,
+    "n": 4,
+    "ci95": [
+     0.301,
+     0.954
+    ]
+   },
+   "ledger_exact": {
+    "k": 27,
+    "n": 40,
+    "ci95": [
+     0.52,
+     0.799
+    ]
+   },
+   "conclusions": {
+    "CONFIRMED": 15,
+    "DOCUMENT_INCONSISTENT": 17,
+    "UNRESOLVED": 8
+   },
+   "rows_corrected": 167
+  }
+ },
+ "descriptions_wrong": [
+  1202,
+  19379
+ ],
+ "second_reader_calls": 185,
+ "cost_usd_as_run": 5.4448,
+ "cost_per_document_usd_as_run": 0.0454,
+ "model_calls_served_from_cache": 0,
+ "clean_confirmed_legacy": [
+  32,
+  40
+ ]
+}

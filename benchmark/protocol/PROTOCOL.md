@@ -223,7 +223,56 @@ documents. None of these was decided with knowledge of any sealed result.
     models agree and a rule still fails) was added to the method during development and
     is part of the Probity condition.
 
-## 10. Development record
+Recorded during and after the sealed run. None of these changed the method, the rules,
+the prompts or the scoring of a condition.
+
+13. **Two items were cut for the budget, from the bottom of the list as section 8
+    provides.** The factorial cell "Qwen reads, Qwen re-reads its own pages" was not
+    run, and the prompt paraphrases were run for Gemini alone and not for Qwen alone.
+    Qwen alone cost 2.46 USD against the 2.4 estimated and the model with a code tool
+    3.38 against 2.4.
+14. **The agreement analysis skips a statement that one reader never transcribed in
+    full,** and counts it, where the frozen script stopped. Two of the 60 statements
+    are affected: on each, one reader has no usable transcription of one page. `benchmark/analysis.py` was changed after the tag for this and nothing
+    else. It reads stored replies and requests nothing.
+15. **Qwen's first readings in the factorial cell "Qwen reads, Gemini second" are the
+    ones it gave in the Qwen-alone condition,** replayed from that run's stored replies
+    as section 5 provides, not requested again.
+16. **Two statements in the Probity condition ended unresolved because the first
+    reader's reply for one page was not usable.** They are counted as unresolved, not
+    excluded.
+
+## 10. Outcome
+
+The sealed run was made once on the code tagged `sealed-run-1`. The results are in
+[`docs/RESULTS.md`](../../docs/RESULTS.md) and the scored outcomes in
+[`results/sealed/`](../../results/sealed/).
+
+Against section 7:
+
+| stated as counting against the method | outcome |
+|---|---|
+| any A1–A4 statement confirmed | **happened: 1 of 52.** A direction alteration on tier T3, which the first reader transcribed in the column the amount had come from |
+| clean confirmed below 75% on tier T1 | did not happen: 11 of 12 |
+| located exactly below 80% on A1–A4 | did not happen: 42 of 52, 80.8% |
+| Gemini with a code tool matching Probity on rows 1–3 | did not happen: 17 of 40, 2 of 52 and 9 of 52, against 32 of 40, 1 of 52 and 42 of 52 |
+| conventional OCR with the same rules matching Probity | did not happen: 9 of 40, 0 of 52 and 15 of 52 |
+| the receipt document type needing Python | did not happen: the type is one YAML file read by the form engine in the frozen code |
+
+Spend: 17.98 USD in the sealed run and 1.01 USD in development, 18.99 USD of the 20.
+
+| item | estimate (USD) | spent (USD) |
+|---|---:|---:|
+| Probity, 120 statements | 5.4 | 5.44 |
+| Gemini alone, verification only | 1.1 | 1.26 |
+| Qwen alone, 60 statements | 2.4 | 2.46 |
+| Gemini with a code tool | 2.4 | 3.38 |
+| receipts, all conditions | 1.5 | 1.48 |
+| factorial, uncached cells | 2.0 | 0.62 |
+| replicates | 2.7 | 2.71 |
+| prompt sensitivity | 0.6 | 0.63 |
+
+## 11. Development record
 
 Spend during development, before the freeze, counted against the 20 USD:
 

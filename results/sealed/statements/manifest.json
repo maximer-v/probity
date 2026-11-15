@@ -1,0 +1,2519 @@
+{
+ "split": "sealed_test",
+ "seed": 20261115,
+ "documents": [
+  {
+   "doc_id": "Type1_00094-amount_adjusted-T2",
+   "source": "agami-Digital_Type1_00094",
+   "layout": "type1",
+   "group": "amount_adjusted",
+   "tier": "T2",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 18,
+    "side": "credit",
+    "from": 9576602,
+    "to": 16576602,
+    "balances_shifted_by": 7000000
+   },
+   "document": "Type1_00094-amount_adjusted-T2.pdf",
+   "truth": "Type1_00094-amount_adjusted-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 157,
+   "pages": 6,
+   "sha256": "8125cf932658de13411f412ca45349c845af61f83c882934393a0c33f417a465"
+  },
+  {
+   "doc_id": "Type2_00077-clean-T3",
+   "source": "agami-Digital_Type2_00077",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T3",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00077-clean-T3.pdf",
+   "truth": "Type2_00077-clean-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 157,
+   "pages": 6,
+   "sha256": "6ffb216e2a0f6c4815752542cbdbfe2c3385e9f96b0899e31ddbf88aff0a5df9"
+  },
+  {
+   "doc_id": "Type2_00041-amount-T3",
+   "source": "agami-Digital_Type2_00041",
+   "layout": "type2",
+   "group": "amount",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    3
+   ],
+   "alteration": {
+    "row": 3,
+    "side": "credit",
+    "from": 505622097,
+    "to": 305622097
+   },
+   "document": "Type2_00041-amount-T3.pdf",
+   "truth": "Type2_00041-amount-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 160,
+   "pages": 6,
+   "sha256": "89333308f5a177d23436a78c6a01879279809c932d5bfccd7e20113673e16cdf"
+  },
+  {
+   "doc_id": "Type2_00058-clean-T1",
+   "source": "agami-Digital_Type2_00058",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T1",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00058-clean-T1.pdf",
+   "truth": "Type2_00058-clean-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 156,
+   "pages": 6,
+   "sha256": "68d934f2b2b667571d065f8dcc97be5d7539f151a1678b3cb4c082c2c6315304"
+  },
+  {
+   "doc_id": "Type1_00084-row_adjusted-T1",
+   "source": "agami-Digital_Type1_00084",
+   "layout": "type1",
+   "group": "row_adjusted",
+   "tier": "T1",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 19,
+    "removed": {
+     "date": "2024-01-15",
+     "debit": 4156871,
+     "credit": null,
+     "balance": 8764853
+    },
+    "balances_shifted_by": 4156871
+   },
+   "document": "Type1_00084-row_adjusted-T1.pdf",
+   "truth": "Type1_00084-row_adjusted-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 157,
+   "pages": 6,
+   "sha256": "a5e8c003e91230583617b0094269d7e71260c9aaf318074324c8390803d84c3d"
+  },
+  {
+   "doc_id": "Type2_00098-amount-T3",
+   "source": "agami-Digital_Type2_00098",
+   "layout": "type2",
+   "group": "amount",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    123
+   ],
+   "alteration": {
+    "row": 123,
+    "side": "credit",
+    "from": 945411,
+    "to": 985411
+   },
+   "document": "Type2_00098-amount-T3.pdf",
+   "truth": "Type2_00098-amount-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 169,
+   "pages": 6,
+   "sha256": "762bda12b7cd50ee863964008a6c97b3b21d8d7f6400fe2d556293982796bee6"
+  },
+  {
+   "doc_id": "Type2_00022-direction-T1",
+   "source": "agami-Digital_Type2_00022",
+   "layout": "type2",
+   "group": "direction",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    83
+   ],
+   "alteration": {
+    "row": 83,
+    "from_side": "credit",
+    "to_side": "debit",
+    "amount": 5719976
+   },
+   "document": "Type2_00022-direction-T1.pdf",
+   "truth": "Type2_00022-direction-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 160,
+   "pages": 6,
+   "sha256": "e9089c835c4dbc383c1b164b392b1978419cb6b2f170dbf7bf7b100a9e87b068"
+  },
+  {
+   "doc_id": "Type2_00038-clean-T2",
+   "source": "agami-Digital_Type2_00038",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T2",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00038-clean-T2.pdf",
+   "truth": "Type2_00038-clean-T2.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 165,
+   "pages": 6,
+   "sha256": "d74d4cc4856da3acc8b3824f75e20f50d826ac5f7c30bb028bd2bb942ccbdfee"
+  },
+  {
+   "doc_id": "Type2_00085-amount_adjusted-T1",
+   "source": "agami-Digital_Type2_00085",
+   "layout": "type2",
+   "group": "amount_adjusted",
+   "tier": "T1",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 9,
+    "side": "debit",
+    "from": 28391886,
+    "to": 28931886,
+    "balances_shifted_by": -540000
+   },
+   "document": "Type2_00085-amount_adjusted-T1.pdf",
+   "truth": "Type2_00085-amount_adjusted-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 157,
+   "pages": 5,
+   "sha256": "d2db166dd6f16dfa82825e4bac5ba9c34dfc3659fb9e09365f7d184190d355a7"
+  },
+  {
+   "doc_id": "Type1_00019-clean-T1",
+   "source": "agami-Digital_Type1_00019",
+   "layout": "type1",
+   "group": "clean",
+   "tier": "T1",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type1_00019-clean-T1.pdf",
+   "truth": "Type1_00019-clean-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 166,
+   "pages": 6,
+   "sha256": "c587e1835a53a64f2f982d095339d0798df8d1dd17e9f6431fe2fc7f1134955a"
+  },
+  {
+   "doc_id": "Type1_00055-clean-T1",
+   "source": "agami-Digital_Type1_00055",
+   "layout": "type1",
+   "group": "clean",
+   "tier": "T1",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type1_00055-clean-T1.pdf",
+   "truth": "Type1_00055-clean-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 168,
+   "pages": 6,
+   "sha256": "f5aff1aaca1bfd2848dd442d04caa98cf1485ddb7855f0e7ba6749dd1fbc2125"
+  },
+  {
+   "doc_id": "Type1_00092-clean-T2",
+   "source": "agami-Digital_Type1_00092",
+   "layout": "type1",
+   "group": "clean",
+   "tier": "T2",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type1_00092-clean-T2.pdf",
+   "truth": "Type1_00092-clean-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 160,
+   "pages": 6,
+   "sha256": "82a0df365da165c10e0c19380bb37296b8ff43ed1d4e7dd15af7755b871e0a48"
+  },
+  {
+   "doc_id": "Type1_00043-row_adjusted-T2",
+   "source": "agami-Digital_Type1_00043",
+   "layout": "type1",
+   "group": "row_adjusted",
+   "tier": "T2",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 49,
+    "removed": {
+     "date": "2024-01-30",
+     "debit": 34119319,
+     "credit": null,
+     "balance": 78650873
+    },
+    "balances_shifted_by": 34119319
+   },
+   "document": "Type1_00043-row_adjusted-T2.pdf",
+   "truth": "Type1_00043-row_adjusted-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 162,
+   "pages": 6,
+   "sha256": "418ff53d07c0690a4734b6baf97bbf9502f91d5e953dfadfa64128e8794a8dc4"
+  },
+  {
+   "doc_id": "Type1_00048-row_removed-T2",
+   "source": "agami-Digital_Type1_00048",
+   "layout": "type1",
+   "group": "row_removed",
+   "tier": "T2",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    73
+   ],
+   "alteration": {
+    "row": 73,
+    "removed": {
+     "date": "2024-02-10",
+     "debit": null,
+     "credit": 514445,
+     "balance": 20897117
+    }
+   },
+   "document": "Type1_00048-row_removed-T2.pdf",
+   "truth": "Type1_00048-row_removed-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 158,
+   "pages": 6,
+   "sha256": "39a6c9361bf7784a406de3959326cd261b8db91b04adeeefa250aef32edf6c9c"
+  },
+  {
+   "doc_id": "Type1_00085-amount-T1",
+   "source": "agami-Digital_Type1_00085",
+   "layout": "type1",
+   "group": "amount",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    25
+   ],
+   "alteration": {
+    "row": 25,
+    "side": "debit",
+    "from": 4438999,
+    "to": 4238999
+   },
+   "document": "Type1_00085-amount-T1.pdf",
+   "truth": "Type1_00085-amount-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 167,
+   "pages": 6,
+   "sha256": "37f10ae8626cfd04847af249dd63b8fafc97e5dec3a957960b413bce62a94175"
+  },
+  {
+   "doc_id": "Type1_00072-direction-T3",
+   "source": "agami-Digital_Type1_00072",
+   "layout": "type1",
+   "group": "direction",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    95
+   ],
+   "alteration": {
+    "row": 95,
+    "from_side": "debit",
+    "to_side": "credit",
+    "amount": 2122808
+   },
+   "document": "Type1_00072-direction-T3.pdf",
+   "truth": "Type1_00072-direction-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 157,
+   "pages": 6,
+   "sha256": "253d7ee619c0bcef369697b2f461dad769dd83503b4bcb19f25e5ffb3867610f"
+  },
+  {
+   "doc_id": "Type2_00075-clean-T2",
+   "source": "agami-Digital_Type2_00075",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T2",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00075-clean-T2.pdf",
+   "truth": "Type2_00075-clean-T2.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 158,
+   "pages": 6,
+   "sha256": "78c1095a05c83b6457998e3bb2fa38fcf2a42b53ce9e7ca4d2e37e2259cc3130"
+  },
+  {
+   "doc_id": "Type2_00091-amount-T1",
+   "source": "agami-Digital_Type2_00091",
+   "layout": "type2",
+   "group": "amount",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    138
+   ],
+   "alteration": {
+    "row": 138,
+    "side": "credit",
+    "from": 10781617,
+    "to": 10871617
+   },
+   "document": "Type2_00091-amount-T1.pdf",
+   "truth": "Type2_00091-amount-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 166,
+   "pages": 6,
+   "sha256": "31aa4873819177bcc195763640eb2590ef82989757cc23544f939917648fe1b2"
+  },
+  {
+   "doc_id": "Type2_00069-amount_adjusted-T2",
+   "source": "agami-Digital_Type2_00069",
+   "layout": "type2",
+   "group": "amount_adjusted",
+   "tier": "T2",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 76,
+    "side": "credit",
+    "from": 663530251,
+    "to": 673530251,
+    "balances_shifted_by": 10000000
+   },
+   "document": "Type2_00069-amount_adjusted-T2.pdf",
+   "truth": "Type2_00069-amount_adjusted-T2.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 165,
+   "pages": 6,
+   "sha256": "41217d4df183c40455b1492df7a173c765382c502ca73b79bc9ba43e34ddaf62"
+  },
+  {
+   "doc_id": "Type2_00029-clean-T1",
+   "source": "agami-Digital_Type2_00029",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T1",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00029-clean-T1.pdf",
+   "truth": "Type2_00029-clean-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 158,
+   "pages": 6,
+   "sha256": "6d46d29007b5c5fbf3d4b0478c60188ce93cae6fc27203277ec63509a4cf43bf"
+  },
+  {
+   "doc_id": "Type2_00065-clean-T2",
+   "source": "agami-Digital_Type2_00065",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T2",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00065-clean-T2.pdf",
+   "truth": "Type2_00065-clean-T2.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 160,
+   "pages": 6,
+   "sha256": "ff6e81f35f4114e76ba77655f474e23afaca4e08e90be3c371406fc8946f9d90"
+  },
+  {
+   "doc_id": "Type1_00030-direction-T3",
+   "source": "agami-Digital_Type1_00030",
+   "layout": "type1",
+   "group": "direction",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    42
+   ],
+   "alteration": {
+    "row": 42,
+    "from_side": "debit",
+    "to_side": "credit",
+    "amount": 64395043
+   },
+   "document": "Type1_00030-direction-T3.pdf",
+   "truth": "Type1_00030-direction-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 157,
+   "pages": 6,
+   "sha256": "c5ef849b5709a7b47deb7435abcab5fa4e18f7037075f2bd80af28089bd187ee"
+  },
+  {
+   "doc_id": "Type1_00079-clean-T3",
+   "source": "agami-Digital_Type1_00079",
+   "layout": "type1",
+   "group": "clean",
+   "tier": "T3",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type1_00079-clean-T3.pdf",
+   "truth": "Type1_00079-clean-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 160,
+   "pages": 6,
+   "sha256": "523ec2c1b7e3852310dcb382e68f64176e3478bc7e1f0c0455cfa8da796f4d93"
+  },
+  {
+   "doc_id": "Type1_00076-clean-T1",
+   "source": "agami-Digital_Type1_00076",
+   "layout": "type1",
+   "group": "clean",
+   "tier": "T1",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type1_00076-clean-T1.pdf",
+   "truth": "Type1_00076-clean-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 163,
+   "pages": 6,
+   "sha256": "274efe35e73a75e612c45b024706bb76fb59ab7638ff6beadb8ed1f94829b382"
+  },
+  {
+   "doc_id": "Type2_00086-clean-T2",
+   "source": "agami-Digital_Type2_00086",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T2",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00086-clean-T2.pdf",
+   "truth": "Type2_00086-clean-T2.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 165,
+   "pages": 6,
+   "sha256": "4f9c431be5d982a379b9d67c67ca61afd42cc0cdd5380ff8129673c20f1f1e06"
+  },
+  {
+   "doc_id": "Type1_00064-clean-T3",
+   "source": "agami-Digital_Type1_00064",
+   "layout": "type1",
+   "group": "clean",
+   "tier": "T3",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type1_00064-clean-T3.pdf",
+   "truth": "Type1_00064-clean-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 168,
+   "pages": 6,
+   "sha256": "290c22042e55fa2dd660e97e4492e307d4a9d71bf605d76a1e7fa7555c489941"
+  },
+  {
+   "doc_id": "Type1_00051-row_removed-T1",
+   "source": "agami-Digital_Type1_00051",
+   "layout": "type1",
+   "group": "row_removed",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    38
+   ],
+   "alteration": {
+    "row": 38,
+    "removed": {
+     "date": "2024-01-27",
+     "debit": 34510891,
+     "credit": null,
+     "balance": 68763578
+    }
+   },
+   "document": "Type1_00051-row_removed-T1.pdf",
+   "truth": "Type1_00051-row_removed-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 162,
+   "pages": 6,
+   "sha256": "ae6a92de2f87e1b5f626844401527731c564d8638ced84307f2a1754a569a79f"
+  },
+  {
+   "doc_id": "Type2_00083-amount-T1",
+   "source": "agami-Digital_Type2_00083",
+   "layout": "type2",
+   "group": "amount",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    30
+   ],
+   "alteration": {
+    "row": 30,
+    "side": "credit",
+    "from": 109702715,
+    "to": 609702715
+   },
+   "document": "Type2_00083-amount-T1.pdf",
+   "truth": "Type2_00083-amount-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 161,
+   "pages": 6,
+   "sha256": "709d83f6ede92da02e7bd9446e7391877efe5a40a5d4b155a352ddda4798f605"
+  },
+  {
+   "doc_id": "Type1_00062-row_adjusted-T3",
+   "source": "agami-Digital_Type1_00062",
+   "layout": "type1",
+   "group": "row_adjusted",
+   "tier": "T3",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 17,
+    "removed": {
+     "date": "2024-01-09",
+     "debit": 1699384,
+     "credit": null,
+     "balance": 34890060
+    },
+    "balances_shifted_by": 1699384
+   },
+   "document": "Type1_00062-row_adjusted-T3.pdf",
+   "truth": "Type1_00062-row_adjusted-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 164,
+   "pages": 6,
+   "sha256": "e45ef5a21200b3fbd6702ee1e0b1e93a537bcf734de87d5ac4aa64851b9d5176"
+  },
+  {
+   "doc_id": "Type1_00040-row_adjusted-T3",
+   "source": "agami-Digital_Type1_00040",
+   "layout": "type1",
+   "group": "row_adjusted",
+   "tier": "T3",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 69,
+    "removed": {
+     "date": "2024-02-10",
+     "debit": 3929945,
+     "credit": 0,
+     "balance": 18817901
+    },
+    "balances_shifted_by": 3929945
+   },
+   "document": "Type1_00040-row_adjusted-T3.pdf",
+   "truth": "Type1_00040-row_adjusted-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 162,
+   "pages": 6,
+   "sha256": "2a09ea6f6fb0b2b8d4a3e83b631002c79a385f0f5dc09d1fda1f9456c5ba2574"
+  },
+  {
+   "doc_id": "Type1_00090-text-T2",
+   "source": "agami-Digital_Type1_00090",
+   "layout": "type1",
+   "group": "text",
+   "tier": "T2",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 44,
+    "from": "RTGS Dr-CNRBR786478297213-HDFC0004171-VISHNU NAIDU-/NONE",
+    "to": "CASH-BNA-SELF-RAJESH SHETTY"
+   },
+   "document": "Type1_00090-text-T2.pdf",
+   "truth": "Type1_00090-text-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 156,
+   "pages": 6,
+   "sha256": "33f9cc81356e8af82b5c6b132f9d31d9dcd770ab20fc58a9c0f6a03189148d38"
+  },
+  {
+   "doc_id": "Type2_00026-amount-T2",
+   "source": "agami-Digital_Type2_00026",
+   "layout": "type2",
+   "group": "amount",
+   "tier": "T2",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    114
+   ],
+   "alteration": {
+    "row": 114,
+    "side": "credit",
+    "from": 5785797,
+    "to": 5785779
+   },
+   "document": "Type2_00026-amount-T2.pdf",
+   "truth": "Type2_00026-amount-T2.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 168,
+   "pages": 6,
+   "sha256": "6c7a7cc9a0b164be6fecb557f75f792b56727c4429ca3c58deaa6d416842670c"
+  },
+  {
+   "doc_id": "Type2_00018-balance-T1",
+   "source": "agami-Digital_Type2_00018",
+   "layout": "type2",
+   "group": "balance",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    19,
+    20
+   ],
+   "alteration": {
+    "row": 19,
+    "from": 96528130,
+    "to": 93528130
+   },
+   "document": "Type2_00018-balance-T1.pdf",
+   "truth": "Type2_00018-balance-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 157,
+   "pages": 6,
+   "sha256": "ea2eef192068acd58041762ec82f119cb242ff127b04865ec61bc0ffb0cd3d3a"
+  },
+  {
+   "doc_id": "Type2_00053-balance-T3",
+   "source": "agami-Digital_Type2_00053",
+   "layout": "type2",
+   "group": "balance",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    147,
+    148
+   ],
+   "alteration": {
+    "row": 147,
+    "from": 38198119,
+    "to": 31198119
+   },
+   "document": "Type2_00053-balance-T3.pdf",
+   "truth": "Type2_00053-balance-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 162,
+   "pages": 6,
+   "sha256": "d489de2baa0d64d72aa702a2cabcd67eed2ec15646ed394b33466e2cf4688dc5"
+  },
+  {
+   "doc_id": "Type1_00027-text-T3",
+   "source": "agami-Digital_Type1_00027",
+   "layout": "type1",
+   "group": "text",
+   "tier": "T3",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 72,
+    "from": "By Clg:DEL ACCTS-CITI BANK N.A.(CIT), SHIPPING SERVICES INDIA",
+    "to": "Cash Withdrawal-ADITYA ACHARYA"
+   },
+   "document": "Type1_00027-text-T3.pdf",
+   "truth": "Type1_00027-text-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 160,
+   "pages": 6,
+   "sha256": "5bd5c98b978e803f19b9de1460608cc07593151b6f1d3904bf6dcc6410831d41"
+  },
+  {
+   "doc_id": "Type2_00035-clean-T2",
+   "source": "agami-Digital_Type2_00035",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T2",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00035-clean-T2.pdf",
+   "truth": "Type2_00035-clean-T2.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 166,
+   "pages": 6,
+   "sha256": "456ec6b241b08382f74288cd27b878af3ac1414a605c0d4c2b40bd2552620d4a"
+  },
+  {
+   "doc_id": "Type2_00047-amount-T3",
+   "source": "agami-Digital_Type2_00047",
+   "layout": "type2",
+   "group": "amount",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    95
+   ],
+   "alteration": {
+    "row": 95,
+    "side": "credit",
+    "from": 13665,
+    "to": 16365
+   },
+   "document": "Type2_00047-amount-T3.pdf",
+   "truth": "Type2_00047-amount-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 158,
+   "pages": 6,
+   "sha256": "26c7ea4cf60c6567ebea3c15bb76ffb9d0afb1e56fe3ed92b70edff201a36983"
+  },
+  {
+   "doc_id": "Type2_00023-clean-T1",
+   "source": "agami-Digital_Type2_00023",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T1",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00023-clean-T1.pdf",
+   "truth": "Type2_00023-clean-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 157,
+   "pages": 6,
+   "sha256": "7f4aac752215693e2dc460fd9ccae520a60d21b14a96a08c0e65ed84c6eb5f32"
+  },
+  {
+   "doc_id": "Type2_00046-clean-T2",
+   "source": "agami-Digital_Type2_00046",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T2",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00046-clean-T2.pdf",
+   "truth": "Type2_00046-clean-T2.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 166,
+   "pages": 6,
+   "sha256": "70bd74c77ab9c7c31a080f13eac3b55c0bffb25ed12f7ca99d45f1968a05395c"
+  },
+  {
+   "doc_id": "Type1_00075-text-T2",
+   "source": "agami-Digital_Type1_00075",
+   "layout": "type1",
+   "group": "text",
+   "tier": "T2",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 138,
+    "from": "NEFT Dr-159791374990-HDFC0009038-DHARA KOTHARI",
+    "to": "Cash Withdrawal-RAKESH PANDYA"
+   },
+   "document": "Type1_00075-text-T2.pdf",
+   "truth": "Type1_00075-text-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 170,
+   "pages": 6,
+   "sha256": "89e991bd360a82731f3bfa739e41bb8ba0a532284c8ec155d104f96e60dc48e6"
+  },
+  {
+   "doc_id": "Type2_00072-row_adjusted-T3",
+   "source": "agami-Digital_Type2_00072",
+   "layout": "type2",
+   "group": "row_adjusted",
+   "tier": "T3",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 160,
+    "removed": {
+     "date": "2024-03-30",
+     "debit": 0,
+     "credit": 16887661,
+     "balance": 44128282
+    },
+    "balances_shifted_by": -16887661
+   },
+   "document": "Type2_00072-row_adjusted-T3.pdf",
+   "truth": "Type2_00072-row_adjusted-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 163,
+   "pages": 6,
+   "sha256": "73672f21674943d019299f3d688606b16da98b9a7f125c638ddf5bad652b936c"
+  },
+  {
+   "doc_id": "Type1_00013-clean-T2",
+   "source": "agami-Digital_Type1_00013",
+   "layout": "type1",
+   "group": "clean",
+   "tier": "T2",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type1_00013-clean-T2.pdf",
+   "truth": "Type1_00013-clean-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 156,
+   "pages": 6,
+   "sha256": "9d5e7febfa5c3115dd59e123f7deea7b54df6dc13bb29f3b94dec6aaed3f4b29"
+  },
+  {
+   "doc_id": "Type1_00021-direction-T2",
+   "source": "agami-Digital_Type1_00021",
+   "layout": "type1",
+   "group": "direction",
+   "tier": "T2",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    28
+   ],
+   "alteration": {
+    "row": 28,
+    "from_side": "debit",
+    "to_side": "credit",
+    "amount": 227261366
+   },
+   "document": "Type1_00021-direction-T2.pdf",
+   "truth": "Type1_00021-direction-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 170,
+   "pages": 6,
+   "sha256": "c1d2fe53afc42fc037ed5400c8b21831e8fdc2542eda20138c49bd81804da6af"
+  },
+  {
+   "doc_id": "Type2_00054-amount_adjusted-T2",
+   "source": "agami-Digital_Type2_00054",
+   "layout": "type2",
+   "group": "amount_adjusted",
+   "tier": "T2",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 65,
+    "side": "credit",
+    "from": 34085367,
+    "to": 94085367,
+    "balances_shifted_by": 60000000
+   },
+   "document": "Type2_00054-amount_adjusted-T2.pdf",
+   "truth": "Type2_00054-amount_adjusted-T2.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 159,
+   "pages": 6,
+   "sha256": "81dbb24a2fcafba6d8028d1dcf111d5c08603936a1639c1708258b4a18227ec4"
+  },
+  {
+   "doc_id": "Type1_00035-row_adjusted-T2",
+   "source": "agami-Digital_Type1_00035",
+   "layout": "type1",
+   "group": "row_adjusted",
+   "tier": "T2",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 61,
+    "removed": {
+     "date": "2024-01-30",
+     "debit": 4823598,
+     "credit": null,
+     "balance": 53529237
+    },
+    "balances_shifted_by": 4823598
+   },
+   "document": "Type1_00035-row_adjusted-T2.pdf",
+   "truth": "Type1_00035-row_adjusted-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 154,
+   "pages": 6,
+   "sha256": "e9944a5facc8db6ddf6623e7dcdd78b3e7a6443cf19dc4ad1f74ee267981c4d7"
+  },
+  {
+   "doc_id": "Type2_00030-row_removed-T2",
+   "source": "agami-Digital_Type2_00030",
+   "layout": "type2",
+   "group": "row_removed",
+   "tier": "T2",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    47
+   ],
+   "alteration": {
+    "row": 47,
+    "removed": {
+     "date": "2024-01-23",
+     "debit": null,
+     "credit": 1554202,
+     "balance": 136157120
+    }
+   },
+   "document": "Type2_00030-row_removed-T2.pdf",
+   "truth": "Type2_00030-row_removed-T2.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 162,
+   "pages": 6,
+   "sha256": "16c68098daa7383c19b32eb1142f3a304f550049559f88d5d1ccc57912adfe25"
+  },
+  {
+   "doc_id": "Type2_00094-clean-T3",
+   "source": "agami-Digital_Type2_00094",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T3",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00094-clean-T3.pdf",
+   "truth": "Type2_00094-clean-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 168,
+   "pages": 6,
+   "sha256": "317e6917a7327689aca9e77575fe1a51bb227645a30dc2d152ebaa59dab9dee1"
+  },
+  {
+   "doc_id": "Type1_00091-amount_adjusted-T1",
+   "source": "agami-Digital_Type1_00091",
+   "layout": "type1",
+   "group": "amount_adjusted",
+   "tier": "T1",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 45,
+    "side": "credit",
+    "from": 29787531,
+    "to": 35787531,
+    "balances_shifted_by": 6000000
+   },
+   "document": "Type1_00091-amount_adjusted-T1.pdf",
+   "truth": "Type1_00091-amount_adjusted-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 163,
+   "pages": 6,
+   "sha256": "f0fa44f56d7e079e43449583c3f0954119b190787a13c646380df098618fa715"
+  },
+  {
+   "doc_id": "Type1_00097-amount-T1",
+   "source": "agami-Digital_Type1_00097",
+   "layout": "type1",
+   "group": "amount",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    128
+   ],
+   "alteration": {
+    "row": 128,
+    "side": "credit",
+    "from": 81074245,
+    "to": 84074245
+   },
+   "document": "Type1_00097-amount-T1.pdf",
+   "truth": "Type1_00097-amount-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 166,
+   "pages": 6,
+   "sha256": "9d034afc9ac6c2bf6d80f941df0204a9a8f881fc1428f433898186802b748e7f"
+  },
+  {
+   "doc_id": "Type1_00082-row_removed-T3",
+   "source": "agami-Digital_Type1_00082",
+   "layout": "type1",
+   "group": "row_removed",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    86
+   ],
+   "alteration": {
+    "row": 86,
+    "removed": {
+     "date": "2024-02-17",
+     "debit": null,
+     "credit": 27448261,
+     "balance": 109655207
+    }
+   },
+   "document": "Type1_00082-row_removed-T3.pdf",
+   "truth": "Type1_00082-row_removed-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 155,
+   "pages": 6,
+   "sha256": "e1947fdee13ea811e7f92e627538ecf80ec4516efc1debc8a372314a3be4098a"
+  },
+  {
+   "doc_id": "Type1_00086-clean-T2",
+   "source": "agami-Digital_Type1_00086",
+   "layout": "type1",
+   "group": "clean",
+   "tier": "T2",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type1_00086-clean-T2.pdf",
+   "truth": "Type1_00086-clean-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 157,
+   "pages": 6,
+   "sha256": "1ce45f708aa2e1510d6f1223f913db52d7677a8169d0c18d02243eea0d024728"
+  },
+  {
+   "doc_id": "Type1_00046-text-T3",
+   "source": "agami-Digital_Type1_00046",
+   "layout": "type1",
+   "group": "text",
+   "tier": "T3",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 118,
+    "from": "Chq Paid-MICR Inward Clearing-SWAGATA SENGUPTA-HDFC BANK LTD.",
+    "to": "CASH-BNA-SELF-PAYEL DASGUPTA"
+   },
+   "document": "Type1_00046-text-T3.pdf",
+   "truth": "Type1_00046-text-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 165,
+   "pages": 6,
+   "sha256": "c3288a67c8ea8b46f7c2e2bd263315f63a66047790f21285d289d64da722dfa7"
+  },
+  {
+   "doc_id": "Type2_00036-clean-T3",
+   "source": "agami-Digital_Type2_00036",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T3",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00036-clean-T3.pdf",
+   "truth": "Type2_00036-clean-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 168,
+   "pages": 6,
+   "sha256": "7e158f06ca2c836d31f7b5149d0836ea82b35b772e735632b76bf84624bc27ec"
+  },
+  {
+   "doc_id": "Type1_00080-row_removed-T3",
+   "source": "agami-Digital_Type1_00080",
+   "layout": "type1",
+   "group": "row_removed",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    88
+   ],
+   "alteration": {
+    "row": 88,
+    "removed": {
+     "date": "2024-02-20",
+     "debit": 13934232,
+     "credit": 0,
+     "balance": 38226268
+    }
+   },
+   "document": "Type1_00080-row_removed-T3.pdf",
+   "truth": "Type1_00080-row_removed-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 163,
+   "pages": 6,
+   "sha256": "282b5ff1423810394fd2c8bb0273ec6ac296b4d416c1aab8ff9b5f6379b6cf62"
+  },
+  {
+   "doc_id": "Type1_00083-clean-T2",
+   "source": "agami-Digital_Type1_00083",
+   "layout": "type1",
+   "group": "clean",
+   "tier": "T2",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type1_00083-clean-T2.pdf",
+   "truth": "Type1_00083-clean-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 165,
+   "pages": 6,
+   "sha256": "e99c66e6edba426cc2ff13d2a0b29edc53a8f1b84aa3d3b0635ef613898f6bfd"
+  },
+  {
+   "doc_id": "Type1_00078-row_removed-T3",
+   "source": "agami-Digital_Type1_00078",
+   "layout": "type1",
+   "group": "row_removed",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    19
+   ],
+   "alteration": {
+    "row": 19,
+    "removed": {
+     "date": "2024-01-11",
+     "debit": null,
+     "credit": 4861422,
+     "balance": 96760800
+    }
+   },
+   "document": "Type1_00078-row_removed-T3.pdf",
+   "truth": "Type1_00078-row_removed-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 160,
+   "pages": 6,
+   "sha256": "23ecdbd62de7f9a69fddc139a6bfbb47d03bc59475958cd8f7318aae11e00c03"
+  },
+  {
+   "doc_id": "Type2_00024-direction-T1",
+   "source": "agami-Digital_Type2_00024",
+   "layout": "type2",
+   "group": "direction",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    111
+   ],
+   "alteration": {
+    "row": 111,
+    "from_side": "credit",
+    "to_side": "debit",
+    "amount": 14475553
+   },
+   "document": "Type2_00024-direction-T1.pdf",
+   "truth": "Type2_00024-direction-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 162,
+   "pages": 6,
+   "sha256": "fd5f7d345925c31af09b35863cb8aa10db5c26ef51ea1763cc9d082921a80e68"
+  },
+  {
+   "doc_id": "Type2_00052-balance-T3",
+   "source": "agami-Digital_Type2_00052",
+   "layout": "type2",
+   "group": "balance",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    80,
+    81
+   ],
+   "alteration": {
+    "row": 80,
+    "from": 42251221,
+    "to": 48251221
+   },
+   "document": "Type2_00052-balance-T3.pdf",
+   "truth": "Type2_00052-balance-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 161,
+   "pages": 6,
+   "sha256": "d7194e9cf3c247c3890c4af9d5f155ee529b88765280ec17155ab05aa3d926ed"
+  },
+  {
+   "doc_id": "Type1_00058-text-T3",
+   "source": "agami-Digital_Type1_00058",
+   "layout": "type1",
+   "group": "text",
+   "tier": "T3",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 53,
+    "from": "ATM WDL-ATM CASH 52241",
+    "to": "ATM WDL-ATM CASH 10202"
+   },
+   "document": "Type1_00058-text-T3.pdf",
+   "truth": "Type1_00058-text-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 157,
+   "pages": 6,
+   "sha256": "392db41dc51946e057493f3892aea07d36452bebb805b9a79601ff1ebaff90ff"
+  },
+  {
+   "doc_id": "Type1_00070-balance-T2",
+   "source": "agami-Digital_Type1_00070",
+   "layout": "type1",
+   "group": "balance",
+   "tier": "T2",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    4,
+    5
+   ],
+   "alteration": {
+    "row": 4,
+    "from": 117100837,
+    "to": 117010837
+   },
+   "document": "Type1_00070-balance-T2.pdf",
+   "truth": "Type1_00070-balance-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 156,
+   "pages": 6,
+   "sha256": "7e4b6b472bd6349117e7784cb67e2944acaf3a3c007027b952c487f5caf3c2d8"
+  },
+  {
+   "doc_id": "Type1_00081-clean-T1",
+   "source": "agami-Digital_Type1_00081",
+   "layout": "type1",
+   "group": "clean",
+   "tier": "T1",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type1_00081-clean-T1.pdf",
+   "truth": "Type1_00081-clean-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 164,
+   "pages": 6,
+   "sha256": "4aa44ed1cb4dfb0a5be054478c3c05214966f797b199bf00375d08c6d896829b"
+  },
+  {
+   "doc_id": "Type1_00049-row_removed-T1",
+   "source": "agami-Digital_Type1_00049",
+   "layout": "type1",
+   "group": "row_removed",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    131
+   ],
+   "alteration": {
+    "row": 131,
+    "removed": {
+     "date": "2024-03-16",
+     "debit": 4352598,
+     "credit": null,
+     "balance": 276324201
+    }
+   },
+   "document": "Type1_00049-row_removed-T1.pdf",
+   "truth": "Type1_00049-row_removed-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 156,
+   "pages": 6,
+   "sha256": "ed9163cdc40658e12bf80d3067f78d384e5315a7b09ae09accb7950c5a2be59a"
+  },
+  {
+   "doc_id": "Type1_00041-direction-T2",
+   "source": "agami-Digital_Type1_00041",
+   "layout": "type1",
+   "group": "direction",
+   "tier": "T2",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    25
+   ],
+   "alteration": {
+    "row": 25,
+    "from_side": "credit",
+    "to_side": "debit",
+    "amount": 701009
+   },
+   "document": "Type1_00041-direction-T2.pdf",
+   "truth": "Type1_00041-direction-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 162,
+   "pages": 6,
+   "sha256": "96c6ce0cbdaf423c3074a74e5cb791acca72b65bc2be4b7a224cfc8889626b9c"
+  },
+  {
+   "doc_id": "Type1_00100-balance-T2",
+   "source": "agami-Digital_Type1_00100",
+   "layout": "type1",
+   "group": "balance",
+   "tier": "T2",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    38,
+    39
+   ],
+   "alteration": {
+    "row": 38,
+    "from": 11107037,
+    "to": 18107037
+   },
+   "document": "Type1_00100-balance-T2.pdf",
+   "truth": "Type1_00100-balance-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 163,
+   "pages": 6,
+   "sha256": "91e389ead28cab0a6028670a4406b3dcd9da253e71e141e2d239126f6ec668ee"
+  },
+  {
+   "doc_id": "Type2_00093-clean-T1",
+   "source": "agami-Digital_Type2_00093",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T1",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00093-clean-T1.pdf",
+   "truth": "Type2_00093-clean-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 156,
+   "pages": 6,
+   "sha256": "85aa28b5d79faef6e695e0d4da54aacdb43dd953c4f6831a27df4be6d5a979b5"
+  },
+  {
+   "doc_id": "Type2_00079-clean-T1",
+   "source": "agami-Digital_Type2_00079",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T1",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00079-clean-T1.pdf",
+   "truth": "Type2_00079-clean-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 162,
+   "pages": 6,
+   "sha256": "c59cd76a2fd734e7c0df585fa017b93c0d6333d4895c980cdfc0319168e81475"
+  },
+  {
+   "doc_id": "Type1_00016-amount_adjusted-T2",
+   "source": "agami-Digital_Type1_00016",
+   "layout": "type1",
+   "group": "amount_adjusted",
+   "tier": "T2",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 68,
+    "side": "credit",
+    "from": 11276325,
+    "to": 81276325,
+    "balances_shifted_by": 70000000
+   },
+   "document": "Type1_00016-amount_adjusted-T2.pdf",
+   "truth": "Type1_00016-amount_adjusted-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 158,
+   "pages": 6,
+   "sha256": "a2a7c3d08df9388ed09d27641a7bd0ea5c78a5f39d3682b45a71260fdab80266"
+  },
+  {
+   "doc_id": "Type1_00038-row_adjusted-T2",
+   "source": "agami-Digital_Type1_00038",
+   "layout": "type1",
+   "group": "row_adjusted",
+   "tier": "T2",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 107,
+    "removed": {
+     "date": "2024-03-02",
+     "debit": 301084,
+     "credit": null,
+     "balance": 14030829
+    },
+    "balances_shifted_by": 301084
+   },
+   "document": "Type1_00038-row_adjusted-T2.pdf",
+   "truth": "Type1_00038-row_adjusted-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 167,
+   "pages": 6,
+   "sha256": "535ccca94e735433ac9bc2763058a1fb3ce64bbd158e718a38ca096f7ec61a82"
+  },
+  {
+   "doc_id": "Type1_00066-amount-T3",
+   "source": "agami-Digital_Type1_00066",
+   "layout": "type1",
+   "group": "amount",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    44
+   ],
+   "alteration": {
+    "row": 44,
+    "side": "debit",
+    "from": 2438686,
+    "to": 2436886
+   },
+   "document": "Type1_00066-amount-T3.pdf",
+   "truth": "Type1_00066-amount-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 156,
+   "pages": 6,
+   "sha256": "565241c5e1eac18484edb6d019535634664937cc66bf630d082b1ba5d3295eb7"
+  },
+  {
+   "doc_id": "Type2_00063-amount-T1",
+   "source": "agami-Digital_Type2_00063",
+   "layout": "type2",
+   "group": "amount",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    10
+   ],
+   "alteration": {
+    "row": 10,
+    "side": "credit",
+    "from": 218637,
+    "to": 288637
+   },
+   "document": "Type2_00063-amount-T1.pdf",
+   "truth": "Type2_00063-amount-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 164,
+   "pages": 6,
+   "sha256": "44e359d7ec8627b94c0b69d445897761b23e97c50d296956c56dc64c2464a9a5"
+  },
+  {
+   "doc_id": "Type2_00043-row_removed-T3",
+   "source": "agami-Digital_Type2_00043",
+   "layout": "type2",
+   "group": "row_removed",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    84
+   ],
+   "alteration": {
+    "row": 84,
+    "removed": {
+     "date": "2024-02-16",
+     "debit": 41115,
+     "credit": null,
+     "balance": 388503351
+    }
+   },
+   "document": "Type2_00043-row_removed-T3.pdf",
+   "truth": "Type2_00043-row_removed-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 159,
+   "pages": 6,
+   "sha256": "3662407a246fd3f9a3f2acf77cf8f5fdba9544a856e8fa9effa925470dfe6def"
+  },
+  {
+   "doc_id": "Type2_00062-clean-T3",
+   "source": "agami-Digital_Type2_00062",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T3",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00062-clean-T3.pdf",
+   "truth": "Type2_00062-clean-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 159,
+   "pages": 6,
+   "sha256": "9ecc8e1ccf38d1c79451ec31cd0cbf0e189734ef432f04b410a7cda42d55fa5d"
+  },
+  {
+   "doc_id": "Type2_00044-balance-T1",
+   "source": "agami-Digital_Type2_00044",
+   "layout": "type2",
+   "group": "balance",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    122,
+    123
+   ],
+   "alteration": {
+    "row": 122,
+    "from": 858153514,
+    "to": 588153514
+   },
+   "document": "Type2_00044-balance-T1.pdf",
+   "truth": "Type2_00044-balance-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 166,
+   "pages": 6,
+   "sha256": "0363f9cf853f350b3b7ed669908e8c35707e22ae48a1cb3c774daf36a10dfd19"
+  },
+  {
+   "doc_id": "Type1_00045-text-T3",
+   "source": "agami-Digital_Type1_00045",
+   "layout": "type1",
+   "group": "text",
+   "tier": "T3",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 87,
+    "from": "NEFT Cr-665245424046-ICIC0SF0002-PERSONAL CARE LTD--",
+    "to": "CASH-BNA-SELF-KAVITA MEHTA"
+   },
+   "document": "Type1_00045-text-T3.pdf",
+   "truth": "Type1_00045-text-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 162,
+   "pages": 6,
+   "sha256": "147f0bdc89dcddd665eaab6624038f68df6bae2d388888d0f465b732d8814eda"
+  },
+  {
+   "doc_id": "Type1_00063-balance-T1",
+   "source": "agami-Digital_Type1_00063",
+   "layout": "type1",
+   "group": "balance",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    19,
+    20
+   ],
+   "alteration": {
+    "row": 19,
+    "from": 116090153,
+    "to": 416090153
+   },
+   "document": "Type1_00063-balance-T1.pdf",
+   "truth": "Type1_00063-balance-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 165,
+   "pages": 6,
+   "sha256": "9ec0b2929f646056d5aaa7d905326b6770867574fb961dbda9eea56e857ef022"
+  },
+  {
+   "doc_id": "Type2_00012-direction-T3",
+   "source": "agami-Digital_Type2_00012",
+   "layout": "type2",
+   "group": "direction",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    110
+   ],
+   "alteration": {
+    "row": 110,
+    "from_side": "debit",
+    "to_side": "credit",
+    "amount": 5024447
+   },
+   "document": "Type2_00012-direction-T3.pdf",
+   "truth": "Type2_00012-direction-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 161,
+   "pages": 6,
+   "sha256": "a096a851b10f39e266996fe63a6eff1bb5eb8ef22350772d50f8b5392d00c606"
+  },
+  {
+   "doc_id": "Type2_00027-clean-T3",
+   "source": "agami-Digital_Type2_00027",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T3",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00027-clean-T3.pdf",
+   "truth": "Type2_00027-clean-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 158,
+   "pages": 6,
+   "sha256": "5da5b193ca99292bdf61b959fee5fc6172fa53f412a91a9ef9d71c4a583c6ee9"
+  },
+  {
+   "doc_id": "Type1_00031-row_removed-T1",
+   "source": "agami-Digital_Type1_00031",
+   "layout": "type1",
+   "group": "row_removed",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    23
+   ],
+   "alteration": {
+    "row": 23,
+    "removed": {
+     "date": "2024-01-17",
+     "debit": null,
+     "credit": 901256,
+     "balance": 5661400
+    }
+   },
+   "document": "Type1_00031-row_removed-T1.pdf",
+   "truth": "Type1_00031-row_removed-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 171,
+   "pages": 6,
+   "sha256": "1406b1373e6b7d4370b4c0b9ab9391e59ea3571adfd71b9e897f95ba3bdbb8c7"
+  },
+  {
+   "doc_id": "Type2_00031-clean-T2",
+   "source": "agami-Digital_Type2_00031",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T2",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00031-clean-T2.pdf",
+   "truth": "Type2_00031-clean-T2.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 166,
+   "pages": 6,
+   "sha256": "c50e186cda11b67f415d54777808ba9fd6f7043ba7b913efb84d997473a818fb"
+  },
+  {
+   "doc_id": "Type1_00067-text-T1",
+   "source": "agami-Digital_Type1_00067",
+   "layout": "type1",
+   "group": "text",
+   "tier": "T1",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 141,
+    "from": "NEFT Cr-920259227124-ICIC0SF0002-SHIPPING SERVICES INDIA--",
+    "to": "CASH-BNA-SELF-DINESH PAREKH"
+   },
+   "document": "Type1_00067-text-T1.pdf",
+   "truth": "Type1_00067-text-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 166,
+   "pages": 6,
+   "sha256": "d4c2a7084e35f25da3daa179bba8486be2c916e04a507f2e7885785cf283421b"
+  },
+  {
+   "doc_id": "Type2_00040-row_removed-T1",
+   "source": "agami-Digital_Type2_00040",
+   "layout": "type2",
+   "group": "row_removed",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    39
+   ],
+   "alteration": {
+    "row": 39,
+    "removed": {
+     "date": "2024-01-29",
+     "debit": null,
+     "credit": 8133517,
+     "balance": 54293100
+    }
+   },
+   "document": "Type2_00040-row_removed-T1.pdf",
+   "truth": "Type2_00040-row_removed-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 162,
+   "pages": 6,
+   "sha256": "c0f214664ff46ea405758566849db55817edac5ed763ffef447a2e4d188456f2"
+  },
+  {
+   "doc_id": "Type2_00097-clean-T3",
+   "source": "agami-Digital_Type2_00097",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T3",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00097-clean-T3.pdf",
+   "truth": "Type2_00097-clean-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 160,
+   "pages": 6,
+   "sha256": "2afe959f3fdbe022fcef2367dfd0bd02b17a4cf479b7f0be5404927eba3bb2b4"
+  },
+  {
+   "doc_id": "Type2_00061-amount_adjusted-T1",
+   "source": "agami-Digital_Type2_00061",
+   "layout": "type2",
+   "group": "amount_adjusted",
+   "tier": "T1",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 126,
+    "side": "credit",
+    "from": 10915546,
+    "to": 70915546,
+    "balances_shifted_by": 60000000
+   },
+   "document": "Type2_00061-amount_adjusted-T1.pdf",
+   "truth": "Type2_00061-amount_adjusted-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 155,
+   "pages": 6,
+   "sha256": "9264ea1d008022903451447326234fe50ba2cd84a252fb5a20eeb231ddbad3e3"
+  },
+  {
+   "doc_id": "Type2_00037-clean-T2",
+   "source": "agami-Digital_Type2_00037",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T2",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00037-clean-T2.pdf",
+   "truth": "Type2_00037-clean-T2.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 168,
+   "pages": 6,
+   "sha256": "2fddf0fa34e2ad39f5c04c6ed0b27944a0b9ed7c37a1c05314d9e8a77b1ae8f0"
+  },
+  {
+   "doc_id": "Type2_00099-direction-T2",
+   "source": "agami-Digital_Type2_00099",
+   "layout": "type2",
+   "group": "direction",
+   "tier": "T2",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    133
+   ],
+   "alteration": {
+    "row": 133,
+    "from_side": "credit",
+    "to_side": "debit",
+    "amount": 1472449
+   },
+   "document": "Type2_00099-direction-T2.pdf",
+   "truth": "Type2_00099-direction-T2.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 162,
+   "pages": 6,
+   "sha256": "1bbbc0f2d493b3f673af66be45895c51c6480f12b61b2b62e5ceeb7fcbfc9112"
+  },
+  {
+   "doc_id": "Type2_00073-amount-T3",
+   "source": "agami-Digital_Type2_00073",
+   "layout": "type2",
+   "group": "amount",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    91
+   ],
+   "alteration": {
+    "row": 91,
+    "side": "credit",
+    "from": 2083514,
+    "to": 2803514
+   },
+   "document": "Type2_00073-amount-T3.pdf",
+   "truth": "Type2_00073-amount-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 162,
+   "pages": 6,
+   "sha256": "ff92a24118880a32d47b594026e000fd7701c12700ebdd38c17d564cb7906098"
+  },
+  {
+   "doc_id": "Type1_00028-clean-T1",
+   "source": "agami-Digital_Type1_00028",
+   "layout": "type1",
+   "group": "clean",
+   "tier": "T1",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type1_00028-clean-T1.pdf",
+   "truth": "Type1_00028-clean-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 165,
+   "pages": 6,
+   "sha256": "6418149ec33251c8001619e455383bcea0b827301ccb20e050e38c01954568ee"
+  },
+  {
+   "doc_id": "Type2_00087-clean-T1",
+   "source": "agami-Digital_Type2_00087",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T1",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00087-clean-T1.pdf",
+   "truth": "Type2_00087-clean-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 157,
+   "pages": 5,
+   "sha256": "e9b54380e134399b4b1f0c692adeb9a85640f3c39dfad59e6a01751039520e9e"
+  },
+  {
+   "doc_id": "Type2_00025-amount_adjusted-T2",
+   "source": "agami-Digital_Type2_00025",
+   "layout": "type2",
+   "group": "amount_adjusted",
+   "tier": "T2",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 132,
+    "side": "debit",
+    "from": 9712777,
+    "to": 1712777,
+    "balances_shifted_by": 8000000
+   },
+   "document": "Type2_00025-amount_adjusted-T2.pdf",
+   "truth": "Type2_00025-amount_adjusted-T2.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 162,
+   "pages": 6,
+   "sha256": "3ff7cd9c7dd03abfef381109c9d69c91027b4ab765dae83ee994ebd6e0dc17ce"
+  },
+  {
+   "doc_id": "Type2_00059-amount-T2",
+   "source": "agami-Digital_Type2_00059",
+   "layout": "type2",
+   "group": "amount",
+   "tier": "T2",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    149
+   ],
+   "alteration": {
+    "row": 149,
+    "side": "credit",
+    "from": 101073447,
+    "to": 131073447
+   },
+   "document": "Type2_00059-amount-T2.pdf",
+   "truth": "Type2_00059-amount-T2.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 164,
+   "pages": 6,
+   "sha256": "7eab01b7af21a35ab30ac2f274a41e64eb72b2d9b122ff065c7ef5255c8a4f0f"
+  },
+  {
+   "doc_id": "Type2_00076-direction-T1",
+   "source": "agami-Digital_Type2_00076",
+   "layout": "type2",
+   "group": "direction",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    146
+   ],
+   "alteration": {
+    "row": 146,
+    "from_side": "credit",
+    "to_side": "debit",
+    "amount": 49368631
+   },
+   "document": "Type2_00076-direction-T1.pdf",
+   "truth": "Type2_00076-direction-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 156,
+   "pages": 6,
+   "sha256": "26adbf40937dc99669e755d07d249a7d4577390cf1f7f0da31e503883a4273c7"
+  },
+  {
+   "doc_id": "Type1_00033-text-T1",
+   "source": "agami-Digital_Type1_00033",
+   "layout": "type1",
+   "group": "text",
+   "tier": "T1",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 105,
+    "from": "IMPS Dr-115643310091-NILESH BHATT",
+    "to": "IMPS Dr-251030307098-RAJESH RAVAL"
+   },
+   "document": "Type1_00033-text-T1.pdf",
+   "truth": "Type1_00033-text-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 165,
+   "pages": 6,
+   "sha256": "8873451038ad04c937ea18912d497f06edcad4ee26598cdf31c8584d9a39fe5c"
+  },
+  {
+   "doc_id": "Type2_00034-balance-T2",
+   "source": "agami-Digital_Type2_00034",
+   "layout": "type2",
+   "group": "balance",
+   "tier": "T2",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    148,
+    149
+   ],
+   "alteration": {
+    "row": 148,
+    "from": 1452221095,
+    "to": 1452220195
+   },
+   "document": "Type2_00034-balance-T2.pdf",
+   "truth": "Type2_00034-balance-T2.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 161,
+   "pages": 6,
+   "sha256": "373495db80f64f23921123965ad8d26196f5eb3638ce41700a8564639ccde6f3"
+  },
+  {
+   "doc_id": "Type2_00048-clean-T3",
+   "source": "agami-Digital_Type2_00048",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T3",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00048-clean-T3.pdf",
+   "truth": "Type2_00048-clean-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 157,
+   "pages": 6,
+   "sha256": "93f7f1918f0aa81eddb34e2e0bc3a45fafd9149da882dcea7e354819df944a79"
+  },
+  {
+   "doc_id": "Type1_00074-amount-T1",
+   "source": "agami-Digital_Type1_00074",
+   "layout": "type1",
+   "group": "amount",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    61
+   ],
+   "alteration": {
+    "row": 61,
+    "side": "credit",
+    "from": 14681386,
+    "to": 14618386
+   },
+   "document": "Type1_00074-amount-T1.pdf",
+   "truth": "Type1_00074-amount-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 172,
+   "pages": 6,
+   "sha256": "b2c61d2c3fe82b72b060a26199e0d0a9c598fe9ccfba2a45262d739d4a09d305"
+  },
+  {
+   "doc_id": "Type1_00042-row_adjusted-T2",
+   "source": "agami-Digital_Type1_00042",
+   "layout": "type1",
+   "group": "row_adjusted",
+   "tier": "T2",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 62,
+    "removed": {
+     "date": "2024-02-01",
+     "debit": 3021783,
+     "credit": null,
+     "balance": 305243045
+    },
+    "balances_shifted_by": 3021783
+   },
+   "document": "Type1_00042-row_adjusted-T2.pdf",
+   "truth": "Type1_00042-row_adjusted-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 161,
+   "pages": 6,
+   "sha256": "15c8d13bb1877ec28a1636bf101311d73169bbb81ddf27469037302235cdc42c"
+  },
+  {
+   "doc_id": "Type1_00029-clean-T3",
+   "source": "agami-Digital_Type1_00029",
+   "layout": "type1",
+   "group": "clean",
+   "tier": "T3",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type1_00029-clean-T3.pdf",
+   "truth": "Type1_00029-clean-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 159,
+   "pages": 6,
+   "sha256": "73fccc712a739a0459dc7135decc46ce2770398b0c088b798f7d612537106de1"
+  },
+  {
+   "doc_id": "Type1_00026-amount_adjusted-T2",
+   "source": "agami-Digital_Type1_00026",
+   "layout": "type1",
+   "group": "amount_adjusted",
+   "tier": "T2",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 52,
+    "side": "debit",
+    "from": 186675508,
+    "to": 86675508,
+    "balances_shifted_by": 100000000
+   },
+   "document": "Type1_00026-amount_adjusted-T2.pdf",
+   "truth": "Type1_00026-amount_adjusted-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 158,
+   "pages": 6,
+   "sha256": "7a2c21101c640ebde6d399a86fe23404b8ccc4c34473e67e6ad70b5efaa8b1ce"
+  },
+  {
+   "doc_id": "Type2_00100-clean-T1",
+   "source": "agami-Digital_Type2_00100",
+   "layout": "type2",
+   "group": "clean",
+   "tier": "T1",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type2_00100-clean-T1.pdf",
+   "truth": "Type2_00100-clean-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 166,
+   "pages": 6,
+   "sha256": "c79a8329810d245cb26b8bcb448b4c886c66509d0094d8540ea33bf570e3b65a"
+  },
+  {
+   "doc_id": "Type1_00044-balance-T1",
+   "source": "agami-Digital_Type1_00044",
+   "layout": "type1",
+   "group": "balance",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    20,
+    21
+   ],
+   "alteration": {
+    "row": 20,
+    "from": 199898660,
+    "to": 199896860
+   },
+   "document": "Type1_00044-balance-T1.pdf",
+   "truth": "Type1_00044-balance-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 155,
+   "pages": 6,
+   "sha256": "8f984f1e41e248ee23fa406615cc64b9f31d1d9796dd39ba71da5a4c2ac96bf8"
+  },
+  {
+   "doc_id": "Type1_00096-clean-T3",
+   "source": "agami-Digital_Type1_00096",
+   "layout": "type1",
+   "group": "clean",
+   "tier": "T3",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type1_00096-clean-T3.pdf",
+   "truth": "Type1_00096-clean-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 157,
+   "pages": 6,
+   "sha256": "84c3d4a2f25ba2b7372f34f512330d463f9979d09e19a2537510238eec699e17"
+  },
+  {
+   "doc_id": "Type1_00017-clean-T2",
+   "source": "agami-Digital_Type1_00017",
+   "layout": "type1",
+   "group": "clean",
+   "tier": "T2",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type1_00017-clean-T2.pdf",
+   "truth": "Type1_00017-clean-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 161,
+   "pages": 6,
+   "sha256": "c95226b687f0803948c876276db7d8fe0dc0ac1ff84f3d6fa7d386847139f31b"
+  },
+  {
+   "doc_id": "Type1_00060-clean-T2",
+   "source": "agami-Digital_Type1_00060",
+   "layout": "type1",
+   "group": "clean",
+   "tier": "T2",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type1_00060-clean-T2.pdf",
+   "truth": "Type1_00060-clean-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 171,
+   "pages": 6,
+   "sha256": "d21481fc1d8791edd0e5f03bae4f871f0eb4d9c4f161314b464f3af040f55eec"
+  },
+  {
+   "doc_id": "Type2_00049-amount-T3",
+   "source": "agami-Digital_Type2_00049",
+   "layout": "type2",
+   "group": "amount",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    99
+   ],
+   "alteration": {
+    "row": 99,
+    "side": "credit",
+    "from": 86848255,
+    "to": 66848255
+   },
+   "document": "Type2_00049-amount-T3.pdf",
+   "truth": "Type2_00049-amount-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 155,
+   "pages": 5,
+   "sha256": "59154cb5c2c8c24f8d19dc5ee994511ba598b707fe72463861e8c837eebe385e"
+  },
+  {
+   "doc_id": "Type1_00012-amount_adjusted-T1",
+   "source": "agami-Digital_Type1_00012",
+   "layout": "type1",
+   "group": "amount_adjusted",
+   "tier": "T1",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 65,
+    "side": "credit",
+    "from": 1933469,
+    "to": 7933469,
+    "balances_shifted_by": 6000000
+   },
+   "document": "Type1_00012-amount_adjusted-T1.pdf",
+   "truth": "Type1_00012-amount_adjusted-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 165,
+   "pages": 6,
+   "sha256": "d16591c4c713c76b4eaef6f87cc18614d3603a29fc96978666755e91a74322f7"
+  },
+  {
+   "doc_id": "Type1_00087-balance-T1",
+   "source": "agami-Digital_Type1_00087",
+   "layout": "type1",
+   "group": "balance",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    152,
+    153
+   ],
+   "alteration": {
+    "row": 152,
+    "from": 138002666,
+    "to": 738002666
+   },
+   "document": "Type1_00087-balance-T1.pdf",
+   "truth": "Type1_00087-balance-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 160,
+   "pages": 6,
+   "sha256": "ae930b2aff5735c49ac9ee63beeeb4188a0802febc7add1a95a038e8e502fb9c"
+  },
+  {
+   "doc_id": "Type1_00022-clean-T2",
+   "source": "agami-Digital_Type1_00022",
+   "layout": "type1",
+   "group": "clean",
+   "tier": "T2",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type1_00022-clean-T2.pdf",
+   "truth": "Type1_00022-clean-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 170,
+   "pages": 6,
+   "sha256": "559056d4c3467e91222fad77899d1ebc66eee54e6faeb20a7562deef7b724de8"
+  },
+  {
+   "doc_id": "Type1_00025-amount_adjusted-T1",
+   "source": "agami-Digital_Type1_00025",
+   "layout": "type1",
+   "group": "amount_adjusted",
+   "tier": "T1",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 12,
+    "side": "credit",
+    "from": 119082211,
+    "to": 619082211,
+    "balances_shifted_by": 500000000
+   },
+   "document": "Type1_00025-amount_adjusted-T1.pdf",
+   "truth": "Type1_00025-amount_adjusted-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 156,
+   "pages": 6,
+   "sha256": "fa2966de492d23df9f0640c040c8c2a396fe93c9c663ea23179e565af4e93e51"
+  },
+  {
+   "doc_id": "Type2_00020-amount_adjusted-T3",
+   "source": "agami-Digital_Type2_00020",
+   "layout": "type2",
+   "group": "amount_adjusted",
+   "tier": "T3",
+   "detectable_by_arithmetic": false,
+   "expected_rows": [],
+   "alteration": {
+    "row": 39,
+    "side": "credit",
+    "from": 17255400,
+    "to": 11255400,
+    "balances_shifted_by": -6000000
+   },
+   "document": "Type2_00020-amount_adjusted-T3.pdf",
+   "truth": "Type2_00020-amount_adjusted-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 163,
+   "pages": 6,
+   "sha256": "bd0efe4bedc7652d44c56990ed8b549f76fd443c743c4b48962fbbd74200779d"
+  },
+  {
+   "doc_id": "Type1_00071-clean-T3",
+   "source": "agami-Digital_Type1_00071",
+   "layout": "type1",
+   "group": "clean",
+   "tier": "T3",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type1_00071-clean-T3.pdf",
+   "truth": "Type1_00071-clean-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 157,
+   "pages": 6,
+   "sha256": "0eeec92f8475d9af546b5e75d9fdf519bb682cd618e46e8d74e80e4bac469bc3"
+  },
+  {
+   "doc_id": "Type1_00039-direction-T3",
+   "source": "agami-Digital_Type1_00039",
+   "layout": "type1",
+   "group": "direction",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    139
+   ],
+   "alteration": {
+    "row": 139,
+    "from_side": "debit",
+    "to_side": "credit",
+    "amount": 68922883
+   },
+   "document": "Type1_00039-direction-T3.pdf",
+   "truth": "Type1_00039-direction-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 162,
+   "pages": 6,
+   "sha256": "e75bcaecc9488ea12e2839d7524f474ca659aee2eba0017127a9fd715650a015"
+  },
+  {
+   "doc_id": "Type2_00051-direction-T2",
+   "source": "agami-Digital_Type2_00051",
+   "layout": "type2",
+   "group": "direction",
+   "tier": "T2",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    116
+   ],
+   "alteration": {
+    "row": 116,
+    "from_side": "debit",
+    "to_side": "credit",
+    "amount": 76229089
+   },
+   "document": "Type2_00051-direction-T2.pdf",
+   "truth": "Type2_00051-direction-T2.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 162,
+   "pages": 6,
+   "sha256": "01f724c311beac901982e8577c26b97321576f3a5196ecb1b3f0673c03539535"
+  },
+  {
+   "doc_id": "Type2_00014-amount-T3",
+   "source": "agami-Digital_Type2_00014",
+   "layout": "type2",
+   "group": "amount",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    149
+   ],
+   "alteration": {
+    "row": 149,
+    "side": "debit",
+    "from": 14631369,
+    "to": 74631369
+   },
+   "document": "Type2_00014-amount-T3.pdf",
+   "truth": "Type2_00014-amount-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 159,
+   "pages": 6,
+   "sha256": "fb3e7df8fe1e45f4a5e4b97b27f8778acf9be010f2f21af22692c07b0ef6e7d5"
+  },
+  {
+   "doc_id": "Type1_00054-amount-T1",
+   "source": "agami-Digital_Type1_00054",
+   "layout": "type1",
+   "group": "amount",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    99
+   ],
+   "alteration": {
+    "row": 99,
+    "side": "credit",
+    "from": 2401786,
+    "to": 2201786
+   },
+   "document": "Type1_00054-amount-T1.pdf",
+   "truth": "Type1_00054-amount-T1.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 164,
+   "pages": 6,
+   "sha256": "58222612a7bbf630087e75146637ce82b0e2a447462aa223891fca149ad4ad0c"
+  },
+  {
+   "doc_id": "Type1_00037-balance-T3",
+   "source": "agami-Digital_Type1_00037",
+   "layout": "type1",
+   "group": "balance",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    16,
+    17
+   ],
+   "alteration": {
+    "row": 16,
+    "from": 107930841,
+    "to": 307930841
+   },
+   "document": "Type1_00037-balance-T3.pdf",
+   "truth": "Type1_00037-balance-T3.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 157,
+   "pages": 6,
+   "sha256": "04cc355489c4fe42a96d9a94e26aeff01bbe98a719238cdbb1566203c26351f3"
+  },
+  {
+   "doc_id": "Type1_00077-row_removed-T2",
+   "source": "agami-Digital_Type1_00077",
+   "layout": "type1",
+   "group": "row_removed",
+   "tier": "T2",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    108
+   ],
+   "alteration": {
+    "row": 108,
+    "removed": {
+     "date": "2024-03-01",
+     "debit": null,
+     "credit": 2763729,
+     "balance": 67377153
+    }
+   },
+   "document": "Type1_00077-row_removed-T2.pdf",
+   "truth": "Type1_00077-row_removed-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 163,
+   "pages": 6,
+   "sha256": "0975c42236f6d7f8213419d163886d2652f913d2094c385023f4e22a14d0dae6"
+  },
+  {
+   "doc_id": "Type2_00033-row_removed-T3",
+   "source": "agami-Digital_Type2_00033",
+   "layout": "type2",
+   "group": "row_removed",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    40
+   ],
+   "alteration": {
+    "row": 40,
+    "removed": {
+     "date": "2024-01-25",
+     "debit": null,
+     "credit": 167954521,
+     "balance": 1106739345
+    }
+   },
+   "document": "Type2_00033-row_removed-T3.pdf",
+   "truth": "Type2_00033-row_removed-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 155,
+   "pages": 6,
+   "sha256": "fdcb64efad56a1e3d1d5616db137047ccfa72303accb3c395b9f5d307b9e1c95"
+  },
+  {
+   "doc_id": "Type2_00078-balance-T3",
+   "source": "agami-Digital_Type2_00078",
+   "layout": "type2",
+   "group": "balance",
+   "tier": "T3",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    154,
+    155
+   ],
+   "alteration": {
+    "row": 154,
+    "from": 1893284862,
+    "to": 1993284862
+   },
+   "document": "Type2_00078-balance-T3.pdf",
+   "truth": "Type2_00078-balance-T3.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 158,
+   "pages": 6,
+   "sha256": "0ccb349f37fee9995194654bbd752352547a14fca2093cc6c7e6dd1862b71d43"
+  },
+  {
+   "doc_id": "Type1_00015-clean-T2",
+   "source": "agami-Digital_Type1_00015",
+   "layout": "type1",
+   "group": "clean",
+   "tier": "T2",
+   "detectable_by_arithmetic": null,
+   "expected_rows": [],
+   "alteration": null,
+   "document": "Type1_00015-clean-T2.pdf",
+   "truth": "Type1_00015-clean-T2.truth.json",
+   "spec": "examples/specs/agami_type1.yaml",
+   "rows": 165,
+   "pages": 6,
+   "sha256": "856373eb75bc1fa1ac072b5c86b142cddbef795963e0201e466400f6b8f86d95"
+  },
+  {
+   "doc_id": "Type2_00096-direction-T1",
+   "source": "agami-Digital_Type2_00096",
+   "layout": "type2",
+   "group": "direction",
+   "tier": "T1",
+   "detectable_by_arithmetic": true,
+   "expected_rows": [
+    60
+   ],
+   "alteration": {
+    "row": 60,
+    "from_side": "debit",
+    "to_side": "credit",
+    "amount": 45048448
+   },
+   "document": "Type2_00096-direction-T1.pdf",
+   "truth": "Type2_00096-direction-T1.truth.json",
+   "spec": "examples/specs/agami_type2.yaml",
+   "rows": 156,
+   "pages": 6,
+   "sha256": "129d44145e049eec953d3d447eb403796ab879dc4ec48f529d6be8e1be6285f5"
+  }
+ ],
+ "skipped": [],
+ "unfilled_slots": [],
+ "counts": {
+  "clean": 40,
+  "amount": 16,
+  "balance": 12,
+  "row_removed": 12,
+  "direction": 12,
+  "amount_adjusted": 12,
+  "row_adjusted": 8,
+  "text": 8
+ },
+ "tiers": {
+  "T1": 40,
+  "T2": 40,
+  "T3": 40
+ }
+}
