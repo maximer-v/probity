@@ -1,0 +1,26 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 52,
+    "field": "credit",
+    "value": ""
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is mathematically consistent after correcting the transcription error in row 52, where a blank credit was incorrectly transcribed."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 52,
+    "field": "credit",
+    "value": ""
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is mathematically consistent after correcting the transcription error in row 52, where a blank credit was incorrectly transcribed."
+ }
+}

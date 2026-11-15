@@ -1,0 +1,176 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 63,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 63,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 154,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 154,
+    "field": "credit",
+    "value": "12,062.90"
+   },
+   {
+    "row": 155,
+    "field": "debit",
+    "value": "150.79"
+   },
+   {
+    "row": 155,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 156,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 156,
+    "field": "credit",
+    "value": "278,543.39"
+   },
+   {
+    "row": 157,
+    "field": "debit",
+    "value": "623,451.62"
+   },
+   {
+    "row": 157,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 158,
+    "field": "debit",
+    "value": "766,398.65"
+   },
+   {
+    "row": 158,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 159,
+    "field": "debit",
+    "value": "233.88"
+   },
+   {
+    "row": 159,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 160,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 160,
+    "field": "credit",
+    "value": "816.29"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription contained several misalignments in the final rows (154-160) where debit/credit columns were swapped or mislabeled. After correcting these entries to match the source document, the arithmetic for every row and the final closing balance are consistent."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 154,
+    "field": "debit",
+    "value": "12,542.36"
+   },
+   {
+    "row": 154,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 155,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 155,
+    "field": "credit",
+    "value": "12,062.90"
+   },
+   {
+    "row": 156,
+    "field": "debit",
+    "value": "150.79"
+   },
+   {
+    "row": 156,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 157,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 157,
+    "field": "credit",
+    "value": "278,543.39"
+   },
+   {
+    "row": 158,
+    "field": "debit",
+    "value": "623,451.62"
+   },
+   {
+    "row": 158,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 159,
+    "field": "debit",
+    "value": "766,398.65"
+   },
+   {
+    "row": 159,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 160,
+    "field": "debit",
+    "value": "233.88"
+   },
+   {
+    "row": 160,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 161,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 161,
+    "field": "credit",
+    "value": "816.29"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription had misaligned the final rows (154-161) by shifting the debit/credit values and missing a row index. After correcting the column assignments and row mapping, the arithmetic is consistent."
+ }
+}

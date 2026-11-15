@@ -1,0 +1,26 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 159,
+    "field": "credit",
+    "value": "17,327.76"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is arithmetically consistent after correcting a transcription error in row 159 where the credit amount was omitted."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 159,
+    "field": "credit",
+    "value": "17,327.76"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is arithmetically consistent after correcting a transcription error in row 159 where the credit amount was omitted."
+ }
+}

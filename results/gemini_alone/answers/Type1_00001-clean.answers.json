@@ -1,0 +1,14 @@
+{
+ "one_pass": {
+  "corrections": [],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is mathematically consistent throughout, with every transaction correctly updating the balance and the final balance matching the closing balance."
+ },
+ "self_check": {
+  "corrections": [],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is mathematically consistent throughout, with every transaction correctly updating the balance and the final balance matching the closing balance."
+ }
+}

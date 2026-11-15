@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "probity"
+version = "0.2.0"
+description = "A cheap vision model reads scanned financial documents; a state machine with rules decides what is confirmed, what is re-read by a second model, and what is wrong with the document"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "CC-BY-NC-4.0"}
+authors = [{name = "Javier Mancilla Montero"}]
+maintainers = [{name = "SquareOne Labs"}]
+keywords = ["bank statements", "document extraction", "OCR", "reconciliation",
+            "verification", "provenance", "audit"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Intended Audience :: Financial and Insurance Industry",
+  "Topic :: Office/Business :: Financial :: Accounting",
+  "Topic :: Text Processing :: Markup",
+]
+dependencies = [
+  "pdfplumber>=0.11",
+  "pypdfium2>=4.30",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+ocr = ["pillow>=10.0", "numpy>=1.26"]
+benchmark = ["requests>=2.31", "pillow>=10.0", "numpy>=1.26", "pikepdf>=8.0"]
+dev = ["pytest>=7.4"]
+all = ["probity[ocr,benchmark,dev]"]
+
+[project.scripts]
+probity = "probity.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["probity*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+filterwarnings = ["ignore::DeprecationWarning"]

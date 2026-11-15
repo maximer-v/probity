@@ -1,0 +1,43 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 154,
+    "field": "credit",
+    "value": "5,365,328.90"
+   },
+   {
+    "row": 154,
+    "field": "balance",
+    "value": "4,969,328.58"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription correctly captured all transaction details except for row 154 (index), where the balance was misread as 4,969,328.58 instead of 4,969,328.58. After correcting this minor OCR error, all balances reconcile perfectly with the opening balance and subsequent transactions, leading to the correct closing balance of 2,795,377.37."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 154,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 154,
+    "field": "debit",
+    "value": "5,365,328.90"
+   },
+   {
+    "row": 154,
+    "field": "balance",
+    "value": "-396,000.32"
+   }
+  ],
+  "consistent": false,
+  "inconsistent_rows": [
+   154
+  ],
+  "reason": "Row 154 (index) has a transcription error where the debit and credit columns were swapped; the page shows a debit of 5,365,328.90 with a resulting balance of -396,000.32, but the transcription incorrectly lists it as a credit. This single row's arithmetic is broken in the printed document."
+ }
+}

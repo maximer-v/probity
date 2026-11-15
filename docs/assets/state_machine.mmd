@@ -1,0 +1,25 @@
+stateDiagram-v2
+    [*] --> INGEST
+    INGEST --> ERROR: no readable page
+    INGEST --> CLASSIFY: ingested
+    CLASSIFY --> EXTRACT: classified
+    EXTRACT --> ESCALATE_TIER: nothing extracted
+    EXTRACT --> HUMAN_REVIEW: nothing extracted, no tier left
+    EXTRACT --> GROUND: candidate reading produced
+    GROUND --> VERIFY: every value located or rejected
+    VERIFY --> ACCEPT: all invariants pass and policy met
+    VERIFY --> REPAIR: localized failure, repair budget left
+    VERIFY --> ESCALATE_TIER: failure, a better tier is available
+    VERIFY --> HUMAN_REVIEW: budget exhausted
+    REPAIR --> GROUND: candidate from the source
+    REPAIR --> ESCALATE_TIER: repair found nothing, tier available
+    REPAIR --> HUMAN_REVIEW: repair found nothing, no tier left
+    ESCALATE_TIER --> EXTRACT: next tier, failed region only
+    ESCALATE_TIER --> HUMAN_REVIEW: no tier left within budget
+    ACCEPT --> [*]
+    HUMAN_REVIEW --> [*]
+    ERROR --> [*]
+    note right of VERIFY
+        Only deterministic predicates decide here.
+        A model's own confidence is logged, never asked.
+    end note

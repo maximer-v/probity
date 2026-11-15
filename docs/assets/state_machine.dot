@@ -1,0 +1,30 @@
+digraph tieout {
+  rankdir=TB;
+  node [shape=box, fontname="Helvetica"];
+  INGEST [shape=box];
+  CLASSIFY [shape=box];
+  EXTRACT [shape=box];
+  GROUND [shape=box];
+  VERIFY [shape=box];
+  REPAIR [shape=box];
+  ESCALATE_TIER [shape=box];
+  ACCEPT [shape=doublecircle];
+  HUMAN_REVIEW [shape=doublecircle];
+  ERROR [shape=doublecircle];
+  INGEST -> ERROR [label="no readable page"];
+  INGEST -> CLASSIFY [label="ingested"];
+  CLASSIFY -> EXTRACT [label="classified"];
+  EXTRACT -> ESCALATE_TIER [label="nothing extracted"];
+  EXTRACT -> HUMAN_REVIEW [label="nothing extracted, no tier left"];
+  EXTRACT -> GROUND [label="candidate reading produced"];
+  GROUND -> VERIFY [label="every value located or rejected"];
+  VERIFY -> ACCEPT [label="all invariants pass and policy met"];
+  VERIFY -> REPAIR [label="localized failure, repair budget left"];
+  VERIFY -> ESCALATE_TIER [label="failure, a better tier is available"];
+  VERIFY -> HUMAN_REVIEW [label="budget exhausted"];
+  REPAIR -> GROUND [label="candidate from the source"];
+  REPAIR -> ESCALATE_TIER [label="repair found nothing, tier available"];
+  REPAIR -> HUMAN_REVIEW [label="repair found nothing, no tier left"];
+  ESCALATE_TIER -> EXTRACT [label="next tier, failed region only"];
+  ESCALATE_TIER -> HUMAN_REVIEW [label="no tier left within budget"];
+}

@@ -1,0 +1,3026 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 0,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 0,
+    "field": "credit",
+    "value": "Rs. 14,056.92"
+   },
+   {
+    "row": 0,
+    "field": "balance",
+    "value": "Rs. 328,382.53"
+   },
+   {
+    "row": 10,
+    "field": "debit",
+    "value": "Rs. 15,166.89"
+   },
+   {
+    "row": 10,
+    "field": "balance",
+    "value": "Rs. 107,213.48"
+   },
+   {
+    "row": 11,
+    "field": "credit",
+    "value": "Rs. 1,152,236.16"
+   },
+   {
+    "row": 11,
+    "field": "balance",
+    "value": "Rs. 1,259,449.64"
+   },
+   {
+    "row": 12,
+    "field": "debit",
+    "value": "Rs. 1,145,914.40"
+   },
+   {
+    "row": 12,
+    "field": "balance",
+    "value": "Rs. 113,535.24"
+   },
+   {
+    "row": 13,
+    "field": "debit",
+    "value": "Rs. 2,195.70"
+   },
+   {
+    "row": 13,
+    "field": "balance",
+    "value": "Rs. 111,339.54"
+   },
+   {
+    "row": 14,
+    "field": "credit",
+    "value": "Rs. 9,268.58"
+   },
+   {
+    "row": 14,
+    "field": "balance",
+    "value": "Rs. 120,608.12"
+   },
+   {
+    "row": 15,
+    "field": "credit",
+    "value": "Rs. 11,251.46"
+   },
+   {
+    "row": 15,
+    "field": "balance",
+    "value": "Rs. 131,859.58"
+   },
+   {
+    "row": 16,
+    "field": "debit",
+    "value": "Rs. 2,503.84"
+   },
+   {
+    "row": 16,
+    "field": "balance",
+    "value": "Rs. 129,355.74"
+   },
+   {
+    "row": 17,
+    "field": "debit",
+    "value": "Rs. 26,489.67"
+   },
+   {
+    "row": 17,
+    "field": "balance",
+    "value": "Rs. 102,866.07"
+   },
+   {
+    "row": 18,
+    "field": "credit",
+    "value": "Rs. 1,232.14"
+   },
+   {
+    "row": 18,
+    "field": "balance",
+    "value": "Rs. 104,098.21"
+   },
+   {
+    "row": 19,
+    "field": "credit",
+    "value": "Rs. 15,705.88"
+   },
+   {
+    "row": 19,
+    "field": "balance",
+    "value": "Rs. 119,804.09"
+   },
+   {
+    "row": 20,
+    "field": "debit",
+    "value": "Rs. 43,608.26"
+   },
+   {
+    "row": 20,
+    "field": "balance",
+    "value": "Rs. 76,195.83"
+   },
+   {
+    "row": 21,
+    "field": "credit",
+    "value": "Rs. 2,381.03"
+   },
+   {
+    "row": 21,
+    "field": "balance",
+    "value": "Rs. 78,576.86"
+   },
+   {
+    "row": 22,
+    "field": "credit",
+    "value": "Rs. 13,377.01"
+   },
+   {
+    "row": 22,
+    "field": "balance",
+    "value": "Rs. 91,953.87"
+   },
+   {
+    "row": 23,
+    "field": "credit",
+    "value": "Rs. 10,859.92"
+   },
+   {
+    "row": 23,
+    "field": "balance",
+    "value": "Rs. 102,813.79"
+   },
+   {
+    "row": 24,
+    "field": "credit",
+    "value": "Rs. 8,552.12"
+   },
+   {
+    "row": 24,
+    "field": "balance",
+    "value": "Rs. 111,365.91"
+   },
+   {
+    "row": 25,
+    "field": "credit",
+    "value": "Rs. 5,709.81"
+   },
+   {
+    "row": 25,
+    "field": "balance",
+    "value": "Rs. 117,075.72"
+   },
+   {
+    "row": 26,
+    "field": "credit",
+    "value": "Rs. 19,336.41"
+   },
+   {
+    "row": 26,
+    "field": "balance",
+    "value": "Rs. 136,412.13"
+   },
+   {
+    "row": 27,
+    "field": "credit",
+    "value": "Rs. 179,849.06"
+   },
+   {
+    "row": 27,
+    "field": "balance",
+    "value": "Rs. 316,261.19"
+   },
+   {
+    "row": 28,
+    "field": "credit",
+    "value": "Rs. 51,305.57"
+   },
+   {
+    "row": 28,
+    "field": "balance",
+    "value": "Rs. 367,566.76"
+   },
+   {
+    "row": 29,
+    "field": "debit",
+    "value": "Rs. 6,322.38"
+   },
+   {
+    "row": 29,
+    "field": "balance",
+    "value": "Rs. 361,244.38"
+   },
+   {
+    "row": 30,
+    "field": "credit",
+    "value": "Rs. 59,029.87"
+   },
+   {
+    "row": 30,
+    "field": "balance",
+    "value": "Rs. 420,274.25"
+   },
+   {
+    "row": 31,
+    "field": "credit",
+    "value": "Rs. 161,664.39"
+   },
+   {
+    "row": 31,
+    "field": "balance",
+    "value": "Rs. 581,938.64"
+   },
+   {
+    "row": 32,
+    "field": "credit",
+    "value": "Rs. 165,849.81"
+   },
+   {
+    "row": 32,
+    "field": "balance",
+    "value": "Rs. 747,788.45"
+   },
+   {
+    "row": 33,
+    "field": "credit",
+    "value": "Rs. 100,410.11"
+   },
+   {
+    "row": 33,
+    "field": "balance",
+    "value": "Rs. 848,198.56"
+   },
+   {
+    "row": 34,
+    "field": "debit",
+    "value": "Rs. 525,052.92"
+   },
+   {
+    "row": 34,
+    "field": "balance",
+    "value": "Rs. 323,145.64"
+   },
+   {
+    "row": 35,
+    "field": "debit",
+    "value": "Rs. 61,708.33"
+   },
+   {
+    "row": 35,
+    "field": "balance",
+    "value": "Rs. 261,437.31"
+   },
+   {
+    "row": 36,
+    "field": "debit",
+    "value": "Rs. 7,145.40"
+   },
+   {
+    "row": 36,
+    "field": "balance",
+    "value": "Rs. 254,291.91"
+   },
+   {
+    "row": 37,
+    "field": "credit",
+    "value": "Rs. 25,187.40"
+   },
+   {
+    "row": 37,
+    "field": "balance",
+    "value": "Rs. 279,479.31"
+   },
+   {
+    "row": 38,
+    "field": "credit",
+    "value": "Rs. 325,956.60"
+   },
+   {
+    "row": 38,
+    "field": "balance",
+    "value": "Rs. 605,435.91"
+   },
+   {
+    "row": 39,
+    "field": "credit",
+    "value": "Rs. 113,337.47"
+   },
+   {
+    "row": 39,
+    "field": "balance",
+    "value": "Rs. 718,773.38"
+   },
+   {
+    "row": 40,
+    "field": "debit",
+    "value": "Rs. 58,542.09"
+   },
+   {
+    "row": 40,
+    "field": "balance",
+    "value": "Rs. 660,231.29"
+   },
+   {
+    "row": 41,
+    "field": "debit",
+    "value": "Rs. 227,036.67"
+   },
+   {
+    "row": 41,
+    "field": "balance",
+    "value": "Rs. 433,194.62"
+   },
+   {
+    "row": 42,
+    "field": "debit",
+    "value": "Rs. 1,300.76"
+   },
+   {
+    "row": 42,
+    "field": "balance",
+    "value": "Rs. 431,893.86"
+   },
+   {
+    "row": 43,
+    "field": "credit",
+    "value": "Rs. 7,830.06"
+   },
+   {
+    "row": 43,
+    "field": "balance",
+    "value": "Rs. 439,723.92"
+   },
+   {
+    "row": 44,
+    "field": "credit",
+    "value": "Rs. 64,111.31"
+   },
+   {
+    "row": 44,
+    "field": "balance",
+    "value": "Rs. 503,835.23"
+   },
+   {
+    "row": 45,
+    "field": "debit",
+    "value": "Rs. 188,245.19"
+   },
+   {
+    "row": 45,
+    "field": "balance",
+    "value": "Rs. 315,590.04"
+   },
+   {
+    "row": 46,
+    "field": "debit",
+    "value": "Rs. 109,903.82"
+   },
+   {
+    "row": 46,
+    "field": "balance",
+    "value": "Rs. 205,686.22"
+   },
+   {
+    "row": 47,
+    "field": "debit",
+    "value": "Rs. 4,162.98"
+   },
+   {
+    "row": 47,
+    "field": "balance",
+    "value": "Rs. 201,523.24"
+   },
+   {
+    "row": 48,
+    "field": "debit",
+    "value": "Rs. 22,130.04"
+   },
+   {
+    "row": 48,
+    "field": "balance",
+    "value": "Rs. 179,393.20"
+   },
+   {
+    "row": 49,
+    "field": "credit",
+    "value": "Rs. 10,589.85"
+   },
+   {
+    "row": 49,
+    "field": "balance",
+    "value": "Rs. 189,983.05"
+   },
+   {
+    "row": 50,
+    "field": "debit",
+    "value": "Rs. 45,584.27"
+   },
+   {
+    "row": 50,
+    "field": "balance",
+    "value": "Rs. 144,398.78"
+   },
+   {
+    "row": 51,
+    "field": "debit",
+    "value": "Rs. 2,407.82"
+   },
+   {
+    "row": 51,
+    "field": "balance",
+    "value": "Rs. 141,990.96"
+   },
+   {
+    "row": 52,
+    "field": "credit",
+    "value": "Rs. 17,551.26"
+   },
+   {
+    "row": 52,
+    "field": "balance",
+    "value": "Rs. 159,542.22"
+   },
+   {
+    "row": 53,
+    "field": "credit",
+    "value": "Rs. 20,715.51"
+   },
+   {
+    "row": 53,
+    "field": "balance",
+    "value": "Rs. 180,257.73"
+   },
+   {
+    "row": 54,
+    "field": "credit",
+    "value": "Rs. 35,677.04"
+   },
+   {
+    "row": 54,
+    "field": "balance",
+    "value": "Rs. 215,934.77"
+   },
+   {
+    "row": 55,
+    "field": "credit",
+    "value": "Rs. 29,946.24"
+   },
+   {
+    "row": 55,
+    "field": "balance",
+    "value": "Rs. 245,881.01"
+   },
+   {
+    "row": 56,
+    "field": "debit",
+    "value": "Rs. 3,639.36"
+   },
+   {
+    "row": 56,
+    "field": "balance",
+    "value": "Rs. 242,241.65"
+   },
+   {
+    "row": 57,
+    "field": "debit",
+    "value": "Rs. 9,113.39"
+   },
+   {
+    "row": 57,
+    "field": "balance",
+    "value": "Rs. 233,128.26"
+   },
+   {
+    "row": 58,
+    "field": "credit",
+    "value": "Rs. 69,042.68"
+   },
+   {
+    "row": 58,
+    "field": "balance",
+    "value": "Rs. 302,170.94"
+   },
+   {
+    "row": 59,
+    "field": "credit",
+    "value": "Rs. 37,646.71"
+   },
+   {
+    "row": 59,
+    "field": "balance",
+    "value": "Rs. 339,817.65"
+   },
+   {
+    "row": 60,
+    "field": "debit",
+    "value": "Rs. 142,839.06"
+   },
+   {
+    "row": 60,
+    "field": "balance",
+    "value": "Rs. 196,978.59"
+   },
+   {
+    "row": 61,
+    "field": "credit",
+    "value": "Rs. 2,776.72"
+   },
+   {
+    "row": 61,
+    "field": "balance",
+    "value": "Rs. 199,755.31"
+   },
+   {
+    "row": 62,
+    "field": "credit",
+    "value": "Rs. 52,322.89"
+   },
+   {
+    "row": 62,
+    "field": "balance",
+    "value": "Rs. 252,078.20"
+   },
+   {
+    "row": 63,
+    "field": "credit",
+    "value": "Rs. 1,214,534.20"
+   },
+   {
+    "row": 63,
+    "field": "balance",
+    "value": "Rs. 1,466,612.40"
+   },
+   {
+    "row": 64,
+    "field": "debit",
+    "value": "Rs. 1,037,782.55"
+   },
+   {
+    "row": 64,
+    "field": "balance",
+    "value": "Rs. 428,829.85"
+   },
+   {
+    "row": 65,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 65,
+    "field": "balance",
+    "value": "Rs. 428,829.85"
+   },
+   {
+    "row": 66,
+    "field": "credit",
+    "value": "Rs. 78,674.18"
+   },
+   {
+    "row": 66,
+    "field": "balance",
+    "value": "Rs. 507,504.03"
+   },
+   {
+    "row": 67,
+    "field": "debit",
+    "value": "Rs. 39,655.71"
+   },
+   {
+    "row": 67,
+    "field": "balance",
+    "value": "Rs. 467,848.32"
+   },
+   {
+    "row": 68,
+    "field": "credit",
+    "value": "Rs. 81,496.90"
+   },
+   {
+    "row": 68,
+    "field": "balance",
+    "value": "Rs. 549,345.22"
+   },
+   {
+    "row": 69,
+    "field": "debit",
+    "value": "Rs. 50,699.15"
+   },
+   {
+    "row": 69,
+    "field": "balance",
+    "value": "Rs. 498,646.07"
+   },
+   {
+    "row": 70,
+    "field": "credit",
+    "value": "Rs. 1,037,009.01"
+   },
+   {
+    "row": 70,
+    "field": "balance",
+    "value": "Rs. 1,535,655.08"
+   },
+   {
+    "row": 71,
+    "field": "debit",
+    "value": "Rs. 1,077,870.91"
+   },
+   {
+    "row": 71,
+    "field": "balance",
+    "value": "Rs. 457,784.17"
+   },
+   {
+    "row": 72,
+    "field": "debit",
+    "value": "Rs. 60,811.89"
+   },
+   {
+    "row": 72,
+    "field": "balance",
+    "value": "Rs. 396,972.28"
+   },
+   {
+    "row": 73,
+    "field": "credit",
+    "value": "Rs. 2,776.76"
+   },
+   {
+    "row": 73,
+    "field": "balance",
+    "value": "Rs. 399,749.04"
+   },
+   {
+    "row": 74,
+    "field": "credit",
+    "value": "Rs. 157,241.09"
+   },
+   {
+    "row": 74,
+    "field": "balance",
+    "value": "Rs. 556,990.13"
+   },
+   {
+    "row": 75,
+    "field": "debit",
+    "value": "Rs. 23,279.74"
+   },
+   {
+    "row": 75,
+    "field": "balance",
+    "value": "Rs. 533,710.39"
+   },
+   {
+    "row": 76,
+    "field": "credit",
+    "value": "Rs. 87,464.49"
+   },
+   {
+    "row": 76,
+    "field": "balance",
+    "value": "Rs. 621,174.88"
+   },
+   {
+    "row": 77,
+    "field": "debit",
+    "value": "Rs. 15,127.88"
+   },
+   {
+    "row": 77,
+    "field": "balance",
+    "value": "Rs. 606,047.00"
+   },
+   {
+    "row": 78,
+    "field": "debit",
+    "value": "Rs. 12,843.20"
+   },
+   {
+    "row": 78,
+    "field": "balance",
+    "value": "Rs. 593,203.80"
+   },
+   {
+    "row": 79,
+    "field": "credit",
+    "value": "Rs. 15,135.21"
+   },
+   {
+    "row": 79,
+    "field": "balance",
+    "value": "Rs. 608,339.01"
+   },
+   {
+    "row": 80,
+    "field": "debit",
+    "value": "Rs. 35,303.67"
+   },
+   {
+    "row": 80,
+    "field": "balance",
+    "value": "Rs. 573,035.34"
+   },
+   {
+    "row": 81,
+    "field": "credit",
+    "value": "Rs. 95,723.85"
+   },
+   {
+    "row": 81,
+    "field": "balance",
+    "value": "Rs. 668,759.19"
+   },
+   {
+    "row": 82,
+    "field": "debit",
+    "value": "Rs. 3,370.92"
+   },
+   {
+    "row": 82,
+    "field": "balance",
+    "value": "Rs. 665,388.27"
+   },
+   {
+    "row": 83,
+    "field": "debit",
+    "value": "Rs. 15,386.11"
+   },
+   {
+    "row": 83,
+    "field": "balance",
+    "value": "Rs. 650,002.16"
+   },
+   {
+    "row": 84,
+    "field": "debit",
+    "value": "Rs. 6,141.71"
+   },
+   {
+    "row": 84,
+    "field": "balance",
+    "value": "Rs. 643,860.45"
+   },
+   {
+    "row": 85,
+    "field": "credit",
+    "value": "Rs. 90,711.09"
+   },
+   {
+    "row": 85,
+    "field": "balance",
+    "value": "Rs. 734,571.54"
+   },
+   {
+    "row": 86,
+    "field": "debit",
+    "value": "Rs. 73,148.28"
+   },
+   {
+    "row": 86,
+    "field": "balance",
+    "value": "Rs. 661,423.26"
+   },
+   {
+    "row": 87,
+    "field": "debit",
+    "value": "Rs. 47,349.77"
+   },
+   {
+    "row": 87,
+    "field": "balance",
+    "value": "Rs. 614,073.49"
+   },
+   {
+    "row": 88,
+    "field": "debit",
+    "value": "Rs. 25,933.09"
+   },
+   {
+    "row": 88,
+    "field": "balance",
+    "value": "Rs. 588,140.40"
+   },
+   {
+    "row": 89,
+    "field": "credit",
+    "value": "Rs. 113,266.58"
+   },
+   {
+    "row": 89,
+    "field": "balance",
+    "value": "Rs. 701,406.98"
+   },
+   {
+    "row": 90,
+    "field": "debit",
+    "value": "Rs. 20,074.10"
+   },
+   {
+    "row": 90,
+    "field": "balance",
+    "value": "Rs. 681,332.88"
+   },
+   {
+    "row": 91,
+    "field": "credit",
+    "value": "Rs. 1,163.68"
+   },
+   {
+    "row": 91,
+    "field": "balance",
+    "value": "Rs. 682,496.56"
+   },
+   {
+    "row": 92,
+    "field": "credit",
+    "value": "Rs. 125,621.24"
+   },
+   {
+    "row": 92,
+    "field": "balance",
+    "value": "Rs. 808,117.80"
+   },
+   {
+    "row": 93,
+    "field": "credit",
+    "value": "Rs. 294,085.41"
+   },
+   {
+    "row": 93,
+    "field": "balance",
+    "value": "Rs. 1,102,203.21"
+   },
+   {
+    "row": 94,
+    "field": "debit",
+    "value": "Rs. 68,820.12"
+   },
+   {
+    "row": 94,
+    "field": "balance",
+    "value": "Rs. 1,033,383.09"
+   },
+   {
+    "row": 95,
+    "field": "credit",
+    "value": "Rs. 16,510.46"
+   },
+   {
+    "row": 95,
+    "field": "balance",
+    "value": "Rs. 1,049,893.55"
+   },
+   {
+    "row": 96,
+    "field": "credit",
+    "value": "Rs. 769,207.54"
+   },
+   {
+    "row": 96,
+    "field": "balance",
+    "value": "Rs. 1,759,101.09"
+   },
+   {
+    "row": 97,
+    "field": "debit",
+    "value": "Rs. 216,124.65"
+   },
+   {
+    "row": 97,
+    "field": "balance",
+    "value": "Rs. 1,542,976.44"
+   },
+   {
+    "row": 98,
+    "field": "debit",
+    "value": "Rs. 285,200.71"
+   },
+   {
+    "row": 98,
+    "field": "balance",
+    "value": "Rs. 1,257,775.73"
+   },
+   {
+    "row": 99,
+    "field": "credit",
+    "value": "Rs. 155,786.43"
+   },
+   {
+    "row": 99,
+    "field": "balance",
+    "value": "Rs. 1,413,562.16"
+   },
+   {
+    "row": 100,
+    "field": "debit",
+    "value": "Rs. 159,470.06"
+   },
+   {
+    "row": 100,
+    "field": "balance",
+    "value": "Rs. 1,254,092.10"
+   },
+   {
+    "row": 101,
+    "field": "debit",
+    "value": "Rs. 17,114.26"
+   },
+   {
+    "row": 101,
+    "field": "balance",
+    "value": "Rs. 1,236,977.84"
+   },
+   {
+    "row": 102,
+    "field": "debit",
+    "value": "Rs. 10,944.39"
+   },
+   {
+    "row": 102,
+    "field": "balance",
+    "value": "Rs. 1,226,033.45"
+   },
+   {
+    "row": 103,
+    "field": "debit",
+    "value": "Rs. 6,555.43"
+   },
+   {
+    "row": 103,
+    "field": "balance",
+    "value": "Rs. 1,219,478.02"
+   },
+   {
+    "row": 104,
+    "field": "debit",
+    "value": "Rs. 29,815.49"
+   },
+   {
+    "row": 104,
+    "field": "balance",
+    "value": "Rs. 1,189,662.53"
+   },
+   {
+    "row": 105,
+    "field": "debit",
+    "value": "Rs. 70,354.58"
+   },
+   {
+    "row": 105,
+    "field": "balance",
+    "value": "Rs. 1,119,307.95"
+   },
+   {
+    "row": 106,
+    "field": "debit",
+    "value": "Rs. 76,934.92"
+   },
+   {
+    "row": 106,
+    "field": "balance",
+    "value": "Rs. 1,042,373.03"
+   },
+   {
+    "row": 107,
+    "field": "debit",
+    "value": "Rs. 14,930.34"
+   },
+   {
+    "row": 107,
+    "field": "balance",
+    "value": "Rs. 1,027,442.69"
+   },
+   {
+    "row": 108,
+    "field": "debit",
+    "value": "Rs. 5,331.71"
+   },
+   {
+    "row": 108,
+    "field": "balance",
+    "value": "Rs. 1,022,110.98"
+   },
+   {
+    "row": 109,
+    "field": "debit",
+    "value": "Rs. 146,327.96"
+   },
+   {
+    "row": 109,
+    "field": "balance",
+    "value": "Rs. 875,783.02"
+   },
+   {
+    "row": 110,
+    "field": "credit",
+    "value": "Rs. 287,350.47"
+   },
+   {
+    "row": 110,
+    "field": "balance",
+    "value": "Rs. 1,163,133.49"
+   },
+   {
+    "row": 111,
+    "field": "debit",
+    "value": "Rs. 272,764.71"
+   },
+   {
+    "row": 111,
+    "field": "balance",
+    "value": "Rs. 890,368.78"
+   },
+   {
+    "row": 112,
+    "field": "credit",
+    "value": "Rs. 9,496.44"
+   },
+   {
+    "row": 112,
+    "field": "balance",
+    "value": "Rs. 899,865.22"
+   },
+   {
+    "row": 113,
+    "field": "credit",
+    "value": "Rs. 349,426.47"
+   },
+   {
+    "row": 113,
+    "field": "balance",
+    "value": "Rs. 1,249,291.69"
+   },
+   {
+    "row": 114,
+    "field": "debit",
+    "value": "Rs. 34,007.97"
+   },
+   {
+    "row": 114,
+    "field": "balance",
+    "value": "Rs. 1,215,283.72"
+   },
+   {
+    "row": 115,
+    "field": "debit",
+    "value": "Rs. 379,785.96"
+   },
+   {
+    "row": 115,
+    "field": "balance",
+    "value": "Rs. 835,497.76"
+   },
+   {
+    "row": 116,
+    "field": "debit",
+    "value": "Rs. 34,879.36"
+   },
+   {
+    "row": 116,
+    "field": "balance",
+    "value": "Rs. 800,618.40"
+   },
+   {
+    "row": 117,
+    "field": "credit",
+    "value": "Rs. 59,283.48"
+   },
+   {
+    "row": 117,
+    "field": "balance",
+    "value": "Rs. 859,901.88"
+   },
+   {
+    "row": 118,
+    "field": "credit",
+    "value": "Rs. 33,621.07"
+   },
+   {
+    "row": 118,
+    "field": "balance",
+    "value": "Rs. 893,522.95"
+   },
+   {
+    "row": 119,
+    "field": "debit",
+    "value": "Rs. 200,016.37"
+   },
+   {
+    "row": 119,
+    "field": "balance",
+    "value": "Rs. 693,506.58"
+   },
+   {
+    "row": 120,
+    "field": "credit",
+    "value": "Rs. 17,508.70"
+   },
+   {
+    "row": 120,
+    "field": "balance",
+    "value": "Rs. 711,015.28"
+   },
+   {
+    "row": 121,
+    "field": "credit",
+    "value": "Rs. 15,446.93"
+   },
+   {
+    "row": 121,
+    "field": "balance",
+    "value": "Rs. 726,462.21"
+   },
+   {
+    "row": 122,
+    "field": "credit",
+    "value": "Rs. 33,106.20"
+   },
+   {
+    "row": 122,
+    "field": "balance",
+    "value": "Rs. 759,568.41"
+   },
+   {
+    "row": 123,
+    "field": "credit",
+    "value": "Rs. 277,286.03"
+   },
+   {
+    "row": 123,
+    "field": "balance",
+    "value": "Rs. 1,036,854.44"
+   },
+   {
+    "row": 124,
+    "field": "credit",
+    "value": "Rs. 220,418.79"
+   },
+   {
+    "row": 124,
+    "field": "balance",
+    "value": "Rs. 1,257,273.23"
+   },
+   {
+    "row": 125,
+    "field": "debit",
+    "value": "Rs. 259,107.89"
+   },
+   {
+    "row": 125,
+    "field": "balance",
+    "value": "Rs. 998,165.34"
+   },
+   {
+    "row": 126,
+    "field": "debit",
+    "value": "Rs. 49,152.77"
+   },
+   {
+    "row": 126,
+    "field": "balance",
+    "value": "Rs. 949,012.57"
+   },
+   {
+    "row": 127,
+    "field": "debit",
+    "value": "Rs. 72,142.91"
+   },
+   {
+    "row": 127,
+    "field": "balance",
+    "value": "Rs. 876,869.66"
+   },
+   {
+    "row": 128,
+    "field": "credit",
+    "value": "Rs. 49,798.86"
+   },
+   {
+    "row": 128,
+    "field": "balance",
+    "value": "Rs. 926,668.52"
+   },
+   {
+    "row": 129,
+    "field": "credit",
+    "value": "Rs. 48,535.52"
+   },
+   {
+    "row": 129,
+    "field": "balance",
+    "value": "Rs. 975,204.04"
+   },
+   {
+    "row": 130,
+    "field": "debit",
+    "value": "Rs. 25,255.88"
+   },
+   {
+    "row": 130,
+    "field": "balance",
+    "value": "Rs. 949,948.16"
+   },
+   {
+    "row": 131,
+    "field": "debit",
+    "value": "Rs. 287,596.59"
+   },
+   {
+    "row": 131,
+    "field": "balance",
+    "value": "Rs. 662,351.57"
+   },
+   {
+    "row": 132,
+    "field": "credit",
+    "value": "Rs. 110,285.04"
+   },
+   {
+    "row": 132,
+    "field": "balance",
+    "value": "Rs. 772,636.61"
+   },
+   {
+    "row": 133,
+    "field": "debit",
+    "value": "Rs. 181,805.25"
+   },
+   {
+    "row": 133,
+    "field": "balance",
+    "value": "Rs. 590,831.36"
+   },
+   {
+    "row": 134,
+    "field": "debit",
+    "value": "Rs. 55,936.16"
+   },
+   {
+    "row": 134,
+    "field": "balance",
+    "value": "Rs. 534,895.20"
+   },
+   {
+    "row": 135,
+    "field": "credit",
+    "value": "Rs. 1,153.04"
+   },
+   {
+    "row": 135,
+    "field": "balance",
+    "value": "Rs. 536,048.24"
+   },
+   {
+    "row": 136,
+    "field": "credit",
+    "value": "Rs. 21,781.74"
+   },
+   {
+    "row": 136,
+    "field": "balance",
+    "value": "Rs. 557,829.98"
+   },
+   {
+    "row": 137,
+    "field": "credit",
+    "value": "Rs. 88,432.23"
+   },
+   {
+    "row": 137,
+    "field": "balance",
+    "value": "Rs. 646,262.21"
+   },
+   {
+    "row": 138,
+    "field": "credit",
+    "value": "Rs. 926,272.02"
+   },
+   {
+    "row": 138,
+    "field": "balance",
+    "value": "Rs. 1,572,534.23"
+   },
+   {
+    "row": 139,
+    "field": "debit",
+    "value": "Rs. 41,443.36"
+   },
+   {
+    "row": 139,
+    "field": "balance",
+    "value": "Rs. 1,531,090.87"
+   },
+   {
+    "row": 140,
+    "field": "debit",
+    "value": "Rs. 79,086.91"
+   },
+   {
+    "row": 140,
+    "field": "balance",
+    "value": "Rs. 1,452,003.96"
+   },
+   {
+    "row": 141,
+    "field": "credit",
+    "value": "Rs. 781,369.26"
+   },
+   {
+    "row": 141,
+    "field": "balance",
+    "value": "Rs. 2,233,373.22"
+   },
+   {
+    "row": 142,
+    "field": "credit",
+    "value": "Rs. 113,011.94"
+   },
+   {
+    "row": 142,
+    "field": "balance",
+    "value": "Rs. 2,346,385.16"
+   },
+   {
+    "row": 143,
+    "field": "debit",
+    "value": "Rs. 34,535.29"
+   },
+   {
+    "row": 143,
+    "field": "balance",
+    "value": "Rs. 2,311,849.87"
+   },
+   {
+    "row": 144,
+    "field": "credit",
+    "value": "Rs. 143,781.69"
+   },
+   {
+    "row": 144,
+    "field": "balance",
+    "value": "Rs. 2,455,631.56"
+   },
+   {
+    "row": 145,
+    "field": "debit",
+    "value": "Rs. 17,635.52"
+   },
+   {
+    "row": 145,
+    "field": "balance",
+    "value": "Rs. 2,437,996.04"
+   },
+   {
+    "row": 146,
+    "field": "debit",
+    "value": "Rs. 749,390.54"
+   },
+   {
+    "row": 146,
+    "field": "balance",
+    "value": "Rs. 1,688,605.50"
+   },
+   {
+    "row": 147,
+    "field": "debit",
+    "value": "Rs. 483,141.02"
+   },
+   {
+    "row": 147,
+    "field": "balance",
+    "value": "Rs. 1,205,464.48"
+   },
+   {
+    "row": 148,
+    "field": "credit",
+    "value": "Rs. 48,634.18"
+   },
+   {
+    "row": 148,
+    "field": "balance",
+    "value": "Rs. 1,254,098.66"
+   },
+   {
+    "row": 149,
+    "field": "debit",
+    "value": "Rs. 355,294.04"
+   },
+   {
+    "row": 149,
+    "field": "balance",
+    "value": "Rs. 898,804.62"
+   },
+   {
+    "row": 150,
+    "field": "debit",
+    "value": "Rs. 62,688.54"
+   },
+   {
+    "row": 150,
+    "field": "balance",
+    "value": "Rs. 836,116.08"
+   },
+   {
+    "row": 151,
+    "field": "credit",
+    "value": "Rs. 468,659.76"
+   },
+   {
+    "row": 151,
+    "field": "balance",
+    "value": "Rs. 1,304,775.84"
+   },
+   {
+    "row": 152,
+    "field": "debit",
+    "value": "Rs. 145,297.84"
+   },
+   {
+    "row": 152,
+    "field": "balance",
+    "value": "Rs. 1,159,478.00"
+   },
+   {
+    "row": 153,
+    "field": "credit",
+    "value": "Rs. 204,543.83"
+   },
+   {
+    "row": 153,
+    "field": "balance",
+    "value": "Rs. 1,364,021.83"
+   },
+   {
+    "row": 154,
+    "field": "credit",
+    "value": "Rs. 88,520.44"
+   },
+   {
+    "row": 154,
+    "field": "balance",
+    "value": "Rs. 1,452,542.27"
+   },
+   {
+    "row": 155,
+    "field": "debit",
+    "value": "Rs. 198,457.88"
+   },
+   {
+    "row": 155,
+    "field": "balance",
+    "value": "Rs. 1,254,084.39"
+   },
+   {
+    "row": 156,
+    "field": "credit",
+    "value": "Rs. 201,494.03"
+   },
+   {
+    "row": 156,
+    "field": "balance",
+    "value": "Rs. 1,455,578.42"
+   },
+   {
+    "row": 157,
+    "field": "credit",
+    "value": "Rs. 80,408.40"
+   },
+   {
+    "row": 157,
+    "field": "balance",
+    "value": "Rs. 1,535,986.82"
+   },
+   {
+    "row": 158,
+    "field": "debit",
+    "value": "Rs. 273,918.25"
+   },
+   {
+    "row": 158,
+    "field": "balance",
+    "value": "Rs. 1,262,068.57"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription contained numerous errors where debits and credits were swapped or placed in the wrong columns. After correcting these transcription errors to match the printed values on the statement pages, the arithmetic for every row is correct, and the closing balance agrees with the opening balance plus all movements."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 0,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 0,
+    "field": "credit",
+    "value": "Rs. 14,056.92"
+   },
+   {
+    "row": 0,
+    "field": "balance",
+    "value": "Rs. 328,382.53"
+   },
+   {
+    "row": 10,
+    "field": "debit",
+    "value": "Rs. 15,166.89"
+   },
+   {
+    "row": 10,
+    "field": "balance",
+    "value": "Rs. 107,213.48"
+   },
+   {
+    "row": 11,
+    "field": "credit",
+    "value": "Rs. 1,152,236.16"
+   },
+   {
+    "row": 11,
+    "field": "balance",
+    "value": "Rs. 1,259,449.64"
+   },
+   {
+    "row": 12,
+    "field": "debit",
+    "value": "Rs. 1,145,914.40"
+   },
+   {
+    "row": 12,
+    "field": "balance",
+    "value": "Rs. 113,535.24"
+   },
+   {
+    "row": 13,
+    "field": "debit",
+    "value": "Rs. 2,195.70"
+   },
+   {
+    "row": 13,
+    "field": "balance",
+    "value": "Rs. 111,339.54"
+   },
+   {
+    "row": 14,
+    "field": "credit",
+    "value": "Rs. 9,268.58"
+   },
+   {
+    "row": 14,
+    "field": "balance",
+    "value": "Rs. 120,608.12"
+   },
+   {
+    "row": 15,
+    "field": "credit",
+    "value": "Rs. 11,251.46"
+   },
+   {
+    "row": 15,
+    "field": "balance",
+    "value": "Rs. 131,859.58"
+   },
+   {
+    "row": 16,
+    "field": "debit",
+    "value": "Rs. 2,503.84"
+   },
+   {
+    "row": 16,
+    "field": "balance",
+    "value": "Rs. 129,355.74"
+   },
+   {
+    "row": 17,
+    "field": "debit",
+    "value": "Rs. 26,489.67"
+   },
+   {
+    "row": 17,
+    "field": "balance",
+    "value": "Rs. 102,866.07"
+   },
+   {
+    "row": 18,
+    "field": "credit",
+    "value": "Rs. 1,232.14"
+   },
+   {
+    "row": 18,
+    "field": "balance",
+    "value": "Rs. 104,098.21"
+   },
+   {
+    "row": 19,
+    "field": "credit",
+    "value": "Rs. 15,705.88"
+   },
+   {
+    "row": 19,
+    "field": "balance",
+    "value": "Rs. 119,804.09"
+   },
+   {
+    "row": 20,
+    "field": "debit",
+    "value": "Rs. 43,608.26"
+   },
+   {
+    "row": 20,
+    "field": "balance",
+    "value": "Rs. 76,195.83"
+   },
+   {
+    "row": 21,
+    "field": "credit",
+    "value": "Rs. 2,381.03"
+   },
+   {
+    "row": 21,
+    "field": "balance",
+    "value": "Rs. 78,576.86"
+   },
+   {
+    "row": 22,
+    "field": "credit",
+    "value": "Rs. 13,377.01"
+   },
+   {
+    "row": 22,
+    "field": "balance",
+    "value": "Rs. 91,953.87"
+   },
+   {
+    "row": 23,
+    "field": "credit",
+    "value": "Rs. 10,859.92"
+   },
+   {
+    "row": 23,
+    "field": "balance",
+    "value": "Rs. 102,813.79"
+   },
+   {
+    "row": 24,
+    "field": "credit",
+    "value": "Rs. 8,552.12"
+   },
+   {
+    "row": 24,
+    "field": "balance",
+    "value": "Rs. 111,365.91"
+   },
+   {
+    "row": 25,
+    "field": "credit",
+    "value": "Rs. 5,709.81"
+   },
+   {
+    "row": 25,
+    "field": "balance",
+    "value": "Rs. 117,075.72"
+   },
+   {
+    "row": 26,
+    "field": "credit",
+    "value": "Rs. 19,336.41"
+   },
+   {
+    "row": 26,
+    "field": "balance",
+    "value": "Rs. 136,412.13"
+   },
+   {
+    "row": 27,
+    "field": "credit",
+    "value": "Rs. 179,849.06"
+   },
+   {
+    "row": 27,
+    "field": "balance",
+    "value": "Rs. 316,261.19"
+   },
+   {
+    "row": 28,
+    "field": "credit",
+    "value": "Rs. 51,305.57"
+   },
+   {
+    "row": 28,
+    "field": "balance",
+    "value": "Rs. 367,566.76"
+   },
+   {
+    "row": 29,
+    "field": "debit",
+    "value": "Rs. 6,322.38"
+   },
+   {
+    "row": 29,
+    "field": "balance",
+    "value": "Rs. 361,244.38"
+   },
+   {
+    "row": 30,
+    "field": "credit",
+    "value": "Rs. 59,029.87"
+   },
+   {
+    "row": 30,
+    "field": "balance",
+    "value": "Rs. 420,274.25"
+   },
+   {
+    "row": 31,
+    "field": "credit",
+    "value": "Rs. 161,664.39"
+   },
+   {
+    "row": 31,
+    "field": "balance",
+    "value": "Rs. 581,938.64"
+   },
+   {
+    "row": 32,
+    "field": "credit",
+    "value": "Rs. 165,849.81"
+   },
+   {
+    "row": 32,
+    "field": "balance",
+    "value": "Rs. 747,788.45"
+   },
+   {
+    "row": 33,
+    "field": "credit",
+    "value": "Rs. 100,410.11"
+   },
+   {
+    "row": 33,
+    "field": "balance",
+    "value": "Rs. 848,198.56"
+   },
+   {
+    "row": 34,
+    "field": "debit",
+    "value": "Rs. 525,052.92"
+   },
+   {
+    "row": 34,
+    "field": "balance",
+    "value": "Rs. 323,145.64"
+   },
+   {
+    "row": 35,
+    "field": "debit",
+    "value": "Rs. 61,708.33"
+   },
+   {
+    "row": 35,
+    "field": "balance",
+    "value": "Rs. 261,437.31"
+   },
+   {
+    "row": 36,
+    "field": "debit",
+    "value": "Rs. 7,145.40"
+   },
+   {
+    "row": 36,
+    "field": "balance",
+    "value": "Rs. 254,291.91"
+   },
+   {
+    "row": 37,
+    "field": "credit",
+    "value": "Rs. 25,187.40"
+   },
+   {
+    "row": 37,
+    "field": "balance",
+    "value": "Rs. 279,479.31"
+   },
+   {
+    "row": 38,
+    "field": "credit",
+    "value": "Rs. 325,956.60"
+   },
+   {
+    "row": 38,
+    "field": "balance",
+    "value": "Rs. 605,435.91"
+   },
+   {
+    "row": 39,
+    "field": "credit",
+    "value": "Rs. 113,337.47"
+   },
+   {
+    "row": 39,
+    "field": "balance",
+    "value": "Rs. 718,773.38"
+   },
+   {
+    "row": 40,
+    "field": "debit",
+    "value": "Rs. 58,542.09"
+   },
+   {
+    "row": 40,
+    "field": "balance",
+    "value": "Rs. 660,231.29"
+   },
+   {
+    "row": 41,
+    "field": "debit",
+    "value": "Rs. 227,036.67"
+   },
+   {
+    "row": 41,
+    "field": "balance",
+    "value": "Rs. 433,194.62"
+   },
+   {
+    "row": 42,
+    "field": "debit",
+    "value": "Rs. 1,300.76"
+   },
+   {
+    "row": 42,
+    "field": "balance",
+    "value": "Rs. 431,893.86"
+   },
+   {
+    "row": 43,
+    "field": "credit",
+    "value": "Rs. 7,830.06"
+   },
+   {
+    "row": 43,
+    "field": "balance",
+    "value": "Rs. 439,723.92"
+   },
+   {
+    "row": 44,
+    "field": "credit",
+    "value": "Rs. 64,111.31"
+   },
+   {
+    "row": 44,
+    "field": "balance",
+    "value": "Rs. 503,835.23"
+   },
+   {
+    "row": 45,
+    "field": "debit",
+    "value": "Rs. 188,245.19"
+   },
+   {
+    "row": 45,
+    "field": "balance",
+    "value": "Rs. 315,590.04"
+   },
+   {
+    "row": 46,
+    "field": "debit",
+    "value": "Rs. 109,903.82"
+   },
+   {
+    "row": 46,
+    "field": "balance",
+    "value": "Rs. 205,686.22"
+   },
+   {
+    "row": 47,
+    "field": "debit",
+    "value": "Rs. 4,162.98"
+   },
+   {
+    "row": 47,
+    "field": "balance",
+    "value": "Rs. 201,523.24"
+   },
+   {
+    "row": 48,
+    "field": "debit",
+    "value": "Rs. 22,130.04"
+   },
+   {
+    "row": 48,
+    "field": "balance",
+    "value": "Rs. 179,393.20"
+   },
+   {
+    "row": 49,
+    "field": "credit",
+    "value": "Rs. 10,589.85"
+   },
+   {
+    "row": 49,
+    "field": "balance",
+    "value": "Rs. 189,983.05"
+   },
+   {
+    "row": 50,
+    "field": "debit",
+    "value": "Rs. 45,584.27"
+   },
+   {
+    "row": 50,
+    "field": "balance",
+    "value": "Rs. 144,398.78"
+   },
+   {
+    "row": 51,
+    "field": "debit",
+    "value": "Rs. 2,407.82"
+   },
+   {
+    "row": 51,
+    "field": "balance",
+    "value": "Rs. 141,990.96"
+   },
+   {
+    "row": 52,
+    "field": "credit",
+    "value": "Rs. 17,551.26"
+   },
+   {
+    "row": 52,
+    "field": "balance",
+    "value": "Rs. 159,542.22"
+   },
+   {
+    "row": 53,
+    "field": "credit",
+    "value": "Rs. 20,715.51"
+   },
+   {
+    "row": 53,
+    "field": "balance",
+    "value": "Rs. 180,257.73"
+   },
+   {
+    "row": 54,
+    "field": "credit",
+    "value": "Rs. 35,677.04"
+   },
+   {
+    "row": 54,
+    "field": "balance",
+    "value": "Rs. 215,934.77"
+   },
+   {
+    "row": 55,
+    "field": "credit",
+    "value": "Rs. 29,946.24"
+   },
+   {
+    "row": 55,
+    "field": "balance",
+    "value": "Rs. 245,881.01"
+   },
+   {
+    "row": 56,
+    "field": "debit",
+    "value": "Rs. 3,639.36"
+   },
+   {
+    "row": 56,
+    "field": "balance",
+    "value": "Rs. 242,241.65"
+   },
+   {
+    "row": 57,
+    "field": "debit",
+    "value": "Rs. 9,113.39"
+   },
+   {
+    "row": 57,
+    "field": "balance",
+    "value": "Rs. 233,128.26"
+   },
+   {
+    "row": 58,
+    "field": "credit",
+    "value": "Rs. 69,042.68"
+   },
+   {
+    "row": 58,
+    "field": "balance",
+    "value": "Rs. 302,170.94"
+   },
+   {
+    "row": 59,
+    "field": "credit",
+    "value": "Rs. 37,646.71"
+   },
+   {
+    "row": 59,
+    "field": "balance",
+    "value": "Rs. 339,817.65"
+   },
+   {
+    "row": 60,
+    "field": "debit",
+    "value": "Rs. 142,839.06"
+   },
+   {
+    "row": 60,
+    "field": "balance",
+    "value": "Rs. 196,978.59"
+   },
+   {
+    "row": 61,
+    "field": "credit",
+    "value": "Rs. 2,776.72"
+   },
+   {
+    "row": 61,
+    "field": "balance",
+    "value": "Rs. 199,755.31"
+   },
+   {
+    "row": 62,
+    "field": "credit",
+    "value": "Rs. 52,322.89"
+   },
+   {
+    "row": 62,
+    "field": "balance",
+    "value": "Rs. 252,078.20"
+   },
+   {
+    "row": 63,
+    "field": "credit",
+    "value": "Rs. 1,214,534.20"
+   },
+   {
+    "row": 63,
+    "field": "balance",
+    "value": "Rs. 1,466,612.40"
+   },
+   {
+    "row": 64,
+    "field": "debit",
+    "value": "Rs. 1,037,782.55"
+   },
+   {
+    "row": 64,
+    "field": "balance",
+    "value": "Rs. 428,829.85"
+   },
+   {
+    "row": 65,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 65,
+    "field": "balance",
+    "value": "Rs. 428,829.85"
+   },
+   {
+    "row": 66,
+    "field": "credit",
+    "value": "Rs. 78,674.18"
+   },
+   {
+    "row": 66,
+    "field": "balance",
+    "value": "Rs. 507,504.03"
+   },
+   {
+    "row": 67,
+    "field": "debit",
+    "value": "Rs. 39,655.71"
+   },
+   {
+    "row": 67,
+    "field": "balance",
+    "value": "Rs. 467,848.32"
+   },
+   {
+    "row": 68,
+    "field": "credit",
+    "value": "Rs. 81,496.90"
+   },
+   {
+    "row": 68,
+    "field": "balance",
+    "value": "Rs. 549,345.22"
+   },
+   {
+    "row": 69,
+    "field": "debit",
+    "value": "Rs. 50,699.15"
+   },
+   {
+    "row": 69,
+    "field": "balance",
+    "value": "Rs. 498,646.07"
+   },
+   {
+    "row": 70,
+    "field": "credit",
+    "value": "Rs. 1,037,009.01"
+   },
+   {
+    "row": 70,
+    "field": "balance",
+    "value": "Rs. 1,535,655.08"
+   },
+   {
+    "row": 71,
+    "field": "debit",
+    "value": "Rs. 1,077,870.91"
+   },
+   {
+    "row": 71,
+    "field": "balance",
+    "value": "Rs. 457,784.17"
+   },
+   {
+    "row": 72,
+    "field": "debit",
+    "value": "Rs. 60,811.89"
+   },
+   {
+    "row": 72,
+    "field": "balance",
+    "value": "Rs. 396,972.28"
+   },
+   {
+    "row": 73,
+    "field": "credit",
+    "value": "Rs. 2,776.76"
+   },
+   {
+    "row": 73,
+    "field": "balance",
+    "value": "Rs. 399,749.04"
+   },
+   {
+    "row": 74,
+    "field": "credit",
+    "value": "Rs. 157,241.09"
+   },
+   {
+    "row": 74,
+    "field": "balance",
+    "value": "Rs. 556,990.13"
+   },
+   {
+    "row": 75,
+    "field": "debit",
+    "value": "Rs. 23,279.74"
+   },
+   {
+    "row": 75,
+    "field": "balance",
+    "value": "Rs. 533,710.39"
+   },
+   {
+    "row": 76,
+    "field": "credit",
+    "value": "Rs. 87,464.49"
+   },
+   {
+    "row": 76,
+    "field": "balance",
+    "value": "Rs. 621,174.88"
+   },
+   {
+    "row": 77,
+    "field": "debit",
+    "value": "Rs. 15,127.88"
+   },
+   {
+    "row": 77,
+    "field": "balance",
+    "value": "Rs. 606,047.00"
+   },
+   {
+    "row": 78,
+    "field": "debit",
+    "value": "Rs. 12,843.20"
+   },
+   {
+    "row": 78,
+    "field": "balance",
+    "value": "Rs. 593,203.80"
+   },
+   {
+    "row": 79,
+    "field": "credit",
+    "value": "Rs. 15,135.21"
+   },
+   {
+    "row": 79,
+    "field": "balance",
+    "value": "Rs. 608,339.01"
+   },
+   {
+    "row": 80,
+    "field": "debit",
+    "value": "Rs. 35,303.67"
+   },
+   {
+    "row": 80,
+    "field": "balance",
+    "value": "Rs. 573,035.34"
+   },
+   {
+    "row": 81,
+    "field": "credit",
+    "value": "Rs. 95,723.85"
+   },
+   {
+    "row": 81,
+    "field": "balance",
+    "value": "Rs. 668,759.19"
+   },
+   {
+    "row": 82,
+    "field": "debit",
+    "value": "Rs. 3,370.92"
+   },
+   {
+    "row": 82,
+    "field": "balance",
+    "value": "Rs. 665,388.27"
+   },
+   {
+    "row": 83,
+    "field": "debit",
+    "value": "Rs. 15,386.11"
+   },
+   {
+    "row": 83,
+    "field": "balance",
+    "value": "Rs. 650,002.16"
+   },
+   {
+    "row": 84,
+    "field": "debit",
+    "value": "Rs. 6,141.71"
+   },
+   {
+    "row": 84,
+    "field": "balance",
+    "value": "Rs. 643,860.45"
+   },
+   {
+    "row": 85,
+    "field": "credit",
+    "value": "Rs. 90,711.09"
+   },
+   {
+    "row": 85,
+    "field": "balance",
+    "value": "Rs. 734,571.54"
+   },
+   {
+    "row": 86,
+    "field": "debit",
+    "value": "Rs. 73,148.28"
+   },
+   {
+    "row": 86,
+    "field": "balance",
+    "value": "Rs. 661,423.26"
+   },
+   {
+    "row": 87,
+    "field": "debit",
+    "value": "Rs. 47,349.77"
+   },
+   {
+    "row": 87,
+    "field": "balance",
+    "value": "Rs. 614,073.49"
+   },
+   {
+    "row": 88,
+    "field": "debit",
+    "value": "Rs. 25,933.09"
+   },
+   {
+    "row": 88,
+    "field": "balance",
+    "value": "Rs. 588,140.40"
+   },
+   {
+    "row": 89,
+    "field": "credit",
+    "value": "Rs. 113,266.58"
+   },
+   {
+    "row": 89,
+    "field": "balance",
+    "value": "Rs. 701,406.98"
+   },
+   {
+    "row": 90,
+    "field": "debit",
+    "value": "Rs. 20,074.10"
+   },
+   {
+    "row": 90,
+    "field": "balance",
+    "value": "Rs. 681,332.88"
+   },
+   {
+    "row": 91,
+    "field": "credit",
+    "value": "Rs. 1,163.68"
+   },
+   {
+    "row": 91,
+    "field": "balance",
+    "value": "Rs. 682,496.56"
+   },
+   {
+    "row": 92,
+    "field": "credit",
+    "value": "Rs. 125,621.24"
+   },
+   {
+    "row": 92,
+    "field": "balance",
+    "value": "Rs. 808,117.80"
+   },
+   {
+    "row": 93,
+    "field": "credit",
+    "value": "Rs. 294,085.41"
+   },
+   {
+    "row": 93,
+    "field": "balance",
+    "value": "Rs. 1,102,203.21"
+   },
+   {
+    "row": 94,
+    "field": "debit",
+    "value": "Rs. 68,820.12"
+   },
+   {
+    "row": 94,
+    "field": "balance",
+    "value": "Rs. 1,033,383.09"
+   },
+   {
+    "row": 95,
+    "field": "credit",
+    "value": "Rs. 16,510.46"
+   },
+   {
+    "row": 95,
+    "field": "balance",
+    "value": "Rs. 1,049,893.55"
+   },
+   {
+    "row": 96,
+    "field": "credit",
+    "value": "Rs. 769,207.54"
+   },
+   {
+    "row": 96,
+    "field": "balance",
+    "value": "Rs. 1,759,101.09"
+   },
+   {
+    "row": 97,
+    "field": "debit",
+    "value": "Rs. 216,124.65"
+   },
+   {
+    "row": 97,
+    "field": "balance",
+    "value": "Rs. 1,542,976.44"
+   },
+   {
+    "row": 98,
+    "field": "debit",
+    "value": "Rs. 285,200.71"
+   },
+   {
+    "row": 98,
+    "field": "balance",
+    "value": "Rs. 1,257,775.73"
+   },
+   {
+    "row": 99,
+    "field": "credit",
+    "value": "Rs. 155,786.43"
+   },
+   {
+    "row": 99,
+    "field": "balance",
+    "value": "Rs. 1,413,562.16"
+   },
+   {
+    "row": 100,
+    "field": "debit",
+    "value": "Rs. 159,470.06"
+   },
+   {
+    "row": 100,
+    "field": "balance",
+    "value": "Rs. 1,254,092.10"
+   },
+   {
+    "row": 101,
+    "field": "debit",
+    "value": "Rs. 17,114.26"
+   },
+   {
+    "row": 101,
+    "field": "balance",
+    "value": "Rs. 1,236,977.84"
+   },
+   {
+    "row": 102,
+    "field": "debit",
+    "value": "Rs. 10,944.39"
+   },
+   {
+    "row": 102,
+    "field": "balance",
+    "value": "Rs. 1,226,033.45"
+   },
+   {
+    "row": 103,
+    "field": "debit",
+    "value": "Rs. 6,555.43"
+   },
+   {
+    "row": 103,
+    "field": "balance",
+    "value": "Rs. 1,219,478.02"
+   },
+   {
+    "row": 104,
+    "field": "debit",
+    "value": "Rs. 29,815.49"
+   },
+   {
+    "row": 104,
+    "field": "balance",
+    "value": "Rs. 1,189,662.53"
+   },
+   {
+    "row": 105,
+    "field": "debit",
+    "value": "Rs. 70,354.58"
+   },
+   {
+    "row": 105,
+    "field": "balance",
+    "value": "Rs. 1,119,307.95"
+   },
+   {
+    "row": 106,
+    "field": "debit",
+    "value": "Rs. 76,934.92"
+   },
+   {
+    "row": 106,
+    "field": "balance",
+    "value": "Rs. 1,042,373.03"
+   },
+   {
+    "row": 107,
+    "field": "debit",
+    "value": "Rs. 14,930.34"
+   },
+   {
+    "row": 107,
+    "field": "balance",
+    "value": "Rs. 1,027,442.69"
+   },
+   {
+    "row": 108,
+    "field": "debit",
+    "value": "Rs. 5,331.71"
+   },
+   {
+    "row": 108,
+    "field": "balance",
+    "value": "Rs. 1,022,110.98"
+   },
+   {
+    "row": 109,
+    "field": "debit",
+    "value": "Rs. 146,327.96"
+   },
+   {
+    "row": 109,
+    "field": "balance",
+    "value": "Rs. 875,783.02"
+   },
+   {
+    "row": 110,
+    "field": "credit",
+    "value": "Rs. 287,350.47"
+   },
+   {
+    "row": 110,
+    "field": "balance",
+    "value": "Rs. 1,163,133.49"
+   },
+   {
+    "row": 111,
+    "field": "debit",
+    "value": "Rs. 272,764.71"
+   },
+   {
+    "row": 111,
+    "field": "balance",
+    "value": "Rs. 890,368.78"
+   },
+   {
+    "row": 112,
+    "field": "credit",
+    "value": "Rs. 9,496.44"
+   },
+   {
+    "row": 112,
+    "field": "balance",
+    "value": "Rs. 899,865.22"
+   },
+   {
+    "row": 113,
+    "field": "credit",
+    "value": "Rs. 349,426.47"
+   },
+   {
+    "row": 113,
+    "field": "balance",
+    "value": "Rs. 1,249,291.69"
+   },
+   {
+    "row": 114,
+    "field": "debit",
+    "value": "Rs. 34,007.97"
+   },
+   {
+    "row": 114,
+    "field": "balance",
+    "value": "Rs. 1,215,283.72"
+   },
+   {
+    "row": 115,
+    "field": "debit",
+    "value": "Rs. 379,785.96"
+   },
+   {
+    "row": 115,
+    "field": "balance",
+    "value": "Rs. 835,497.76"
+   },
+   {
+    "row": 116,
+    "field": "debit",
+    "value": "Rs. 34,879.36"
+   },
+   {
+    "row": 116,
+    "field": "balance",
+    "value": "Rs. 800,618.40"
+   },
+   {
+    "row": 117,
+    "field": "credit",
+    "value": "Rs. 59,283.48"
+   },
+   {
+    "row": 117,
+    "field": "balance",
+    "value": "Rs. 859,901.88"
+   },
+   {
+    "row": 118,
+    "field": "credit",
+    "value": "Rs. 33,621.07"
+   },
+   {
+    "row": 118,
+    "field": "balance",
+    "value": "Rs. 893,522.95"
+   },
+   {
+    "row": 119,
+    "field": "debit",
+    "value": "Rs. 200,016.37"
+   },
+   {
+    "row": 119,
+    "field": "balance",
+    "value": "Rs. 693,506.58"
+   },
+   {
+    "row": 120,
+    "field": "credit",
+    "value": "Rs. 17,508.70"
+   },
+   {
+    "row": 120,
+    "field": "balance",
+    "value": "Rs. 711,015.28"
+   },
+   {
+    "row": 121,
+    "field": "credit",
+    "value": "Rs. 15,446.93"
+   },
+   {
+    "row": 121,
+    "field": "balance",
+    "value": "Rs. 726,462.21"
+   },
+   {
+    "row": 122,
+    "field": "credit",
+    "value": "Rs. 33,106.20"
+   },
+   {
+    "row": 122,
+    "field": "balance",
+    "value": "Rs. 759,568.41"
+   },
+   {
+    "row": 123,
+    "field": "credit",
+    "value": "Rs. 277,286.03"
+   },
+   {
+    "row": 123,
+    "field": "balance",
+    "value": "Rs. 1,036,854.44"
+   },
+   {
+    "row": 124,
+    "field": "credit",
+    "value": "Rs. 220,418.79"
+   },
+   {
+    "row": 124,
+    "field": "balance",
+    "value": "Rs. 1,257,273.23"
+   },
+   {
+    "row": 125,
+    "field": "debit",
+    "value": "Rs. 259,107.89"
+   },
+   {
+    "row": 125,
+    "field": "balance",
+    "value": "Rs. 998,165.34"
+   },
+   {
+    "row": 126,
+    "field": "debit",
+    "value": "Rs. 49,152.77"
+   },
+   {
+    "row": 126,
+    "field": "balance",
+    "value": "Rs. 949,012.57"
+   },
+   {
+    "row": 127,
+    "field": "debit",
+    "value": "Rs. 72,142.91"
+   },
+   {
+    "row": 127,
+    "field": "balance",
+    "value": "Rs. 876,869.66"
+   },
+   {
+    "row": 128,
+    "field": "credit",
+    "value": "Rs. 49,798.86"
+   },
+   {
+    "row": 128,
+    "field": "balance",
+    "value": "Rs. 926,668.52"
+   },
+   {
+    "row": 129,
+    "field": "credit",
+    "value": "Rs. 48,535.52"
+   },
+   {
+    "row": 129,
+    "field": "balance",
+    "value": "Rs. 975,204.04"
+   },
+   {
+    "row": 130,
+    "field": "debit",
+    "value": "Rs. 25,255.88"
+   },
+   {
+    "row": 130,
+    "field": "balance",
+    "value": "Rs. 949,948.16"
+   },
+   {
+    "row": 131,
+    "field": "debit",
+    "value": "Rs. 287,596.59"
+   },
+   {
+    "row": 131,
+    "field": "balance",
+    "value": "Rs. 662,351.57"
+   },
+   {
+    "row": 132,
+    "field": "credit",
+    "value": "Rs. 110,285.04"
+   },
+   {
+    "row": 132,
+    "field": "balance",
+    "value": "Rs. 772,636.61"
+   },
+   {
+    "row": 133,
+    "field": "debit",
+    "value": "Rs. 181,805.25"
+   },
+   {
+    "row": 133,
+    "field": "balance",
+    "value": "Rs. 590,831.36"
+   },
+   {
+    "row": 134,
+    "field": "debit",
+    "value": "Rs. 55,936.16"
+   },
+   {
+    "row": 134,
+    "field": "balance",
+    "value": "Rs. 534,895.20"
+   },
+   {
+    "row": 135,
+    "field": "credit",
+    "value": "Rs. 1,153.04"
+   },
+   {
+    "row": 135,
+    "field": "balance",
+    "value": "Rs. 536,048.24"
+   },
+   {
+    "row": 136,
+    "field": "credit",
+    "value": "Rs. 21,781.74"
+   },
+   {
+    "row": 136,
+    "field": "balance",
+    "value": "Rs. 557,829.98"
+   },
+   {
+    "row": 137,
+    "field": "credit",
+    "value": "Rs. 88,432.23"
+   },
+   {
+    "row": 137,
+    "field": "balance",
+    "value": "Rs. 646,262.21"
+   },
+   {
+    "row": 138,
+    "field": "credit",
+    "value": "Rs. 926,272.02"
+   },
+   {
+    "row": 138,
+    "field": "balance",
+    "value": "Rs. 1,572,534.23"
+   },
+   {
+    "row": 139,
+    "field": "debit",
+    "value": "Rs. 41,443.36"
+   },
+   {
+    "row": 139,
+    "field": "balance",
+    "value": "Rs. 1,531,090.87"
+   },
+   {
+    "row": 140,
+    "field": "debit",
+    "value": "Rs. 79,086.91"
+   },
+   {
+    "row": 140,
+    "field": "balance",
+    "value": "Rs. 1,452,003.96"
+   },
+   {
+    "row": 141,
+    "field": "credit",
+    "value": "Rs. 781,369.26"
+   },
+   {
+    "row": 141,
+    "field": "balance",
+    "value": "Rs. 2,233,373.22"
+   },
+   {
+    "row": 142,
+    "field": "credit",
+    "value": "Rs. 113,011.94"
+   },
+   {
+    "row": 142,
+    "field": "balance",
+    "value": "Rs. 2,346,385.16"
+   },
+   {
+    "row": 143,
+    "field": "debit",
+    "value": "Rs. 34,535.29"
+   },
+   {
+    "row": 143,
+    "field": "balance",
+    "value": "Rs. 2,311,849.87"
+   },
+   {
+    "row": 144,
+    "field": "credit",
+    "value": "Rs. 143,781.69"
+   },
+   {
+    "row": 144,
+    "field": "balance",
+    "value": "Rs. 2,455,631.56"
+   },
+   {
+    "row": 145,
+    "field": "debit",
+    "value": "Rs. 17,635.52"
+   },
+   {
+    "row": 145,
+    "field": "balance",
+    "value": "Rs. 2,437,996.04"
+   },
+   {
+    "row": 146,
+    "field": "debit",
+    "value": "Rs. 749,390.54"
+   },
+   {
+    "row": 146,
+    "field": "balance",
+    "value": "Rs. 1,688,605.50"
+   },
+   {
+    "row": 147,
+    "field": "debit",
+    "value": "Rs. 483,141.02"
+   },
+   {
+    "row": 147,
+    "field": "balance",
+    "value": "Rs. 1,205,464.48"
+   },
+   {
+    "row": 148,
+    "field": "credit",
+    "value": "Rs. 48,634.18"
+   },
+   {
+    "row": 148,
+    "field": "balance",
+    "value": "Rs. 1,254,098.66"
+   },
+   {
+    "row": 149,
+    "field": "debit",
+    "value": "Rs. 355,294.04"
+   },
+   {
+    "row": 149,
+    "field": "balance",
+    "value": "Rs. 898,804.62"
+   },
+   {
+    "row": 150,
+    "field": "debit",
+    "value": "Rs. 62,688.54"
+   },
+   {
+    "row": 150,
+    "field": "balance",
+    "value": "Rs. 836,116.08"
+   },
+   {
+    "row": 151,
+    "field": "credit",
+    "value": "Rs. 468,659.76"
+   },
+   {
+    "row": 151,
+    "field": "balance",
+    "value": "Rs. 1,304,775.84"
+   },
+   {
+    "row": 152,
+    "field": "debit",
+    "value": "Rs. 145,297.84"
+   },
+   {
+    "row": 152,
+    "field": "balance",
+    "value": "Rs. 1,159,478.00"
+   },
+   {
+    "row": 153,
+    "field": "credit",
+    "value": "Rs. 204,543.83"
+   },
+   {
+    "row": 153,
+    "field": "balance",
+    "value": "Rs. 1,364,021.83"
+   },
+   {
+    "row": 154,
+    "field": "credit",
+    "value": "Rs. 88,520.44"
+   },
+   {
+    "row": 154,
+    "field": "balance",
+    "value": "Rs. 1,452,542.27"
+   },
+   {
+    "row": 155,
+    "field": "debit",
+    "value": "Rs. 198,457.88"
+   },
+   {
+    "row": 155,
+    "field": "balance",
+    "value": "Rs. 1,254,084.39"
+   },
+   {
+    "row": 156,
+    "field": "credit",
+    "value": "Rs. 201,494.03"
+   },
+   {
+    "row": 156,
+    "field": "balance",
+    "value": "Rs. 1,455,578.42"
+   },
+   {
+    "row": 157,
+    "field": "credit",
+    "value": "Rs. 80,408.40"
+   },
+   {
+    "row": 157,
+    "field": "balance",
+    "value": "Rs. 1,535,986.82"
+   },
+   {
+    "row": 158,
+    "field": "debit",
+    "value": "Rs. 273,918.25"
+   },
+   {
+    "row": 158,
+    "field": "balance",
+    "value": "Rs. 1,262,068.57"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription contained numerous errors where debits and credits were swapped or placed in the wrong columns. After correcting these transcription errors to match the printed values on the statement pages, the arithmetic for every row is correct, and the closing balance agrees with the opening balance plus all movements."
+ }
+}

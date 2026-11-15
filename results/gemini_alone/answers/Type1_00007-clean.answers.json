@@ -1,0 +1,26 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 57,
+    "field": "debit",
+    "value": ""
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is arithmetically consistent after correcting a blank debit field in row 57, which was erroneously transcribed as a transaction."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 57,
+    "field": "debit",
+    "value": ""
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is arithmetically consistent after correcting a blank debit field in row 57, which was erroneously transcribed as a transaction."
+ }
+}

@@ -1,0 +1,1606 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 0,
+    "field": "debit",
+    "value": "Rs. 41,507.00"
+   },
+   {
+    "row": 3,
+    "field": "debit",
+    "value": "Rs. 127,821.16"
+   },
+   {
+    "row": 4,
+    "field": "debit",
+    "value": "Rs. 14,757.45"
+   },
+   {
+    "row": 5,
+    "field": "credit",
+    "value": "Rs. 123,676.12"
+   },
+   {
+    "row": 7,
+    "field": "debit",
+    "value": "Rs. 126,325.42"
+   },
+   {
+    "row": 8,
+    "field": "credit",
+    "value": "Rs. 7,410.56"
+   },
+   {
+    "row": 9,
+    "field": "credit",
+    "value": "Rs. 14,236.29"
+   },
+   {
+    "row": 10,
+    "field": "debit",
+    "value": "Rs. 3,946.72"
+   },
+   {
+    "row": 11,
+    "field": "debit",
+    "value": "Rs. 15,718.97"
+   },
+   {
+    "row": 12,
+    "field": "credit",
+    "value": "Rs. 8,998.31"
+   },
+   {
+    "row": 13,
+    "field": "credit",
+    "value": "Rs. 432.49"
+   },
+   {
+    "row": 14,
+    "field": "debit",
+    "value": "Rs. 2,474.01"
+   },
+   {
+    "row": 15,
+    "field": "debit",
+    "value": "Rs. 2,401.52"
+   },
+   {
+    "row": 16,
+    "field": "debit",
+    "value": "Rs. 7,750.33"
+   },
+   {
+    "row": 17,
+    "field": "debit",
+    "value": "Rs. 3,102.14"
+   },
+   {
+    "row": 18,
+    "field": "credit",
+    "value": "Rs. 1,076.64"
+   },
+   {
+    "row": 19,
+    "field": "debit",
+    "value": "Rs. 11,918.91"
+   },
+   {
+    "row": 20,
+    "field": "credit",
+    "value": "Rs. 465.03"
+   },
+   {
+    "row": 21,
+    "field": "credit",
+    "value": "Rs. 1,617.78"
+   },
+   {
+    "row": 22,
+    "field": "credit",
+    "value": "Rs. 943.94"
+   },
+   {
+    "row": 23,
+    "field": "credit",
+    "value": "Rs. 995.72"
+   },
+   {
+    "row": 24,
+    "field": "credit",
+    "value": "Rs. 2,000.03"
+   },
+   {
+    "row": 25,
+    "field": "credit",
+    "value": "Rs. 2,769.92"
+   },
+   {
+    "row": 26,
+    "field": "credit",
+    "value": "Rs. 961.66"
+   },
+   {
+    "row": 27,
+    "field": "credit",
+    "value": "Rs. 1,166.40"
+   },
+   {
+    "row": 28,
+    "field": "debit",
+    "value": "Rs. 183.38"
+   },
+   {
+    "row": 29,
+    "field": "credit",
+    "value": "Rs. 3,634.60"
+   },
+   {
+    "row": 30,
+    "field": "debit",
+    "value": "Rs. 1,082.46"
+   },
+   {
+    "row": 31,
+    "field": "debit",
+    "value": "Rs. 5,744.09"
+   },
+   {
+    "row": 32,
+    "field": "credit",
+    "value": "Rs. 201.57"
+   },
+   {
+    "row": 33,
+    "field": "credit",
+    "value": "Rs. 2,749.34"
+   },
+   {
+    "row": 34,
+    "field": "credit",
+    "value": "Rs. 3,691.37"
+   },
+   {
+    "row": 35,
+    "field": "credit",
+    "value": "Rs. 3,070.80"
+   },
+   {
+    "row": 36,
+    "field": "credit",
+    "value": "Rs. 2,028.27"
+   },
+   {
+    "row": 37,
+    "field": "credit",
+    "value": "Rs. 7,397.40"
+   },
+   {
+    "row": 38,
+    "field": "credit",
+    "value": "Rs. 729.77"
+   },
+   {
+    "row": 39,
+    "field": "credit",
+    "value": "Rs. 15,536.05"
+   },
+   {
+    "row": 40,
+    "field": "debit",
+    "value": "Rs. 6,305.98"
+   },
+   {
+    "row": 41,
+    "field": "credit",
+    "value": "Rs. 3,121.14"
+   },
+   {
+    "row": 42,
+    "field": "credit",
+    "value": "Rs. 10,043.04"
+   },
+   {
+    "row": 43,
+    "field": "debit",
+    "value": "Rs. 18,646.88"
+   },
+   {
+    "row": 44,
+    "field": "credit",
+    "value": "Rs. 4,460.99"
+   },
+   {
+    "row": 45,
+    "field": "credit",
+    "value": "Rs. 8,132.86"
+   },
+   {
+    "row": 46,
+    "field": "credit",
+    "value": "Rs. 3,585.98"
+   },
+   {
+    "row": 47,
+    "field": "credit",
+    "value": "Rs. 787.18"
+   },
+   {
+    "row": 48,
+    "field": "debit",
+    "value": "Rs. 9,158.83"
+   },
+   {
+    "row": 49,
+    "field": "credit",
+    "value": "Rs. 11,607.69"
+   },
+   {
+    "row": 50,
+    "field": "credit",
+    "value": "Rs. 6,687.23"
+   },
+   {
+    "row": 51,
+    "field": "credit",
+    "value": "Rs. 5,298.11"
+   },
+   {
+    "row": 52,
+    "field": "credit",
+    "value": "Rs. 8,735.32"
+   },
+   {
+    "row": 53,
+    "field": "credit",
+    "value": "Rs. 101,116.73"
+   },
+   {
+    "row": 54,
+    "field": "credit",
+    "value": "Rs. 28,156.85"
+   },
+   {
+    "row": 55,
+    "field": "debit",
+    "value": "Rs. 2,284.65"
+   },
+   {
+    "row": 56,
+    "field": "debit",
+    "value": "Rs. 86,641.94"
+   },
+   {
+    "row": 57,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 58,
+    "field": "credit",
+    "value": "Rs. 6,081.34"
+   },
+   {
+    "row": 59,
+    "field": "credit",
+    "value": "Rs. 4,884.27"
+   },
+   {
+    "row": 60,
+    "field": "debit",
+    "value": "Rs. 23,364.53"
+   },
+   {
+    "row": 61,
+    "field": "debit",
+    "value": "Rs. 5,130.01"
+   },
+   {
+    "row": 62,
+    "field": "credit",
+    "value": "Rs. 40,389.77"
+   },
+   {
+    "row": 63,
+    "field": "debit",
+    "value": "Rs. 16,999.00"
+   },
+   {
+    "row": 64,
+    "field": "debit",
+    "value": "Rs. 25,567.77"
+   },
+   {
+    "row": 65,
+    "field": "credit",
+    "value": "Rs. 4,250.80"
+   },
+   {
+    "row": 66,
+    "field": "credit",
+    "value": "Rs. 29,882.04"
+   },
+   {
+    "row": 67,
+    "field": "credit",
+    "value": "Rs. 1,903.33"
+   },
+   {
+    "row": 68,
+    "field": "debit",
+    "value": "Rs. 54,014.00"
+   },
+   {
+    "row": 69,
+    "field": "credit",
+    "value": "Rs. 3,656.48"
+   },
+   {
+    "row": 70,
+    "field": "debit",
+    "value": "Rs. 17,975.56"
+   },
+   {
+    "row": 71,
+    "field": "debit",
+    "value": "Rs. 6,102.89"
+   },
+   {
+    "row": 72,
+    "field": "credit",
+    "value": "Rs. 2,781.43"
+   },
+   {
+    "row": 73,
+    "field": "credit",
+    "value": "Rs. 11,416.91"
+   },
+   {
+    "row": 74,
+    "field": "credit",
+    "value": "Rs. 7,434.80"
+   },
+   {
+    "row": 75,
+    "field": "credit",
+    "value": "Rs. 90,872.90"
+   },
+   {
+    "row": 76,
+    "field": "credit",
+    "value": "Rs. 19,881.12"
+   },
+   {
+    "row": 77,
+    "field": "debit",
+    "value": "Rs. 2,954.49"
+   },
+   {
+    "row": 78,
+    "field": "debit",
+    "value": "Rs. 2,522.96"
+   },
+   {
+    "row": 79,
+    "field": "debit",
+    "value": "Rs. 1,283.54"
+   },
+   {
+    "row": 80,
+    "field": "credit",
+    "value": "Rs. 19,857.99"
+   },
+   {
+    "row": 81,
+    "field": "credit",
+    "value": "Rs. 7,509.60"
+   },
+   {
+    "row": 82,
+    "field": "debit",
+    "value": "Rs. 24,691.31"
+   },
+   {
+    "row": 83,
+    "field": "credit",
+    "value": "Rs. 31,971.09"
+   },
+   {
+    "row": 84,
+    "field": "debit",
+    "value": "Rs. 7,654.24"
+   },
+   {
+    "row": 85,
+    "field": "credit",
+    "value": "Rs. 166,506.25"
+   },
+   {
+    "row": 86,
+    "field": "debit",
+    "value": "Rs. 215,385.44"
+   },
+   {
+    "row": 87,
+    "field": "credit",
+    "value": "Rs. 243,014.70"
+   },
+   {
+    "row": 88,
+    "field": "credit",
+    "value": "Rs. 106,049.75"
+   },
+   {
+    "row": 89,
+    "field": "credit",
+    "value": "Rs. 39,723.91"
+   },
+   {
+    "row": 90,
+    "field": "credit",
+    "value": "Rs. 10,528.53"
+   },
+   {
+    "row": 91,
+    "field": "debit",
+    "value": "Rs. 63,242.90"
+   },
+   {
+    "row": 92,
+    "field": "debit",
+    "value": "Rs. 188,256.27"
+   },
+   {
+    "row": 93,
+    "field": "debit",
+    "value": "Rs. 134,563.00"
+   },
+   {
+    "row": 94,
+    "field": "credit",
+    "value": "Rs. 3,115.00"
+   },
+   {
+    "row": 95,
+    "field": "credit",
+    "value": "Rs. 14,404.36"
+   },
+   {
+    "row": 96,
+    "field": "credit",
+    "value": "Rs. 256,398.13"
+   },
+   {
+    "row": 97,
+    "field": "credit",
+    "value": "Rs. 91,053.91"
+   },
+   {
+    "row": 98,
+    "field": "debit",
+    "value": "Rs. 172,173.32"
+   },
+   {
+    "row": 99,
+    "field": "debit",
+    "value": "Rs. 120,961.91"
+   },
+   {
+    "row": 100,
+    "field": "debit",
+    "value": "Rs. 27,677.13"
+   },
+   {
+    "row": 101,
+    "field": "credit",
+    "value": "Rs. 18,849.99"
+   },
+   {
+    "row": 102,
+    "field": "debit",
+    "value": "Rs. 5,573.01"
+   },
+   {
+    "row": 103,
+    "field": "debit",
+    "value": "Rs. 84,795.31"
+   },
+   {
+    "row": 104,
+    "field": "credit",
+    "value": "Rs. 2,214.33"
+   },
+   {
+    "row": 105,
+    "field": "debit",
+    "value": "Rs. 46,438.67"
+   },
+   {
+    "row": 106,
+    "field": "debit",
+    "value": "Rs. 197.12"
+   },
+   {
+    "row": 107,
+    "field": "credit",
+    "value": "Rs. 49,306.05"
+   },
+   {
+    "row": 108,
+    "field": "credit",
+    "value": "Rs. 72,043.60"
+   },
+   {
+    "row": 109,
+    "field": "credit",
+    "value": "Rs. 16,654.77"
+   },
+   {
+    "row": 110,
+    "field": "debit",
+    "value": "Rs. 78,972.59"
+   },
+   {
+    "row": 111,
+    "field": "debit",
+    "value": "Rs. 3,073.16"
+   },
+   {
+    "row": 112,
+    "field": "credit",
+    "value": "Rs. 7,737.67"
+   },
+   {
+    "row": 113,
+    "field": "debit",
+    "value": "Rs. 63,376.98"
+   },
+   {
+    "row": 114,
+    "field": "credit",
+    "value": "Rs. 2,858.42"
+   },
+   {
+    "row": 115,
+    "field": "credit",
+    "value": "Rs. 96,674.62"
+   },
+   {
+    "row": 116,
+    "field": "credit",
+    "value": "Rs. 44,169.43"
+   },
+   {
+    "row": 117,
+    "field": "debit",
+    "value": "Rs. 100,071.17"
+   },
+   {
+    "row": 118,
+    "field": "credit",
+    "value": "Rs. 5,105.90"
+   },
+   {
+    "row": 119,
+    "field": "credit",
+    "value": "Rs. 68,498.72"
+   },
+   {
+    "row": 120,
+    "field": "debit",
+    "value": "Rs. 37,748.91"
+   },
+   {
+    "row": 121,
+    "field": "credit",
+    "value": "Rs. 1,597.73"
+   },
+   {
+    "row": 122,
+    "field": "credit",
+    "value": "Rs. 21,790.43"
+   },
+   {
+    "row": 123,
+    "field": "debit",
+    "value": "Rs. 42,634.32"
+   },
+   {
+    "row": 124,
+    "field": "debit",
+    "value": "Rs. 835.60"
+   },
+   {
+    "row": 125,
+    "field": "debit",
+    "value": "Rs. 95,771.32"
+   },
+   {
+    "row": 126,
+    "field": "credit",
+    "value": "Rs. 46,472.20"
+   },
+   {
+    "row": 127,
+    "field": "debit",
+    "value": "Rs. 6,342.05"
+   },
+   {
+    "row": 128,
+    "field": "debit",
+    "value": "Rs. 18,660.29"
+   },
+   {
+    "row": 129,
+    "field": "credit",
+    "value": "Rs. 10,762.75"
+   },
+   {
+    "row": 130,
+    "field": "debit",
+    "value": "Rs. 35,634.34"
+   },
+   {
+    "row": 131,
+    "field": "credit",
+    "value": "Rs. 2,607.43"
+   },
+   {
+    "row": 132,
+    "field": "credit",
+    "value": "Rs. 604.90"
+   },
+   {
+    "row": 133,
+    "field": "credit",
+    "value": "Rs. 11,771.92"
+   },
+   {
+    "row": 134,
+    "field": "credit",
+    "value": "Rs. 7,898.54"
+   },
+   {
+    "row": 135,
+    "field": "debit",
+    "value": "Rs. 43,840.58"
+   },
+   {
+    "row": 136,
+    "field": "credit",
+    "value": "Rs. 13,123.05"
+   },
+   {
+    "row": 137,
+    "field": "credit",
+    "value": "Rs. 6,406.30"
+   },
+   {
+    "row": 138,
+    "field": "credit",
+    "value": "Rs. 6,039.73"
+   },
+   {
+    "row": 139,
+    "field": "credit",
+    "value": "Rs. 13,315.02"
+   },
+   {
+    "row": 140,
+    "field": "credit",
+    "value": "Rs. 119,484.88"
+   },
+   {
+    "row": 141,
+    "field": "credit",
+    "value": "Rs. 25,402.66"
+   },
+   {
+    "row": 142,
+    "field": "debit",
+    "value": "Rs. 45,085.81"
+   },
+   {
+    "row": 143,
+    "field": "debit",
+    "value": "Rs. 86,106.32"
+   },
+   {
+    "row": 144,
+    "field": "debit",
+    "value": "Rs. 20,556.51"
+   },
+   {
+    "row": 145,
+    "field": "debit",
+    "value": "Rs. 27,644.79"
+   },
+   {
+    "row": 146,
+    "field": "debit",
+    "value": "Rs. 13,902.50"
+   },
+   {
+    "row": 147,
+    "field": "debit",
+    "value": "Rs. 6,317.97"
+   },
+   {
+    "row": 148,
+    "field": "credit",
+    "value": "Rs. 39,422.74"
+   },
+   {
+    "row": 149,
+    "field": "credit",
+    "value": "Rs. 2,798.36"
+   },
+   {
+    "row": 150,
+    "field": "credit",
+    "value": "Rs. 21,248.69"
+   },
+   {
+    "row": 151,
+    "field": "credit",
+    "value": "Rs. 6,498.74"
+   },
+   {
+    "row": 152,
+    "field": "credit",
+    "value": "Rs. 93,325.86"
+   },
+   {
+    "row": 153,
+    "field": "credit",
+    "value": "Rs. 180,100.36"
+   },
+   {
+    "row": 154,
+    "field": "debit",
+    "value": "Rs. 183,274.74"
+   },
+   {
+    "row": 155,
+    "field": "debit",
+    "value": "Rs. 19,851.49"
+   },
+   {
+    "row": 156,
+    "field": "credit",
+    "value": "Rs. 6,279.45"
+   },
+   {
+    "row": 157,
+    "field": "credit",
+    "value": "Rs. 16,512.67"
+   },
+   {
+    "row": 158,
+    "field": "credit",
+    "value": "Rs. 3,684.97"
+   },
+   {
+    "row": 159,
+    "field": "debit",
+    "value": "Rs. 90,797.12"
+   },
+   {
+    "row": 160,
+    "field": "debit",
+    "value": "Rs. 149.98"
+   },
+   {
+    "row": 161,
+    "field": "debit",
+    "value": "Rs. 190.26"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription contained numerous OCR errors in the debit and credit columns which have been corrected to match the printed statement. After applying these corrections, all row balances are mathematically consistent with the previous balance plus or minus the transaction amount, and the final closing balance of Rs. 105,716.95 matches the sum of the opening balance and all movements."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 0,
+    "field": "debit",
+    "value": "Rs. 41,507.00"
+   },
+   {
+    "row": 3,
+    "field": "debit",
+    "value": "Rs. 127,821.16"
+   },
+   {
+    "row": 4,
+    "field": "debit",
+    "value": "Rs. 14,757.45"
+   },
+   {
+    "row": 5,
+    "field": "credit",
+    "value": "Rs. 123,676.12"
+   },
+   {
+    "row": 7,
+    "field": "debit",
+    "value": "Rs. 126,325.42"
+   },
+   {
+    "row": 8,
+    "field": "credit",
+    "value": "Rs. 7,410.56"
+   },
+   {
+    "row": 9,
+    "field": "credit",
+    "value": "Rs. 14,236.29"
+   },
+   {
+    "row": 10,
+    "field": "debit",
+    "value": "Rs. 3,946.72"
+   },
+   {
+    "row": 11,
+    "field": "debit",
+    "value": "Rs. 15,718.97"
+   },
+   {
+    "row": 12,
+    "field": "credit",
+    "value": "Rs. 8,998.31"
+   },
+   {
+    "row": 13,
+    "field": "credit",
+    "value": "Rs. 432.49"
+   },
+   {
+    "row": 14,
+    "field": "debit",
+    "value": "Rs. 2,474.01"
+   },
+   {
+    "row": 15,
+    "field": "debit",
+    "value": "Rs. 2,401.52"
+   },
+   {
+    "row": 16,
+    "field": "debit",
+    "value": "Rs. 7,750.33"
+   },
+   {
+    "row": 17,
+    "field": "debit",
+    "value": "Rs. 3,102.14"
+   },
+   {
+    "row": 18,
+    "field": "credit",
+    "value": "Rs. 1,076.64"
+   },
+   {
+    "row": 19,
+    "field": "debit",
+    "value": "Rs. 11,918.91"
+   },
+   {
+    "row": 20,
+    "field": "credit",
+    "value": "Rs. 465.03"
+   },
+   {
+    "row": 21,
+    "field": "credit",
+    "value": "Rs. 1,617.78"
+   },
+   {
+    "row": 22,
+    "field": "credit",
+    "value": "Rs. 943.94"
+   },
+   {
+    "row": 23,
+    "field": "credit",
+    "value": "Rs. 995.72"
+   },
+   {
+    "row": 24,
+    "field": "credit",
+    "value": "Rs. 2,000.03"
+   },
+   {
+    "row": 25,
+    "field": "credit",
+    "value": "Rs. 2,769.92"
+   },
+   {
+    "row": 26,
+    "field": "credit",
+    "value": "Rs. 961.66"
+   },
+   {
+    "row": 27,
+    "field": "credit",
+    "value": "Rs. 1,166.40"
+   },
+   {
+    "row": 28,
+    "field": "debit",
+    "value": "Rs. 183.38"
+   },
+   {
+    "row": 29,
+    "field": "credit",
+    "value": "Rs. 3,634.60"
+   },
+   {
+    "row": 30,
+    "field": "debit",
+    "value": "Rs. 1,082.46"
+   },
+   {
+    "row": 31,
+    "field": "debit",
+    "value": "Rs. 5,744.09"
+   },
+   {
+    "row": 32,
+    "field": "credit",
+    "value": "Rs. 201.57"
+   },
+   {
+    "row": 33,
+    "field": "credit",
+    "value": "Rs. 2,749.34"
+   },
+   {
+    "row": 34,
+    "field": "credit",
+    "value": "Rs. 3,691.37"
+   },
+   {
+    "row": 35,
+    "field": "credit",
+    "value": "Rs. 3,070.80"
+   },
+   {
+    "row": 36,
+    "field": "credit",
+    "value": "Rs. 2,028.27"
+   },
+   {
+    "row": 37,
+    "field": "credit",
+    "value": "Rs. 7,397.40"
+   },
+   {
+    "row": 38,
+    "field": "credit",
+    "value": "Rs. 729.77"
+   },
+   {
+    "row": 39,
+    "field": "credit",
+    "value": "Rs. 15,536.05"
+   },
+   {
+    "row": 40,
+    "field": "debit",
+    "value": "Rs. 6,305.98"
+   },
+   {
+    "row": 41,
+    "field": "credit",
+    "value": "Rs. 3,121.14"
+   },
+   {
+    "row": 42,
+    "field": "credit",
+    "value": "Rs. 10,043.04"
+   },
+   {
+    "row": 43,
+    "field": "debit",
+    "value": "Rs. 18,646.88"
+   },
+   {
+    "row": 44,
+    "field": "credit",
+    "value": "Rs. 4,460.99"
+   },
+   {
+    "row": 45,
+    "field": "credit",
+    "value": "Rs. 8,132.86"
+   },
+   {
+    "row": 46,
+    "field": "credit",
+    "value": "Rs. 3,585.98"
+   },
+   {
+    "row": 47,
+    "field": "credit",
+    "value": "Rs. 787.18"
+   },
+   {
+    "row": 48,
+    "field": "debit",
+    "value": "Rs. 9,158.83"
+   },
+   {
+    "row": 49,
+    "field": "credit",
+    "value": "Rs. 11,607.69"
+   },
+   {
+    "row": 50,
+    "field": "credit",
+    "value": "Rs. 6,687.23"
+   },
+   {
+    "row": 51,
+    "field": "credit",
+    "value": "Rs. 5,298.11"
+   },
+   {
+    "row": 52,
+    "field": "credit",
+    "value": "Rs. 8,735.32"
+   },
+   {
+    "row": 53,
+    "field": "credit",
+    "value": "Rs. 101,116.73"
+   },
+   {
+    "row": 54,
+    "field": "credit",
+    "value": "Rs. 28,156.85"
+   },
+   {
+    "row": 55,
+    "field": "debit",
+    "value": "Rs. 2,284.65"
+   },
+   {
+    "row": 56,
+    "field": "debit",
+    "value": "Rs. 86,641.94"
+   },
+   {
+    "row": 57,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 58,
+    "field": "credit",
+    "value": "Rs. 6,081.34"
+   },
+   {
+    "row": 59,
+    "field": "credit",
+    "value": "Rs. 4,884.27"
+   },
+   {
+    "row": 60,
+    "field": "debit",
+    "value": "Rs. 23,364.53"
+   },
+   {
+    "row": 61,
+    "field": "debit",
+    "value": "Rs. 5,130.01"
+   },
+   {
+    "row": 62,
+    "field": "credit",
+    "value": "Rs. 40,389.77"
+   },
+   {
+    "row": 63,
+    "field": "debit",
+    "value": "Rs. 16,999.00"
+   },
+   {
+    "row": 64,
+    "field": "debit",
+    "value": "Rs. 25,567.77"
+   },
+   {
+    "row": 65,
+    "field": "credit",
+    "value": "Rs. 4,250.80"
+   },
+   {
+    "row": 66,
+    "field": "credit",
+    "value": "Rs. 29,882.04"
+   },
+   {
+    "row": 67,
+    "field": "credit",
+    "value": "Rs. 1,903.33"
+   },
+   {
+    "row": 68,
+    "field": "debit",
+    "value": "Rs. 54,014.00"
+   },
+   {
+    "row": 69,
+    "field": "credit",
+    "value": "Rs. 3,656.48"
+   },
+   {
+    "row": 70,
+    "field": "debit",
+    "value": "Rs. 17,975.56"
+   },
+   {
+    "row": 71,
+    "field": "debit",
+    "value": "Rs. 6,102.89"
+   },
+   {
+    "row": 72,
+    "field": "credit",
+    "value": "Rs. 2,781.43"
+   },
+   {
+    "row": 73,
+    "field": "credit",
+    "value": "Rs. 11,416.91"
+   },
+   {
+    "row": 74,
+    "field": "credit",
+    "value": "Rs. 7,434.80"
+   },
+   {
+    "row": 75,
+    "field": "credit",
+    "value": "Rs. 90,872.90"
+   },
+   {
+    "row": 76,
+    "field": "credit",
+    "value": "Rs. 19,881.12"
+   },
+   {
+    "row": 77,
+    "field": "debit",
+    "value": "Rs. 2,954.49"
+   },
+   {
+    "row": 78,
+    "field": "debit",
+    "value": "Rs. 2,522.96"
+   },
+   {
+    "row": 79,
+    "field": "debit",
+    "value": "Rs. 1,283.54"
+   },
+   {
+    "row": 80,
+    "field": "credit",
+    "value": "Rs. 19,857.99"
+   },
+   {
+    "row": 81,
+    "field": "credit",
+    "value": "Rs. 7,509.60"
+   },
+   {
+    "row": 82,
+    "field": "debit",
+    "value": "Rs. 24,691.31"
+   },
+   {
+    "row": 83,
+    "field": "credit",
+    "value": "Rs. 31,971.09"
+   },
+   {
+    "row": 84,
+    "field": "debit",
+    "value": "Rs. 7,654.24"
+   },
+   {
+    "row": 85,
+    "field": "credit",
+    "value": "Rs. 166,506.25"
+   },
+   {
+    "row": 86,
+    "field": "debit",
+    "value": "Rs. 215,385.44"
+   },
+   {
+    "row": 87,
+    "field": "credit",
+    "value": "Rs. 243,014.70"
+   },
+   {
+    "row": 88,
+    "field": "credit",
+    "value": "Rs. 106,049.75"
+   },
+   {
+    "row": 89,
+    "field": "credit",
+    "value": "Rs. 39,723.91"
+   },
+   {
+    "row": 90,
+    "field": "credit",
+    "value": "Rs. 10,528.53"
+   },
+   {
+    "row": 91,
+    "field": "debit",
+    "value": "Rs. 63,242.90"
+   },
+   {
+    "row": 92,
+    "field": "debit",
+    "value": "Rs. 188,256.27"
+   },
+   {
+    "row": 93,
+    "field": "debit",
+    "value": "Rs. 134,563.00"
+   },
+   {
+    "row": 94,
+    "field": "credit",
+    "value": "Rs. 3,115.00"
+   },
+   {
+    "row": 95,
+    "field": "credit",
+    "value": "Rs. 14,404.36"
+   },
+   {
+    "row": 96,
+    "field": "credit",
+    "value": "Rs. 256,398.13"
+   },
+   {
+    "row": 97,
+    "field": "credit",
+    "value": "Rs. 91,053.91"
+   },
+   {
+    "row": 98,
+    "field": "debit",
+    "value": "Rs. 172,173.32"
+   },
+   {
+    "row": 99,
+    "field": "debit",
+    "value": "Rs. 120,961.91"
+   },
+   {
+    "row": 100,
+    "field": "debit",
+    "value": "Rs. 27,677.13"
+   },
+   {
+    "row": 101,
+    "field": "credit",
+    "value": "Rs. 18,849.99"
+   },
+   {
+    "row": 102,
+    "field": "debit",
+    "value": "Rs. 5,573.01"
+   },
+   {
+    "row": 103,
+    "field": "debit",
+    "value": "Rs. 84,795.31"
+   },
+   {
+    "row": 104,
+    "field": "credit",
+    "value": "Rs. 2,214.33"
+   },
+   {
+    "row": 105,
+    "field": "debit",
+    "value": "Rs. 46,438.67"
+   },
+   {
+    "row": 106,
+    "field": "debit",
+    "value": "Rs. 197.12"
+   },
+   {
+    "row": 107,
+    "field": "credit",
+    "value": "Rs. 49,306.05"
+   },
+   {
+    "row": 108,
+    "field": "credit",
+    "value": "Rs. 72,043.60"
+   },
+   {
+    "row": 109,
+    "field": "credit",
+    "value": "Rs. 16,654.77"
+   },
+   {
+    "row": 110,
+    "field": "debit",
+    "value": "Rs. 78,972.59"
+   },
+   {
+    "row": 111,
+    "field": "debit",
+    "value": "Rs. 3,073.16"
+   },
+   {
+    "row": 112,
+    "field": "credit",
+    "value": "Rs. 7,737.67"
+   },
+   {
+    "row": 113,
+    "field": "debit",
+    "value": "Rs. 63,376.98"
+   },
+   {
+    "row": 114,
+    "field": "credit",
+    "value": "Rs. 2,858.42"
+   },
+   {
+    "row": 115,
+    "field": "credit",
+    "value": "Rs. 96,674.62"
+   },
+   {
+    "row": 116,
+    "field": "credit",
+    "value": "Rs. 44,169.43"
+   },
+   {
+    "row": 117,
+    "field": "debit",
+    "value": "Rs. 100,071.17"
+   },
+   {
+    "row": 118,
+    "field": "credit",
+    "value": "Rs. 5,105.90"
+   },
+   {
+    "row": 119,
+    "field": "credit",
+    "value": "Rs. 68,498.72"
+   },
+   {
+    "row": 120,
+    "field": "debit",
+    "value": "Rs. 37,748.91"
+   },
+   {
+    "row": 121,
+    "field": "credit",
+    "value": "Rs. 1,597.73"
+   },
+   {
+    "row": 122,
+    "field": "credit",
+    "value": "Rs. 21,790.43"
+   },
+   {
+    "row": 123,
+    "field": "debit",
+    "value": "Rs. 42,634.32"
+   },
+   {
+    "row": 124,
+    "field": "debit",
+    "value": "Rs. 835.60"
+   },
+   {
+    "row": 125,
+    "field": "debit",
+    "value": "Rs. 95,771.32"
+   },
+   {
+    "row": 126,
+    "field": "credit",
+    "value": "Rs. 46,472.20"
+   },
+   {
+    "row": 127,
+    "field": "debit",
+    "value": "Rs. 6,342.05"
+   },
+   {
+    "row": 128,
+    "field": "debit",
+    "value": "Rs. 18,660.29"
+   },
+   {
+    "row": 129,
+    "field": "credit",
+    "value": "Rs. 10,762.75"
+   },
+   {
+    "row": 130,
+    "field": "debit",
+    "value": "Rs. 35,634.34"
+   },
+   {
+    "row": 131,
+    "field": "credit",
+    "value": "Rs. 2,607.43"
+   },
+   {
+    "row": 132,
+    "field": "credit",
+    "value": "Rs. 604.90"
+   },
+   {
+    "row": 133,
+    "field": "credit",
+    "value": "Rs. 11,771.92"
+   },
+   {
+    "row": 134,
+    "field": "credit",
+    "value": "Rs. 7,898.54"
+   },
+   {
+    "row": 135,
+    "field": "debit",
+    "value": "Rs. 43,840.58"
+   },
+   {
+    "row": 136,
+    "field": "credit",
+    "value": "Rs. 13,123.05"
+   },
+   {
+    "row": 137,
+    "field": "credit",
+    "value": "Rs. 6,406.30"
+   },
+   {
+    "row": 138,
+    "field": "credit",
+    "value": "Rs. 6,039.73"
+   },
+   {
+    "row": 139,
+    "field": "credit",
+    "value": "Rs. 13,315.02"
+   },
+   {
+    "row": 140,
+    "field": "credit",
+    "value": "Rs. 119,484.88"
+   },
+   {
+    "row": 141,
+    "field": "credit",
+    "value": "Rs. 25,402.66"
+   },
+   {
+    "row": 142,
+    "field": "debit",
+    "value": "Rs. 45,085.81"
+   },
+   {
+    "row": 143,
+    "field": "debit",
+    "value": "Rs. 86,106.32"
+   },
+   {
+    "row": 144,
+    "field": "debit",
+    "value": "Rs. 20,556.51"
+   },
+   {
+    "row": 145,
+    "field": "debit",
+    "value": "Rs. 27,644.79"
+   },
+   {
+    "row": 146,
+    "field": "debit",
+    "value": "Rs. 13,902.50"
+   },
+   {
+    "row": 147,
+    "field": "debit",
+    "value": "Rs. 6,317.97"
+   },
+   {
+    "row": 148,
+    "field": "credit",
+    "value": "Rs. 39,422.74"
+   },
+   {
+    "row": 149,
+    "field": "credit",
+    "value": "Rs. 2,798.36"
+   },
+   {
+    "row": 150,
+    "field": "credit",
+    "value": "Rs. 21,248.69"
+   },
+   {
+    "row": 151,
+    "field": "credit",
+    "value": "Rs. 6,498.74"
+   },
+   {
+    "row": 152,
+    "field": "credit",
+    "value": "Rs. 93,325.86"
+   },
+   {
+    "row": 153,
+    "field": "credit",
+    "value": "Rs. 180,100.36"
+   },
+   {
+    "row": 154,
+    "field": "debit",
+    "value": "Rs. 183,274.74"
+   },
+   {
+    "row": 155,
+    "field": "debit",
+    "value": "Rs. 19,851.49"
+   },
+   {
+    "row": 156,
+    "field": "credit",
+    "value": "Rs. 6,279.45"
+   },
+   {
+    "row": 157,
+    "field": "credit",
+    "value": "Rs. 16,512.67"
+   },
+   {
+    "row": 158,
+    "field": "credit",
+    "value": "Rs. 3,684.97"
+   },
+   {
+    "row": 159,
+    "field": "debit",
+    "value": "Rs. 90,797.12"
+   },
+   {
+    "row": 160,
+    "field": "debit",
+    "value": "Rs. 149.98"
+   },
+   {
+    "row": 161,
+    "field": "debit",
+    "value": "Rs. 190.26"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription contained numerous OCR errors in the debit and credit columns which have been corrected to match the printed statement. After applying these corrections, all row balances are mathematically consistent with the previous balance plus or minus the transaction amount, and the final closing balance of Rs. 105,716.95 matches the sum of the opening balance and all movements."
+ }
+}

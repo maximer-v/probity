@@ -1,0 +1,3 @@
+qwen/qwen3.5-flash-02-23                     rows  167/167 exact  166 fieldacc  98.8%  $0.0157    503s
+meta-llama/llama-4-scout                     rows  168/167 exact  164 fieldacc  95.3%  $0.0095    189s
+bytedance-seed/seed-2.0-mini                 rows  167/167 exact  160 fieldacc  92.0%  $0.0231    311s

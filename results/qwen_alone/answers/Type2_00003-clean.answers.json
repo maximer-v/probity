@@ -1,0 +1,1536 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 10,
+    "field": "balance",
+    "value": "9,760,391.32"
+   },
+   {
+    "row": 11,
+    "field": "balance",
+    "value": "10,220,988.20"
+   },
+   {
+    "row": 12,
+    "field": "balance",
+    "value": "12,395,468.61"
+   },
+   {
+    "row": 13,
+    "field": "balance",
+    "value": "8,889,042.53"
+   },
+   {
+    "row": 14,
+    "field": "balance",
+    "value": "8,668,335.42"
+   },
+   {
+    "row": 15,
+    "field": "balance",
+    "value": "11,854,202.09"
+   },
+   {
+    "row": 16,
+    "field": "balance",
+    "value": "11,854,102.76"
+   },
+   {
+    "row": 17,
+    "field": "balance",
+    "value": "14,982,622.42"
+   },
+   {
+    "row": 18,
+    "field": "balance",
+    "value": "10,981,637.00"
+   },
+   {
+    "row": 19,
+    "field": "balance",
+    "value": "8,259,588.50"
+   },
+   {
+    "row": 20,
+    "field": "balance",
+    "value": "6,773,186.37"
+   },
+   {
+    "row": 21,
+    "field": "balance",
+    "value": "6,899,631.67"
+   },
+   {
+    "row": 22,
+    "field": "balance",
+    "value": "8,827,938.11"
+   },
+   {
+    "row": 23,
+    "field": "balance",
+    "value": "9,647,302.52"
+   },
+   {
+    "row": 24,
+    "field": "balance",
+    "value": "11,098,655.46"
+   },
+   {
+    "row": 25,
+    "field": "balance",
+    "value": "23,400,695.51"
+   },
+   {
+    "row": 26,
+    "field": "balance",
+    "value": "26,654,070.31"
+   },
+   {
+    "row": 27,
+    "field": "balance",
+    "value": "10,664,066.62"
+   },
+   {
+    "row": 28,
+    "field": "balance",
+    "value": "7,967,589.53"
+   },
+   {
+    "row": 29,
+    "field": "balance",
+    "value": "5,022,226.67"
+   },
+   {
+    "row": 30,
+    "field": "balance",
+    "value": "4,984,820.92"
+   },
+   {
+    "row": 31,
+    "field": "balance",
+    "value": "4,977,825.09"
+   },
+   {
+    "row": 32,
+    "field": "balance",
+    "value": "5,127,833.77"
+   },
+   {
+    "row": 33,
+    "field": "balance",
+    "value": "9,528,562.76"
+   },
+   {
+    "row": 34,
+    "field": "balance",
+    "value": "5,620,146.22"
+   },
+   {
+    "row": 35,
+    "field": "balance",
+    "value": "5,619,017.12"
+   },
+   {
+    "row": 36,
+    "field": "balance",
+    "value": "6,710,791.90"
+   },
+   {
+    "row": 37,
+    "field": "balance",
+    "value": "7,369,412.61"
+   },
+   {
+    "row": 38,
+    "field": "balance",
+    "value": "7,414,789.86"
+   },
+   {
+    "row": 39,
+    "field": "balance",
+    "value": "14,740,731.32"
+   },
+   {
+    "row": 40,
+    "field": "balance",
+    "value": "14,915,415.44"
+   },
+   {
+    "row": 41,
+    "field": "balance",
+    "value": "14,328,647.23"
+   },
+   {
+    "row": 42,
+    "field": "balance",
+    "value": "11,450,567.83"
+   },
+   {
+    "row": 43,
+    "field": "balance",
+    "value": "11,902,294.46"
+   },
+   {
+    "row": 44,
+    "field": "balance",
+    "value": "11,204,122.23"
+   },
+   {
+    "row": 45,
+    "field": "balance",
+    "value": "6,220,690.52"
+   },
+   {
+    "row": 46,
+    "field": "balance",
+    "value": "5,451,582.79"
+   },
+   {
+    "row": 47,
+    "field": "balance",
+    "value": "7,138,513.47"
+   },
+   {
+    "row": 48,
+    "field": "balance",
+    "value": "8,454,933.46"
+   },
+   {
+    "row": 49,
+    "field": "balance",
+    "value": "10,478,482.55"
+   },
+   {
+    "row": 50,
+    "field": "balance",
+    "value": "10,413,561.34"
+   },
+   {
+    "row": 51,
+    "field": "balance",
+    "value": "7,256,577.85"
+   },
+   {
+    "row": 52,
+    "field": "balance",
+    "value": "3,958,731.84"
+   },
+   {
+    "row": 53,
+    "field": "balance",
+    "value": "4,111,297.50"
+   },
+   {
+    "row": 54,
+    "field": "balance",
+    "value": "4,102,942.45"
+   },
+   {
+    "row": 55,
+    "field": "balance",
+    "value": "4,133,876.52"
+   },
+   {
+    "row": 56,
+    "field": "balance",
+    "value": "3,504,491.36"
+   },
+   {
+    "row": 57,
+    "field": "balance",
+    "value": "3,788,981.53"
+   },
+   {
+    "row": 58,
+    "field": "balance",
+    "value": "4,134,034.00"
+   },
+   {
+    "row": 59,
+    "field": "balance",
+    "value": "4,516,411.49"
+   },
+   {
+    "row": 60,
+    "field": "balance",
+    "value": "4,584,740.63"
+   },
+   {
+    "row": 61,
+    "field": "balance",
+    "value": "6,135,150.38"
+   },
+   {
+    "row": 62,
+    "field": "balance",
+    "value": "9,179,046.88"
+   },
+   {
+    "row": 63,
+    "field": "balance",
+    "value": "6,241,591.64"
+   },
+   {
+    "row": 64,
+    "field": "balance",
+    "value": "6,465,222.11"
+   },
+   {
+    "row": 65,
+    "field": "balance",
+    "value": "6,386,845.11"
+   },
+   {
+    "row": 66,
+    "field": "balance",
+    "value": "7,599,223.19"
+   },
+   {
+    "row": 67,
+    "field": "balance",
+    "value": "13,404,328.50"
+   },
+   {
+    "row": 68,
+    "field": "balance",
+    "value": "8,672,023.91"
+   },
+   {
+    "row": 69,
+    "field": "balance",
+    "value": "6,041,641.85"
+   },
+   {
+    "row": 70,
+    "field": "balance",
+    "value": "5,690,333.29"
+   },
+   {
+    "row": 71,
+    "field": "balance",
+    "value": "7,339,612.66"
+   },
+   {
+    "row": 72,
+    "field": "balance",
+    "value": "8,222,406.87"
+   },
+   {
+    "row": 73,
+    "field": "balance",
+    "value": "7,291,116.13"
+   },
+   {
+    "row": 74,
+    "field": "balance",
+    "value": "7,635,316.67"
+   },
+   {
+    "row": 75,
+    "field": "balance",
+    "value": "9,269,344.71"
+   },
+   {
+    "row": 76,
+    "field": "balance",
+    "value": "6,536,418.74"
+   },
+   {
+    "row": 77,
+    "field": "balance",
+    "value": "6,188,903.33"
+   },
+   {
+    "row": 78,
+    "field": "balance",
+    "value": "6,774,179.49"
+   },
+   {
+    "row": 79,
+    "field": "balance",
+    "value": "6,941,949.13"
+   },
+   {
+    "row": 80,
+    "field": "balance",
+    "value": "6,971,090.14"
+   },
+   {
+    "row": 81,
+    "field": "balance",
+    "value": "7,146,722.52"
+   },
+   {
+    "row": 82,
+    "field": "balance",
+    "value": "8,436,907.50"
+   },
+   {
+    "row": 83,
+    "field": "balance",
+    "value": "20,700,351.15"
+   },
+   {
+    "row": 84,
+    "field": "balance",
+    "value": "20,691,677.91"
+   },
+   {
+    "row": 85,
+    "field": "balance",
+    "value": "19,394,736.97"
+   },
+   {
+    "row": 86,
+    "field": "balance",
+    "value": "16,772,592.63"
+   },
+   {
+    "row": 87,
+    "field": "balance",
+    "value": "14,909,922.65"
+   },
+   {
+    "row": 88,
+    "field": "balance",
+    "value": "13,451,028.29"
+   },
+   {
+    "row": 89,
+    "field": "balance",
+    "value": "13,417,820.53"
+   },
+   {
+    "row": 90,
+    "field": "balance",
+    "value": "8,625,488.10"
+   },
+   {
+    "row": 91,
+    "field": "balance",
+    "value": "13,041,342.45"
+   },
+   {
+    "row": 92,
+    "field": "balance",
+    "value": "13,041,257.56"
+   },
+   {
+    "row": 93,
+    "field": "balance",
+    "value": "9,152,450.78"
+   },
+   {
+    "row": 94,
+    "field": "balance",
+    "value": "10,107,674.67"
+   },
+   {
+    "row": 95,
+    "field": "balance",
+    "value": "7,892,559.01"
+   },
+   {
+    "row": 96,
+    "field": "balance",
+    "value": "7,000,556.19"
+   },
+   {
+    "row": 97,
+    "field": "balance",
+    "value": "7,252,518.61"
+   },
+   {
+    "row": 98,
+    "field": "balance",
+    "value": "7,129,061.42"
+   },
+   {
+    "row": 99,
+    "field": "balance",
+    "value": "4,818,581.38"
+   },
+   {
+    "row": 100,
+    "field": "balance",
+    "value": "8,628,443.72"
+   },
+   {
+    "row": 101,
+    "field": "balance",
+    "value": "8,628,787.93"
+   },
+   {
+    "row": 102,
+    "field": "balance",
+    "value": "4,751,713.52"
+   },
+   {
+    "row": 103,
+    "field": "balance",
+    "value": "3,510,026.91"
+   },
+   {
+    "row": 104,
+    "field": "balance",
+    "value": "3,507,803.21"
+   },
+   {
+    "row": 105,
+    "field": "balance",
+    "value": "3,590,277.98"
+   },
+   {
+    "row": 106,
+    "field": "balance",
+    "value": "10,234,386.58"
+   },
+   {
+    "row": 107,
+    "field": "balance",
+    "value": "3,631,828.29"
+   },
+   {
+    "row": 108,
+    "field": "balance",
+    "value": "5,587,382.86"
+   },
+   {
+    "row": 109,
+    "field": "balance",
+    "value": "3,971,223.41"
+   },
+   {
+    "row": 110,
+    "field": "balance",
+    "value": "4,202,826.67"
+   },
+   {
+    "row": 111,
+    "field": "balance",
+    "value": "4,138,807.78"
+   },
+   {
+    "row": 112,
+    "field": "balance",
+    "value": "7,501,303.22"
+   },
+   {
+    "row": 113,
+    "field": "balance",
+    "value": "7,484,048.39"
+   },
+   {
+    "row": 114,
+    "field": "balance",
+    "value": "8,471,771.28"
+   },
+   {
+    "row": 115,
+    "field": "balance",
+    "value": "7,199,714.75"
+   },
+   {
+    "row": 116,
+    "field": "balance",
+    "value": "6,630,287.04"
+   },
+   {
+    "row": 117,
+    "field": "balance",
+    "value": "6,862,589.23"
+   },
+   {
+    "row": 118,
+    "field": "balance",
+    "value": "7,138,845.02"
+   },
+   {
+    "row": 119,
+    "field": "balance",
+    "value": "8,183,734.18"
+   },
+   {
+    "row": 120,
+    "field": "balance",
+    "value": "8,143,635.13"
+   },
+   {
+    "row": 121,
+    "field": "balance",
+    "value": "8,322,078.99"
+   },
+   {
+    "row": 122,
+    "field": "balance",
+    "value": "10,063,260.14"
+   },
+   {
+    "row": 123,
+    "field": "balance",
+    "value": "9,392,968.94"
+   },
+   {
+    "row": 124,
+    "field": "balance",
+    "value": "8,347,728.92"
+   },
+   {
+    "row": 125,
+    "field": "balance",
+    "value": "9,844,821.71"
+   },
+   {
+    "row": 126,
+    "field": "balance",
+    "value": "9,778,302.14"
+   },
+   {
+    "row": 127,
+    "field": "balance",
+    "value": "10,210,852.32"
+   },
+   {
+    "row": 128,
+    "field": "balance",
+    "value": "10,210,653.30"
+   },
+   {
+    "row": 129,
+    "field": "balance",
+    "value": "10,065,660.40"
+   },
+   {
+    "row": 130,
+    "field": "balance",
+    "value": "10,065,323.70"
+   },
+   {
+    "row": 131,
+    "field": "balance",
+    "value": "9,338,182.57"
+   },
+   {
+    "row": 132,
+    "field": "balance",
+    "value": "9,105,655.09"
+   },
+   {
+    "row": 133,
+    "field": "balance",
+    "value": "10,859,416.10"
+   },
+   {
+    "row": 134,
+    "field": "balance",
+    "value": "7,250,483.53"
+   },
+   {
+    "row": 135,
+    "field": "balance",
+    "value": "7,822,021.47"
+   },
+   {
+    "row": 136,
+    "field": "balance",
+    "value": "6,083,178.80"
+   },
+   {
+    "row": 137,
+    "field": "balance",
+    "value": "6,167,262.26"
+   },
+   {
+    "row": 138,
+    "field": "balance",
+    "value": "7,963,348.96"
+   },
+   {
+    "row": 139,
+    "field": "balance",
+    "value": "5,468,898.44"
+   },
+   {
+    "row": 140,
+    "field": "balance",
+    "value": "10,991,249.59"
+   },
+   {
+    "row": 141,
+    "field": "balance",
+    "value": "8,165,294.08"
+   },
+   {
+    "row": 142,
+    "field": "balance",
+    "value": "9,052,898.61"
+   },
+   {
+    "row": 143,
+    "field": "balance",
+    "value": "10,345,312.01"
+   },
+   {
+    "row": 144,
+    "field": "balance",
+    "value": "10,517,658.01"
+   },
+   {
+    "row": 145,
+    "field": "balance",
+    "value": "10,508,631.57"
+   },
+   {
+    "row": 146,
+    "field": "balance",
+    "value": "10,705,913.94"
+   },
+   {
+    "row": 147,
+    "field": "balance",
+    "value": "12,901,561.60"
+   },
+   {
+    "row": 148,
+    "field": "balance",
+    "value": "13,214,633.87"
+   },
+   {
+    "row": 149,
+    "field": "balance",
+    "value": "13,853,552.79"
+   },
+   {
+    "row": 150,
+    "field": "balance",
+    "value": "14,737,502.50"
+   },
+   {
+    "row": 151,
+    "field": "balance",
+    "value": "12,715,714.99"
+   },
+   {
+    "row": 152,
+    "field": "balance",
+    "value": "11,970,722.34"
+   },
+   {
+    "row": 153,
+    "field": "balance",
+    "value": "11,378,877.18"
+   },
+   {
+    "row": 154,
+    "field": "balance",
+    "value": "7,963,186.80"
+   },
+   {
+    "row": 155,
+    "field": "balance",
+    "value": "7,963,192.92"
+   },
+   {
+    "row": 156,
+    "field": "balance",
+    "value": "7,963,022.41"
+   },
+   {
+    "row": 157,
+    "field": "balance",
+    "value": "11,377,365.51"
+   },
+   {
+    "row": 158,
+    "field": "balance",
+    "value": "13,034,708.92"
+   },
+   {
+    "row": 159,
+    "field": "balance",
+    "value": "16,033,819.13"
+   },
+   {
+    "row": 160,
+    "field": "balance",
+    "value": "11,777,996.79"
+   },
+   {
+    "row": 161,
+    "field": "balance",
+    "value": "11,760,890.51"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription contains numerous errors in the 'balance' column where values were misread from the statement images. After correcting all balance figures to match the printed amounts on pages 1-6, the arithmetic is consistent: every row's balance correctly follows from the previous balance plus credit minus debit, and the final closing balance of 10,576,796.33 matches the sum of the opening balance and all movements."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 10,
+    "field": "balance",
+    "value": "8,236,695.64"
+   },
+   {
+    "row": 11,
+    "field": "balance",
+    "value": "8,697,292.52"
+   },
+   {
+    "row": 12,
+    "field": "balance",
+    "value": "10,871,772.93"
+   },
+   {
+    "row": 13,
+    "field": "balance",
+    "value": "7,365,346.85"
+   },
+   {
+    "row": 14,
+    "field": "balance",
+    "value": "7,144,639.74"
+   },
+   {
+    "row": 15,
+    "field": "balance",
+    "value": "10,330,506.41"
+   },
+   {
+    "row": 16,
+    "field": "balance",
+    "value": "10,330,407.08"
+   },
+   {
+    "row": 17,
+    "field": "balance",
+    "value": "13,458,926.74"
+   },
+   {
+    "row": 18,
+    "field": "balance",
+    "value": "9,457,941.31"
+   },
+   {
+    "row": 19,
+    "field": "balance",
+    "value": "6,735,892.81"
+   },
+   {
+    "row": 20,
+    "field": "balance",
+    "value": "5,249,490.68"
+   },
+   {
+    "row": 21,
+    "field": "balance",
+    "value": "5,375,935.98"
+   },
+   {
+    "row": 22,
+    "field": "balance",
+    "value": "7,304,242.42"
+   },
+   {
+    "row": 23,
+    "field": "balance",
+    "value": "8,123,606.83"
+   },
+   {
+    "row": 24,
+    "field": "balance",
+    "value": "9,574,959.77"
+   },
+   {
+    "row": 25,
+    "field": "balance",
+    "value": "21,875,999.82"
+   },
+   {
+    "row": 26,
+    "field": "balance",
+    "value": "25,129,374.62"
+   },
+   {
+    "row": 27,
+    "field": "balance",
+    "value": "9,139,370.93"
+   },
+   {
+    "row": 28,
+    "field": "balance",
+    "value": "6,442,893.84"
+   },
+   {
+    "row": 29,
+    "field": "balance",
+    "value": "3,497,530.98"
+   },
+   {
+    "row": 30,
+    "field": "balance",
+    "value": "3,460,125.23"
+   },
+   {
+    "row": 31,
+    "field": "balance",
+    "value": "3,453,129.40"
+   },
+   {
+    "row": 32,
+    "field": "balance",
+    "value": "3,603,138.08"
+   },
+   {
+    "row": 33,
+    "field": "balance",
+    "value": "8,003,867.07"
+   },
+   {
+    "row": 34,
+    "field": "balance",
+    "value": "4,095,450.53"
+   },
+   {
+    "row": 35,
+    "field": "balance",
+    "value": "4,095,321.43"
+   },
+   {
+    "row": 36,
+    "field": "balance",
+    "value": "5,187,096.21"
+   },
+   {
+    "row": 37,
+    "field": "balance",
+    "value": "5,845,716.92"
+   },
+   {
+    "row": 38,
+    "field": "balance",
+    "value": "5,891,094.17"
+   },
+   {
+    "row": 39,
+    "field": "balance",
+    "value": "13,217,035.63"
+   },
+   {
+    "row": 40,
+    "field": "balance",
+    "value": "13,391,719.75"
+   },
+   {
+    "row": 41,
+    "field": "balance",
+    "value": "12,804,951.54"
+   },
+   {
+    "row": 42,
+    "field": "balance",
+    "value": "9,926,872.14"
+   },
+   {
+    "row": 43,
+    "field": "balance",
+    "value": "10,378,598.77"
+   },
+   {
+    "row": 44,
+    "field": "balance",
+    "value": "9,680,426.54"
+   },
+   {
+    "row": 45,
+    "field": "balance",
+    "value": "4,696,994.83"
+   },
+   {
+    "row": 46,
+    "field": "balance",
+    "value": "3,927,887.10"
+   },
+   {
+    "row": 47,
+    "field": "balance",
+    "value": "5,614,817.78"
+   },
+   {
+    "row": 48,
+    "field": "balance",
+    "value": "6,931,237.77"
+   },
+   {
+    "row": 49,
+    "field": "balance",
+    "value": "8,954,786.86"
+   },
+   {
+    "row": 50,
+    "field": "balance",
+    "value": "8,889,865.65"
+   },
+   {
+    "row": 51,
+    "field": "balance",
+    "value": "5,732,882.16"
+   },
+   {
+    "row": 52,
+    "field": "balance",
+    "value": "2,435,036.15"
+   },
+   {
+    "row": 53,
+    "field": "balance",
+    "value": "2,587,601.81"
+   },
+   {
+    "row": 54,
+    "field": "balance",
+    "value": "2,579,246.76"
+   },
+   {
+    "row": 55,
+    "field": "balance",
+    "value": "2,610,180.83"
+   },
+   {
+    "row": 56,
+    "field": "balance",
+    "value": "1,980,795.67"
+   },
+   {
+    "row": 57,
+    "field": "balance",
+    "value": "2,265,285.84"
+   },
+   {
+    "row": 58,
+    "field": "balance",
+    "value": "2,610,338.30"
+   },
+   {
+    "row": 59,
+    "field": "balance",
+    "value": "2,992,715.79"
+   },
+   {
+    "row": 60,
+    "field": "balance",
+    "value": "3,061,044.93"
+   },
+   {
+    "row": 61,
+    "field": "balance",
+    "value": "4,611,454.68"
+   },
+   {
+    "row": 62,
+    "field": "balance",
+    "value": "7,655,351.18"
+   },
+   {
+    "row": 63,
+    "field": "balance",
+    "value": "4,717,895.94"
+   },
+   {
+    "row": 64,
+    "field": "balance",
+    "value": "4,941,526.41"
+   },
+   {
+    "row": 65,
+    "field": "balance",
+    "value": "4,863,149.41"
+   },
+   {
+    "row": 66,
+    "field": "balance",
+    "value": "6,075,527.49"
+   },
+   {
+    "row": 67,
+    "field": "balance",
+    "value": "11,880,632.80"
+   },
+   {
+    "row": 68,
+    "field": "balance",
+    "value": "7,148,328.21"
+   },
+   {
+    "row": 69,
+    "field": "balance",
+    "value": "4,517,946.15"
+   },
+   {
+    "row": 70,
+    "field": "balance",
+    "value": "4,166,637.59"
+   },
+   {
+    "row": 71,
+    "field": "balance",
+    "value": "5,815,916.96"
+   },
+   {
+    "row": 72,
+    "field": "balance",
+    "value": "6,698,711.17"
+   },
+   {
+    "row": 73,
+    "field": "balance",
+    "value": "5,767,420.43"
+   },
+   {
+    "row": 74,
+    "field": "balance",
+    "value": "6,111,620.97"
+   },
+   {
+    "row": 75,
+    "field": "balance",
+    "value": "7,745,649.01"
+   },
+   {
+    "row": 76,
+    "field": "balance",
+    "value": "5,012,723.04"
+   },
+   {
+    "row": 77,
+    "field": "balance",
+    "value": "4,665,207.63"
+   },
+   {
+    "row": 78,
+    "field": "balance",
+    "value": "5,250,483.79"
+   },
+   {
+    "row": 79,
+    "field": "balance",
+    "value": "5,418,253.43"
+   },
+   {
+    "row": 80,
+    "field": "balance",
+    "value": "5,447,394.44"
+   },
+   {
+    "row": 81,
+    "field": "balance",
+    "value": "5,623,026.82"
+   },
+   {
+    "row": 82,
+    "field": "balance",
+    "value": "6,913,211.80"
+   },
+   {
+    "row": 83,
+    "field": "balance",
+    "value": "19,276,655.45"
+   },
+   {
+    "row": 84,
+    "field": "balance",
+    "value": "19,267,982.21"
+   },
+   {
+    "row": 85,
+    "field": "balance",
+    "value": "17,971,041.27"
+   },
+   {
+    "row": 86,
+    "field": "balance",
+    "value": "15,348,896.93"
+   },
+   {
+    "row": 87,
+    "field": "balance",
+    "value": "13,486,326.95"
+   },
+   {
+    "row": 88,
+    "field": "balance",
+    "value": "12,027,432.59"
+   },
+   {
+    "row": 89,
+    "field": "balance",
+    "value": "11,994,224.83"
+   },
+   {
+    "row": 90,
+    "field": "balance",
+    "value": "7,201,892.40"
+   },
+   {
+    "row": 91,
+    "field": "balance",
+    "value": "11,617,746.75"
+   },
+   {
+    "row": 92,
+    "field": "balance",
+    "value": "11,617,661.86"
+   },
+   {
+    "row": 93,
+    "field": "balance",
+    "value": "7,728,855.08"
+   },
+   {
+    "row": 94,
+    "field": "balance",
+    "value": "8,684,078.97"
+   },
+   {
+    "row": 95,
+    "field": "balance",
+    "value": "6,468,963.31"
+   },
+   {
+    "row": 96,
+    "field": "balance",
+    "value": "5,573,560.49"
+   },
+   {
+    "row": 97,
+    "field": "balance",
+    "value": "5,825,522.91"
+   },
+   {
+    "row": 98,
+    "field": "balance",
+    "value": "5,702,065.72"
+   },
+   {
+    "row": 99,
+    "field": "balance",
+    "value": "3,391,585.68"
+   },
+   {
+    "row": 100,
+    "field": "balance",
+    "value": "7,201,448.02"
+   },
+   {
+    "row": 101,
+    "field": "balance",
+    "value": "7,201,792.23"
+   },
+   {
+    "row": 102,
+    "field": "balance",
+    "value": "3,324,717.82"
+   },
+   {
+    "row": 103,
+    "field": "balance",
+    "value": "2,083,031.21"
+   },
+   {
+    "row": 104,
+    "field": "balance",
+    "value": "2,080,807.51"
+   },
+   {
+    "row": 105,
+    "field": "balance",
+    "value": "2,163,282.28"
+   },
+   {
+    "row": 106,
+    "field": "balance",
+    "value": "8,807,390.88"
+   },
+   {
+    "row": 107,
+    "field": "balance",
+    "value": "2,204,832.59"
+   },
+   {
+    "row": 108,
+    "field": "balance",
+    "value": "4,160,387.16"
+   },
+   {
+    "row": 109,
+    "field": "balance",
+    "value": "2,544,227.71"
+   },
+   {
+    "row": 110,
+    "field": "balance",
+    "value": "2,775,830.97"
+   },
+   {
+    "row": 111,
+    "field": "balance",
+    "value": "2,711,812.08"
+   },
+   {
+    "row": 112,
+    "field": "balance",
+    "value": "6,074,307.52"
+   },
+   {
+    "row": 113,
+    "field": "balance",
+    "value": "6,057,052.69"
+   },
+   {
+    "row": 114,
+    "field": "balance",
+    "value": "7,044,775.58"
+   },
+   {
+    "row": 115,
+    "field": "balance",
+    "value": "5,772,719.05"
+   },
+   {
+    "row": 116,
+    "field": "balance",
+    "value": "5,203,291.34"
+   },
+   {
+    "row": 117,
+    "field": "balance",
+    "value": "5,435,593.53"
+   },
+   {
+    "row": 118,
+    "field": "balance",
+    "value": "5,711,849.32"
+   },
+   {
+    "row": 119,
+    "field": "balance",
+    "value": "6,756,738.48"
+   },
+   {
+    "row": 120,
+    "field": "balance",
+    "value": "6,716,639.43"
+   },
+   {
+    "row": 121,
+    "field": "balance",
+    "value": "6,895,083.29"
+   },
+   {
+    "row": 122,
+    "field": "balance",
+    "value": "8,636,264.44"
+   },
+   {
+    "row": 123,
+    "field": "balance",
+    "value": "7,965,973.24"
+   },
+   {
+    "row": 124,
+    "field": "balance",
+    "value": "6,920,733.22"
+   },
+   {
+    "row": 125,
+    "field": "balance",
+    "value": "8,417,826.01"
+   },
+   {
+    "row": 126,
+    "field": "balance",
+    "value": "8,351,306.44"
+   },
+   {
+    "row": 127,
+    "field": "balance",
+    "value": "8,783,856.62"
+   },
+   {
+    "row": 128,
+    "field": "balance",
+    "value": "8,783,657.60"
+   },
+   {
+    "row": 129,
+    "field": "balance",
+    "value": "8,638,664.70"
+   },
+   {
+    "row": 130,
+    "field": "balance",
+    "value": "8,638,328.00"
+   },
+   {
+    "row": 131,
+    "field": "balance",
+    "value": "7,911,186.87"
+   },
+   {
+    "row": 132,
+    "field": "balance",
+    "value": "7,678,659.39"
+   },
+   {
+    "row": 133,
+    "field": "balance",
+    "value": "9,432,420.40"
+   },
+   {
+    "row": 134,
+    "field": "balance",
+    "value": "5,823,487.83"
+   },
+   {
+    "row": 135,
+    "field": "balance",
+    "value": "6,395,025.77"
+   },
+   {
+    "row": 136,
+    "field": "balance",
+    "value": "4,656,183.10"
+   },
+   {
+    "row": 137,
+    "field": "balance",
+    "value": "4,740,266.56"
+   },
+   {
+    "row": 138,
+    "field": "balance",
+    "value": "6,536,353.26"
+   },
+   {
+    "row": 139,
+    "field": "balance",
+    "value": "4,041,902.74"
+   },
+   {
+    "row": 140,
+    "field": "balance",
+    "value": "9,564,253.89"
+   },
+   {
+    "row": 141,
+    "field": "balance",
+    "value": "6,738,298.38"
+   },
+   {
+    "row": 142,
+    "field": "balance",
+    "value": "7,625,902.91"
+   },
+   {
+    "row": 143,
+    "field": "balance",
+    "value": "8,918,316.31"
+   },
+   {
+    "row": 144,
+    "field": "balance",
+    "value": "9,090,662.31"
+   },
+   {
+    "row": 145,
+    "field": "balance",
+    "value": "9,081,635.87"
+   },
+   {
+    "row": 146,
+    "field": "balance",
+    "value": "9,278,918.24"
+   },
+   {
+    "row": 147,
+    "field": "balance",
+    "value": "11,474,565.90"
+   },
+   {
+    "row": 148,
+    "field": "balance",
+    "value": "11,787,638.17"
+   },
+   {
+    "row": 149,
+    "field": "balance",
+    "value": "12,426,557.09"
+   },
+   {
+    "row": 150,
+    "field": "balance",
+    "value": "13,310,506.80"
+   },
+   {
+    "row": 151,
+    "field": "balance",
+    "value": "11,288,719.29"
+   },
+   {
+    "row": 152,
+    "field": "balance",
+    "value": "10,543,726.64"
+   },
+   {
+    "row": 153,
+    "field": "balance",
+    "value": "9,951,881.48"
+   },
+   {
+    "row": 154,
+    "field": "balance",
+    "value": "6,536,191.10"
+   },
+   {
+    "row": 155,
+    "field": "balance",
+    "value": "6,536,197.22"
+   },
+   {
+    "row": 156,
+    "field": "balance",
+    "value": "6,536,026.71"
+   },
+   {
+    "row": 157,
+    "field": "balance",
+    "value": "9,950,369.81"
+   },
+   {
+    "row": 158,
+    "field": "balance",
+    "value": "11,607,713.22"
+   },
+   {
+    "row": 159,
+    "field": "balance",
+    "value": "14,606,823.43"
+   },
+   {
+    "row": 160,
+    "field": "balance",
+    "value": "10,351,001.09"
+   },
+   {
+    "row": 161,
+    "field": "balance",
+    "value": "10,333,894.81"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription contains numerous errors in the 'balance' column where values were misread from the statement images. After correcting all balance figures to match the printed amounts on pages 1-6, the arithmetic is consistent: every row's balance correctly follows from the previous balance plus credit minus debit, and the final closing balance of 10,576,796.33 matches the sum of the opening balance and all movements."
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "documents": 20,
+ "one_pass": {
+  "no_answer": 0,
+  "no_answer_clean": 0,
+  "no_answer_altered": 0,
+  "no_answer_reasons": {},
+  "clean_certified": [
+   10,
+   11
+  ],
+  "altered_certified": [
+   9,
+   9
+  ],
+  "altered_certified_95ci": [
+   0.701,
+   1.0
+  ],
+  "altered_certified_among_answered": [
+   9,
+   9
+  ],
+  "altered_row_named_exactly": [
+   0,
+   9
+  ],
+  "altered_row_among_named": [
+   0,
+   9
+  ],
+  "amounts_and_dates_exact": [
+   4,
+   20
+  ],
+  "period_dates_exact": [
+   20,
+   20
+  ],
+  "rows_changed": 45,
+  "cost_per_document_usd": 0.0
+ },
+ "self_check": {
+  "no_answer": 0,
+  "no_answer_clean": 0,
+  "no_answer_altered": 0,
+  "no_answer_reasons": {},
+  "clean_certified": [
+   10,
+   11
+  ],
+  "altered_certified": [
+   8,
+   9
+  ],
+  "altered_certified_95ci": [
+   0.565,
+   0.98
+  ],
+  "altered_certified_among_answered": [
+   8,
+   9
+  ],
+  "altered_row_named_exactly": [
+   0,
+   9
+  ],
+  "altered_row_among_named": [
+   0,
+   9
+  ],
+  "amounts_and_dates_exact": [
+   3,
+   20
+  ],
+  "period_dates_exact": [
+   20,
+   20
+  ],
+  "rows_changed": 115,
+  "cost_per_document_usd": 0.0
+ },
+ "final": {
+  "no_answer": 0,
+  "no_answer_clean": 0,
+  "no_answer_altered": 0,
+  "no_answer_reasons": {},
+  "clean_certified": [
+   10,
+   11
+  ],
+  "altered_certified": [
+   8,
+   9
+  ],
+  "altered_certified_95ci": [
+   0.565,
+   0.98
+  ],
+  "altered_certified_among_answered": [
+   8,
+   9
+  ],
+  "altered_row_named_exactly": [
+   0,
+   9
+  ],
+  "altered_row_among_named": [
+   0,
+   9
+  ],
+  "amounts_and_dates_exact": [
+   3,
+   20
+  ],
+  "period_dates_exact": [
+   20,
+   20
+  ],
+  "rows_changed": 115,
+  "cost_per_document_usd": 0.0
+ }
+}

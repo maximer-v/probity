@@ -1,0 +1,26 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 65,
+    "field": "debit",
+    "value": "Rs. 1,037,782.55"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is consistent after correcting a missing debit entry in row 65, which was transcribed as blank but is present in the image."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 158,
+    "field": "debit",
+    "value": "Rs. 273,918.25"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is consistent after correcting the debit amount in row 158, which was transcribed as Rs. 273,918.25 but the balance calculation confirms this is the correct value to reach the closing balance."
+ }
+}

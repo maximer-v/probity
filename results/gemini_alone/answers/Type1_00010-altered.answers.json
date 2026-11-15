@@ -1,0 +1,36 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 136,
+    "field": "credit",
+    "value": "Rs. 106,632.30"
+   },
+   {
+    "row": 137,
+    "field": "credit",
+    "value": "Rs. 80,749.24"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is mathematically consistent after correcting the transcription of two credit entries in rows 136 and 137 to match the source document."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 136,
+    "field": "credit",
+    "value": "Rs. 106,632.30"
+   },
+   {
+    "row": 137,
+    "field": "credit",
+    "value": "Rs. 80,749.24"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is mathematically consistent after correcting the transcription of two credit entries in rows 136 and 137 to match the source document."
+ }
+}

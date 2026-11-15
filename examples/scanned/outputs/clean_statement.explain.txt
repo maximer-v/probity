@@ -1,0 +1,70 @@
+=== clean_statement ===
+spec f743ea85257c3740  probity 0.2.0
+
+INGEST
+  note ingested clean_statement.pdf
+  ask  ingest_failed                no   <- the document opened and has pages
+  go   INGEST -> CLASSIFY (via fallback)
+
+CLASSIFY
+  ask  has_text_layer               no   <- no usable text layer; OCR will be required
+  note starting at llm_small: the text-layer tiers cannot apply to a scan
+  go   CLASSIFY -> EXTRACT (via fallback)
+
+EXTRACT
+  call llm:google/gemini-3.1-flash-lite (transcribe) cached
+  call llm:google/gemini-3.1-flash-lite (transcribe) cached
+  call llm:google/gemini-3.1-flash-lite (transcribe) cached
+  call llm:google/gemini-3.1-flash-lite (transcribe) cached
+  call llm:google/gemini-3.1-flash-lite (transcribe) cached
+  call llm:google/gemini-3.1-flash-lite (transcribe) cached
+  read llm_small proposed 163 rows, 0 unreadable cells
+  ask  extract_empty_and_tier_left  no   <- 163 rows were read
+  ask  extract_empty                no   <- 163 rows were read
+  go   EXTRACT -> GROUND (via fallback)
+
+GROUND
+  gnd  all 658 fields grounded on the page
+  go   GROUND -> VERIFY (via fallback)
+
+VERIFY
+  chk  3 invariant failure(s):
+  chk    [ROW_BAL/MISMATCH] row:151: row 151: 1331050680 + 202178751 = 1533229431, but the balance column reads 1128871929 (off by -404357502)
+  chk    [ROW_BAL/MISMATCH] row:155: row 155: 653619110 + -612 = 653618498, but the balance column reads 653619722 (off by 1224)
+  chk    [GLOBAL_BAL/MISMATCH] document: opening 260136936 + movements 1201898975 = 1462035911, closing balance reads 1057679633
+  ask  accepts                      no   <- 3 invariant failure(s): MISMATCH
+  ask  repairable                   yes  <- row:151 has 2 repair attempt(s) left
+  go   VERIFY -> REPAIR (via repairable)
+
+REPAIR
+  note repair request for row:151
+  call llm:qwen/qwen3.5-flash-02-23 (second_opinion) cached
+  fix  row:151: second_opinion -> accepted
+  ask  repair_proposed              yes  <- the second reading has row(s) [151, 155] differently, and with it the rule passes and no other check fails (3 failure(s) before, 0 after)
+  go   REPAIR -> GROUND (via repair_proposed)
+
+GROUND
+  gnd  all 658 fields grounded on the page
+  go   GROUND -> VERIFY (via fallback)
+
+VERIFY
+  chk  all invariants passed (DATE_ORDER 163/163, GLOBAL_BAL 1/1, LAST_ROW_EQ_CLOSING 1/1, NO_DUP_ROW 1/1, ROW_BAL 163/163)
+  ask  accepts                      yes  <- every invariant passed and every required field is grounded
+  go   VERIFY -> ACCEPT (via accepts)
+
+ACCEPT
+
+FINAL ACCEPT: every invariant passed and every required field is grounded
+  7 model call(s), $0.00000, 317 ms
+
+clean_statement: CONFIRMED
+  every rule passed; 2 row(s) were corrected on the way
+  491/822 fields VERIFIED; 329/329 invariant checks passed
+  1 tier(s) used, $0.00000
+  2 row(s) corrected: [151, 155]
+
+report      -> examples/scanned/outputs/clean_statement.report.md
+
+certificate -> examples/scanned/outputs/clean_statement.certificate.json
+trace       -> examples/scanned/outputs/clean_statement.trace.jsonl
+rows        -> examples/scanned/outputs/clean_statement.rows.csv

@@ -1,0 +1,43 @@
+# AgamiAI Indian-Bank-Statements, "Type 1" layout (external corpus, not ours).
+# Separate Debit and Credit columns, amounts prefixed "Rs.", a rotated watermark
+# that drops stray letters into data cells, and two date columns side by side.
+doc_type: bank_statement.agami_type1
+locale: en-IN
+currency_default: INR
+date_format: "%d-%m-%Y"
+header_date_format: "%d %b %Y"
+template_id: agami_type1
+version: "1"
+
+columns:
+  mode: debit_credit
+  has_running_balance: true
+  has_page_carry_forward: false
+  sort_order: ascending
+
+invariants:
+  - ROW_BAL
+  - GLOBAL_BAL
+  - LAST_ROW_EQ_CLOSING
+  - DATE_ORDER
+  - NO_DUP_ROW
+
+acceptance:
+  require_all_invariants: true
+  require_grounding_on: [amount, date]
+  min_grounded_fraction: 1.0
+  allow_inferred_fields: false
+  max_unverified_rows: 0
+
+tier_order: [text_layer, template, ocr, llm_small, llm_large]
+budgets:
+  ocr: {max_calls: 12, max_regions: 8}
+  # A model tier reads these six-page statements one page at a time, so the read
+  # alone costs six calls. The budget has to cover the read *and* the repairs it
+  # makes possible: 6 pages + 4 regions x 2 attempts. Leaving it at 6 meant the
+  # read consumed the whole allowance and every repair was refused for lack of
+  # budget, which looked exactly like a repair that had been tried and failed.
+  llm_small: {max_calls: 14, max_regions: 4}
+  llm_large: {max_calls: 3, max_regions: 2}
+repair_budget_per_region: 2
+max_repair_regions: 8

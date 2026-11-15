@@ -1,0 +1,26 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 123,
+    "field": "credit",
+    "value": "Rs. 1,626,970.54"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is consistent after correcting a transcription error in row 123 where the credit amount was missing in the transcription but present in the image."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 123,
+    "field": "credit",
+    "value": "Rs. 1,626,970.54"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is consistent after correcting a transcription error in row 123 where the credit amount was missing in the transcription but present in the image."
+ }
+}

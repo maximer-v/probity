@@ -1,0 +1,1596 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 0,
+    "field": "balance",
+    "value": "392,826.67"
+   },
+   {
+    "row": 1,
+    "field": "debit",
+    "value": "64,327.44"
+   },
+   {
+    "row": 2,
+    "field": "credit",
+    "value": "25,412.42"
+   },
+   {
+    "row": 3,
+    "field": "debit",
+    "value": "52,797.69"
+   },
+   {
+    "row": 4,
+    "field": "debit",
+    "value": "17,136.34"
+   },
+   {
+    "row": 5,
+    "field": "debit",
+    "value": "91,337.63"
+   },
+   {
+    "row": 6,
+    "field": "debit",
+    "value": "93,786.22"
+   },
+   {
+    "row": 7,
+    "field": "credit",
+    "value": "6,190.58"
+   },
+   {
+    "row": 8,
+    "field": "debit",
+    "value": "21,423.42"
+   },
+   {
+    "row": 9,
+    "field": "debit",
+    "value": "6,546.22"
+   },
+   {
+    "row": 10,
+    "field": "debit",
+    "value": "4,427.72"
+   },
+   {
+    "row": 11,
+    "field": "debit",
+    "value": "40,563.84"
+   },
+   {
+    "row": 12,
+    "field": "credit",
+    "value": "1,999.15"
+   },
+   {
+    "row": 13,
+    "field": "credit",
+    "value": "4,245.59"
+   },
+   {
+    "row": 14,
+    "field": "credit",
+    "value": "11,048.74"
+   },
+   {
+    "row": 15,
+    "field": "credit",
+    "value": "9,207.60"
+   },
+   {
+    "row": 16,
+    "field": "debit",
+    "value": "2,398.58"
+   },
+   {
+    "row": 17,
+    "field": "credit",
+    "value": "1,704.54"
+   },
+   {
+    "row": 18,
+    "field": "credit",
+    "value": "3,197.81"
+   },
+   {
+    "row": 19,
+    "field": "credit",
+    "value": "2,966.78"
+   },
+   {
+    "row": 20,
+    "field": "debit",
+    "value": "9,265.14"
+   },
+   {
+    "row": 21,
+    "field": "credit",
+    "value": "78,167.19"
+   },
+   {
+    "row": 22,
+    "field": "debit",
+    "value": "73,791.10"
+   },
+   {
+    "row": 23,
+    "field": "debit",
+    "value": "12,507.93"
+   },
+   {
+    "row": 24,
+    "field": "credit",
+    "value": "12,873.48"
+   },
+   {
+    "row": 25,
+    "field": "debit",
+    "value": "7,283.96"
+   },
+   {
+    "row": 26,
+    "field": "credit",
+    "value": "5,213.14"
+   },
+   {
+    "row": 27,
+    "field": "credit",
+    "value": "55,738.18"
+   },
+   {
+    "row": 28,
+    "field": "credit",
+    "value": "9,969.28"
+   },
+   {
+    "row": 29,
+    "field": "credit",
+    "value": "32,090.57"
+   },
+   {
+    "row": 30,
+    "field": "debit",
+    "value": "1,174.53"
+   },
+   {
+    "row": 31,
+    "field": "debit",
+    "value": "20,966.32"
+   },
+   {
+    "row": 32,
+    "field": "credit",
+    "value": "5,117.63"
+   },
+   {
+    "row": 33,
+    "field": "debit",
+    "value": "9,966.53"
+   },
+   {
+    "row": 34,
+    "field": "credit",
+    "value": "15,921.10"
+   },
+   {
+    "row": 35,
+    "field": "debit",
+    "value": "50,921.92"
+   },
+   {
+    "row": 36,
+    "field": "debit",
+    "value": "25,916.76"
+   },
+   {
+    "row": 37,
+    "field": "debit",
+    "value": "14,371.26"
+   },
+   {
+    "row": 38,
+    "field": "credit",
+    "value": "14,705.19"
+   },
+   {
+    "row": 39,
+    "field": "credit",
+    "value": "12,140.50"
+   },
+   {
+    "row": 40,
+    "field": "debit",
+    "value": "8,327.61"
+   },
+   {
+    "row": 41,
+    "field": "debit",
+    "value": "23,183.90"
+   },
+   {
+    "row": 42,
+    "field": "debit",
+    "value": "38,159.80"
+   },
+   {
+    "row": 43,
+    "field": "credit",
+    "value": "1,705.51"
+   },
+   {
+    "row": 44,
+    "field": "credit",
+    "value": "988.53"
+   },
+   {
+    "row": 45,
+    "field": "credit",
+    "value": "1,594.82"
+   },
+   {
+    "row": 46,
+    "field": "credit",
+    "value": "871.06"
+   },
+   {
+    "row": 47,
+    "field": "credit",
+    "value": "2,830.53"
+   },
+   {
+    "row": 48,
+    "field": "credit",
+    "value": "237.00"
+   },
+   {
+    "row": 49,
+    "field": "credit",
+    "value": "2,442.97"
+   },
+   {
+    "row": 50,
+    "field": "credit",
+    "value": "1,801.33"
+   },
+   {
+    "row": 51,
+    "field": "credit",
+    "value": "8,394.41"
+   },
+   {
+    "row": 52,
+    "field": "credit",
+    "value": "8,735.92"
+   },
+   {
+    "row": 53,
+    "field": "credit",
+    "value": "2,095.93"
+   },
+   {
+    "row": 54,
+    "field": "debit",
+    "value": "17,302.22"
+   },
+   {
+    "row": 55,
+    "field": "credit",
+    "value": "8,021.41"
+   },
+   {
+    "row": 56,
+    "field": "credit",
+    "value": "1,005.07"
+   },
+   {
+    "row": 57,
+    "field": "credit",
+    "value": "8,479.58"
+   },
+   {
+    "row": 58,
+    "field": "debit",
+    "value": "5,787.90"
+   },
+   {
+    "row": 59,
+    "field": "credit",
+    "value": "54,802.83"
+   },
+   {
+    "row": 60,
+    "field": "debit",
+    "value": "35,060.36"
+   },
+   {
+    "row": 61,
+    "field": "debit",
+    "value": "10,537.99"
+   },
+   {
+    "row": 62,
+    "field": "debit",
+    "value": "16,283.87"
+   },
+   {
+    "row": 63,
+    "field": "credit",
+    "value": "2,260.21"
+   },
+   {
+    "row": 64,
+    "field": "credit",
+    "value": "6,762.84"
+   },
+   {
+    "row": 65,
+    "field": "credit",
+    "value": "6,208.20"
+   },
+   {
+    "row": 66,
+    "field": "credit",
+    "value": "17,864.03"
+   },
+   {
+    "row": 67,
+    "field": "debit",
+    "value": "23,414.78"
+   },
+   {
+    "row": 68,
+    "field": "credit",
+    "value": "6,046.26"
+   },
+   {
+    "row": 69,
+    "field": "credit",
+    "value": "6,992.99"
+   },
+   {
+    "row": 70,
+    "field": "credit",
+    "value": "766.19"
+   },
+   {
+    "row": 71,
+    "field": "debit",
+    "value": "51,033.10"
+   },
+   {
+    "row": 72,
+    "field": "credit",
+    "value": "76,437.56"
+   },
+   {
+    "row": 73,
+    "field": "debit",
+    "value": "2,814.19"
+   },
+   {
+    "row": 74,
+    "field": "debit",
+    "value": "19,613.78"
+   },
+   {
+    "row": 75,
+    "field": "debit",
+    "value": "21,407.85"
+   },
+   {
+    "row": 76,
+    "field": "credit",
+    "value": "5,174.25"
+   },
+   {
+    "row": 77,
+    "field": "debit",
+    "value": "3,953.67"
+   },
+   {
+    "row": 78,
+    "field": "credit",
+    "value": "768.73"
+   },
+   {
+    "row": 79,
+    "field": "credit",
+    "value": "6,260.49"
+   },
+   {
+    "row": 80,
+    "field": "credit",
+    "value": "11,696.08"
+   },
+   {
+    "row": 81,
+    "field": "credit",
+    "value": "24,016.75"
+   },
+   {
+    "row": 82,
+    "field": "credit",
+    "value": "156,411.07"
+   },
+   {
+    "row": 83,
+    "field": "debit",
+    "value": "16,257.71"
+   },
+   {
+    "row": 84,
+    "field": "debit",
+    "value": "68,160.94"
+   },
+   {
+    "row": 85,
+    "field": "credit",
+    "value": "5,400.66"
+   },
+   {
+    "row": 86,
+    "field": "debit",
+    "value": "15,037.68"
+   },
+   {
+    "row": 87,
+    "field": "credit",
+    "value": "12,637.58"
+   },
+   {
+    "row": 88,
+    "field": "credit",
+    "value": "14,817.22"
+   },
+   {
+    "row": 89,
+    "field": "credit",
+    "value": "49,787.83"
+   },
+   {
+    "row": 90,
+    "field": "debit",
+    "value": "45,288.96"
+   },
+   {
+    "row": 91,
+    "field": "debit",
+    "value": "15,091.37"
+   },
+   {
+    "row": 92,
+    "field": "credit",
+    "value": "51,314.22"
+   },
+   {
+    "row": 93,
+    "field": "debit",
+    "value": "83,469.48"
+   },
+   {
+    "row": 94,
+    "field": "debit",
+    "value": "17,124.82"
+   },
+   {
+    "row": 95,
+    "field": "credit",
+    "value": "18,157.36"
+   },
+   {
+    "row": 96,
+    "field": "credit",
+    "value": "5,848.54"
+   },
+   {
+    "row": 97,
+    "field": "credit",
+    "value": "5,856.11"
+   },
+   {
+    "row": 98,
+    "field": "credit",
+    "value": "22,256.55"
+   },
+   {
+    "row": 99,
+    "field": "debit",
+    "value": "159,519.66"
+   },
+   {
+    "row": 100,
+    "field": "credit",
+    "value": "776.85"
+   },
+   {
+    "row": 101,
+    "field": "debit",
+    "value": "445.26"
+   },
+   {
+    "row": 102,
+    "field": "credit",
+    "value": "95,258.20"
+   },
+   {
+    "row": 103,
+    "field": "credit",
+    "value": "17,856.35"
+   },
+   {
+    "row": 104,
+    "field": "debit",
+    "value": "1,788.92"
+   },
+   {
+    "row": 105,
+    "field": "credit",
+    "value": "526.77"
+   },
+   {
+    "row": 106,
+    "field": "debit",
+    "value": "56,310.19"
+   },
+   {
+    "row": 107,
+    "field": "credit",
+    "value": "3,607.04"
+   },
+   {
+    "row": 108,
+    "field": "debit",
+    "value": "98,646.15"
+   },
+   {
+    "row": 109,
+    "field": "credit",
+    "value": "76,608.59"
+   },
+   {
+    "row": 110,
+    "field": "credit",
+    "value": "713.90"
+   },
+   {
+    "row": 111,
+    "field": "credit",
+    "value": "242.04"
+   },
+   {
+    "row": 112,
+    "field": "credit",
+    "value": "1,101.28"
+   },
+   {
+    "row": 113,
+    "field": "debit",
+    "value": "12,413.99"
+   },
+   {
+    "row": 114,
+    "field": "credit",
+    "value": "3,497.16"
+   },
+   {
+    "row": 115,
+    "field": "credit",
+    "value": "36,203.59"
+   },
+   {
+    "row": 116,
+    "field": "credit",
+    "value": "30,375.21"
+   },
+   {
+    "row": 117,
+    "field": "credit",
+    "value": "4,005.01"
+   },
+   {
+    "row": 118,
+    "field": "credit",
+    "value": "7,652.10"
+   },
+   {
+    "row": 119,
+    "field": "credit",
+    "value": "119,003.44"
+   },
+   {
+    "row": 120,
+    "field": "credit",
+    "value": "64,987.49"
+   },
+   {
+    "row": 121,
+    "field": "debit",
+    "value": "63,779.62"
+   },
+   {
+    "row": 122,
+    "field": "credit",
+    "value": "2,517.27"
+   },
+   {
+    "row": 123,
+    "field": "credit",
+    "value": "159,008.83"
+   },
+   {
+    "row": 124,
+    "field": "debit",
+    "value": "52,176.95"
+   },
+   {
+    "row": 125,
+    "field": "debit",
+    "value": "125,279.40"
+   },
+   {
+    "row": 126,
+    "field": "credit",
+    "value": "5,806.19"
+   },
+   {
+    "row": 127,
+    "field": "debit",
+    "value": "94,344.67"
+   },
+   {
+    "row": 128,
+    "field": "credit",
+    "value": "88,276.68"
+   },
+   {
+    "row": 129,
+    "field": "debit",
+    "value": "34,141.94"
+   },
+   {
+    "row": 130,
+    "field": "credit",
+    "value": "16,749.73"
+   },
+   {
+    "row": 131,
+    "field": "credit",
+    "value": "810.93"
+   },
+   {
+    "row": 132,
+    "field": "debit",
+    "value": "23,748.83"
+   },
+   {
+    "row": 133,
+    "field": "debit",
+    "value": "40,824.83"
+   },
+   {
+    "row": 134,
+    "field": "debit",
+    "value": "3,131.82"
+   },
+   {
+    "row": 135,
+    "field": "debit",
+    "value": "3,351.16"
+   },
+   {
+    "row": 136,
+    "field": "credit",
+    "value": "43,671.29"
+   },
+   {
+    "row": 137,
+    "field": "credit",
+    "value": "46,204.99"
+   },
+   {
+    "row": 138,
+    "field": "credit",
+    "value": "38,595.16"
+   },
+   {
+    "row": 139,
+    "field": "credit",
+    "value": "27,646.52"
+   },
+   {
+    "row": 140,
+    "field": "credit",
+    "value": "55,945.71"
+   },
+   {
+    "row": 141,
+    "field": "debit",
+    "value": "101,136.76"
+   },
+   {
+    "row": 142,
+    "field": "credit",
+    "value": "29,283.92"
+   },
+   {
+    "row": 143,
+    "field": "credit",
+    "value": "33,168.23"
+   },
+   {
+    "row": 144,
+    "field": "credit",
+    "value": "5,461.75"
+   },
+   {
+    "row": 145,
+    "field": "credit",
+    "value": "7,236.48"
+   },
+   {
+    "row": 146,
+    "field": "credit",
+    "value": "248,466.74"
+   },
+   {
+    "row": 147,
+    "field": "debit",
+    "value": "61,553.53"
+   },
+   {
+    "row": 148,
+    "field": "debit",
+    "value": "12,662.15"
+   },
+   {
+    "row": 149,
+    "field": "debit",
+    "value": "62,745.97"
+   },
+   {
+    "row": 150,
+    "field": "credit",
+    "value": "37,812.33"
+   },
+   {
+    "row": 151,
+    "field": "debit",
+    "value": "8,440.12"
+   },
+   {
+    "row": 152,
+    "field": "debit",
+    "value": "160,396.53"
+   },
+   {
+    "row": 153,
+    "field": "debit",
+    "value": "331,065.17"
+   },
+   {
+    "row": 154,
+    "field": "credit",
+    "value": "318,300.96"
+   },
+   {
+    "row": 155,
+    "field": "debit",
+    "value": "92,873.38"
+   },
+   {
+    "row": 156,
+    "field": "credit",
+    "value": "17,327.76"
+   },
+   {
+    "row": 157,
+    "field": "debit",
+    "value": "69,235.74"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription contains numerous errors in the debit and credit columns for almost every transaction row, where amounts were often swapped or placed in the wrong column. After correcting all these transcription errors to match the printed statement, the arithmetic is consistent: every row's balance correctly follows from the previous balance plus credits minus debits, and the final closing balance of 134,955.98 matches the sum of the opening balance and all movements."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 0,
+    "field": "balance",
+    "value": "392,826.67"
+   },
+   {
+    "row": 1,
+    "field": "debit",
+    "value": "64,327.44"
+   },
+   {
+    "row": 2,
+    "field": "credit",
+    "value": "25,412.42"
+   },
+   {
+    "row": 3,
+    "field": "debit",
+    "value": "52,797.69"
+   },
+   {
+    "row": 4,
+    "field": "debit",
+    "value": "17,136.34"
+   },
+   {
+    "row": 5,
+    "field": "debit",
+    "value": "91,337.63"
+   },
+   {
+    "row": 6,
+    "field": "debit",
+    "value": "93,786.22"
+   },
+   {
+    "row": 7,
+    "field": "credit",
+    "value": "6,190.58"
+   },
+   {
+    "row": 8,
+    "field": "debit",
+    "value": "21,423.42"
+   },
+   {
+    "row": 9,
+    "field": "debit",
+    "value": "6,546.22"
+   },
+   {
+    "row": 10,
+    "field": "debit",
+    "value": "4,427.72"
+   },
+   {
+    "row": 11,
+    "field": "debit",
+    "value": "40,563.84"
+   },
+   {
+    "row": 12,
+    "field": "credit",
+    "value": "1,999.15"
+   },
+   {
+    "row": 13,
+    "field": "credit",
+    "value": "4,245.59"
+   },
+   {
+    "row": 14,
+    "field": "credit",
+    "value": "11,048.74"
+   },
+   {
+    "row": 15,
+    "field": "credit",
+    "value": "9,207.60"
+   },
+   {
+    "row": 16,
+    "field": "debit",
+    "value": "2,398.58"
+   },
+   {
+    "row": 17,
+    "field": "credit",
+    "value": "1,704.54"
+   },
+   {
+    "row": 18,
+    "field": "credit",
+    "value": "3,197.81"
+   },
+   {
+    "row": 19,
+    "field": "credit",
+    "value": "2,966.78"
+   },
+   {
+    "row": 20,
+    "field": "debit",
+    "value": "9,265.14"
+   },
+   {
+    "row": 21,
+    "field": "credit",
+    "value": "78,167.19"
+   },
+   {
+    "row": 22,
+    "field": "debit",
+    "value": "73,791.10"
+   },
+   {
+    "row": 23,
+    "field": "debit",
+    "value": "12,507.93"
+   },
+   {
+    "row": 24,
+    "field": "credit",
+    "value": "12,873.48"
+   },
+   {
+    "row": 25,
+    "field": "debit",
+    "value": "7,283.96"
+   },
+   {
+    "row": 26,
+    "field": "credit",
+    "value": "5,213.14"
+   },
+   {
+    "row": 27,
+    "field": "credit",
+    "value": "55,738.18"
+   },
+   {
+    "row": 28,
+    "field": "credit",
+    "value": "9,969.28"
+   },
+   {
+    "row": 29,
+    "field": "credit",
+    "value": "32,090.57"
+   },
+   {
+    "row": 30,
+    "field": "debit",
+    "value": "1,174.53"
+   },
+   {
+    "row": 31,
+    "field": "debit",
+    "value": "20,966.32"
+   },
+   {
+    "row": 32,
+    "field": "credit",
+    "value": "5,117.63"
+   },
+   {
+    "row": 33,
+    "field": "debit",
+    "value": "9,966.53"
+   },
+   {
+    "row": 34,
+    "field": "credit",
+    "value": "15,921.10"
+   },
+   {
+    "row": 35,
+    "field": "debit",
+    "value": "50,921.92"
+   },
+   {
+    "row": 36,
+    "field": "debit",
+    "value": "25,916.76"
+   },
+   {
+    "row": 37,
+    "field": "debit",
+    "value": "14,371.26"
+   },
+   {
+    "row": 38,
+    "field": "credit",
+    "value": "14,705.19"
+   },
+   {
+    "row": 39,
+    "field": "credit",
+    "value": "12,140.50"
+   },
+   {
+    "row": 40,
+    "field": "debit",
+    "value": "8,327.61"
+   },
+   {
+    "row": 41,
+    "field": "debit",
+    "value": "23,183.90"
+   },
+   {
+    "row": 42,
+    "field": "debit",
+    "value": "38,159.80"
+   },
+   {
+    "row": 43,
+    "field": "credit",
+    "value": "1,705.51"
+   },
+   {
+    "row": 44,
+    "field": "credit",
+    "value": "988.53"
+   },
+   {
+    "row": 45,
+    "field": "credit",
+    "value": "1,594.82"
+   },
+   {
+    "row": 46,
+    "field": "credit",
+    "value": "871.06"
+   },
+   {
+    "row": 47,
+    "field": "credit",
+    "value": "2,830.53"
+   },
+   {
+    "row": 48,
+    "field": "credit",
+    "value": "237.00"
+   },
+   {
+    "row": 49,
+    "field": "credit",
+    "value": "2,442.97"
+   },
+   {
+    "row": 50,
+    "field": "credit",
+    "value": "1,801.33"
+   },
+   {
+    "row": 51,
+    "field": "credit",
+    "value": "8,394.41"
+   },
+   {
+    "row": 52,
+    "field": "credit",
+    "value": "8,735.92"
+   },
+   {
+    "row": 53,
+    "field": "credit",
+    "value": "2,095.93"
+   },
+   {
+    "row": 54,
+    "field": "debit",
+    "value": "17,302.22"
+   },
+   {
+    "row": 55,
+    "field": "credit",
+    "value": "8,021.41"
+   },
+   {
+    "row": 56,
+    "field": "credit",
+    "value": "1,005.07"
+   },
+   {
+    "row": 57,
+    "field": "credit",
+    "value": "8,479.58"
+   },
+   {
+    "row": 58,
+    "field": "debit",
+    "value": "5,787.90"
+   },
+   {
+    "row": 59,
+    "field": "credit",
+    "value": "54,802.83"
+   },
+   {
+    "row": 60,
+    "field": "debit",
+    "value": "35,060.36"
+   },
+   {
+    "row": 61,
+    "field": "debit",
+    "value": "10,537.99"
+   },
+   {
+    "row": 62,
+    "field": "debit",
+    "value": "16,283.87"
+   },
+   {
+    "row": 63,
+    "field": "credit",
+    "value": "2,260.21"
+   },
+   {
+    "row": 64,
+    "field": "credit",
+    "value": "6,762.84"
+   },
+   {
+    "row": 65,
+    "field": "credit",
+    "value": "6,208.20"
+   },
+   {
+    "row": 66,
+    "field": "credit",
+    "value": "17,864.03"
+   },
+   {
+    "row": 67,
+    "field": "debit",
+    "value": "23,414.78"
+   },
+   {
+    "row": 68,
+    "field": "credit",
+    "value": "6,046.26"
+   },
+   {
+    "row": 69,
+    "field": "credit",
+    "value": "6,992.99"
+   },
+   {
+    "row": 70,
+    "field": "credit",
+    "value": "766.19"
+   },
+   {
+    "row": 71,
+    "field": "debit",
+    "value": "51,033.10"
+   },
+   {
+    "row": 72,
+    "field": "credit",
+    "value": "76,437.56"
+   },
+   {
+    "row": 73,
+    "field": "debit",
+    "value": "2,814.19"
+   },
+   {
+    "row": 74,
+    "field": "debit",
+    "value": "19,613.78"
+   },
+   {
+    "row": 75,
+    "field": "debit",
+    "value": "21,407.85"
+   },
+   {
+    "row": 76,
+    "field": "credit",
+    "value": "5,174.25"
+   },
+   {
+    "row": 77,
+    "field": "debit",
+    "value": "3,953.67"
+   },
+   {
+    "row": 78,
+    "field": "credit",
+    "value": "768.73"
+   },
+   {
+    "row": 79,
+    "field": "credit",
+    "value": "6,260.49"
+   },
+   {
+    "row": 80,
+    "field": "credit",
+    "value": "11,696.08"
+   },
+   {
+    "row": 81,
+    "field": "credit",
+    "value": "24,016.75"
+   },
+   {
+    "row": 82,
+    "field": "credit",
+    "value": "156,411.07"
+   },
+   {
+    "row": 83,
+    "field": "debit",
+    "value": "16,257.71"
+   },
+   {
+    "row": 84,
+    "field": "debit",
+    "value": "68,160.94"
+   },
+   {
+    "row": 85,
+    "field": "credit",
+    "value": "5,400.66"
+   },
+   {
+    "row": 86,
+    "field": "debit",
+    "value": "15,037.68"
+   },
+   {
+    "row": 87,
+    "field": "credit",
+    "value": "12,637.58"
+   },
+   {
+    "row": 88,
+    "field": "credit",
+    "value": "14,817.22"
+   },
+   {
+    "row": 89,
+    "field": "credit",
+    "value": "49,787.83"
+   },
+   {
+    "row": 90,
+    "field": "debit",
+    "value": "45,288.96"
+   },
+   {
+    "row": 91,
+    "field": "debit",
+    "value": "15,091.37"
+   },
+   {
+    "row": 92,
+    "field": "credit",
+    "value": "51,314.22"
+   },
+   {
+    "row": 93,
+    "field": "debit",
+    "value": "83,469.48"
+   },
+   {
+    "row": 94,
+    "field": "debit",
+    "value": "17,124.82"
+   },
+   {
+    "row": 95,
+    "field": "credit",
+    "value": "18,157.36"
+   },
+   {
+    "row": 96,
+    "field": "credit",
+    "value": "5,848.54"
+   },
+   {
+    "row": 97,
+    "field": "credit",
+    "value": "5,856.11"
+   },
+   {
+    "row": 98,
+    "field": "credit",
+    "value": "22,256.55"
+   },
+   {
+    "row": 99,
+    "field": "debit",
+    "value": "159,519.66"
+   },
+   {
+    "row": 100,
+    "field": "credit",
+    "value": "776.85"
+   },
+   {
+    "row": 101,
+    "field": "debit",
+    "value": "445.26"
+   },
+   {
+    "row": 102,
+    "field": "credit",
+    "value": "95,258.20"
+   },
+   {
+    "row": 103,
+    "field": "credit",
+    "value": "17,856.35"
+   },
+   {
+    "row": 104,
+    "field": "debit",
+    "value": "1,788.92"
+   },
+   {
+    "row": 105,
+    "field": "credit",
+    "value": "526.77"
+   },
+   {
+    "row": 106,
+    "field": "debit",
+    "value": "56,310.19"
+   },
+   {
+    "row": 107,
+    "field": "credit",
+    "value": "3,607.04"
+   },
+   {
+    "row": 108,
+    "field": "debit",
+    "value": "98,646.15"
+   },
+   {
+    "row": 109,
+    "field": "credit",
+    "value": "76,608.59"
+   },
+   {
+    "row": 110,
+    "field": "credit",
+    "value": "713.90"
+   },
+   {
+    "row": 111,
+    "field": "credit",
+    "value": "242.04"
+   },
+   {
+    "row": 112,
+    "field": "credit",
+    "value": "1,101.28"
+   },
+   {
+    "row": 113,
+    "field": "debit",
+    "value": "12,413.99"
+   },
+   {
+    "row": 114,
+    "field": "credit",
+    "value": "3,497.16"
+   },
+   {
+    "row": 115,
+    "field": "credit",
+    "value": "36,203.59"
+   },
+   {
+    "row": 116,
+    "field": "credit",
+    "value": "30,375.21"
+   },
+   {
+    "row": 117,
+    "field": "credit",
+    "value": "4,005.01"
+   },
+   {
+    "row": 118,
+    "field": "credit",
+    "value": "7,652.10"
+   },
+   {
+    "row": 119,
+    "field": "credit",
+    "value": "119,003.44"
+   },
+   {
+    "row": 120,
+    "field": "credit",
+    "value": "64,987.49"
+   },
+   {
+    "row": 121,
+    "field": "debit",
+    "value": "63,779.62"
+   },
+   {
+    "row": 122,
+    "field": "credit",
+    "value": "2,517.27"
+   },
+   {
+    "row": 123,
+    "field": "credit",
+    "value": "159,008.83"
+   },
+   {
+    "row": 124,
+    "field": "debit",
+    "value": "52,176.95"
+   },
+   {
+    "row": 125,
+    "field": "debit",
+    "value": "125,279.40"
+   },
+   {
+    "row": 126,
+    "field": "credit",
+    "value": "5,806.19"
+   },
+   {
+    "row": 127,
+    "field": "debit",
+    "value": "94,344.67"
+   },
+   {
+    "row": 128,
+    "field": "credit",
+    "value": "88,276.68"
+   },
+   {
+    "row": 129,
+    "field": "debit",
+    "value": "34,141.94"
+   },
+   {
+    "row": 130,
+    "field": "credit",
+    "value": "16,749.73"
+   },
+   {
+    "row": 131,
+    "field": "credit",
+    "value": "810.93"
+   },
+   {
+    "row": 132,
+    "field": "debit",
+    "value": "23,748.83"
+   },
+   {
+    "row": 133,
+    "field": "debit",
+    "value": "40,824.83"
+   },
+   {
+    "row": 134,
+    "field": "debit",
+    "value": "3,131.82"
+   },
+   {
+    "row": 135,
+    "field": "debit",
+    "value": "3,351.16"
+   },
+   {
+    "row": 136,
+    "field": "credit",
+    "value": "43,671.29"
+   },
+   {
+    "row": 137,
+    "field": "credit",
+    "value": "46,204.99"
+   },
+   {
+    "row": 138,
+    "field": "credit",
+    "value": "38,595.16"
+   },
+   {
+    "row": 139,
+    "field": "credit",
+    "value": "27,646.52"
+   },
+   {
+    "row": 140,
+    "field": "credit",
+    "value": "55,945.71"
+   },
+   {
+    "row": 141,
+    "field": "debit",
+    "value": "101,136.76"
+   },
+   {
+    "row": 142,
+    "field": "credit",
+    "value": "29,283.92"
+   },
+   {
+    "row": 143,
+    "field": "credit",
+    "value": "33,168.23"
+   },
+   {
+    "row": 144,
+    "field": "credit",
+    "value": "5,461.75"
+   },
+   {
+    "row": 145,
+    "field": "credit",
+    "value": "7,236.48"
+   },
+   {
+    "row": 146,
+    "field": "credit",
+    "value": "248,466.74"
+   },
+   {
+    "row": 147,
+    "field": "debit",
+    "value": "61,553.53"
+   },
+   {
+    "row": 148,
+    "field": "debit",
+    "value": "12,662.15"
+   },
+   {
+    "row": 149,
+    "field": "debit",
+    "value": "62,745.97"
+   },
+   {
+    "row": 150,
+    "field": "credit",
+    "value": "37,812.33"
+   },
+   {
+    "row": 151,
+    "field": "debit",
+    "value": "8,440.12"
+   },
+   {
+    "row": 152,
+    "field": "debit",
+    "value": "160,396.53"
+   },
+   {
+    "row": 153,
+    "field": "debit",
+    "value": "331,065.17"
+   },
+   {
+    "row": 154,
+    "field": "credit",
+    "value": "318,300.96"
+   },
+   {
+    "row": 155,
+    "field": "debit",
+    "value": "92,873.38"
+   },
+   {
+    "row": 156,
+    "field": "credit",
+    "value": "17,327.76"
+   },
+   {
+    "row": 157,
+    "field": "debit",
+    "value": "69,235.74"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription contains numerous errors in the debit and credit columns for almost every transaction row, where amounts were often swapped or placed in the wrong column. After correcting all these transcription errors to match the printed statement, the arithmetic is consistent: every row's balance correctly follows from the previous balance plus credits minus debits, and the final closing balance of 134,955.98 matches the sum of the opening balance and all movements."
+ }
+}

@@ -1,0 +1,125 @@
+=== altered_statement ===
+spec f743ea85257c3740  probity 0.2.0
+
+INGEST
+  note ingested altered_statement.pdf
+  ask  ingest_failed                no   <- the document opened and has pages
+  go   INGEST -> CLASSIFY (via fallback)
+
+CLASSIFY
+  ask  has_text_layer               no   <- no usable text layer; OCR will be required
+  note starting at llm_small: the text-layer tiers cannot apply to a scan
+  go   CLASSIFY -> EXTRACT (via fallback)
+
+EXTRACT
+  call llm:google/gemini-3.1-flash-lite (transcribe) cached
+  call llm:google/gemini-3.1-flash-lite (transcribe) cached
+  call llm:google/gemini-3.1-flash-lite (transcribe) cached
+  call llm:google/gemini-3.1-flash-lite (transcribe) cached
+  call llm:google/gemini-3.1-flash-lite (transcribe) cached
+  call llm:google/gemini-3.1-flash-lite (transcribe) cached
+  read llm_small proposed 167 rows, 0 unreadable cells
+  ask  extract_empty_and_tier_left  no   <- 167 rows were read
+  ask  extract_empty                no   <- 167 rows were read
+  go   EXTRACT -> GROUND (via fallback)
+
+GROUND
+  gnd  all 671 fields grounded on the page
+  go   GROUND -> VERIFY (via fallback)
+
+VERIFY
+  chk  9 invariant failure(s):
+  chk    [ROW_BAL/MISMATCH] row:69: row 69: 807096948 + -287011504 = 520085444, but the balance column reads 520085440 (off by -4)
+  chk    [ROW_BAL/MISMATCH] row:70: row 70: 520085440 + -203887164 = 316198276, but the balance column reads 316198280 (off by 4)
+  chk    [ROW_BAL/MISMATCH] row:73: row 73: 82197456 + -706684742 = -624487286, but the balance column reads 788882198 (off by 1413369484)
+  chk    [ROW_BAL/MISMATCH] row:77: row 77: 51122872 + -565374836 = -514251964, but the balance column reads 616497708 (off by 1130749672)
+  chk    [ROW_BAL/MISMATCH] row:78: row 78: 616497708 + 563779830 = 1180277538, but the balance column reads 52717878 (off by -1127559660)
+  chk    [ROW_BAL/MISMATCH] row:127: row 127: 451886831 + -2382371 = 449504460, but the balance column reads 442504460 (off by -7000000)
+  chk    ... and 3 more
+  ask  accepts                      no   <- 9 invariant failure(s): MISMATCH
+  ask  repairable                   yes  <- row:69 has 2 repair attempt(s) left
+  go   VERIFY -> REPAIR (via repairable)
+
+REPAIR
+  note repair request for row:69
+  call llm:qwen/qwen3.5-flash-02-23 (second_opinion) cached
+  fix  row:69: second_opinion -> accepted
+  ask  repair_proposed              yes  <- the second reading has row(s) [69, 73, 77, 78] differently, and with it the rule passes and no other check fails (9 failure(s) before, 4 after)
+  go   REPAIR -> GROUND (via repair_proposed)
+
+GROUND
+  gnd  all 671 fields grounded on the page
+  go   GROUND -> VERIFY (via fallback)
+
+VERIFY
+  chk  4 invariant failure(s):
+  chk    [ROW_BAL/MISMATCH] row:127: row 127: 451886831 + -2382371 = 449504460, but the balance column reads 442504460 (off by -7000000)
+  chk    [ROW_BAL/MISMATCH] row:135: row 135: 821799118 + 210519183 = 1032318301, but the balance column reads 611279935 (off by -421038366)
+  chk    [ROW_BAL/MISMATCH] row:148: row 148: 777280212 + -11541778 = 765738434, but the balance column reads 788821990 (off by 23083556)
+  chk    [GLOBAL_BAL/MISMATCH] document: opening 258125025 + movements 935755809 = 1193880834, closing balance reads 788926024
+  ask  accepts                      no   <- 4 invariant failure(s): MISMATCH
+  ask  repairable                   yes  <- row:127 has 2 repair attempt(s) left
+  go   VERIFY -> REPAIR (via repairable)
+
+REPAIR
+  note repair request for row:127
+  call llm:qwen/qwen3.5-flash-02-23 (second_opinion) cached
+  call llm:google/gemini-3.1-flash-lite (reread) cached
+  fix  row:127: second_opinion -> both readers agree, the document is inconsistent here
+  note repair request for row:135
+  fix  row:135: second_opinion -> accepted
+  ask  repair_proposed              yes  <- the second reading has row(s) [135] differently, and with it the rule passes and no other check fails (4 failure(s) before, 3 after)
+  go   REPAIR -> GROUND (via repair_proposed)
+
+GROUND
+  gnd  all 671 fields grounded on the page
+  go   GROUND -> VERIFY (via fallback)
+
+VERIFY
+  chk  3 invariant failure(s):
+  chk    [ROW_BAL/MISMATCH] row:127: row 127: 451886831 + -2382371 = 449504460, but the balance column reads 442504460 (off by -7000000)
+  chk    [ROW_BAL/MISMATCH] row:148: row 148: 777280212 + -11541778 = 765738434, but the balance column reads 788821990 (off by 23083556)
+  chk    [GLOBAL_BAL/MISMATCH] document: opening 258125025 + movements 514717443 = 772842468, closing balance reads 788926024
+  ask  accepts                      no   <- 3 invariant failure(s): MISMATCH
+  ask  repairable                   yes  <- row:148 has 2 repair attempt(s) left
+  go   VERIFY -> REPAIR (via repairable)
+
+REPAIR
+  note repair request for row:148
+  fix  row:148: second_opinion -> accepted
+  ask  repair_proposed              yes  <- two readers had agreed on row 148, but a third reading at higher resolution has row(s) [148] differently, and with it the rule passes and no other check fails. The two earlier readings shared a misreading
+  go   REPAIR -> GROUND (via repair_proposed)
+
+GROUND
+  gnd  all 671 fields grounded on the page
+  go   GROUND -> VERIFY (via fallback)
+
+VERIFY
+  chk  2 invariant failure(s):
+  chk    [ROW_BAL/MISMATCH] row:127: row 127: 451886831 + -2382371 = 449504460, but the balance column reads 442504460 (off by -7000000)
+  chk    [GLOBAL_BAL/MISMATCH] document: opening 258125025 + movements 537800999 = 795926024, closing balance reads 788926024
+  ask  accepts                      no   <- 2 invariant failure(s): MISMATCH
+  ask  repairable                   no   <- every failing region has used its 2 repair attempts: ['row:127', 'document']
+  ask  tier_left                    no   <- a reading exists; a failed check is settled by a second look or left unresolved, not by replacing the reading
+  go   VERIFY -> HUMAN_REVIEW (via fallback)
+
+HUMAN_REVIEW
+
+FINAL HUMAN_REVIEW: 2 invariant failure(s): MISMATCH
+  9 model call(s), $0.00000, 617 ms
+
+altered_statement: DOCUMENT_INCONSISTENT
+  the rules fail at row:127, and two readers agree on what is printed there and on the balance carried into it
+  496/842 fields VERIFIED; 335/337 invariant checks passed
+  1 tier(s) used, $0.00000
+  6 row(s) corrected: [69, 73, 77, 78, 135, 148]
+  FLAG BALANCE_CHAIN_BROKEN: the running balance does not follow from the amounts on at least one row
+  FLAG STATEMENT_DOES_NOT_BALANCE: opening plus movements does not equal the closing balance
+  REVIEW row:127: row 127: 451886831 + -2382371 = 449504460, but the balance column reads 442504460 (off by -7000000)
+  REVIEW document: opening 258125025 + movements 537800999 = 795926024, closing balance reads 788926024
+
+report      -> examples/scanned/outputs/altered_statement.report.md
+
+certificate -> examples/scanned/outputs/altered_statement.certificate.json
+trace       -> examples/scanned/outputs/altered_statement.trace.jsonl
+rows        -> examples/scanned/outputs/altered_statement.rows.csv

@@ -1,0 +1,239 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 0,
+    "field": "balance",
+    "value": "2,138,169.58"
+   },
+   {
+    "row": 1,
+    "field": "balance",
+    "value": "721,020.00"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is consistent after correcting the balance values for the first two rows to match the provided document images."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 125,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 125,
+    "field": "credit",
+    "value": "5,009,851.66"
+   },
+   {
+    "row": 125,
+    "field": "balance",
+    "value": "4,216,518.28"
+   },
+   {
+    "row": 126,
+    "field": "debit",
+    "value": "5,009,851.66"
+   },
+   {
+    "row": 126,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 126,
+    "field": "balance",
+    "value": "-793,333.38"
+   },
+   {
+    "row": 127,
+    "field": "balance",
+    "value": "-1,217,009.86"
+   },
+   {
+    "row": 128,
+    "field": "balance",
+    "value": "-1,184,996.86"
+   },
+   {
+    "row": 129,
+    "field": "balance",
+    "value": "-2,531,638.79"
+   },
+   {
+    "row": 130,
+    "field": "balance",
+    "value": "-2,466,373.72"
+   },
+   {
+    "row": 131,
+    "field": "balance",
+    "value": "-2,435,902.01"
+   },
+   {
+    "row": 132,
+    "field": "balance",
+    "value": "-2,361,049.59"
+   },
+   {
+    "row": 133,
+    "field": "balance",
+    "value": "-2,479,019.60"
+   },
+   {
+    "row": 134,
+    "field": "balance",
+    "value": "-2,393,412.76"
+   },
+   {
+    "row": 135,
+    "field": "balance",
+    "value": "-2,040,789.09"
+   },
+   {
+    "row": 136,
+    "field": "balance",
+    "value": "-1,643,948.66"
+   },
+   {
+    "row": 137,
+    "field": "balance",
+    "value": "-2,048,074.07"
+   },
+   {
+    "row": 138,
+    "field": "balance",
+    "value": "-2,320,522.96"
+   },
+   {
+    "row": 139,
+    "field": "balance",
+    "value": "-2,466,023.89"
+   },
+   {
+    "row": 140,
+    "field": "balance",
+    "value": "-3,209,022.62"
+   },
+   {
+    "row": 141,
+    "field": "balance",
+    "value": "-3,025,375.49"
+   },
+   {
+    "row": 142,
+    "field": "balance",
+    "value": "-3,007,738.72"
+   },
+   {
+    "row": 143,
+    "field": "balance",
+    "value": "-2,963,171.75"
+   },
+   {
+    "row": 144,
+    "field": "balance",
+    "value": "-2,856,503.25"
+   },
+   {
+    "row": 145,
+    "field": "balance",
+    "value": "-2,566,936.41"
+   },
+   {
+    "row": 146,
+    "field": "balance",
+    "value": "165,112.91"
+   },
+   {
+    "row": 147,
+    "field": "balance",
+    "value": "262,551.12"
+   },
+   {
+    "row": 148,
+    "field": "balance",
+    "value": "1,439,205.99"
+   },
+   {
+    "row": 149,
+    "field": "balance",
+    "value": "830,040.22"
+   },
+   {
+    "row": 150,
+    "field": "balance",
+    "value": "825,730.51"
+   },
+   {
+    "row": 151,
+    "field": "balance",
+    "value": "-4,608,901.19"
+   },
+   {
+    "row": 152,
+    "field": "balance",
+    "value": "-4,608,915.45"
+   },
+   {
+    "row": 153,
+    "field": "balance",
+    "value": "-4,608,702.83"
+   },
+   {
+    "row": 154,
+    "field": "balance",
+    "value": "756,626.07"
+   },
+   {
+    "row": 155,
+    "field": "balance",
+    "value": "-1,417,325.14"
+   },
+   {
+    "row": 156,
+    "field": "balance",
+    "value": "756,373.93"
+   }
+  ],
+  "consistent": false,
+  "inconsistent_rows": [
+   125,
+   126,
+   127,
+   128,
+   129,
+   130,
+   131,
+   132,
+   133,
+   134,
+   135,
+   136,
+   137,
+   138,
+   139,
+   140,
+   141,
+   142,
+   143,
+   144,
+   145,
+   146,
+   147,
+   148,
+   149,
+   150,
+   151,
+   152,
+   153,
+   154,
+   155,
+   156
+  ],
+  "reason": "The statement contains significant arithmetic errors starting from row 125, where a transaction was misclassified and subsequent running balances were calculated incorrectly."
+ }
+}

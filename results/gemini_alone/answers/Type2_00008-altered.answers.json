@@ -1,0 +1,26 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 155,
+    "field": "balance",
+    "value": "2,346,814.60"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription for row 155 contained a typo in the balance column, which was corrected to match the statement image. With this correction, all row balances and the final closing balance are mathematically consistent."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 132,
+    "field": "credit",
+    "value": "88,069.22"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription for row 132 had a blank credit field, but the statement image shows a credit of 88,069.22. With this correction, the running balance is consistent throughout the statement."
+ }
+}

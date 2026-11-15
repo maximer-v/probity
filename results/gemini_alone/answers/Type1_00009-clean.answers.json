@@ -1,0 +1,20 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 42,
+    "field": "debit",
+    "value": "Rs. 0.00"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is mathematically consistent after accounting for the blank debit field in row 42, which represents a zero value."
+ },
+ "self_check": {
+  "corrections": [],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is mathematically consistent. The blank fields in the debit or credit columns represent zero values, and all running balances are calculated correctly from the opening balance to the closing balance."
+ }
+}

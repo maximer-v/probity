@@ -1,0 +1,25 @@
+# Secrets. The OpenRouter key is read from the environment or from a local .env,
+# and neither is ever committed.
+.env
+.env.*
+*.key
+
+# Generated corpora and run artefacts
+data/
+benchmark/results/*/
+!benchmark/results/.gitkeep
+.tieout-work/
+.venv*/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Rendered page images and model reply caches
+*.vlm.*.png
+.probity-cache/

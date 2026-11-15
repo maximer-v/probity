@@ -1,0 +1,162 @@
+[
+ {
+  "doc_id": "agami-Digital_Type1_00001-scan-repaired",
+  "short": "Type1_00001-clean",
+  "layout": "type1",
+  "group": "clean",
+  "rows": 162,
+  "altered_row": null
+ },
+ {
+  "doc_id": "agami-Digital_Type2_00001-scan-repaired",
+  "short": "Type2_00001-clean",
+  "layout": "type2",
+  "group": "clean",
+  "rows": 161,
+  "altered_row": null
+ },
+ {
+  "doc_id": "agami-Digital_Type1_00002-scan-tampered",
+  "short": "Type1_00002-altered",
+  "layout": "type1",
+  "group": "altered",
+  "rows": 161,
+  "altered_row": 6
+ },
+ {
+  "doc_id": "agami-Digital_Type2_00002-scan-tampered",
+  "short": "Type2_00002-altered",
+  "layout": "type2",
+  "group": "altered",
+  "rows": 167,
+  "altered_row": 127
+ },
+ {
+  "doc_id": "agami-Digital_Type1_00003-scan-repaired",
+  "short": "Type1_00003-clean",
+  "layout": "type1",
+  "group": "clean",
+  "rows": 159,
+  "altered_row": null
+ },
+ {
+  "doc_id": "agami-Digital_Type2_00003-scan-repaired",
+  "short": "Type2_00003-clean",
+  "layout": "type2",
+  "group": "clean",
+  "rows": 163,
+  "altered_row": null
+ },
+ {
+  "doc_id": "agami-Digital_Type1_00004-scan-tampered",
+  "short": "Type1_00004-altered",
+  "layout": "type1",
+  "group": "altered",
+  "rows": 155,
+  "altered_row": 124
+ },
+ {
+  "doc_id": "agami-Digital_Type2_00004-scan-tampered",
+  "short": "Type2_00004-altered",
+  "layout": "type2",
+  "group": "altered",
+  "rows": 156,
+  "altered_row": 108
+ },
+ {
+  "doc_id": "agami-Digital_Type1_00005-scan-repaired",
+  "short": "Type1_00005-clean",
+  "layout": "type1",
+  "group": "clean",
+  "rows": 170,
+  "altered_row": null
+ },
+ {
+  "doc_id": "agami-Digital_Type2_00005-scan-repaired",
+  "short": "Type2_00005-clean",
+  "layout": "type2",
+  "group": "clean",
+  "rows": 156,
+  "altered_row": null
+ },
+ {
+  "doc_id": "agami-Digital_Type1_00006-scan-tampered",
+  "short": "Type1_00006-altered",
+  "layout": "type1",
+  "group": "altered",
+  "rows": 159,
+  "altered_row": 96
+ },
+ {
+  "doc_id": "agami-Digital_Type2_00006-scan-tampered",
+  "short": "Type2_00006-altered",
+  "layout": "type2",
+  "group": "altered",
+  "rows": 158,
+  "altered_row": 24
+ },
+ {
+  "doc_id": "agami-Digital_Type1_00007-scan-repaired",
+  "short": "Type1_00007-clean",
+  "layout": "type1",
+  "group": "clean",
+  "rows": 162,
+  "altered_row": null
+ },
+ {
+  "doc_id": "agami-Digital_Type2_00007-scan-repaired",
+  "short": "Type2_00007-clean",
+  "layout": "type2",
+  "group": "clean",
+  "rows": 160,
+  "altered_row": null
+ },
+ {
+  "doc_id": "agami-Digital_Type1_00008-scan-tampered",
+  "short": "Type1_00008-altered",
+  "layout": "type1",
+  "group": "altered",
+  "rows": 166,
+  "altered_row": 148
+ },
+ {
+  "doc_id": "agami-Digital_Type2_00008-scan-tampered",
+  "short": "Type2_00008-altered",
+  "layout": "type2",
+  "group": "altered",
+  "rows": 159,
+  "altered_row": 53
+ },
+ {
+  "doc_id": "agami-Digital_Type1_00009-scan-repaired",
+  "short": "Type1_00009-clean",
+  "layout": "type1",
+  "group": "clean",
+  "rows": 159,
+  "altered_row": null
+ },
+ {
+  "doc_id": "agami-Digital_Type2_00009-scan-repaired",
+  "short": "Type2_00009-clean",
+  "layout": "type2",
+  "group": "clean",
+  "rows": 163,
+  "altered_row": null
+ },
+ {
+  "doc_id": "agami-Digital_Type1_00010-scan-tampered",
+  "short": "Type1_00010-altered",
+  "layout": "type1",
+  "group": "altered",
+  "rows": 167,
+  "altered_row": 22
+ },
+ {
+  "doc_id": "agami-Digital_Type1_00011-scan-repaired",
+  "short": "Type1_00011-clean",
+  "layout": "type1",
+  "group": "clean",
+  "rows": 158,
+  "altered_row": null
+ }
+]

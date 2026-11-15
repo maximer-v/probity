@@ -1,0 +1,31 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 46,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 46,
+    "field": "credit",
+    "value": ""
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is mathematically consistent after correcting the blank row 46, which was transcribed with empty debit/credit fields but had a balance carried forward."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 46,
+    "field": "debit",
+    "value": "Rs. 385,404.06"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is mathematically consistent after correcting the debit field in row 46, which was missing the transaction amount that caused the balance to remain unchanged from the previous row."
+ }
+}

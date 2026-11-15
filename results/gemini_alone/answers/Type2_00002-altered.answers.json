@@ -1,0 +1,26 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 144,
+    "field": "debit",
+    "value": "1,271,562.84"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is consistent after correcting a missing debit entry in row 144, which was transcribed as blank but is present in the source image."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 144,
+    "field": "debit",
+    "value": "1,271,562.84"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is consistent after correcting a missing debit entry in row 144, which was transcribed as blank but is present in the source image."
+ }
+}

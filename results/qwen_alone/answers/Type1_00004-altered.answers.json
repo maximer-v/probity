@@ -1,0 +1,406 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 0,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 0,
+    "field": "credit",
+    "value": "Rs. 165,870.21"
+   },
+   {
+    "row": 0,
+    "field": "balance",
+    "value": "Rs. 814,906.32"
+   },
+   {
+    "row": 1,
+    "field": "debit",
+    "value": "Rs. 12,809.73"
+   },
+   {
+    "row": 1,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 1,
+    "field": "balance",
+    "value": "Rs. 802,096.59"
+   },
+   {
+    "row": 2,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 2,
+    "field": "credit",
+    "value": "Rs. 565,068.86"
+   },
+   {
+    "row": 2,
+    "field": "balance",
+    "value": "Rs. 1,367,165.45"
+   },
+   {
+    "row": 3,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 3,
+    "field": "credit",
+    "value": "Rs. 15,428.01"
+   },
+   {
+    "row": 3,
+    "field": "balance",
+    "value": "Rs. 1,382,593.46"
+   },
+   {
+    "row": 4,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 4,
+    "field": "credit",
+    "value": "Rs. 126,384.01"
+   },
+   {
+    "row": 4,
+    "field": "balance",
+    "value": "Rs. 1,508,977.47"
+   },
+   {
+    "row": 5,
+    "field": "debit",
+    "value": "Rs. 169,940.83"
+   },
+   {
+    "row": 5,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 5,
+    "field": "balance",
+    "value": "Rs. 1,339,036.64"
+   },
+   {
+    "row": 6,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 6,
+    "field": "credit",
+    "value": "Rs. 128,549.17"
+   },
+   {
+    "row": 6,
+    "field": "balance",
+    "value": "Rs. 1,467,585.81"
+   },
+   {
+    "row": 7,
+    "field": "debit",
+    "value": "Rs. 524,351.15"
+   },
+   {
+    "row": 7,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 7,
+    "field": "balance",
+    "value": "Rs. 943,234.66"
+   },
+   {
+    "row": 8,
+    "field": "debit",
+    "value": "Rs. 453,730.21"
+   },
+   {
+    "row": 8,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 8,
+    "field": "balance",
+    "value": "Rs. 489,504.45"
+   },
+   {
+    "row": 9,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 9,
+    "field": "credit",
+    "value": "Rs. 265,182.35"
+   },
+   {
+    "row": 9,
+    "field": "balance",
+    "value": "Rs. 754,686.80"
+   },
+   {
+    "row": 10,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 10,
+    "field": "credit",
+    "value": "Rs. 8,626.01"
+   },
+   {
+    "row": 10,
+    "field": "balance",
+    "value": "Rs. 763,312.81"
+   },
+   {
+    "row": 11,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 11,
+    "field": "credit",
+    "value": "Rs. 52,041.58"
+   },
+   {
+    "row": 11,
+    "field": "balance",
+    "value": "Rs. 815,354.39"
+   },
+   {
+    "row": 12,
+    "field": "debit",
+    "value": "Rs. 11,303.52"
+   },
+   {
+    "row": 12,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 12,
+    "field": "balance",
+    "value": "Rs. 804,050.87"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription contained numerous OCR errors where debit and credit columns were swapped or misread for the first 13 rows; after correcting these to match the printed statement, all row balances are mathematically consistent with the opening balance and movements."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 0,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 0,
+    "field": "credit",
+    "value": "Rs. 165,870.21"
+   },
+   {
+    "row": 0,
+    "field": "balance",
+    "value": "Rs. 814,906.32"
+   },
+   {
+    "row": 1,
+    "field": "debit",
+    "value": "Rs. 12,809.73"
+   },
+   {
+    "row": 1,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 1,
+    "field": "balance",
+    "value": "Rs. 802,096.59"
+   },
+   {
+    "row": 2,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 2,
+    "field": "credit",
+    "value": "Rs. 565,068.86"
+   },
+   {
+    "row": 2,
+    "field": "balance",
+    "value": "Rs. 1,367,165.45"
+   },
+   {
+    "row": 3,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 3,
+    "field": "credit",
+    "value": "Rs. 15,428.01"
+   },
+   {
+    "row": 3,
+    "field": "balance",
+    "value": "Rs. 1,382,593.46"
+   },
+   {
+    "row": 4,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 4,
+    "field": "credit",
+    "value": "Rs. 126,384.01"
+   },
+   {
+    "row": 4,
+    "field": "balance",
+    "value": "Rs. 1,508,977.47"
+   },
+   {
+    "row": 5,
+    "field": "debit",
+    "value": "Rs. 169,940.83"
+   },
+   {
+    "row": 5,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 5,
+    "field": "balance",
+    "value": "Rs. 1,339,036.64"
+   },
+   {
+    "row": 6,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 6,
+    "field": "credit",
+    "value": "Rs. 128,549.17"
+   },
+   {
+    "row": 6,
+    "field": "balance",
+    "value": "Rs. 1,467,585.81"
+   },
+   {
+    "row": 7,
+    "field": "debit",
+    "value": "Rs. 524,351.15"
+   },
+   {
+    "row": 7,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 7,
+    "field": "balance",
+    "value": "Rs. 943,234.66"
+   },
+   {
+    "row": 8,
+    "field": "debit",
+    "value": "Rs. 453,730.21"
+   },
+   {
+    "row": 8,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 8,
+    "field": "balance",
+    "value": "Rs. 489,504.45"
+   },
+   {
+    "row": 9,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 9,
+    "field": "credit",
+    "value": "Rs. 265,182.35"
+   },
+   {
+    "row": 9,
+    "field": "balance",
+    "value": "Rs. 754,686.80"
+   },
+   {
+    "row": 10,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 10,
+    "field": "credit",
+    "value": "Rs. 8,626.01"
+   },
+   {
+    "row": 10,
+    "field": "balance",
+    "value": "Rs. 763,312.81"
+   },
+   {
+    "row": 11,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 11,
+    "field": "credit",
+    "value": "Rs. 52,041.58"
+   },
+   {
+    "row": 11,
+    "field": "balance",
+    "value": "Rs. 815,354.39"
+   },
+   {
+    "row": 12,
+    "field": "debit",
+    "value": "Rs. 11,303.52"
+   },
+   {
+    "row": 12,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 12,
+    "field": "balance",
+    "value": "Rs. 804,050.87"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription contained numerous OCR errors where debit and credit columns were swapped or misread for the first 13 rows; after correcting these to match the printed statement, all row balances are mathematically consistent with the opening balance and movements."
+ }
+}

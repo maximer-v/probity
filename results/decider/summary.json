@@ -1,0 +1,36 @@
+{
+ "experiment": "same reading, different decider",
+ "note": "Every mode is handed the framework's own text-layer reading, so no mode reads a page and reading is not a variable. 'machine' is the control.",
+ "n_documents": 191,
+ "readings_exact": 191,
+ "by_mode": {
+  "machine": {
+   "documents_judged": 191,
+   "clean_accepted": 97,
+   "clean_total": 97,
+   "altered_accepted": 0,
+   "altered_total": 94,
+   "false_certification_rate": 0.0,
+   "cost_usd": 0.0
+  },
+  "shown": {
+   "documents_judged": 191,
+   "clean_accepted": 91,
+   "clean_total": 97,
+   "altered_accepted": 0,
+   "altered_total": 94,
+   "false_certification_rate": 0.0,
+   "cost_usd": 0.0
+  },
+  "unaided": {
+   "documents_judged": 191,
+   "clean_accepted": 88,
+   "clean_total": 97,
+   "altered_accepted": 84,
+   "altered_total": 94,
+   "false_certification_rate": 48.8,
+   "cost_usd": 0.0
+  }
+ },
+ "spend_usd": 0.0
+}

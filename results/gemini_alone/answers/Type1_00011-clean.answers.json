@@ -1,0 +1,26 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 153,
+    "field": "debit",
+    "value": "Rs. 357,338.62"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is consistent after correcting the debit amount in row 153 to match the printed document."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 152,
+    "field": "credit",
+    "value": "Rs. 52,159.71"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is consistent after correcting the credit amount in row 152 to match the printed document."
+ }
+}

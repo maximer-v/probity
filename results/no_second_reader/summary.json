@@ -1,0 +1,49 @@
+{
+ "documents": 20,
+ "clean_confirmed": [
+  8,
+  11
+ ],
+ "clean_confirmed_95ci": [
+  0.434,
+  0.903
+ ],
+ "altered_confirmed": [
+  0,
+  9
+ ],
+ "altered_confirmed_95ci": [
+  0.0,
+  0.299
+ ],
+ "altered_row_named_exactly": [
+  0,
+  9
+ ],
+ "altered_row_among_named": [
+  0,
+  9
+ ],
+ "altered_row_only_one_failing": [
+  3,
+  9
+ ],
+ "conclusions": {
+  "CONFIRMED": 8,
+  "DOCUMENT_INCONSISTENT": 0,
+  "UNRESOLVED": 12
+ },
+ "rows_corrected": 53,
+ "amounts_and_dates_exact": [
+  11,
+  20
+ ],
+ "descriptions_wrong": [
+  140,
+  3221
+ ],
+ "second_reader_calls": 0,
+ "cost_usd_as_run": 0.0,
+ "cost_per_document_usd_as_run": 0.0,
+ "model_calls_served_from_cache": 148
+}

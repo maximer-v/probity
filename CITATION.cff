@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+title: "Probity: a low-cost vision model reads the document, a state machine with rules decides"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: "Mancilla Montero"
+    given-names: "Javier"
+    affiliation: "SquareOne Labs"
+version: 0.2.0
+date-released: "2026-11-14"
+license: CC-BY-NC-4.0
+repository-code: https://github.com/maximer-v/probity
+abstract: >-
+  A framework for extracting structured data from scanned and photographed financial
+  documents. An inexpensive vision model transcribes each page; rules implemented as code
+  check the transcription with exact arithmetic; where a rule fails, a different model
+  re-reads that page blind and code decides between the two readings. Each document is
+  reported as confirmed, inconsistent at a named row, or unresolved, with every corrected
+  value recorded.
+keywords:
+  - bank statements
+  - document extraction
+  - reconciliation
+  - verification
+  - provenance

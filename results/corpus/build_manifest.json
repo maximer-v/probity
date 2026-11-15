@@ -1,0 +1,2435 @@
+{
+ "built": 191,
+ "clean": 97,
+ "altered": 94,
+ "read_back_exactly": 191,
+ "not_built": [
+  {
+   "doc_id": "agami-Digital_Type2_00010",
+   "kind": "tampered",
+   "why": "could not map cells to the ledger"
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00019",
+   "kind": "repaired",
+   "why": "could not map cells to the ledger"
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00057",
+   "kind": "repaired",
+   "why": "could not map cells to the ledger"
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00066",
+   "kind": "tampered",
+   "why": "could not map cells to the ledger"
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00067",
+   "kind": "repaired",
+   "why": "could not map cells to the ledger"
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00068",
+   "kind": "tampered",
+   "why": "could not map cells to the ledger"
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00070",
+   "kind": "tampered",
+   "why": "could not map cells to the ledger"
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00082",
+   "kind": "tampered",
+   "why": "could not map cells to the ledger"
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00092",
+   "kind": "tampered",
+   "why": "could not map cells to the ledger"
+  }
+ ],
+ "documents": [
+  {
+   "doc_id": "agami-Digital_Type1_00001-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 162,
+   "cells_edited": 20,
+   "alteration": null,
+   "sha256": "dcc4f2a80719ad5be926e0e507b2a53b824205fcf0d65788a9dd32427932527e",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00001-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 161,
+   "cells_edited": 16,
+   "alteration": null,
+   "sha256": "139ba03e220dba78e5f2b55a1b77c31618a23c421edbb3d8bb7d81428aadd465",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00002-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 161,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 6,
+    "side": "debit",
+    "from": 289076432,
+    "to": 789076432
+   },
+   "sha256": "4f87f559b2225efa9b8011ddf6984ef6cf424b17d89e4f9640ecbec82f3d7ab1",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00002-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 167,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 127,
+    "side": "debit",
+    "from": 9382371,
+    "to": 2382371
+   },
+   "sha256": "cb2f3ed78ecba25e7c3fe2da9c4a31e10052c0c91bae64fe5cd6c4074de61c90",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00003-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 159,
+   "cells_edited": 10,
+   "alteration": null,
+   "sha256": "8e9f91f44a9691f55d4445034d99f7b24112ce6de955b2dc009c7d4d4758adc1",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00003-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 163,
+   "cells_edited": 23,
+   "alteration": null,
+   "sha256": "af3e63f0177769c2f9a0317a10845795ef975723e9a2dd50943dea3c1d9fcae2",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00004-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 155,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 124,
+    "side": "debit",
+    "from": 16402217,
+    "to": 12402217
+   },
+   "sha256": "0ccff3f1b04a1eefc2a36be0edb7e4b4e815fc81414c6016cfea6ce4bc918730",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00004-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 156,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 108,
+    "side": "credit",
+    "from": 5171893,
+    "to": 5871893
+   },
+   "sha256": "a9e272980b4da9c8d6b98d29125e0b5fcc6fcd53c4efcac3becce2bceda444b2",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00005-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 170,
+   "cells_edited": 38,
+   "alteration": null,
+   "sha256": "0409dfcfa1082f874a07a63171a0d80ccf6d4eb4e85f07b40f270e7e33b3cf33",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00005-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 156,
+   "cells_edited": 9,
+   "alteration": null,
+   "sha256": "7eaaea1f3d66b37ad874d93b45315f0571751c758d3697cecaaf2c37124a339f",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00006-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 159,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 96,
+    "side": "credit",
+    "from": 70920754,
+    "to": 76920754
+   },
+   "sha256": "6e372debd3ae7ee19dc83ac5e097eb35cb61023968780a9e7fbe18e0240db949",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00006-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 158,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 24,
+    "side": "debit",
+    "from": 59882848,
+    "to": 49882848
+   },
+   "sha256": "e953f424f08695c60e61a4bbd99101c80bb08e8a27355076ee83d206b614b785",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00007-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 162,
+   "cells_edited": 14,
+   "alteration": null,
+   "sha256": "488d7e1325135760d265bd1f9343220037d1e0f6a5c8fae32419db76bed3ad97",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00007-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 160,
+   "cells_edited": 17,
+   "alteration": null,
+   "sha256": "c2ff65eafd01d07bd79f4b83511febbdb659caae9fa30e2d2141b7ac2690d2ff",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00008-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 166,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 148,
+    "side": "debit",
+    "from": 428222,
+    "to": 128222
+   },
+   "sha256": "0c2e1a78396883dd9643747f8e035899afd9dec73f947ca7cdb4b27e3957f0e3",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00008-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 159,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 53,
+    "side": "debit",
+    "from": 298646623,
+    "to": 298646263
+   },
+   "sha256": "b41fd50d597eac15bdc8ec1fa8ad8ceaa0d737431fbdffd186c16f9a9af74a60",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00009-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 159,
+   "cells_edited": 14,
+   "alteration": null,
+   "sha256": "dc10c40995b604b52a4314a2d62f9615279652b8b1b35b7063c513764935583a",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00009-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 163,
+   "cells_edited": 23,
+   "alteration": null,
+   "sha256": "754d913aa3e713457deac1166bbfde1f66f5cdac7aea45cadc11853a592c8a6d",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00010-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 167,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 22,
+    "side": "credit",
+    "from": 87772415,
+    "to": 89772415
+   },
+   "sha256": "886a9645edd89334d4f38e8b5b8e616a92b29d0b4113c3f541460feffabae377",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00011-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 158,
+   "cells_edited": 12,
+   "alteration": null,
+   "sha256": "ea759982acc602aa6290b5d961b351524d002754cbfe37fca77705391f7209a0",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00011-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 158,
+   "cells_edited": 10,
+   "alteration": null,
+   "sha256": "b7db75d9f25524c14d40f125703f5d53ab4acad8c6083b55181a28dc84ead61f",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00012-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 165,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 48,
+    "side": "debit",
+    "from": 15179713,
+    "to": 18179713
+   },
+   "sha256": "2fe1e84d1d6f1c8236b34274b1d47ae6796ac7f99b33de14927f38af7623ff36",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00012-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 161,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 57,
+    "side": "credit",
+    "from": 6535927,
+    "to": 6535297
+   },
+   "sha256": "ff3ddfd8604445fe67b4797b9c6442b8da17ec59a3e93fb1252af0e74bfebbe0",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00013-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 156,
+   "cells_edited": 8,
+   "alteration": null,
+   "sha256": "b41a57dd5edf20375a655b1cc1d6dca7b7841fa00f3ed0a247778e64e72a952a",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00013-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 171,
+   "cells_edited": 32,
+   "alteration": null,
+   "sha256": "6c44caa61c57bf08ef56516b6409ed9d4996ae3acf67956fa1f954dc1ed09c89",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00014-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 159,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 89,
+    "side": "credit",
+    "from": 218751,
+    "to": 218715
+   },
+   "sha256": "24af782a2b5fb1a4ba4b0ce65eaa29bf4a73c8d5e1d35ccda4e38471d0c11ef6",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00014-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 159,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 124,
+    "side": "debit",
+    "from": 33292690,
+    "to": 31292690
+   },
+   "sha256": "a1b0684d4491db77e9ad26dfabfc1246a65bb203151511a89ee74a88d28ce05b",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00015-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 165,
+   "cells_edited": 26,
+   "alteration": null,
+   "sha256": "26c6000e00575e1cbabd09205a0002e8c5506d2b1660a3f4b7a1d01a508511db",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00015-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 158,
+   "cells_edited": 12,
+   "alteration": null,
+   "sha256": "0cfa1f0492a150f38f2abe7abdd8539fd54c81231569f5e1a1ff958b628d3482",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00016-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 158,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 46,
+    "side": "credit",
+    "from": 1010756,
+    "to": 1010765
+   },
+   "sha256": "732267fbd5cdef9889a38e4ecc68e0a4c157a39c8d9b9fd99669e2d80c632520",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00016-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 164,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 146,
+    "side": "credit",
+    "from": 118876357,
+    "to": 168876357
+   },
+   "sha256": "2d0e76392ca8b25743fe3e33c07b69c6ce880057d490edf074e05748dc55a7f5",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00017-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 161,
+   "cells_edited": 17,
+   "alteration": null,
+   "sha256": "eb1f3349442954d682c1581d661a7dbdf75ac70edfb27a06840ec6facd36cdf3",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00017-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 158,
+   "cells_edited": 12,
+   "alteration": null,
+   "sha256": "cd428cbbb238f9d8359671322e733ee7f9b386eae8bd9daa6eb2092ce1755360",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00018-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 167,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 113,
+    "side": "credit",
+    "from": 164854524,
+    "to": 864854524
+   },
+   "sha256": "84d3e1bf8ba8f17f49e26abdddf9604406c077264cbecfe0afbaa0bc0a693eae",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00018-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 157,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 6,
+    "side": "debit",
+    "from": 18185197,
+    "to": 13185197
+   },
+   "sha256": "bc45d1cbad6b32cdf6e729c71657f7738e65368f48cd45f79905c9a2e5c2fe02",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00019-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 166,
+   "cells_edited": 20,
+   "alteration": null,
+   "sha256": "8c8e7feafcbbe214daa6a1cb7b9561b85da053a1a0f770549d8b554d5c15c04b",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00020-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 157,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 90,
+    "side": "credit",
+    "from": 23954700,
+    "to": 29354700
+   },
+   "sha256": "21f94ecf50ae71651c0814f87eb17eb7545b063f84d7231f7489857715a3295c",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00020-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 163,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 115,
+    "side": "debit",
+    "from": 87157116,
+    "to": 85157116
+   },
+   "sha256": "017131c6fce817e149abb890646b38b73403fd4ac82bbda03e4ae078986e2866",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00021-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 170,
+   "cells_edited": 34,
+   "alteration": null,
+   "sha256": "9e9baca8d98a09a94213d4bb35dabdb76573055c540fbdf6cb3fa7e66b78786b",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00021-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 166,
+   "cells_edited": 30,
+   "alteration": null,
+   "sha256": "001b9d832d0946cc0f7dc9a779ab3b330b310abd44032d4cddec845bc49b236a",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00022-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 170,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 59,
+    "side": "credit",
+    "from": 25455262,
+    "to": 24455262
+   },
+   "sha256": "b9bc9ed077f72a36cf0a975fc7e7bdb87d6c0a8914575aee49774f9167fd851f",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00022-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 160,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 135,
+    "side": "debit",
+    "from": 10122802,
+    "to": 13122802
+   },
+   "sha256": "2d84a1eec6a65dae4b5c018ad7ccaafa981d6fdb32660c280e7829b708e04a26",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00023-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 160,
+   "cells_edited": 18,
+   "alteration": null,
+   "sha256": "2ad53a802ac854b8acfe96bf797d9b0b48197f4b527566de610281d24ccda8fa",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00023-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 157,
+   "cells_edited": 14,
+   "alteration": null,
+   "sha256": "9c4ec423ea9d133d53275a736279472224379f651c15cef4ee7a7bb5986f5446",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00024-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 163,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 79,
+    "side": "credit",
+    "from": 10266140,
+    "to": 40266140
+   },
+   "sha256": "30df76f94da16d8cd60da710549cc217709960e531d5e3fb030db67f6daee348",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00024-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 162,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 101,
+    "side": "debit",
+    "from": 227704205,
+    "to": 227740205
+   },
+   "sha256": "6139b382fac67aca4638b44e73fb47987bf12d8fdc5d02ceb8bb0d25b4dc27cc",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00025-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 156,
+   "cells_edited": 8,
+   "alteration": null,
+   "sha256": "5a06b193896ef9b066056964a86a015180142d83cef9132cb664e49423546773",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00025-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 162,
+   "cells_edited": 19,
+   "alteration": null,
+   "sha256": "522b75be472e50e19f583fd3df95eccd5d6e96e16c4a2560749a14b728fb614c",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00026-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 158,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 8,
+    "side": "credit",
+    "from": 46719543,
+    "to": 42719543
+   },
+   "sha256": "4df7765ec492f8fc3dc6881b64f30b353f5ae629e04a72ff129ce615db9ee598",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00026-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 168,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 137,
+    "side": "credit",
+    "from": 301096401,
+    "to": 301094601
+   },
+   "sha256": "aa08fbb9a529f90e9f3b719d3c643f71962f85deb3e8ecca6926229f605c0de6",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00027-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 160,
+   "cells_edited": 20,
+   "alteration": null,
+   "sha256": "6f423a31495ade62af62c4e3bfcee1629d777038e6b0bf0c3ff83836a84b47db",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00027-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 158,
+   "cells_edited": 14,
+   "alteration": null,
+   "sha256": "bc89dafeaa9813860d040f693f414aa10f594ea9a8921415e4e4d3954b65b2cf",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00028-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 165,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 36,
+    "side": "credit",
+    "from": 19106174,
+    "to": 19016174
+   },
+   "sha256": "f031760cbe2f2c0788c6a42140fbbf948c3ac55a8d8213e0dd3dd5eb3e14fee9",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00028-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 156,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 59,
+    "side": "credit",
+    "from": 10709893,
+    "to": 13709893
+   },
+   "sha256": "b96c81603a0549fdb855357570f676571d687253a1c7f7a45d1403d7b3b24a26",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00029-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 159,
+   "cells_edited": 14,
+   "alteration": null,
+   "sha256": "667dd9602c76eb6a0ccd9ec692b8f89c050a293a92f19a172f1bdf0d9945bf83",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00029-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 158,
+   "cells_edited": 14,
+   "alteration": null,
+   "sha256": "bd5c73ff68017937475b493674cb2512504fce06f98453246e9a104f76bcae76",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00030-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 157,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 21,
+    "side": "credit",
+    "from": 4101659,
+    "to": 4201659
+   },
+   "sha256": "30168016bb3f21778967f5e6cffbb72cc3fb6f8f39ac96d73c0438b096ee39e4",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00030-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 163,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 57,
+    "side": "debit",
+    "from": 10798860,
+    "to": 19798860
+   },
+   "sha256": "a3e03f82576ae7c3c49b962ad4c78d03d2acc7bf235ae9ce2842dad3700527c1",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00031-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 172,
+   "cells_edited": 38,
+   "alteration": null,
+   "sha256": "ed8e988baaa021b9a85ac19686f8e60300e00dc48bbd760d866bdf2802ef5c64",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00031-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 166,
+   "cells_edited": 31,
+   "alteration": null,
+   "sha256": "281f4b29f127006d0b4a1db7a5361593832f39eec6587fe7bcd798e41fbd9d28",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00032-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 161,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 69,
+    "side": "credit",
+    "from": 5217527,
+    "to": 5217257
+   },
+   "sha256": "81d3c6ba76fa5482c411299146a3e91cee82bcff7f88e98539db5bbbb174cc64",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00032-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 155,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 135,
+    "side": "credit",
+    "from": 2346049696,
+    "to": 3346049696
+   },
+   "sha256": "f7b243348d5e74baebb02b7af1ff93c669a2452c676754914a83fde7d9796350",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00033-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 165,
+   "cells_edited": 30,
+   "alteration": null,
+   "sha256": "b76d3ec735bfbfb8ce598cb8e15dbff0621872e661389617fe81be6c92fc1ebf",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00033-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 156,
+   "cells_edited": 8,
+   "alteration": null,
+   "sha256": "f36dd4c471bc6c441193419ce91d32ffbbcb98fc89837eb4c23dbe075e0cfe67",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00034-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 166,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 60,
+    "side": "debit",
+    "from": 4194250,
+    "to": 7194250
+   },
+   "sha256": "0434140142a05b3725d3ef2d29de3496cc68f3d12854a7bfb97a70bfaaf858ff",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00034-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 161,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 101,
+    "side": "debit",
+    "from": 1791623917,
+    "to": 1691623917
+   },
+   "sha256": "22c77b5cf7ec69e51c933b9285848da227c618377ee4fea3f0896a081f9b290d",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00035-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 155,
+   "cells_edited": 8,
+   "alteration": null,
+   "sha256": "d39efdac521d6a392ea3f7e641a12611b41f0fbe11e618612107f06df46129a8",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00035-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 166,
+   "cells_edited": 26,
+   "alteration": null,
+   "sha256": "171da86c087787fddb2ca6eb89774d23378b869bf0024c94ab14df4211d27c51",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00036-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 163,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 112,
+    "side": "credit",
+    "from": 37397376,
+    "to": 57397376
+   },
+   "sha256": "f553fb97fb7ab95b76a4c486c28e740c95213df118324c95c68e682425f59386",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00036-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 168,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 161,
+    "side": "credit",
+    "from": 119286071,
+    "to": 119286017
+   },
+   "sha256": "636411be6f65eae61b61cdcda1972c7337f6a40fa81f4076c586697f510a250f",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00037-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 157,
+   "cells_edited": 12,
+   "alteration": null,
+   "sha256": "a09dd2194f33f87029934e952cdbb8a71ab91cd877a6d0cae3be86d5e86656de",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00037-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 168,
+   "cells_edited": 30,
+   "alteration": null,
+   "sha256": "b56abd1e352b6c670d4ee69c843947d9cd5b79d23d4b34cab35c4f87d45b53d4",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00038-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 168,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 57,
+    "side": "debit",
+    "from": 54344079,
+    "to": 94344079
+   },
+   "sha256": "2881804395523103f2cb566f3ee86c9e5826312f1396ff0ac8071b43960eb991",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00038-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 165,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 38,
+    "side": "debit",
+    "from": 333124170,
+    "to": 383124170
+   },
+   "sha256": "2e6cdf2509fbfd033fac4701fce16c2435f4736e4d0ef753972cca213a220dc1",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00039-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 162,
+   "cells_edited": 19,
+   "alteration": null,
+   "sha256": "8e0c3272c82b4e1b074ac1c4933bd32f28c8a3645cc2600d375accbe10dbbc47",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00039-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 169,
+   "cells_edited": 30,
+   "alteration": null,
+   "sha256": "876a5cbb1a6f459d1e01a842606c157b9e93e3846fbb630a8f63cd1df7ad096f",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00040-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 163,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 105,
+    "side": "debit",
+    "from": 11413613,
+    "to": 11413163
+   },
+   "sha256": "1459c92e37e86a9976aae91844d32819d737fce426c750218d624d0f78d31aba",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00040-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 163,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 58,
+    "side": "debit",
+    "from": 33294050,
+    "to": 39294050
+   },
+   "sha256": "21ea4cfcbef74066c300e0600c47142eb61424dc731959b4f7fa751fc18da601",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00041-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 162,
+   "cells_edited": 20,
+   "alteration": null,
+   "sha256": "1ff091f1a9dae45383c50f3901648ee08a5fb19e3d9358b10199097d5055fdd8",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00041-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 160,
+   "cells_edited": 18,
+   "alteration": null,
+   "sha256": "acce0c054a7bbf2c5fadeeb02e4b3539b3779e5dfb9a2fa2968f35ab3289510f",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00042-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 162,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 113,
+    "side": "debit",
+    "from": 23309469,
+    "to": 43309469
+   },
+   "sha256": "aa971ae37c2be30c475d980da19019dbaa09505673291c317230b3300a204994",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00042-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 158,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 152,
+    "side": "credit",
+    "from": 7260732,
+    "to": 7160732
+   },
+   "sha256": "44ebde9ad87e2c742526ccf37289556a17c7b52629d2dcce19706f182b7e48f0",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00043-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 163,
+   "cells_edited": 24,
+   "alteration": null,
+   "sha256": "aa6a6d83d1a6cc942eb70393a32afff5d558dcb70e28bbc4983f3d04d6ad3982",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00043-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 160,
+   "cells_edited": 17,
+   "alteration": null,
+   "sha256": "d55ad3082d3803c9114ea5450deca837212eb1c96291f3248200cfade06f7831",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00044-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 155,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 151,
+    "side": "credit",
+    "from": 192640348,
+    "to": 192460348
+   },
+   "sha256": "714241602f70c6af6a32a8cecdea12e287a3038f50e48f10219412ebf97035f3",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00044-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 166,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 109,
+    "side": "debit",
+    "from": 1024836209,
+    "to": 1624836209
+   },
+   "sha256": "675178a4c7ecb7a01f4f0a4391b7851a6dae4bb3218807f19a25a6ea988e0bc3",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00045-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 162,
+   "cells_edited": 24,
+   "alteration": null,
+   "sha256": "5787c82e2200387a3aeca532dd67e62c9041c8ffdafacdbab995aeb9b99f0590",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00045-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 159,
+   "cells_edited": 14,
+   "alteration": null,
+   "sha256": "37116e7860d1dcc2f74c87a126ca79e87ca9c018f6c38a2921a18d46cd946e4d",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00046-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 165,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 140,
+    "side": "debit",
+    "from": 20355612,
+    "to": 23355612
+   },
+   "sha256": "eee02903207890edc15ad6e482e3f5edad5b40e1d525c37714c9b63f5af8fee2",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00046-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 166,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 142,
+    "side": "debit",
+    "from": 1183274,
+    "to": 8183274
+   },
+   "sha256": "adc03df085bc827de37d811062cbfcaecba12b98bee5aa6bd91fe0824f337d57",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00047-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 159,
+   "cells_edited": 14,
+   "alteration": null,
+   "sha256": "8f7132fd035adbc56605a4db77a9c70568870a0c49a148d0a37762b7feb50497",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00047-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 158,
+   "cells_edited": 14,
+   "alteration": null,
+   "sha256": "60ea1b036c84363f34254bec192d64033fd0cc0d7ac220b3d3ccfef26054b06d",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00048-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 159,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 18,
+    "side": "debit",
+    "from": 1228318,
+    "to": 8228318
+   },
+   "sha256": "523cc0818a9ef463950247e02c3c4694f92f993541efb3c0dd1d3f0f09a42728",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00048-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 157,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 27,
+    "side": "credit",
+    "from": 27581366,
+    "to": 22581366
+   },
+   "sha256": "b147a039d32a0f0f564bd61ff29b549c7cf429c95ed0a6d61247e1bd83ae7f2d",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00049-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 157,
+   "cells_edited": 14,
+   "alteration": null,
+   "sha256": "37bf5cb012ff4fadfbb05e1ae26bf500b99af8f66b750d60ba0272caf26c4737",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00049-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 155,
+   "cells_edited": 8,
+   "alteration": null,
+   "sha256": "e3d38dc7eda2f2fc4ff18b6c6bbdb51a1a91b06c4e5489cad23b6ce06c6b406f",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00050-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 161,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 159,
+    "side": "debit",
+    "from": 56160991,
+    "to": 96160991
+   },
+   "sha256": "64176cc72b2a91d6a541e113e541cd592ed14492f8c83f657473c7811b6c926e",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00050-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 156,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 5,
+    "side": "debit",
+    "from": 69578363,
+    "to": 19578363
+   },
+   "sha256": "99c311968e67cdc72c68de8a4417d1357f0d044d48cb9e6b020c4b4c02b3bb0a",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00051-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 163,
+   "cells_edited": 24,
+   "alteration": null,
+   "sha256": "531247c2c0dd83e05ae070d5a2ce4544c6ae544bf2d30c1f49cad07e14f4a3b1",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00051-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 162,
+   "cells_edited": 22,
+   "alteration": null,
+   "sha256": "b69dab97ffc87fe16a675d43b0fe30d8e3ffc61cdc7ae692340cf0eeccc9530b",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00052-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 159,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 76,
+    "side": "credit",
+    "from": 3454226,
+    "to": 3452426
+   },
+   "sha256": "08fa974ab0c0db802e108f687ad0921383497c899f290eca4e4f40f0edbf4ab5",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00052-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 161,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 4,
+    "side": "credit",
+    "from": 263443,
+    "to": 163443
+   },
+   "sha256": "575b931870fc2b1178f13b71b618e2b4f0c245e8f522f97955b58b37cdbef83b",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00053-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 169,
+   "cells_edited": 33,
+   "alteration": null,
+   "sha256": "aa514a3727d4858ae87f69410ffa3bff0e09b8711067c6a79da47c7ac6738625",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00053-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 162,
+   "cells_edited": 21,
+   "alteration": null,
+   "sha256": "bbaf56ce7e1ebc21012596f54097db8dee75f61b4d3533c60ec6a6586f7633d8",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00054-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 164,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 143,
+    "side": "credit",
+    "from": 46011863,
+    "to": 40611863
+   },
+   "sha256": "f7dd770d74ca60ca953651c0074281e6bf4498304d83ecf3efde493462f6145b",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00054-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 159,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 91,
+    "side": "debit",
+    "from": 54735354,
+    "to": 84735354
+   },
+   "sha256": "339a7a9a8c523e21c80ce40a81eb567bdfb45dfab3b0d4c830f21ddd469ee8cc",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00055-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 168,
+   "cells_edited": 28,
+   "alteration": null,
+   "sha256": "f6095bb679d48c877517088c35b385d5b2e897225e4f675efda015e002c9cdb5",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00055-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 168,
+   "cells_edited": 30,
+   "alteration": null,
+   "sha256": "5d72e17f5ab0b37f339715c0d871f204ca52f17fa85f93fe4510915c422eb8cc",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00056-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 156,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 31,
+    "side": "debit",
+    "from": 12224180,
+    "to": 82224180
+   },
+   "sha256": "fb8116d0415994e8bf0201f36cb2e6b35818d042c69dcdba530870e3f5d8cd96",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00056-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 171,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 99,
+    "side": "credit",
+    "from": 1401955104,
+    "to": 1401595104
+   },
+   "sha256": "de243d8af406283a60b65e9e258e21dc82e564879f7c15f65762f39e26be4f27",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00057-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 164,
+   "cells_edited": 26,
+   "alteration": null,
+   "sha256": "177ff8c0fb8b7cf07688cb5f5f7b4593be4ed8f0a7e2bb5717351b65f42e3a38",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00058-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 157,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 52,
+    "side": "debit",
+    "from": 129197310,
+    "to": 529197310
+   },
+   "sha256": "e461ec04e95f701ac0962294bef47042db9efbfc6582272f261bf6c65983bb28",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00058-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 156,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 133,
+    "side": "credit",
+    "from": 49789104,
+    "to": 19789104
+   },
+   "sha256": "2aae5a0238628acb6d35e44bc81ec7aaeacca1967cfca1cb32bcb08d3b9ea03c",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00059-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 160,
+   "cells_edited": 16,
+   "alteration": null,
+   "sha256": "b3b39c3d73270f6f0c1d77d748cc5ffc7591da4d168d57b4e0d9db6cfcdc07cd",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00059-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 164,
+   "cells_edited": 25,
+   "alteration": null,
+   "sha256": "c2647dbad7d7eea7d325a0c03d5e3b2fcfefd735dfebabe3ba6870d9fabdf9ed",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00060-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 171,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 5,
+    "side": "credit",
+    "from": 1050923,
+    "to": 1650923
+   },
+   "sha256": "b4a7297279f3e4b019622fc49d2cae49df73da1f08652ca7a05561b046400eb9",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00060-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 155,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 62,
+    "side": "debit",
+    "from": 570101,
+    "to": 570011
+   },
+   "sha256": "22dca0386c23dfae05025136b5744fffddc448c7618fe20d691a3af057ec3401",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00061-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 163,
+   "cells_edited": 18,
+   "alteration": null,
+   "sha256": "53e12047013b38e76374798b5d23ae2ada47be72a7762d4bb0ea4ea666cb3d50",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00061-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 155,
+   "cells_edited": 8,
+   "alteration": null,
+   "sha256": "da29161e62a39b8807b0a26c0e0525d2b462dec43e36504aadf83aa299f325a5",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00062-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 165,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 104,
+    "side": "credit",
+    "from": 3174993,
+    "to": 1174993
+   },
+   "sha256": "9102381fec9016a2b47cfb1cb2bbc5ae8e0f9a99f655413efd3fa89347c025f2",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00062-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 159,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 53,
+    "side": "debit",
+    "from": 308003419,
+    "to": 908003419
+   },
+   "sha256": "0b58d85f179d1c642aa4c9a3cf917cba28fff1600a2874d671294a43a4fdaa2c",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00063-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 165,
+   "cells_edited": 27,
+   "alteration": null,
+   "sha256": "1f04a474fdcd382f8523d369e6152eb3e072a27002586eb06f4cf34540edbc60",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00063-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 164,
+   "cells_edited": 25,
+   "alteration": null,
+   "sha256": "343116e199afdee15c070a08a632204367baa171e5eaadd72212b3561dfa7431",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00064-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 168,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 49,
+    "side": "credit",
+    "from": 27804056,
+    "to": 67804056
+   },
+   "sha256": "adaac8e5ea84218e37d2c953ebf55927fff7fb960a4d5dab7135b1feef090d87",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00064-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 162,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 44,
+    "side": "debit",
+    "from": 5057499,
+    "to": 5957499
+   },
+   "sha256": "e87e5d52a9ef8a36585690b2873aeda05a805f3a534ec59c2d289635b009dea5",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00065-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 160,
+   "cells_edited": 18,
+   "alteration": null,
+   "sha256": "91aed7d880d1581d10a6050d2218d087d603d5123bcde9ac6ec48179e3f21e06",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00065-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 160,
+   "cells_edited": 13,
+   "alteration": null,
+   "sha256": "853ad139a53628f4fbbefa56250dfc7996abe0f8280e0e8de8867a75009c7202",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00066-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 156,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 108,
+    "side": "credit",
+    "from": 607649,
+    "to": 407649
+   },
+   "sha256": "346ce841ce92e0eb0c70ecd729f7f110bb51c5dfc2d55d8feef5904ed9452f18",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00067-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 166,
+   "cells_edited": 28,
+   "alteration": null,
+   "sha256": "eaf7c11ddbac3e5b2ef9f938d7374e6aa59f1eaba8343b7d2bb8ba028128f576",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00068-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 161,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 121,
+    "side": "debit",
+    "from": 14278164,
+    "to": 14278146
+   },
+   "sha256": "a8ccfafc7978fe49dfdaedf844ed2bac79cb7cbeb14a20ff46c1ce9f6ba8cccf",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00069-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 167,
+   "cells_edited": 29,
+   "alteration": null,
+   "sha256": "61050091cd118311be4988c13521ed772000cd3cb4c110362820d4d2eb1bcf6b",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00069-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 165,
+   "cells_edited": 24,
+   "alteration": null,
+   "sha256": "85f90de0af2f175387e17be9bd8285b6f70b5871a543f324f73166436f9d3fba",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00070-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 156,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 52,
+    "side": "debit",
+    "from": 147754250,
+    "to": 157754250
+   },
+   "sha256": "68b6985f0992b3219ee5dc705aee6a805922a980fcce38ab794401fcb7ad2c11",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00071-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 157,
+   "cells_edited": 10,
+   "alteration": null,
+   "sha256": "00bc95e8bd80ca3506e9047aeb7b3b58cb08d312c8724b5c6cb785c83f7cca44",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00071-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 166,
+   "cells_edited": 28,
+   "alteration": null,
+   "sha256": "4efa0d7d5e9f82e5eba2e47b864c641f291ceac300b11a1fc730edeff41d4726",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00072-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 157,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 106,
+    "side": "debit",
+    "from": 60195811,
+    "to": 20195811
+   },
+   "sha256": "ecbaefdb3a2e43539099589354ebe6c4c77b4784f400ef553449186ac3526bcd",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00072-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 164,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 140,
+    "side": "debit",
+    "from": 640655,
+    "to": 604655
+   },
+   "sha256": "207db6decc101b38aa5bb981f1b06cc6a45941d015abd1ae502f8025e2dfd116",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00073-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 172,
+   "cells_edited": 37,
+   "alteration": null,
+   "sha256": "e267ea9dfdc9c9dc5ace83c78062b47ea0ac7fe6ab7e4663b8ec12faa7d862d2",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00073-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 162,
+   "cells_edited": 23,
+   "alteration": null,
+   "sha256": "e5f1314fc07a681ff6aa0947026ba5e0c09dd4d48a08a0bc9566914788c5fb2a",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00074-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 172,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 104,
+    "side": "debit",
+    "from": 333666,
+    "to": 833666
+   },
+   "sha256": "069dc7301ad40a58865fec18794e24bd008aadfc3ea0a1330f2a96bb8df70b4d",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00074-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 162,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 34,
+    "side": "debit",
+    "from": 7252091,
+    "to": 7652091
+   },
+   "sha256": "896498a42936bb38db1a63ee9aa5d547cc4f8657320b97ed18508bdd96746400",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00075-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 170,
+   "cells_edited": 34,
+   "alteration": null,
+   "sha256": "2a309cdbac83b934032114d9b9e35654453011fce2461b1835e71746b1809ce4",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00075-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 158,
+   "cells_edited": 14,
+   "alteration": null,
+   "sha256": "9bb1791f5f5bd4e4ca7d1398bb4dc2104d704e4c422a961f8b53bf8d4c2df512",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00076-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 163,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 114,
+    "side": "debit",
+    "from": 263874291,
+    "to": 253874291
+   },
+   "sha256": "974301ce1fc81066d7ed5cecc3c520e31b6b8291d9bd96753506490b9b076d6a",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00076-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 156,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 147,
+    "side": "debit",
+    "from": 49243605,
+    "to": 49243650
+   },
+   "sha256": "95d359d756eb49206f79a2c3091739e5e6d0cc7e8c2b6952156715dd1e52c762",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00077-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 164,
+   "cells_edited": 20,
+   "alteration": null,
+   "sha256": "d3aa02ccf9d8c63fb55ea010a4e0e8c775a684db500b190f48da36e5ad088938",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00077-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 157,
+   "cells_edited": 12,
+   "alteration": null,
+   "sha256": "8c4b615c809197b26875fb7dd1234a08bff43c6ef5cf7862926002c738204cd3",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00078-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 161,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 19,
+    "side": "credit",
+    "from": 4861422,
+    "to": 4961422
+   },
+   "sha256": "ed06d641d341b151c15744f9f889b17026519f5d68f05b577c7194c8de6e79b4",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00078-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 158,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 89,
+    "side": "debit",
+    "from": 5709,
+    "to": 2709
+   },
+   "sha256": "5f7fa729b7292590f5423c09a06af778b1b372364f93ebe82c558954e2a128ae",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00079-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 160,
+   "cells_edited": 15,
+   "alteration": null,
+   "sha256": "bdb2ce40334f2dcf0763975b0767bebb707f05173242e2b54a1d69be2929d1cf",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00079-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 162,
+   "cells_edited": 19,
+   "alteration": null,
+   "sha256": "8175d02904447568f7864bffba5623a44aa1eeea19dbf319a07ce0a59adabda4",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00080-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 164,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 102,
+    "side": "debit",
+    "from": 540940,
+    "to": 340940
+   },
+   "sha256": "b9a95999efd18d3bd988713cadfb81f766ed4094913a249423ee4d37def33496",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00080-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 163,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 156,
+    "side": "debit",
+    "from": 1268889,
+    "to": 1368889
+   },
+   "sha256": "67b22c68538300972c4163338d94436c73d618e02e56dc99ae4be22f155c9d51",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00081-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 164,
+   "cells_edited": 21,
+   "alteration": null,
+   "sha256": "c8db199620a2c49ff892f2de7a159787efd772d60bd6091f328337e24df63ef7",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00081-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 159,
+   "cells_edited": 14,
+   "alteration": null,
+   "sha256": "9cfe1e87dc00800e1c064f9d3547d08867ba1c4df647cba1e570eb55d099673c",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00082-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 156,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 69,
+    "side": "debit",
+    "from": 1709214,
+    "to": 5709214
+   },
+   "sha256": "074076080b83f0bffec046f97226a8f17fcb731af5a6953f9bcca881577babb3",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00083-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 165,
+   "cells_edited": 24,
+   "alteration": null,
+   "sha256": "3d0ec1185e5d792eab22d2ce95ef50acf2e4b526046ab9855dfa1b1035857494",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00083-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 161,
+   "cells_edited": 19,
+   "alteration": null,
+   "sha256": "9468a29ecd89ade407c6fe2a21dba9b9e4a686ecf918127cecbe7303cfcbbe39",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00084-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 158,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 27,
+    "side": "credit",
+    "from": 2673115,
+    "to": 2671315
+   },
+   "sha256": "2fbf168e1e0d164570dc2c5e5e9f3244da06bdb197afcbeac242b4733fbe2ae6",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00084-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 158,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 140,
+    "side": "credit",
+    "from": 31884621,
+    "to": 11884621
+   },
+   "sha256": "ba59f7f310b0064cfee66cbaa1eca639b79dc0ef86963af90ed34913ac4b5413",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00085-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 167,
+   "cells_edited": 30,
+   "alteration": null,
+   "sha256": "30a4b207308d6501930c05aeb8ca0bf6d21b9231445636e3cb9b19332a32eff8",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00085-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 157,
+   "cells_edited": 10,
+   "alteration": null,
+   "sha256": "0f8b46b7d22b1122625dcd5940248943084645d11a6b466aa2fc518e3d48267d",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00086-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 157,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 120,
+    "side": "debit",
+    "from": 220251,
+    "to": 222051
+   },
+   "sha256": "d57f62858d5ad9b1b73ff1cf0eb289e59e1474e4f44d344fd456a3c415bd6dc6",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00086-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 165,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 29,
+    "side": "debit",
+    "from": 1133027,
+    "to": 4133027
+   },
+   "sha256": "6be03319b3dd85530054e7dae62a69c9b680ccce91cc44ddd9ceba9e596d1619",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00087-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 160,
+   "cells_edited": 14,
+   "alteration": null,
+   "sha256": "7314b4e55c4ab4d58aa83bf8161a1b431df0c3b591115da14d7d5c08966d1bf3",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00087-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 157,
+   "cells_edited": 10,
+   "alteration": null,
+   "sha256": "498bb8bb72b8f3c5071532def227f4913942aa17e39bde79def30f576b2a0cdb",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00088-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 153,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 33,
+    "side": "credit",
+    "from": 1118436,
+    "to": 5118436
+   },
+   "sha256": "18f9ca5eb824788f7df2a8512e0a61dafd7240d0f4a0237eae18d5b509e4e009",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00088-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 158,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 60,
+    "side": "credit",
+    "from": 1771283,
+    "to": 1771823
+   },
+   "sha256": "b4902a477b77674fd0ad110461ec811c0f0bf052e14a710da8529d537f1e033b",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00089-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 160,
+   "cells_edited": 13,
+   "alteration": null,
+   "sha256": "457a217961238e8c4f56c1998e7562f9fa82ead604bdcecef4b679701393144e",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00089-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 158,
+   "cells_edited": 15,
+   "alteration": null,
+   "sha256": "dc4d664f3b8f2a8ea20f65e75d4b4f89b6e0a58f152fb618fb4fffdd1d070ae7",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00090-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 156,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 72,
+    "side": "credit",
+    "from": 4077319,
+    "to": 4777319
+   },
+   "sha256": "7da5368990959533eb8f6e2b550aff593dd53987b6a5cc85f1fb14ef262e257f",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00090-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 160,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 79,
+    "side": "credit",
+    "from": 71822508,
+    "to": 76822508
+   },
+   "sha256": "210759df8d1acf669e5b089b9afc62194aca127be25852b9acc9bbcc01ead80c",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00091-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 163,
+   "cells_edited": 20,
+   "alteration": null,
+   "sha256": "efbb899cdcdf60ef5de74e499116b84692aa251d90e68f05723648b1d14e3f5c",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00091-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 166,
+   "cells_edited": 30,
+   "alteration": null,
+   "sha256": "0839a5f05875ba2df7a1736f2d8f2d2d38105c6a40c1febadfafe5f599a8d3e5",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00092-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 160,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 123,
+    "side": "credit",
+    "from": 22096283,
+    "to": 24096283
+   },
+   "sha256": "72beb46cb01ede835b010ca59eab87dad762fa91eda064df1073d76a72a35aca",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00093-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 165,
+   "cells_edited": 26,
+   "alteration": null,
+   "sha256": "2297720a3243777a0efd9b22c6f574b9f4692a912fd5ba9064cf3db9284a4eaa",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00093-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 156,
+   "cells_edited": 9,
+   "alteration": null,
+   "sha256": "b18dd1110265934dda851b89dae46b460121af43035467e8dc4652ba67e8b5bb",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00094-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 157,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 67,
+    "side": "credit",
+    "from": 41775115,
+    "to": 71775115
+   },
+   "sha256": "04f711da59fc84c026e231141ab6ddb1f316db862a6c42f591279d0ef43eff60",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00094-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 168,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 156,
+    "side": "credit",
+    "from": 3962484,
+    "to": 3662484
+   },
+   "sha256": "bfbb8bd9033a1bb0018378866ec6f42c083bd45511713c0d8757935af16c2175",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00095-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 164,
+   "cells_edited": 21,
+   "alteration": null,
+   "sha256": "94ab2943f7dec96ff8e85a9715beec6ce061db68643210df522c8b2ae559c062",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00095-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 154,
+   "cells_edited": 7,
+   "alteration": null,
+   "sha256": "b5d3f508bf7e0cba5bb8620aec5b9ac9b9dd6ee523ad2d84a915a458b8b70db5",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00096-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 157,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 60,
+    "side": "debit",
+    "from": 204682875,
+    "to": 204682857
+   },
+   "sha256": "145ee8ce4deb0207754de26e9fe4b548ee80fc82e145e94f5e271425139efef1",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00096-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 156,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 145,
+    "side": "debit",
+    "from": 676416,
+    "to": 636416
+   },
+   "sha256": "13bb180332583fa1333bf6385a1e68ae56d1ecb463f9bb9efedbe2828989dff1",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00097-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 166,
+   "cells_edited": 28,
+   "alteration": null,
+   "sha256": "a506dd875d4baffb4adc9156c3cdb3ef2ff0b797ef0ee328586817b5208b5d98",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00097-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 160,
+   "cells_edited": 17,
+   "alteration": null,
+   "sha256": "517eb37d670e905fa1d6945cf29985db87b154f48392a2311903cd1930df681f",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00098-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 163,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 44,
+    "side": "debit",
+    "from": 2875938,
+    "to": 2975938
+   },
+   "sha256": "9a2cb5f653cf7ae6d4def4efa155dc1cc8acb007645e049d99aac2d6f828346d",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00098-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 169,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 93,
+    "side": "debit",
+    "from": 86134,
+    "to": 96134
+   },
+   "sha256": "e9b1ed0913b7e6898caaf2b423030c1550f56c86767c46e2a941015adbf0fc8c",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00099-repaired",
+   "layout": "type1",
+   "group": "clean",
+   "rows": 165,
+   "cells_edited": 19,
+   "alteration": null,
+   "sha256": "a909b396addc64bd4cb2a9c78d8dc0d048bfc7b8bfef95cb219ebc14723b046c",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00099-repaired",
+   "layout": "type2",
+   "group": "clean",
+   "rows": 162,
+   "cells_edited": 21,
+   "alteration": null,
+   "sha256": "230683509bf938035a8bbb53d28d10f5506b3dac318d858c3149a4b9ffc6072b",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00100-tampered",
+   "layout": "type1",
+   "group": "altered",
+   "rows": 163,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 113,
+    "side": "debit",
+    "from": 254959,
+    "to": 259459
+   },
+   "sha256": "ee802ce2b09b7b0218a382decfc77a1f390a2b2fc04303cf9b43c5e7a5e456bd",
+   "reads_back_exactly_as_its_answer_key": true
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00100-tampered",
+   "layout": "type2",
+   "group": "altered",
+   "rows": 166,
+   "cells_edited": 1,
+   "alteration": {
+    "row": 87,
+    "side": "debit",
+    "from": 741255030,
+    "to": 741255300
+   },
+   "sha256": "b857f5c98037b603d1c7d00df60f00f8286ec88e924b147642c0f64b3e18d569",
+   "reads_back_exactly_as_its_answer_key": true
+  }
+ ]
+}

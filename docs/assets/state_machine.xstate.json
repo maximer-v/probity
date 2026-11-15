@@ -1,0 +1,180 @@
+{
+  "id": "probity.verified_extraction",
+  "initial": "INGEST",
+  "version": "1.0.0",
+  "description": "probity: deterministic verdicts over non-deterministic proposers",
+  "states": {
+    "INGEST": {
+      "on": {
+        "no readable page": [
+          {
+            "target": "ERROR",
+            "guard": {
+              "type": "ingest_failed",
+              "params": {}
+            },
+            "description": "the file could not be opened or has no pages"
+          }
+        ],
+        "ingested": [
+          {
+            "target": "CLASSIFY"
+          }
+        ]
+      }
+    },
+    "CLASSIFY": {
+      "on": {
+        "classified": [
+          {
+            "target": "EXTRACT",
+            "description": "digital or scanned, document type, template id"
+          }
+        ]
+      }
+    },
+    "EXTRACT": {
+      "on": {
+        "nothing extracted": [
+          {
+            "target": "ESCALATE_TIER",
+            "guard": {
+              "type": "extract_empty_and_tier_left",
+              "params": {}
+            },
+            "description": "the tier produced no rows and a more expensive tier is available"
+          }
+        ],
+        "nothing extracted, no tier left": [
+          {
+            "target": "HUMAN_REVIEW",
+            "guard": {
+              "type": "extract_empty",
+              "params": {}
+            }
+          }
+        ],
+        "candidate reading produced": [
+          {
+            "target": "GROUND"
+          }
+        ]
+      }
+    },
+    "GROUND": {
+      "on": {
+        "every value located or rejected": [
+          {
+            "target": "VERIFY",
+            "description": "ungrounded values are marked, never silently kept"
+          }
+        ]
+      }
+    },
+    "VERIFY": {
+      "on": {
+        "all invariants pass and policy met": [
+          {
+            "target": "ACCEPT",
+            "guard": {
+              "type": "accepts",
+              "params": {}
+            }
+          }
+        ],
+        "localized failure, repair budget left": [
+          {
+            "target": "REPAIR",
+            "guard": {
+              "type": "repairable",
+              "params": {}
+            }
+          }
+        ],
+        "failure, a better tier is available": [
+          {
+            "target": "ESCALATE_TIER",
+            "guard": {
+              "type": "tier_left",
+              "params": {}
+            }
+          }
+        ],
+        "budget exhausted": [
+          {
+            "target": "HUMAN_REVIEW"
+          }
+        ]
+      }
+    },
+    "REPAIR": {
+      "on": {
+        "candidate from the source": [
+          {
+            "target": "GROUND",
+            "guard": {
+              "type": "repair_proposed",
+              "params": {}
+            }
+          }
+        ],
+        "repair found nothing, tier available": [
+          {
+            "target": "ESCALATE_TIER",
+            "guard": {
+              "type": "tier_left",
+              "params": {}
+            }
+          }
+        ],
+        "repair found nothing, no tier left": [
+          {
+            "target": "HUMAN_REVIEW"
+          }
+        ]
+      }
+    },
+    "ESCALATE_TIER": {
+      "on": {
+        "next tier, failed region only": [
+          {
+            "target": "EXTRACT",
+            "guard": {
+              "type": "tier_advanced",
+              "params": {}
+            }
+          }
+        ],
+        "no tier left within budget": [
+          {
+            "target": "HUMAN_REVIEW"
+          }
+        ]
+      }
+    },
+    "ACCEPT": {
+      "type": "final",
+      "description": "every invariant in the spec passed and the acceptance policy was met"
+    },
+    "HUMAN_REVIEW": {
+      "type": "final",
+      "description": "the failure was not resolved within budget; the failing rows are listed"
+    },
+    "ERROR": {
+      "type": "final",
+      "description": "the document could not be processed at all"
+    }
+  },
+  "meta": {
+    "guards": {
+      "accepts": "every invariant passed and the acceptance policy is satisfied",
+      "extract_empty": "this tier produced no rows",
+      "extract_empty_and_tier_left": "this tier produced no rows and a dearer tier is free",
+      "ingest_failed": "the file could not be opened or contains no pages",
+      "repair_proposed": "the repair produced a grounded candidate from the source",
+      "repairable": "the failure is localized and this region has repair budget left",
+      "tier_advanced": "the tier pointer moved to a usable tier",
+      "tier_left": "a more capable tier is available within budget"
+    }
+  }
+}

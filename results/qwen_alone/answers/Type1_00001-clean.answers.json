@@ -1,0 +1,336 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 0,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 12,
+    "field": "debit",
+    "value": "Rs. 571.24"
+   },
+   {
+    "row": 39,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 40,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 64,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 82,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 83,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 105,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 110,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 111,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 112,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 115,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 116,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 117,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 119,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 120,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 121,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 124,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 125,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 131,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 133,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 135,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 137,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 139,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 142,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 143,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 145,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 146,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 149,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 152,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 158,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 160,
+    "field": "credit",
+    "value": ""
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription contained numerous errors where debit amounts were incorrectly placed in the credit column and vice versa. After correcting these misplacements to match the printed statement, the arithmetic for every row is correct, and the closing balance of Rs. 21,661.82 agrees with the sum of the opening balance and all movements."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 0,
+    "field": "debit",
+    "value": ""
+   },
+   {
+    "row": 12,
+    "field": "debit",
+    "value": "Rs. 571.24"
+   },
+   {
+    "row": 39,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 40,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 64,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 82,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 83,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 105,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 110,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 111,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 112,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 115,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 116,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 117,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 119,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 120,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 121,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 124,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 125,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 131,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 133,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 135,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 137,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 139,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 142,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 143,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 145,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 146,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 149,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 152,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 158,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 160,
+    "field": "credit",
+    "value": ""
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription contained numerous errors where debit amounts were incorrectly placed in the credit column and vice versa. After correcting these misplacements to match the printed statement, the arithmetic for every row is correct, and the closing balance of Rs. 21,661.82 agrees with the sum of the opening balance and all movements."
+ }
+}

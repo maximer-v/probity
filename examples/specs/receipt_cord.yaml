@@ -1,0 +1,48 @@
+# Retail and restaurant receipts, as in the public CORD corpus (Indonesian rupiah).
+# A form: a few totals and a list of lines, tied together by sums.
+doc_type: receipt.cord
+kind: form
+amounts: integer              # rupiah has no minor unit; "16,500" and "16.500" are 16500
+
+fields:
+  subtotal: {type: money, optional: true, label: "the subtotal before tax and service, if one is printed"}
+  tax:      {type: money, optional: true, label: "tax (PPN, PB1, VAT), if printed"}
+  service:  {type: money, optional: true, label: "service charge, if printed"}
+  discount: {type: money, optional: true, label: "total discount, if printed, as a positive number"}
+  total:    {type: money, label: "the total to pay"}
+  cash:     {type: money, optional: true, label: "cash tendered, if printed"}
+  change:   {type: money, optional: true, label: "change returned, if printed"}
+
+tables:
+  items:
+    columns:
+      name:       {type: text,   label: "the item as printed"}
+      quantity:   {type: number, optional: true, label: "quantity, if printed"}
+      unit_price: {type: money,  optional: true, label: "price of one unit, if printed separately"}
+      price:      {type: money,  label: "the line amount"}
+
+instruction: |
+  One entry per purchased item. Do not list subtotal, tax, service, discount, total, cash
+  or change as items.
+
+rules:
+  - id: ITEMS_SUM_TO_SUBTOTAL
+    when: subtotal is not None
+    check: sum(items.price) == subtotal
+
+  - id: SUBTOTAL_TO_TOTAL
+    when: subtotal is not None
+    check: subtotal + (tax or 0) + (service or 0) - (discount or 0) == total
+
+  - id: ITEMS_SUM_TO_TOTAL
+    when: subtotal is None
+    check: sum(items.price) + (tax or 0) + (service or 0) - (discount or 0) == total
+
+  - id: CASH_LESS_TOTAL_IS_CHANGE
+    when: cash is not None and change is not None
+    check: cash - total == change
+
+  - id: LINE_AMOUNT
+    for_each: items
+    when: row.quantity is not None and row.unit_price is not None
+    check: row.quantity * row.unit_price == row.price

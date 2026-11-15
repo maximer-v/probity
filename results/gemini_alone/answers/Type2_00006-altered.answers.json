@@ -1,0 +1,36 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 139,
+    "field": "credit",
+    "value": "162,492.37"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is consistent after correcting a transcription error in row 139 where the credit amount was missing."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 139,
+    "field": "credit",
+    "value": "393,067.87"
+   },
+   {
+    "row": 140,
+    "field": "credit",
+    "value": ""
+   },
+   {
+    "row": 140,
+    "field": "debit",
+    "value": "840,837.71"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription for row 139 and 140 was misaligned, with the credit amount for 139 missing and the debit for 140 incorrectly placed. After correcting these, the statement is consistent."
+ }
+}

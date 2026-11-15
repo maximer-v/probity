@@ -1,0 +1,1616 @@
+{
+ "summary": {
+  "source": "AgamiAI/Indian-Bank-Statements, digital split, as published",
+  "documents": 200,
+  "rows": 32349,
+  "rows_breaking_the_running_balance": 3901,
+  "documents_with_no_break": 0,
+  "min_breaks_per_document": 6,
+  "closing_equals_last_row_balance": 200,
+  "amounts_chain_below_closing": 184,
+  "amounts_chain_above_closing": 0,
+  "amounts_chain_equal_closing": 16
+ },
+ "documents": [
+  {
+   "doc_id": "agami-Digital_Type1_00001",
+   "layout": "type1",
+   "rows": 162,
+   "rows_breaking_the_running_balance": 20,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -2798773
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00002",
+   "layout": "type1",
+   "rows": 161,
+   "rows_breaking_the_running_balance": 19,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -139445249
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00003",
+   "layout": "type1",
+   "rows": 159,
+   "rows_breaking_the_running_balance": 10,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -28896316
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00004",
+   "layout": "type1",
+   "rows": 155,
+   "rows_breaking_the_running_balance": 10,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -61563334
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00005",
+   "layout": "type1",
+   "rows": 170,
+   "rows_breaking_the_running_balance": 38,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -73886502
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00006",
+   "layout": "type1",
+   "rows": 159,
+   "rows_breaking_the_running_balance": 17,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -798418
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00007",
+   "layout": "type1",
+   "rows": 162,
+   "rows_breaking_the_running_balance": 14,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": 0
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00008",
+   "layout": "type1",
+   "rows": 166,
+   "rows_breaking_the_running_balance": 24,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -27010253
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00009",
+   "layout": "type1",
+   "rows": 159,
+   "rows_breaking_the_running_balance": 14,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -13818979
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00010",
+   "layout": "type1",
+   "rows": 167,
+   "rows_breaking_the_running_balance": 26,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -56805656
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00011",
+   "layout": "type1",
+   "rows": 158,
+   "rows_breaking_the_running_balance": 12,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -35557855
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00012",
+   "layout": "type1",
+   "rows": 165,
+   "rows_breaking_the_running_balance": 28,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -58869357
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00013",
+   "layout": "type1",
+   "rows": 156,
+   "rows_breaking_the_running_balance": 8,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -13786070
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00014",
+   "layout": "type1",
+   "rows": 159,
+   "rows_breaking_the_running_balance": 16,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -60266409
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00015",
+   "layout": "type1",
+   "rows": 165,
+   "rows_breaking_the_running_balance": 26,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -32307025
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00016",
+   "layout": "type1",
+   "rows": 158,
+   "rows_breaking_the_running_balance": 12,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -19244410
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00017",
+   "layout": "type1",
+   "rows": 161,
+   "rows_breaking_the_running_balance": 17,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -23637102
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00018",
+   "layout": "type1",
+   "rows": 167,
+   "rows_breaking_the_running_balance": 34,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -69098453
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00019",
+   "layout": "type1",
+   "rows": 166,
+   "rows_breaking_the_running_balance": 20,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -63706000
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00020",
+   "layout": "type1",
+   "rows": 157,
+   "rows_breaking_the_running_balance": 10,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -180083960
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00021",
+   "layout": "type1",
+   "rows": 170,
+   "rows_breaking_the_running_balance": 34,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -54586632
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00022",
+   "layout": "type1",
+   "rows": 170,
+   "rows_breaking_the_running_balance": 33,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -14715146
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00023",
+   "layout": "type1",
+   "rows": 160,
+   "rows_breaking_the_running_balance": 18,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -160238806
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00024",
+   "layout": "type1",
+   "rows": 163,
+   "rows_breaking_the_running_balance": 23,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -45828893
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00025",
+   "layout": "type1",
+   "rows": 156,
+   "rows_breaking_the_running_balance": 8,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -69589593
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00026",
+   "layout": "type1",
+   "rows": 158,
+   "rows_breaking_the_running_balance": 8,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -82386849
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00027",
+   "layout": "type1",
+   "rows": 160,
+   "rows_breaking_the_running_balance": 20,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -52527943
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00028",
+   "layout": "type1",
+   "rows": 165,
+   "rows_breaking_the_running_balance": 25,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": 0
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00029",
+   "layout": "type1",
+   "rows": 159,
+   "rows_breaking_the_running_balance": 14,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -45764242
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00030",
+   "layout": "type1",
+   "rows": 157,
+   "rows_breaking_the_running_balance": 7,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": 0
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00031",
+   "layout": "type1",
+   "rows": 172,
+   "rows_breaking_the_running_balance": 38,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -55306819
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00032",
+   "layout": "type1",
+   "rows": 161,
+   "rows_breaking_the_running_balance": 19,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -28702387
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00033",
+   "layout": "type1",
+   "rows": 165,
+   "rows_breaking_the_running_balance": 30,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -12905342
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00034",
+   "layout": "type1",
+   "rows": 166,
+   "rows_breaking_the_running_balance": 27,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -29092714
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00035",
+   "layout": "type1",
+   "rows": 155,
+   "rows_breaking_the_running_balance": 8,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -7051197
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00036",
+   "layout": "type1",
+   "rows": 163,
+   "rows_breaking_the_running_balance": 22,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -43619920
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00037",
+   "layout": "type1",
+   "rows": 157,
+   "rows_breaking_the_running_balance": 12,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -52160030
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00038",
+   "layout": "type1",
+   "rows": 168,
+   "rows_breaking_the_running_balance": 30,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -32697082
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00039",
+   "layout": "type1",
+   "rows": 162,
+   "rows_breaking_the_running_balance": 19,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": 0
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00040",
+   "layout": "type1",
+   "rows": 163,
+   "rows_breaking_the_running_balance": 24,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -20112443
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00041",
+   "layout": "type1",
+   "rows": 162,
+   "rows_breaking_the_running_balance": 20,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -24151949
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00042",
+   "layout": "type1",
+   "rows": 162,
+   "rows_breaking_the_running_balance": 22,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -6133146
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00043",
+   "layout": "type1",
+   "rows": 163,
+   "rows_breaking_the_running_balance": 24,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -38612242
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00044",
+   "layout": "type1",
+   "rows": 155,
+   "rows_breaking_the_running_balance": 8,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -149493431
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00045",
+   "layout": "type1",
+   "rows": 162,
+   "rows_breaking_the_running_balance": 24,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -45461402
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00046",
+   "layout": "type1",
+   "rows": 165,
+   "rows_breaking_the_running_balance": 29,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -73975218
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00047",
+   "layout": "type1",
+   "rows": 159,
+   "rows_breaking_the_running_balance": 14,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -13146527
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00048",
+   "layout": "type1",
+   "rows": 159,
+   "rows_breaking_the_running_balance": 16,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -14322540
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00049",
+   "layout": "type1",
+   "rows": 157,
+   "rows_breaking_the_running_balance": 14,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -124839720
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00050",
+   "layout": "type1",
+   "rows": 161,
+   "rows_breaking_the_running_balance": 22,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -74065930
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00051",
+   "layout": "type1",
+   "rows": 163,
+   "rows_breaking_the_running_balance": 24,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -9842714
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00052",
+   "layout": "type1",
+   "rows": 159,
+   "rows_breaking_the_running_balance": 14,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -16831164
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00053",
+   "layout": "type1",
+   "rows": 169,
+   "rows_breaking_the_running_balance": 33,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -53388516
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00054",
+   "layout": "type1",
+   "rows": 164,
+   "rows_breaking_the_running_balance": 23,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": 0
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00055",
+   "layout": "type1",
+   "rows": 168,
+   "rows_breaking_the_running_balance": 28,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": 0
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00056",
+   "layout": "type1",
+   "rows": 156,
+   "rows_breaking_the_running_balance": 10,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -25276586
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00057",
+   "layout": "type1",
+   "rows": 164,
+   "rows_breaking_the_running_balance": 26,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -88564573
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00058",
+   "layout": "type1",
+   "rows": 157,
+   "rows_breaking_the_running_balance": 13,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -14498828
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00059",
+   "layout": "type1",
+   "rows": 160,
+   "rows_breaking_the_running_balance": 16,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -99850315
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00060",
+   "layout": "type1",
+   "rows": 171,
+   "rows_breaking_the_running_balance": 32,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -47320478
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00061",
+   "layout": "type1",
+   "rows": 163,
+   "rows_breaking_the_running_balance": 18,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -137505872
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00062",
+   "layout": "type1",
+   "rows": 165,
+   "rows_breaking_the_running_balance": 22,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -49493412
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00063",
+   "layout": "type1",
+   "rows": 165,
+   "rows_breaking_the_running_balance": 27,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": 0
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00064",
+   "layout": "type1",
+   "rows": 168,
+   "rows_breaking_the_running_balance": 30,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -84445452
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00065",
+   "layout": "type1",
+   "rows": 160,
+   "rows_breaking_the_running_balance": 18,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -56280434
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00066",
+   "layout": "type1",
+   "rows": 156,
+   "rows_breaking_the_running_balance": 10,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -6112658
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00067",
+   "layout": "type1",
+   "rows": 166,
+   "rows_breaking_the_running_balance": 28,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -38513406
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00068",
+   "layout": "type1",
+   "rows": 161,
+   "rows_breaking_the_running_balance": 14,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -77468113
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00069",
+   "layout": "type1",
+   "rows": 167,
+   "rows_breaking_the_running_balance": 29,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -25727369
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00070",
+   "layout": "type1",
+   "rows": 156,
+   "rows_breaking_the_running_balance": 8,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -250903933
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00071",
+   "layout": "type1",
+   "rows": 157,
+   "rows_breaking_the_running_balance": 10,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -10492126
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00072",
+   "layout": "type1",
+   "rows": 157,
+   "rows_breaking_the_running_balance": 12,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -11260991
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00073",
+   "layout": "type1",
+   "rows": 172,
+   "rows_breaking_the_running_balance": 37,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -38728726
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00074",
+   "layout": "type1",
+   "rows": 172,
+   "rows_breaking_the_running_balance": 38,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -25170132
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00075",
+   "layout": "type1",
+   "rows": 170,
+   "rows_breaking_the_running_balance": 34,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -8194087
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00076",
+   "layout": "type1",
+   "rows": 163,
+   "rows_breaking_the_running_balance": 19,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -54764301
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00077",
+   "layout": "type1",
+   "rows": 164,
+   "rows_breaking_the_running_balance": 20,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -29126521
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00078",
+   "layout": "type1",
+   "rows": 161,
+   "rows_breaking_the_running_balance": 16,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -20933329
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00079",
+   "layout": "type1",
+   "rows": 160,
+   "rows_breaking_the_running_balance": 15,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -11815978
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00080",
+   "layout": "type1",
+   "rows": 164,
+   "rows_breaking_the_running_balance": 20,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -61379108
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00081",
+   "layout": "type1",
+   "rows": 164,
+   "rows_breaking_the_running_balance": 21,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -42183614
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00082",
+   "layout": "type1",
+   "rows": 156,
+   "rows_breaking_the_running_balance": 10,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -69062488
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00083",
+   "layout": "type1",
+   "rows": 165,
+   "rows_breaking_the_running_balance": 24,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -140086418
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00084",
+   "layout": "type1",
+   "rows": 158,
+   "rows_breaking_the_running_balance": 12,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -3049585
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00085",
+   "layout": "type1",
+   "rows": 167,
+   "rows_breaking_the_running_balance": 30,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -73739295
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00086",
+   "layout": "type1",
+   "rows": 157,
+   "rows_breaking_the_running_balance": 12,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -162460184
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00087",
+   "layout": "type1",
+   "rows": 160,
+   "rows_breaking_the_running_balance": 14,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -24056043
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00088",
+   "layout": "type1",
+   "rows": 153,
+   "rows_breaking_the_running_balance": 6,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -3128738
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00089",
+   "layout": "type1",
+   "rows": 160,
+   "rows_breaking_the_running_balance": 13,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": 0
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00090",
+   "layout": "type1",
+   "rows": 156,
+   "rows_breaking_the_running_balance": 8,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -7912470
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00091",
+   "layout": "type1",
+   "rows": 163,
+   "rows_breaking_the_running_balance": 20,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -172172819
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00092",
+   "layout": "type1",
+   "rows": 160,
+   "rows_breaking_the_running_balance": 16,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -34736339
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00093",
+   "layout": "type1",
+   "rows": 165,
+   "rows_breaking_the_running_balance": 26,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -23287892
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00094",
+   "layout": "type1",
+   "rows": 157,
+   "rows_breaking_the_running_balance": 12,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -64240404
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00095",
+   "layout": "type1",
+   "rows": 164,
+   "rows_breaking_the_running_balance": 21,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -32179851
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00096",
+   "layout": "type1",
+   "rows": 157,
+   "rows_breaking_the_running_balance": 9,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -757872811
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00097",
+   "layout": "type1",
+   "rows": 166,
+   "rows_breaking_the_running_balance": 28,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -47810692
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00098",
+   "layout": "type1",
+   "rows": 163,
+   "rows_breaking_the_running_balance": 22,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -17994598
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00099",
+   "layout": "type1",
+   "rows": 165,
+   "rows_breaking_the_running_balance": 19,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": 0
+  },
+  {
+   "doc_id": "agami-Digital_Type1_00100",
+   "layout": "type1",
+   "rows": 163,
+   "rows_breaking_the_running_balance": 24,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -13758715
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00001",
+   "layout": "type2",
+   "rows": 161,
+   "rows_breaking_the_running_balance": 16,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -81629
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00002",
+   "layout": "type2",
+   "rows": 167,
+   "rows_breaking_the_running_balance": 30,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -261694043
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00003",
+   "layout": "type2",
+   "rows": 163,
+   "rows_breaking_the_running_balance": 23,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -404076962
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00004",
+   "layout": "type2",
+   "rows": 156,
+   "rows_breaking_the_running_balance": 9,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -319159031
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00005",
+   "layout": "type2",
+   "rows": 156,
+   "rows_breaking_the_running_balance": 9,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -926780363
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00006",
+   "layout": "type2",
+   "rows": 158,
+   "rows_breaking_the_running_balance": 16,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -108437760
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00007",
+   "layout": "type2",
+   "rows": 160,
+   "rows_breaking_the_running_balance": 17,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -17351960
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00008",
+   "layout": "type2",
+   "rows": 159,
+   "rows_breaking_the_running_balance": 14,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -595993419
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00009",
+   "layout": "type2",
+   "rows": 163,
+   "rows_breaking_the_running_balance": 23,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -782995271
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00010",
+   "layout": "type2",
+   "rows": 168,
+   "rows_breaking_the_running_balance": 30,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -509993489
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00011",
+   "layout": "type2",
+   "rows": 158,
+   "rows_breaking_the_running_balance": 10,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -357694799
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00012",
+   "layout": "type2",
+   "rows": 161,
+   "rows_breaking_the_running_balance": 21,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -429155652
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00013",
+   "layout": "type2",
+   "rows": 171,
+   "rows_breaking_the_running_balance": 32,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": 0
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00014",
+   "layout": "type2",
+   "rows": 159,
+   "rows_breaking_the_running_balance": 11,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": 0
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00015",
+   "layout": "type2",
+   "rows": 158,
+   "rows_breaking_the_running_balance": 12,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -38742506
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00016",
+   "layout": "type2",
+   "rows": 164,
+   "rows_breaking_the_running_balance": 27,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -230216669
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00017",
+   "layout": "type2",
+   "rows": 158,
+   "rows_breaking_the_running_balance": 12,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -31197783
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00018",
+   "layout": "type2",
+   "rows": 157,
+   "rows_breaking_the_running_balance": 9,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -45192012
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00019",
+   "layout": "type2",
+   "rows": 166,
+   "rows_breaking_the_running_balance": 30,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -486024921
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00020",
+   "layout": "type2",
+   "rows": 163,
+   "rows_breaking_the_running_balance": 21,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -353627072
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00021",
+   "layout": "type2",
+   "rows": 166,
+   "rows_breaking_the_running_balance": 30,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -226233240
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00022",
+   "layout": "type2",
+   "rows": 160,
+   "rows_breaking_the_running_balance": 17,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -56603487
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00023",
+   "layout": "type2",
+   "rows": 157,
+   "rows_breaking_the_running_balance": 14,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -191857821
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00024",
+   "layout": "type2",
+   "rows": 162,
+   "rows_breaking_the_running_balance": 22,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -135151678
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00025",
+   "layout": "type2",
+   "rows": 162,
+   "rows_breaking_the_running_balance": 19,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -60375329
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00026",
+   "layout": "type2",
+   "rows": 168,
+   "rows_breaking_the_running_balance": 33,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -298873905
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00027",
+   "layout": "type2",
+   "rows": 158,
+   "rows_breaking_the_running_balance": 14,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -224808209
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00028",
+   "layout": "type2",
+   "rows": 156,
+   "rows_breaking_the_running_balance": 8,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -572461804
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00029",
+   "layout": "type2",
+   "rows": 158,
+   "rows_breaking_the_running_balance": 14,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -155590346
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00030",
+   "layout": "type2",
+   "rows": 163,
+   "rows_breaking_the_running_balance": 23,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -77028841
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00031",
+   "layout": "type2",
+   "rows": 166,
+   "rows_breaking_the_running_balance": 31,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -494389083
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00032",
+   "layout": "type2",
+   "rows": 155,
+   "rows_breaking_the_running_balance": 8,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -2117260295
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00033",
+   "layout": "type2",
+   "rows": 156,
+   "rows_breaking_the_running_balance": 8,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -1209695702
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00034",
+   "layout": "type2",
+   "rows": 161,
+   "rows_breaking_the_running_balance": 19,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -677065718
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00035",
+   "layout": "type2",
+   "rows": 166,
+   "rows_breaking_the_running_balance": 26,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -528485147
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00036",
+   "layout": "type2",
+   "rows": 168,
+   "rows_breaking_the_running_balance": 33,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -153605574
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00037",
+   "layout": "type2",
+   "rows": 168,
+   "rows_breaking_the_running_balance": 30,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -24610763
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00038",
+   "layout": "type2",
+   "rows": 165,
+   "rows_breaking_the_running_balance": 24,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -217877890
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00039",
+   "layout": "type2",
+   "rows": 169,
+   "rows_breaking_the_running_balance": 30,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -74396664
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00040",
+   "layout": "type2",
+   "rows": 163,
+   "rows_breaking_the_running_balance": 22,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -338703525
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00041",
+   "layout": "type2",
+   "rows": 160,
+   "rows_breaking_the_running_balance": 18,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -274163455
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00042",
+   "layout": "type2",
+   "rows": 158,
+   "rows_breaking_the_running_balance": 11,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -384674733
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00043",
+   "layout": "type2",
+   "rows": 160,
+   "rows_breaking_the_running_balance": 17,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -115580215
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00044",
+   "layout": "type2",
+   "rows": 166,
+   "rows_breaking_the_running_balance": 29,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -630182668
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00045",
+   "layout": "type2",
+   "rows": 159,
+   "rows_breaking_the_running_balance": 14,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -190002436
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00046",
+   "layout": "type2",
+   "rows": 166,
+   "rows_breaking_the_running_balance": 28,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -268887070
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00047",
+   "layout": "type2",
+   "rows": 158,
+   "rows_breaking_the_running_balance": 14,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -522454
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00048",
+   "layout": "type2",
+   "rows": 157,
+   "rows_breaking_the_running_balance": 11,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -451939249
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00049",
+   "layout": "type2",
+   "rows": 155,
+   "rows_breaking_the_running_balance": 8,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -3171992548
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00050",
+   "layout": "type2",
+   "rows": 156,
+   "rows_breaking_the_running_balance": 9,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -391687983
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00051",
+   "layout": "type2",
+   "rows": 162,
+   "rows_breaking_the_running_balance": 22,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -48218400
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00052",
+   "layout": "type2",
+   "rows": 161,
+   "rows_breaking_the_running_balance": 18,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -102519275
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00053",
+   "layout": "type2",
+   "rows": 162,
+   "rows_breaking_the_running_balance": 21,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": 0
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00054",
+   "layout": "type2",
+   "rows": 159,
+   "rows_breaking_the_running_balance": 15,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -140635037
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00055",
+   "layout": "type2",
+   "rows": 168,
+   "rows_breaking_the_running_balance": 30,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -347659923
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00056",
+   "layout": "type2",
+   "rows": 171,
+   "rows_breaking_the_running_balance": 34,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -1107711172
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00057",
+   "layout": "type2",
+   "rows": 171,
+   "rows_breaking_the_running_balance": 38,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -478388109
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00058",
+   "layout": "type2",
+   "rows": 156,
+   "rows_breaking_the_running_balance": 11,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -463826344
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00059",
+   "layout": "type2",
+   "rows": 164,
+   "rows_breaking_the_running_balance": 25,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -85938486
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00060",
+   "layout": "type2",
+   "rows": 155,
+   "rows_breaking_the_running_balance": 10,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -8347608
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00061",
+   "layout": "type2",
+   "rows": 155,
+   "rows_breaking_the_running_balance": 8,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -157982488
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00062",
+   "layout": "type2",
+   "rows": 159,
+   "rows_breaking_the_running_balance": 16,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -99745797
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00063",
+   "layout": "type2",
+   "rows": 164,
+   "rows_breaking_the_running_balance": 25,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -202938254
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00064",
+   "layout": "type2",
+   "rows": 162,
+   "rows_breaking_the_running_balance": 19,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -213071445
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00065",
+   "layout": "type2",
+   "rows": 160,
+   "rows_breaking_the_running_balance": 13,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": 0
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00066",
+   "layout": "type2",
+   "rows": 165,
+   "rows_breaking_the_running_balance": 23,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": 0
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00067",
+   "layout": "type2",
+   "rows": 170,
+   "rows_breaking_the_running_balance": 34,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -239848835
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00068",
+   "layout": "type2",
+   "rows": 160,
+   "rows_breaking_the_running_balance": 13,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -66208170
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00069",
+   "layout": "type2",
+   "rows": 165,
+   "rows_breaking_the_running_balance": 24,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -202183720
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00070",
+   "layout": "type2",
+   "rows": 166,
+   "rows_breaking_the_running_balance": 28,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -234467114
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00071",
+   "layout": "type2",
+   "rows": 166,
+   "rows_breaking_the_running_balance": 28,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -149173503
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00072",
+   "layout": "type2",
+   "rows": 164,
+   "rows_breaking_the_running_balance": 24,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -59375665
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00073",
+   "layout": "type2",
+   "rows": 162,
+   "rows_breaking_the_running_balance": 23,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -138193383
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00074",
+   "layout": "type2",
+   "rows": 162,
+   "rows_breaking_the_running_balance": 21,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -54933157
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00075",
+   "layout": "type2",
+   "rows": 158,
+   "rows_breaking_the_running_balance": 14,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -352383098
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00076",
+   "layout": "type2",
+   "rows": 156,
+   "rows_breaking_the_running_balance": 10,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": 0
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00077",
+   "layout": "type2",
+   "rows": 157,
+   "rows_breaking_the_running_balance": 12,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -50178480
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00078",
+   "layout": "type2",
+   "rows": 158,
+   "rows_breaking_the_running_balance": 13,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -14701
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00079",
+   "layout": "type2",
+   "rows": 162,
+   "rows_breaking_the_running_balance": 19,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -472109124
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00080",
+   "layout": "type2",
+   "rows": 163,
+   "rows_breaking_the_running_balance": 25,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -602084604
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00081",
+   "layout": "type2",
+   "rows": 159,
+   "rows_breaking_the_running_balance": 14,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -184288417
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00082",
+   "layout": "type2",
+   "rows": 162,
+   "rows_breaking_the_running_balance": 22,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -328009137
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00083",
+   "layout": "type2",
+   "rows": 161,
+   "rows_breaking_the_running_balance": 19,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -186002995
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00084",
+   "layout": "type2",
+   "rows": 158,
+   "rows_breaking_the_running_balance": 10,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -1357037854
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00085",
+   "layout": "type2",
+   "rows": 157,
+   "rows_breaking_the_running_balance": 10,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -13378938
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00086",
+   "layout": "type2",
+   "rows": 165,
+   "rows_breaking_the_running_balance": 24,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -360716577
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00087",
+   "layout": "type2",
+   "rows": 157,
+   "rows_breaking_the_running_balance": 10,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -86600788
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00088",
+   "layout": "type2",
+   "rows": 158,
+   "rows_breaking_the_running_balance": 12,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -436261298
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00089",
+   "layout": "type2",
+   "rows": 158,
+   "rows_breaking_the_running_balance": 15,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -343114464
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00090",
+   "layout": "type2",
+   "rows": 160,
+   "rows_breaking_the_running_balance": 14,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -199448954
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00091",
+   "layout": "type2",
+   "rows": 166,
+   "rows_breaking_the_running_balance": 30,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -98958100
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00092",
+   "layout": "type2",
+   "rows": 162,
+   "rows_breaking_the_running_balance": 17,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -122391318
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00093",
+   "layout": "type2",
+   "rows": 156,
+   "rows_breaking_the_running_balance": 9,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -265163520
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00094",
+   "layout": "type2",
+   "rows": 168,
+   "rows_breaking_the_running_balance": 31,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -110913566
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00095",
+   "layout": "type2",
+   "rows": 154,
+   "rows_breaking_the_running_balance": 7,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": 0
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00096",
+   "layout": "type2",
+   "rows": 156,
+   "rows_breaking_the_running_balance": 9,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -211438618
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00097",
+   "layout": "type2",
+   "rows": 160,
+   "rows_breaking_the_running_balance": 17,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -214348476
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00098",
+   "layout": "type2",
+   "rows": 169,
+   "rows_breaking_the_running_balance": 32,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -22723545
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00099",
+   "layout": "type2",
+   "rows": 162,
+   "rows_breaking_the_running_balance": 21,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -58405895
+  },
+  {
+   "doc_id": "agami-Digital_Type2_00100",
+   "layout": "type2",
+   "rows": 166,
+   "rows_breaking_the_running_balance": 28,
+   "closing_equals_last_row_balance": true,
+   "amounts_chain_minus_closing_minor": -128880440
+  }
+ ]
+}

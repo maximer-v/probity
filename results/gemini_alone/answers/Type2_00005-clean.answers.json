@@ -1,0 +1,31 @@
+{
+ "one_pass": {
+  "corrections": [
+   {
+    "row": 155,
+    "field": "balance",
+    "value": "5,580,097.49"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The statement is mathematically consistent after correcting the final balance entry to match the closing balance."
+ },
+ "self_check": {
+  "corrections": [
+   {
+    "row": 154,
+    "field": "balance",
+    "value": "6,463,722.35"
+   },
+   {
+    "row": 155,
+    "field": "balance",
+    "value": "5,580,097.49"
+   }
+  ],
+  "consistent": true,
+  "inconsistent_rows": [],
+  "reason": "The transcription was missing the final transaction row (index 156) and had incorrect balance values for the last two rows. After correcting the balances for rows 154 and 155 and accounting for the final transaction, the statement is mathematically consistent."
+ }
+}
