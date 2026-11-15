@@ -21,10 +21,14 @@
   document; phone-photo rotation applied.
 - **Output**: readable report, JSON certificate, prose decision log, JSONL trace, CSV.
 - **Command line**: `probity verify | report | machine | specs`.
-- **Experiments**: `benchmark/run_scanned.py` (the method, with or without the second
-  reader), `benchmark/run_llm_alone.py` (a model doing the whole job alone),
-  `benchmark/ablate_decider.py` (same reading, three deciders), over statements built
-  by `benchmark/external/agami_patch.py` and `rasterise.py`.
-- **Results**: `results/` holds the scored outcomes, reports, raw model answers and cost
-  ledgers; `docs/RESULTS.md` is the experimental record.
-- 143 tests.
+- **Other document types in YAML**: a spec of `kind: form` declares fields, a table and
+  rules as formulas; `probity/forms.py` reads, checks, re-reads and concludes the same
+  way. `examples/specs/receipt_cord.yaml` is the receipt type used in the evaluation.
+- **Evaluation**: a protocol committed before the test set existed
+  (`benchmark/protocol/PROTOCOL.md`), run once on the code tagged `sealed-run-1`: 120
+  scanned statements and 100 real receipts, against each model alone, a model with a
+  Python interpreter, and conventional OCR with the same rules. `docs/RESULTS.md` is
+  the record and `results/sealed/` holds the scored outcomes.
+- **Development sample**: the 20 statements the method was built on and the experiment
+  on who decides, in `docs/DEVELOPMENT_SAMPLE.md` and `results/development/`.
+- 163 tests.
