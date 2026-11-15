@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="900" viewBox="0 0 1040 900" font-family="Inter, 'Helvetica Neue', Arial, sans-serif">
+  <defs>
+    <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#8a8984"/>
+    </marker>
+  </defs>
+  <rect width="1040" height="900" fill="#fcfcfb"/>
+
+  <!-- arrows -->
+  <g stroke="#8a8984" stroke-width="1.6" fill="none">
+    <line x1="520" y1="76" x2="520" y2="104" marker-end="url(#a)"/>
+    <line x1="520" y1="180" x2="520" y2="208" marker-end="url(#a)"/>
+    <line x1="520" y1="268" x2="520" y2="296" marker-end="url(#a)"/>
+    <!-- check -> confirmed -->
+    <line x1="360" y1="334" x2="272" y2="334" marker-end="url(#a)"/>
+    <!-- check -> revisit -->
+    <line x1="520" y1="372" x2="520" y2="424" marker-end="url(#a)"/>
+    <!-- revisit -> compare -->
+    <line x1="520" y1="500" x2="520" y2="528" marker-end="url(#a)"/>
+    <!-- compare -> corrected -->
+    <line x1="680" y1="566" x2="768" y2="566" marker-end="url(#a)"/>
+    <!-- corrected -> check -->
+    <path d="M 890 528 L 890 334 L 682 334" marker-end="url(#a)"/>
+    <!-- compare -> unresolved -->
+    <line x1="360" y1="566" x2="272" y2="566" marker-end="url(#a)"/>
+    <!-- compare -> third -->
+    <line x1="520" y1="604" x2="520" y2="656" marker-end="url(#a)"/>
+    <!-- third -> corrected -->
+    <path d="M 680 694 L 890 694 L 890 606" marker-end="url(#a)"/>
+    <!-- third -> inconsistent -->
+    <line x1="520" y1="732" x2="520" y2="784" marker-end="url(#a)"/>
+  </g>
+
+  <!-- input -->
+  <rect x="360" y="24" width="320" height="52" rx="12" fill="#ffffff" stroke="#d9d8d3"/>
+  <text x="520" y="47" text-anchor="middle" font-size="15" font-weight="600" fill="#0b0b0b">Scanned document</text>
+  <text x="520" y="65" text-anchor="middle" font-size="12" fill="#52514e">PDF or image</text>
+
+  <!-- read -->
+  <rect x="360" y="106" width="320" height="74" rx="12" fill="#ffffff" stroke="#d9d8d3"/>
+  <rect x="360" y="106" width="6" height="74" rx="3" fill="#6250d6"/>
+  <text x="520" y="131" text-anchor="middle" font-size="12" fill="#6250d6" letter-spacing="1.5">READ · MODEL</text>
+  <text x="520" y="151" text-anchor="middle" font-size="13" fill="#0b0b0b">The first model transcribes each page</text>
+  <text x="520" y="169" text-anchor="middle" font-size="12" fill="#52514e">It returns the characters it sees and decides nothing</text>
+
+  <!-- parse -->
+  <rect x="360" y="210" width="320" height="58" rx="12" fill="#ffffff" stroke="#d9d8d3"/>
+  <rect x="360" y="210" width="6" height="58" rx="3" fill="#2a78d6"/>
+  <text x="520" y="233" text-anchor="middle" font-size="12" fill="#2a78d6" letter-spacing="1.5">PARSE · CODE</text>
+  <text x="520" y="253" text-anchor="middle" font-size="13" fill="#0b0b0b">Characters become exact amounts and dates</text>
+
+  <!-- check -->
+  <rect x="360" y="298" width="320" height="74" rx="12" fill="#f3f8fe" stroke="#2a78d6" stroke-width="1.6"/>
+  <text x="520" y="323" text-anchor="middle" font-size="12" fill="#2a78d6" letter-spacing="1.5">CHECK · CODE</text>
+  <text x="520" y="343" text-anchor="middle" font-size="13" fill="#0b0b0b">Rules run with exact equality</text>
+  <text x="520" y="361" text-anchor="middle" font-size="12" fill="#52514e">A failure is located to a row</text>
+
+  <!-- confirmed -->
+  <rect x="40" y="298" width="230" height="74" rx="12" fill="#f0faf5" stroke="#7cc9a4" stroke-width="1.6"/>
+  <text x="155" y="330" text-anchor="middle" font-size="15" font-weight="600" fill="#0e6b49">CONFIRMED</text>
+  <text x="155" y="351" text-anchor="middle" font-size="12" fill="#3d5a4d">Every rule passes</text>
+  <text x="316" y="324" text-anchor="middle" font-size="11" fill="#52514e">all pass</text>
+
+  <!-- label: rule fails -->
+  <rect x="436" y="386" width="168" height="20" fill="#fcfcfb"/>
+  <text x="520" y="401" text-anchor="middle" font-size="11" fill="#52514e">a rule fails at row N</text>
+
+  <!-- revisit -->
+  <rect x="360" y="426" width="320" height="74" rx="12" fill="#ffffff" stroke="#d9d8d3"/>
+  <rect x="360" y="426" width="6" height="74" rx="3" fill="#6250d6"/>
+  <text x="520" y="451" text-anchor="middle" font-size="12" fill="#6250d6" letter-spacing="1.5">REVISIT · MODEL</text>
+  <text x="520" y="471" text-anchor="middle" font-size="13" fill="#0b0b0b">A different model transcribes that page</text>
+  <text x="520" y="489" text-anchor="middle" font-size="12" fill="#52514e">It sees nothing of the first reading</text>
+
+  <!-- compare -->
+  <rect x="360" y="530" width="320" height="74" rx="12" fill="#f3f8fe" stroke="#2a78d6" stroke-width="1.6"/>
+  <text x="520" y="555" text-anchor="middle" font-size="12" fill="#2a78d6" letter-spacing="1.5">COMPARE · CODE</text>
+  <text x="520" y="575" text-anchor="middle" font-size="13" fill="#0b0b0b">The two readings of row N, side by side</text>
+  <text x="520" y="593" text-anchor="middle" font-size="12" fill="#52514e">The rule is run again on each</text>
+
+  <!-- corrected -->
+  <rect x="770" y="530" width="240" height="74" rx="12" fill="#ffffff" stroke="#d9d8d3"/>
+  <text x="890" y="562" text-anchor="middle" font-size="15" font-weight="600" fill="#0b0b0b">CORRECTED</text>
+  <text x="890" y="583" text-anchor="middle" font-size="12" fill="#52514e">Both values are recorded</text>
+  <text x="725" y="548" text-anchor="middle" font-size="11" fill="#52514e">they differ, and</text>
+  <text x="725" y="562" text-anchor="middle" font-size="11" fill="#52514e" dy="18">the second ties</text>
+  <rect x="846" y="420" width="88" height="20" fill="#fcfcfb"/>
+  <text x="890" y="435" text-anchor="middle" font-size="11" fill="#52514e">check again</text>
+
+  <!-- unresolved -->
+  <rect x="40" y="530" width="230" height="74" rx="12" fill="#fff8e6" stroke="#e5c46b" stroke-width="1.6"/>
+  <text x="155" y="562" text-anchor="middle" font-size="15" font-weight="600" fill="#8a5d00">UNRESOLVED</text>
+  <text x="155" y="583" text-anchor="middle" font-size="12" fill="#6b5a2e">Both readings go to a person</text>
+  <text x="316" y="556" text-anchor="middle" font-size="11" fill="#52514e">anything else</text>
+
+  <!-- label: they agree -->
+  <rect x="396" y="618" width="248" height="20" fill="#fcfcfb"/>
+  <text x="520" y="633" text-anchor="middle" font-size="11" fill="#52514e">they agree, and the rule still fails</text>
+
+  <!-- third reading -->
+  <rect x="360" y="658" width="320" height="74" rx="12" fill="#ffffff" stroke="#d9d8d3"/>
+  <rect x="360" y="658" width="6" height="74" rx="3" fill="#6250d6"/>
+  <text x="520" y="683" text-anchor="middle" font-size="12" fill="#6250d6" letter-spacing="1.5">THIRD READING · MODEL</text>
+  <text x="520" y="703" text-anchor="middle" font-size="13" fill="#0b0b0b">The first model again, at a higher resolution</text>
+  <text x="520" y="721" text-anchor="middle" font-size="12" fill="#52514e">Code compares it with the other two</text>
+  <text x="785" y="686" text-anchor="middle" font-size="11" fill="#52514e">it differs, and ties</text>
+
+  <!-- label: agrees -->
+  <rect x="412" y="746" width="216" height="20" fill="#fcfcfb"/>
+  <text x="520" y="761" text-anchor="middle" font-size="11" fill="#52514e">it agrees, or settles nothing</text>
+
+  <!-- inconsistent -->
+  <rect x="360" y="786" width="320" height="74" rx="12" fill="#fdf1f0" stroke="#e3a9a4" stroke-width="1.6"/>
+  <text x="520" y="818" text-anchor="middle" font-size="15" font-weight="600" fill="#99231b">DOCUMENT INCONSISTENT</text>
+  <text x="520" y="839" text-anchor="middle" font-size="12" fill="#6b3b37">at row N, with every reading shown</text>
+
+  <text x="520" y="886" text-anchor="middle" font-size="11" fill="#8a8984">Every outcome comes with a report, a certificate and a decision log.</text>
+</svg>

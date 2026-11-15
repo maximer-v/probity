@@ -251,24 +251,9 @@ as No. 128.
 
 ## How it works
 
-```mermaid
-flowchart TD
-    A["Scanned statement<br/>PDF or image"] --> B["READ<br/>first model, one page per request<br/>returns the characters it sees"]
-    B --> C["PARSE<br/>code turns the characters into exact amounts and dates"]
-    C --> D{"CHECK<br/>rules, exact equality"}
-    D -- "all pass" --> OK(["CONFIRMED"])
-    D -- "a rule fails at row N" --> E["REVISIT<br/>a different model transcribes that page<br/>it sees nothing of the first reading"]
-    E --> F{"code compares the two<br/>readings of row N"}
-    F -- "they differ, and the second passes the guards" --> G["CORRECTED<br/>both values recorded"]
-    G --> D
-    F -- "they agree, on the row and on the balance carried into it" --> T{"THIRD READING<br/>first model again, higher resolution"}
-    T -- "differs, and passes the guards" --> G
-    T -- "agrees, or settles nothing" --> H(["DOCUMENT INCONSISTENT<br/>at row N"])
-    F -- "anything else" --> I(["UNRESOLVED<br/>both readings go to a person"])
-    OK --> R["Report, certificate, decision log"]
-    H --> R
-    I --> R
-```
+<p align="center">
+  <img src="docs/assets/decision_flow.svg" alt="The decision flow. A scanned document is read by the first model, which transcribes each page and decides nothing. Code parses the characters into exact amounts and dates and checks the rules with exact equality. If all pass, the document is confirmed. If a rule fails at a row, a different model transcribes that page without seeing the first reading, and code compares the two readings of the row. If they differ and the second one ties, the row is corrected, both values are recorded and the rules are checked again. If they agree and the rule still fails, the first model reads the page a third time at a higher resolution: if that reading differs and ties, the row is corrected; if it agrees or settles nothing, the document is inconsistent at that row. Anything else is unresolved and both readings go to a person." width="88%">
+</p>
 
 **This is not an agent.** No model plans, chooses a tool, or decides what happens next.
 The flow is fixed: read, check, re-read where a check failed, compare, conclude. Every
@@ -433,7 +418,7 @@ print(render_report(result.certificate.to_json()))
 
 ```bash
 probity report certificate.json     # the readable report, from a stored certificate
-probity machine --format mermaid    # the state machine
+probity machine --format table      # the state machine
 probity specs                       # the document types available
 ```
 

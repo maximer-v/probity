@@ -5,52 +5,22 @@ table, guards are named deterministic functions of the run state, and the loop t
 lines in [`probity/machine.py`](../probity/machine.py) and
 [`probity/pipeline.py`](../probity/pipeline.py).
 
-The diagram below is generated from that table by
-[`probity/export.py`](../probity/export.py). A test checks that every transition in the
-table appears in this document; it does not check labels or ordering, so regenerate the
-diagram with `probity machine --format mermaid` after changing the table.
-
 Two guards are not pure predicates: `repairable` records which region it selected and
 `tier_advanced` moves the reader pointer. Both are deterministic, and both write what
 they did to the trace.
 
-```mermaid
-stateDiagram-v2
-    [*] --> INGEST
-    INGEST --> ERROR: no readable page
-    INGEST --> CLASSIFY: ingested
-    CLASSIFY --> EXTRACT: classified
-    EXTRACT --> ESCALATE_TIER: nothing extracted
-    EXTRACT --> HUMAN_REVIEW: nothing extracted, no tier left
-    EXTRACT --> GROUND: candidate reading produced
-    GROUND --> VERIFY: every value located or rejected
-    VERIFY --> ACCEPT: all invariants pass and policy met
-    VERIFY --> REPAIR: localized failure, repair budget left
-    VERIFY --> ESCALATE_TIER: failure, a better tier is available
-    VERIFY --> HUMAN_REVIEW: budget exhausted
-    REPAIR --> GROUND: candidate from the source
-    REPAIR --> ESCALATE_TIER: repair found nothing, tier available
-    REPAIR --> HUMAN_REVIEW: repair found nothing, no tier left
-    ESCALATE_TIER --> EXTRACT: next tier, failed region only
-    ESCALATE_TIER --> HUMAN_REVIEW: no tier left within budget
-    ACCEPT --> [*]
-    HUMAN_REVIEW --> [*]
-    ERROR --> [*]
-    note right of VERIFY
-        Only deterministic predicates decide here.
-        A model's own confidence is logged, never asked.
-    end note
-```
+<p align="center">
+  <img src="assets/state_machine.svg" alt="The state machine: ten states and sixteen transitions, listed in full in the table below. INGEST leads to CLASSIFY, EXTRACT, GROUND and VERIFY. From VERIFY the machine goes to ACCEPT when every rule passes, to REPAIR on a located failure, to ESCALATE_TIER when a better reader is available, or to HUMAN_REVIEW. REPAIR returns to GROUND with a new candidate. The terminal states are ACCEPT, HUMAN_REVIEW and ERROR." width="100%">
+</p>
 
-## Why the diagram is Mermaid
-
-Mermaid renders inline in a GitHub README and themes itself for light and dark mode, so
-the picture lives next to the code and needs no build step or committed image. The same
-string is also accepted by **[Stately Sketch](https://sketch.stately.ai/)** — paste
-[`docs/assets/state_machine.mmd`](assets/state_machine.mmd) into it and you get an
-interactive, simulatable version of this machine with no account and no install.
-
-That is the whole of what we took from Stately. The reasoning is in the next section.
+The picture and [the table](#the-table) are both generated from the transition table in
+the code by [`probity/export.py`](../probity/export.py), and a test fails if a
+transition in the code is missing from the table on this page. The same machine is
+exported as text for other tools in [`assets/`](assets/): Graphviz
+([`state_machine.dot`](assets/state_machine.dot)), Mermaid
+([`state_machine.mmd`](assets/state_machine.mmd), which
+[Stately Sketch](https://sketch.stately.ai/) accepts for an interactive view) and XState
+JSON ([`state_machine.xstate.json`](assets/state_machine.xstate.json)).
 
 ## What we looked at, and what we use
 
@@ -59,7 +29,7 @@ choice in another.
 
 | Thing | Verdict | Why |
 |---|---|---|
-| **Stately Sketch** (`sketch.stately.ai`) | **Used.** | Free, no account, and it accepts Mermaid `stateDiagram-v2` directly. One string serves as the README diagram *and* an interactive simulator. |
+| **Stately Sketch** (`sketch.stately.ai`) | **Used.** | Free, no account, and it accepts Mermaid `stateDiagram-v2` directly, so the exported text gives an interactive simulator. |
 | **XState v6 JSON** | **Emitted, optional.** | The serialization format is documented, so [`export.py`](../probity/export.py) writes [`state_machine.xstate.json`](assets/state_machine.xstate.json) for richer guard rendering. Nothing in the runtime reads it back, and XState v6 is still beta, so it is a convenience and not a dependency. |
 | **Stately Studio** (hosted editor) | **Not used.** | On the free tier every project is public. Machines that will describe client document pipelines do not belong there. |
 | **XState as a runtime** | **Not used.** | It is TypeScript, and this is a Python pipeline. |

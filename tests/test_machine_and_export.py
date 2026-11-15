@@ -87,15 +87,17 @@ def test_mermaid_has_no_hardcoded_colours():
 
 
 def test_documented_diagram_matches_the_code():
-    """The diagram in docs/STATE_MACHINE.md is generated; this fails if it drifts."""
+    """The table in docs/STATE_MACHINE.md is generated; this fails if it drifts."""
     doc = Path(__file__).resolve().parents[1] / "docs" / "STATE_MACHINE.md"
     if not doc.exists():
         pytest.skip("docs not present")
     text = doc.read_text(encoding="utf-8")
     for t in TRANSITIONS:
-        assert f"{t.source.value} --> {t.target.value}" in text, (
-            f"docs/STATE_MACHINE.md is missing {t.source.value} --> {t.target.value}; "
-            "regenerate it with probity.export.write_all")
+        guard = f"`{t.guard}`" if t.guard else "_(fallback)_"
+        row = f"| {t.source.value} | {guard} | {t.target.value} |"
+        assert row in text, (
+            f"docs/STATE_MACHINE.md is missing the row {row}; "
+            "regenerate the table with probity.export.to_markdown_table")
 
 
 def test_xstate_json_shape():

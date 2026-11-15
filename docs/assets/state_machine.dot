@@ -1,4 +1,4 @@
-digraph tieout {
+digraph probity {
   rankdir=TB;
   node [shape=box, fontname="Helvetica"];
   INGEST [shape=box];
